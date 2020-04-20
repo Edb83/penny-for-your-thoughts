@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Indie+Flower|Raleway&display=swap");
+/* Google fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap');
 
 /* Site-wide */
 
@@ -18,44 +20,64 @@ body {
   background-color: rgba(255, 255, 255, 0.9);
   border-color: transparent;
   border-bottom-color: rgba(148, 54, 52, 0.7);
-  position: relative;
+  opacity: 1;
+  
+  position: fixed;
   z-index: 1;
 }
 
 .navbar-brand {
   font-weight: bold;
-  font-family: "Raleway", sans-serif;
-  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
   letter-spacing: 1px;
 }
 
-/* Circle 
+.navbar-nav {
 
-.circle-container {
+}
+
+.navbar .navbar-toggler {
+    border: 0;
+}
+
+.navbar-nav .navbar-text {
+    color: rgba(148, 54, 52, 0.7);
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgba(0,0,0,1);
+    background-color: rgba(148, 54, 52, 0.3);
+    border-color: rgba(148, 54, 52, 1);
+    border-radius: 10%;
+}
+
+/* Callout */
+
+.callout-container {
+  height: 100vh;
+  background: url("../assets/images/landscapes/Fieldscape.jpg") no-repeat bottom right fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
-  padding: 30px 0px;
 }
 
-.circle-image-top-left {
-  border-top-left-radius: 100%;
+/* Intro */
+
+.intro-container {
+    text-align: center;
 }
 
-.circle-image-top-right {
-  border-top-right-radius: 100%;
+.intro-header {
+    padding: 10px 10px;
 }
 
-.circle-image-bottom-left {
-  border-bottom-left-radius: 100%;
+.intro-item {
+    padding-left: 10px;
+    padding-right: 10px;
 }
-
-.circle-image-bottom-right {
-  border-bottom-right-radius: 100%;
-}
-
-.fit-image {
-  max-width: 100%;
-  width: 100%;
-  object-fit: cover;
-  max-height: 300px;
-  height: 300px;
-} */
