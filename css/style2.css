@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower|Raleway&display=swap");
+
+/* Site-wide */
+
+body {
+  margin: 0;
+}
+
+/* Colors */
+
+/* Navbar */
+
+.navbar {
+  margin-bottom: 0;
+  border: 1px;
+  border-style: solid;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-color: transparent;
+  border-bottom-color: rgba(148, 54, 52, 0.7);
+  position: relative;
+  z-index: 1;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+/* Circle 
+
+.circle-container {
+  position: relative;
+  padding: 30px 0px;
+}
+
+.circle-image-top-left {
+  border-top-left-radius: 100%;
+}
+
+.circle-image-top-right {
+  border-top-right-radius: 100%;
+}
+
+.circle-image-bottom-left {
+  border-bottom-left-radius: 100%;
+}
+
+.circle-image-bottom-right {
+  border-bottom-right-radius: 100%;
+}
+
+.fit-image {
+  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
+  max-height: 300px;
+  height: 300px;
+} */

@@ -1,0 +1,63 @@
+/* Fonts
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Raleway', sans-serif; */
+
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower|Raleway&display=swap");
+
+/* Site-wide */
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+/* Colors */
+
+/* Callout */
+
+/* Navbar */
+
+.navbar {
+  margin-bottom: 0;
+  border: 1px;
+  border-style: solid;
+  width: 100%;
+  background-color: rgba(255,255,255,0.9);
+  border-color: transparent;
+  border-bottom-color: rgba(148, 54, 52, 0.7);
+  position: fixed;
+  z-index: 1;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+/* Headings */
+
+/* Callout */
+
+.callout-container {
+  height: 100vh;
+  background: url("../assets/images/trees/Misty Woods.jpg") no-repeat bottom right fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.callout-text {
+    font-size: 1.5em;
+    color: black;
+}
+
+.callout-padding {
+    padding: 10% 5%;
+    text-align: left;
+}
