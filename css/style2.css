@@ -8,6 +8,12 @@ body {
   margin: 0;
 }
 
+/* Headings */
+
+h2 {
+    text-align: center;
+}
+
 /* Colors */
 
 /* Navbar */
@@ -22,7 +28,7 @@ body {
   border-bottom-color: rgba(148, 54, 52, 0.7);
   opacity: 1;
 
-  position: sticky;
+  position: fixed;
   z-index: 1;
 }
 
@@ -74,67 +80,46 @@ body {
   text-align: center;
 }
 
-/* Categories */
+/* Six Categories */
 
-.media-categories {
+.categories-media {
   height: 15vh;
   width: 100%;
-  margin: 10px 0px;
-  border-color: whitesmoke;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
   position: relative;
+  overflow: hidden;
 }
 
-.media-canals {
-  background: url("../assets/images/canals/bridge.jpg") center fixed;
-}
-
-.media-coast {
-  background: url("../assets/images/coast/Coast1.jpg") center fixed;
-}
-
-.media-flora {
-  background: url("../assets/images/flora-and-fauna/autumn-1.jpg") center fixed;
-}
-
-.media-flowers {
-  background: url("../assets/images/flowers/faded-glory.jpg") center fixed;
-}
-
-.media-landscapes {
-  background: url("../assets/images/landscapes/bale-scape.jpg") center fixed;
-}
-
-.media-trees {
-  background: url("../assets/images/trees/misty-woods.jpg") center fixed;
+.categories-media img {
+  position: absolute;
+  width: 100%;
+  top: 45%;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .section-bg--red {
-    background-color: rgba(148, 54, 52, 0.5);
-    color: #f7f7f7f7;
+  background-color: rgba(148, 54, 52, 1);
+  color: whitesmoke;
 }
 
 .section-bg--white {
-    background-color: white;
-    color: rgba(148, 54, 52, 0.7);
+  background-color: white;
+  color: black;
 }
 
 .categories-text {
   font-family: "Open Sans", sans-serif;
   font-size: 24px;
   font-weight: bold;
-}
-
-.categories-text--white {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: whitesmoke;
 }
 
 .categories-text--red {
-  color: rgba(148, 54, 52, 0.7);
+  color: rgba(148, 54, 52, 1);
 }

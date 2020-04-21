@@ -56,6 +56,8 @@ Content
 
 https://stackoverflow.com/questions/48482944/how-to-fit-the-image-inside-the-bootstrap-div/48483068
 
+https://stackoverflow.com/questions/11757537/css-image-size-how-to-fill-not-stretch
+
 	• The text for section Y was copied from the Wikipedia article Z
 
 Media
