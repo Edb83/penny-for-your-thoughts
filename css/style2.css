@@ -55,6 +55,7 @@ body {
 
 .callout-container {
   height: 100vh;
+  width: auto;
   background: url("../assets/images/landscapes/Fieldscape.jpg") no-repeat bottom
     right fixed;
   -webkit-background-size: cover;
@@ -67,23 +68,9 @@ body {
   position: relative;
 }
 
-/* Sections general */
-
-.section-container {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.section-header {
-  padding: 20px 0px;
-  text-align: center;
-}
-
 /* Intro */
 
 .intro-item {
-  padding-left: 45px;
-  padding-right: 45px;
   text-align: center;
 }
 
@@ -91,6 +78,9 @@ body {
 
 .media-categories {
   height: 15vh;
+  width: 100%;
+  margin: 10px 0px;
+  border-color: whitesmoke;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -102,16 +92,49 @@ body {
 }
 
 .media-canals {
-  background: url("../assets/images/canals/bridge.jpg") bottom fixed;
+  background: url("../assets/images/canals/bridge.jpg") center fixed;
 }
 
 .media-coast {
-  background: url("../assets/images/coast/Coast1.jpg") bottom fixed;
+  background: url("../assets/images/coast/Coast1.jpg") center fixed;
+}
+
+.media-flora {
+  background: url("../assets/images/flora-and-fauna/autumn-1.jpg") center fixed;
+}
+
+.media-flowers {
+  background: url("../assets/images/flowers/faded-glory.jpg") center fixed;
+}
+
+.media-landscapes {
+  background: url("../assets/images/landscapes/bale-scape.jpg") center fixed;
+}
+
+.media-trees {
+  background: url("../assets/images/trees/misty-woods.jpg") center fixed;
+}
+
+.section-bg--red {
+    background-color: rgba(148, 54, 52, 0.5);
+    color: #f7f7f7f7;
+}
+
+.section-bg--white {
+    background-color: white;
+    color: rgba(148, 54, 52, 0.7);
 }
 
 .categories-text {
-    font-family: "Open Sans",sans-serif;
-    color: whitesmoke;
-    font-size: 24px;
-    font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.categories-text--white {
+  color: whitesmoke;
+}
+
+.categories-text--red {
+  color: rgba(148, 54, 52, 0.7);
 }
