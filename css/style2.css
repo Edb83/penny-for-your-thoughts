@@ -4,17 +4,53 @@
 
 /* Site-wide */
 
-body {
+/* Special paddings/margins/text */
+
+h1,
+h2,
+h3,
+h4 {
   margin: 0;
 }
 
-/* Headings */
-
-h2 {
-    text-align: center;
+.uppercase {
+  text-transform: uppercase;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
+.intro-heading,
+.categories-heading {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  margin-top: 25px;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #989681;
+}
+
+.intro-heading {
+    background-color: white;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+
 /* Colors */
+
+.bg-color--red {
+  background-color: rgba(148, 54, 52, 1);
+  color: white;
+}
+
+.bg-color--white {
+  background-color: white;
+  color: black;
+}
 
 /* Navbar */
 
@@ -28,7 +64,7 @@ h2 {
   border-bottom-color: rgba(148, 54, 52, 0.7);
   opacity: 1;
 
-  position: fixed;
+  position: relative;
   z-index: 1;
 }
 
@@ -52,9 +88,7 @@ h2 {
 
 .navbar-nav .nav-link:hover {
   color: rgba(0, 0, 0, 1);
-  background-color: rgba(148, 54, 52, 0.3);
-  border-color: rgba(148, 54, 52, 1);
-  border-radius: 10%;
+  font-weight: 500;
 }
 
 /* Callout */
@@ -78,6 +112,8 @@ h2 {
 
 .intro-item {
   text-align: center;
+  font-size: 1.25em;
+  margin-bottom: 2rem;
 }
 
 /* Six Categories */
@@ -88,30 +124,23 @@ h2 {
   display: block;
   position: relative;
   overflow: hidden;
+  border-style: ridge;
+  border-width: thin;
+  border-color: rgba(148, 54, 52, 0.7);
 }
 
 .categories-media img {
   position: absolute;
   width: 100%;
-  top: 45%;
+  top: 55%;
   -ms-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
-.section-bg--red {
-  background-color: rgba(148, 54, 52, 1);
-  color: whitesmoke;
-}
-
-.section-bg--white {
-  background-color: white;
-  color: black;
-}
-
 .categories-text {
-  font-family: "Open Sans", sans-serif;
-  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
   font-weight: bold;
   position: absolute;
   top: 50%;
@@ -122,4 +151,12 @@ h2 {
 
 .categories-text--red {
   color: rgba(148, 54, 52, 1);
+}
+
+
+/* Gallery */
+
+#gallery {
+  padding: 0;
+  position: absolute;
 }
