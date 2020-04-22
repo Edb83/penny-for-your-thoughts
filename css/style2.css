@@ -4,6 +4,10 @@
 
 /* Site-wide */
 
+body {
+    font-family: "Open Sans",sans-serif;
+}
+
 /* Special paddings/margins/text */
 
 h1,
@@ -156,7 +160,27 @@ h4 {
 
 /* Gallery */
 
-#gallery {
-  padding: 0;
+.gallery {
+
+}
+.pic {
+    position: relative;
+}
+
+.pic img {
+    top: 5%;
+    height: 50vh;
+    object-fit: cover;
+    margin-top: 20px;
+    border-style: solid;
+    border-color: rgba(148, 54, 52, 1);
+}
+
+.pic button {
   position: absolute;
+  top: 90%;
+  left: 90%;
+  transform: translate(-90%, -90%);
+  -ms-transform: translate(-90%, -90%);
+  opacity: 0.85;
 }
