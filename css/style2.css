@@ -100,7 +100,7 @@ h4 {
 .callout-container {
   height: 100vh;
   width: auto;
-  background: url("../assets/images/landscapes/Fieldscape.jpg") no-repeat bottom
+  background: url("../assets/images/landscapes/fieldscape.jpg") no-repeat bottom
     right fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
