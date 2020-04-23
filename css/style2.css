@@ -5,7 +5,7 @@
 /* Site-wide */
 
 body {
-    font-family: "Open Sans",sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 /* Special paddings/margins/text */
@@ -36,13 +36,12 @@ h4 {
 }
 
 .intro-heading {
-    background-color: white;
+  background-color: white;
 }
 
 .container-fluid {
-    padding: 0;
+  padding: 0;
 }
-
 
 /* Colors */
 
@@ -95,7 +94,7 @@ h4 {
   font-weight: 500;
 }
 
-/* Callout */
+/* Hero image */
 
 .callout-container {
   height: 100vh;
@@ -114,10 +113,15 @@ h4 {
 
 /* Intro */
 
+.intro-item-container {
+  box-shadow: 2px 5px 9px rgba(148, 54, 52, 0.5);
+}
+
 .intro-item {
   text-align: center;
   font-size: 1.25em;
   margin-bottom: 2rem;
+  display: block;
 }
 
 /* Six Categories */
@@ -157,23 +161,20 @@ h4 {
   color: rgba(148, 54, 52, 1);
 }
 
-
 /* Gallery */
 
 .gallery {
-
 }
 .pic {
-    position: relative;
+  position: relative;
 }
 
 .pic img {
-    top: 5%;
-    height: 50vh;
-    object-fit: cover;
-    margin-top: 20px;
-    border-style: solid;
-    border-color: rgba(148, 54, 52, 1);
+  top: 5%;
+  height: 50vh;
+  object-fit: cover;
+  margin-top: 20px;
+  box-shadow: 2px 5px 9px rgba(148, 54, 52, 0.5);
 }
 
 .pic button {
