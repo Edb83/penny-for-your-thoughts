@@ -26,8 +26,7 @@ h4 {
   display: inline-block;
 }
 
-.intro-heading,
-.categories-heading {
+.intro-heading {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   margin-top: 25px;
@@ -131,60 +130,6 @@ h4 {
   align-items: center;
   justify-content: center;
   position: relative;
-}
-
-/* Intro */
-
-.intro-container {
-  margin: 0;
-}
-
-.intro-item-container {
-  
-}
-
-.intro-item {
-  text-align: center;
-  font-size: 1.25em;
-  margin-bottom: 2rem;
-  display: block;
-}
-
-/* Six Categories */
-
-.categories-media {
-  height: 15vh;
-  width: 100%;
-  display: block;
-  position: relative;
-  overflow: hidden;
-  border-style: ridge;
-  border-width: thin;
-  border-color: rgba(148, 54, 52, 0.7);
-}
-
-.categories-media img {
-  position: absolute;
-  width: 100%;
-  top: 55%;
-  -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.categories-text {
-  font-family: "Montserrat", sans-serif;
-  font-size: 22px;
-  font-weight: bold;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: whitesmoke;
-}
-
-.categories-text--red {
-  color: rgba(148, 54, 52, 1);
 }
 
 /* Gallery */
