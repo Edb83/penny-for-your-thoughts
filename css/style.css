@@ -106,13 +106,9 @@ h4 {
   border: 0;
 }
 
-.navbar-nav .navbar-text {
-  color: rgba(148, 54, 52, 0.7);
-}
-
-.navbar-nav .nav-link:hover {
-  color: rgba(0, 0, 0, 1);
+.navbar-light .navbar-nav .nav-link:hover {
   font-weight: 500;
+    color: rgba(148, 54, 52, 0.7);
 }
 
 /* Hero image */
