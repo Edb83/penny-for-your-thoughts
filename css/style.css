@@ -47,6 +47,11 @@ body {
   color: white;
 }
 
+.bg-color--green {
+  background-color: rgb(38, 77, 38);
+  color: white;
+}
+
 .bg-color--white {
   background-color: white;
   color: rgb(43, 41, 41);
@@ -120,21 +125,22 @@ body {
 
 /* Welcome */
 
-
-
 /* Intro */
 
 .intro-container p {
-    margin: 0;
-    padding: 10px 0px;
+  margin: 0;
+  padding: 10px 0px;
 }
 
-/* Three Steps */
-.step-container p {
-margin: 0;
-padding: 10px 5px;
+/* Footer */
+
+.footer-container a {
+    color: white;
 }
 
+.footer-container a:hover {
+    color:rgb(92, 173, 201);
+}
 
 /* Gallery */
 
