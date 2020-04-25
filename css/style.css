@@ -95,6 +95,7 @@ body {
 /* Headings */
 
 .heading-welcome,
+.heading-steps,
 .heading-gallery {
   text-align: center;
 }
@@ -117,13 +118,23 @@ body {
   border-bottom-color: rgba(148, 54, 52, 0.7);
 }
 
-/* Steps */
-.step-container {
+/* Welcome */
+
+
+
+/* Intro */
+
+.intro-container p {
+    margin: 0;
+    padding: 10px 0px;
 }
 
-.step {
-    text-align: right;
+/* Three Steps */
+.step-container p {
+margin: 0;
+padding: 10px 5px;
 }
+
 
 /* Gallery */
 
@@ -140,6 +151,7 @@ body {
   height: 20vh;
   object-fit: cover;
   margin-top: 20px;
+  border-radius: 5px;
   box-shadow: 7px 7px 7px rgba(148, 54, 52, 0.3);
 }
 
