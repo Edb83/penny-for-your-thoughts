@@ -94,7 +94,7 @@ body {
 
 /* Headings */
 
-.heading-steps,
+.heading-welcome,
 .heading-gallery {
   text-align: center;
 }
@@ -121,11 +121,16 @@ body {
 .step-container {
 }
 
+.step {
+    text-align: right;
+}
+
 /* Gallery */
 
 .gallery-container {
   padding-top: 50px;
 }
+
 .pic {
   position: relative;
   padding: 0;
