@@ -4,9 +4,14 @@
 
 /* Site-wide */
 
+html,
 body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
+  /* These properties are used in conjunction with footer to position the footer at the bottom of pages which do not have much content */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Special paddings/margins/text */
@@ -100,9 +105,17 @@ body {
 /* Headings */
 
 .heading-welcome,
-.heading-steps,
-.heading-gallery {
+.heading-about,
+.heading-pricing,
+.heading-gallery,
+.heading-signup {
   text-align: center;
+}
+
+.heading-gallery-category {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  padding-top: 18px;
 }
 
 /* Hero image */
@@ -134,9 +147,10 @@ body {
 
 /* Footer */
 
-.footer {
-    position: fixed;
-    bottom: 0;
+/* These properties are used in conjunction with html,body to position the footer at the bottom of pages which do not have much content  */
+footer {
+  margin-top: auto;
+  height: 158.875px;
 }
 
 .footer-container a {
