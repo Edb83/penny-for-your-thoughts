@@ -140,6 +140,13 @@ body {
 
 .footer-container a:hover {
     color:rgb(92, 173, 201);
+    text-decoration: none;
+}
+
+/* Pricing */
+
+caption {
+    text-align: right;
 }
 
 /* Gallery */
