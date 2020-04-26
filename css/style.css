@@ -44,16 +44,16 @@ body {
 
 .bg-color--red {
   background-color: rgba(148, 54, 52, 1);
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .bg-color--green {
   background-color: rgb(38, 77, 38);
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .bg-color--white {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   color: rgb(43, 41, 41);
 }
 
@@ -135,18 +135,22 @@ body {
 /* Footer */
 
 .footer-container a {
-    color: white;
+  color: rgb(255, 255, 255);
 }
 
 .footer-container a:hover {
-    color:rgb(92, 173, 201);
-    text-decoration: none;
+  color: rgb(92, 173, 201);
+  text-decoration: none;
+}
+
+.copyright-container a {
+  color: rgb(255, 255, 255);
 }
 
 /* Pricing */
 
 caption {
-    text-align: right;
+  text-align: right;
 }
 
 /* Gallery */
@@ -170,9 +174,9 @@ caption {
 
 .pic button {
   position: absolute;
-  top: 75%;
-  left: 75%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  top: 95%;
+  left: 95%;
+  transform: translate(-90%, -100%);
+  -ms-transform: translate(-90%, -100%);
   opacity: 0.85;
 }
