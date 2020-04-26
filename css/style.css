@@ -20,31 +20,6 @@ body {
   text-transform: uppercase;
 }
 
-.inline-block {
-  display: inline-block;
-}
-
-.container-fluid {
-  padding: 0;
-}
-
-.center-all {
-  text-align: center;
-  align-items: center;
-  align-self: center;
-  justify-items: center;
-  justify-self: center;
-  justify-content: center;
-  place-items: center;
-  vertical-align: middle;
-  line-height: 100%;
-  margin: auto;
-  position: absolute;
-  left: 50%;
-  right: 50%;
-  transform: translate(-50%, -50%);
-}
-
 /* Colors */
 
 .bg-color--red {
@@ -129,7 +104,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  display: flex;
+  display: table;
   position: relative;
   border-bottom: solid;
   border-bottom-width: 1px;
