@@ -174,3 +174,10 @@ caption {
   -ms-transform: translate(-90%, -100%);
   opacity: 0.85;
 }
+
+/* Sign Up */
+
+.btn-red {
+    background-color: rgba(148, 54, 52, 0.8);
+    color: rgb(255,255,255);
+}
