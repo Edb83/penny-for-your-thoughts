@@ -207,7 +207,7 @@ caption {
 }
 
 /* This adjustment allows gallery dropdown items to remain visible for mobile users in landscape */
-@media screen and (max-device-width: 767px) and (max-device-height: 475px) {
+@media screen and (max-width: 767px) and (max-height: 475px) {
   .dropdown-menu {
     height: 100px;
     overflow-y: scroll;
