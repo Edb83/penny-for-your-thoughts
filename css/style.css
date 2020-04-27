@@ -9,9 +9,9 @@ body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
   /* These properties are used in conjunction with footer to position the footer at the bottom of pages which do not have much content */
-  height: 100%;
+  /* height: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; */
 }
 
 /* Special paddings/margins/text */
@@ -98,13 +98,15 @@ body {
 .callout-container {
   height: 100vh;
   width: auto;
-  background: url("../assets/images/landscapes/fieldscape.jpg") no-repeat top
-    right fixed;
+  background: url("../assets/images/landscapes/fieldscape.jpg");
+  background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  display: table;
+  display: flex;
   position: relative;
   border-bottom: solid;
   border-bottom-width: 1px;
@@ -123,10 +125,10 @@ body {
 /* Footer */
 
 /* These properties are used in conjunction with html,body to position the footer at the bottom of pages which do not have much content  */
-footer {
+/* footer {
   margin-top: auto;
   height: 158.875px;
-}
+} */
 
 .footer-container a {
   color: rgb(255, 255, 255);
@@ -188,4 +190,5 @@ caption {
 @media screen and (max-device-width: 1024px){
 .callout-container {
     background-attachment: scroll;
+}
 }
