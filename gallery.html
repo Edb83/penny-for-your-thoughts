@@ -42,8 +42,7 @@
           data-target="#navbarNavDropdown"
           aria-controls="navbarNavDropdown"
           aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+          aria-label="Toggle navigation"        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -65,20 +64,16 @@
                 role="button"
                 data-toggle="dropdown"
                 aria-haspopup="true"
-                aria-expanded="false"
-              >
+                aria-expanded="false"              >
                 Gallery <span class="sr-only">(current)</span>
               </a>
               <div
                 class="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
+                aria-labelledby="navbarDropdownMenuLink"              >
                 <a class="dropdown-item" href="#">All</a>
                 <a class="dropdown-item" href="#canals">Canals</a>
                 <a class="dropdown-item" href="#coast">Coast</a>
-                <a class="dropdown-item" href="#flora-and-fauna"
-                  >Flora and Fauna</a
-                >
+                <a class="dropdown-item" href="#flora-and-fauna">Flora and Fauna</a>
                 <a class="dropdown-item" href="#flowers">Flowers</a>
                 <a class="dropdown-item" href="#landscapes">Landscapes</a>
                 <a class="dropdown-item" href="#trees">Trees</a>
@@ -88,8 +83,7 @@
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
               <a class="nav-link nav-signup" href="signup.html"
-                >Sign In / Sign Up</a
-              >
+                >Sign In / Sign Up</a>
             </li>
           </ul>
         </div>
@@ -947,5 +941,10 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
+    <!-- Script to collapse dropdowns in burger menu when clicked -->
+   <script> $('.dropdown-item').on('click', function() {
+        $('.navbar-collapse').collapse('hide');
+    });</script>
+
   </body>
 </html>
