@@ -124,12 +124,6 @@ background-position: center;
 
 /* Footer */
 
-/* These properties are used in conjunction with html,body to position the footer at the bottom of pages which do not have much content  */
-/* footer {
-  margin-top: auto;
-  height: 158.875px;
-} */
-
 .footer-container a {
   color: rgb(255, 255, 255);
 }
@@ -141,6 +135,12 @@ background-position: center;
 
 .copyright-container a {
   color: rgb(255, 255, 255);
+}
+
+/* About */
+
+.about-container {
+    height: 100vh;
 }
 
 /* Pricing */
