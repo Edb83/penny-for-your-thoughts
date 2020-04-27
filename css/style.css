@@ -126,7 +126,7 @@ body {
 /* Footer */
 
 footer {
-    margin-top: 80px;
+  margin-top: 80px;
 }
 
 .footer-container a {
@@ -145,7 +145,6 @@ footer {
 /* About */
 
 .about-container {
-
 }
 
 /* Pricing */
@@ -157,7 +156,6 @@ caption {
 /* Gallery */
 
 .gallery-container {
-  
 }
 
 .pic {
@@ -190,13 +188,13 @@ caption {
 }
 
 .btn-red:hover {
-    color: rgb(255, 255, 255);
-    background-color: #f7761a;
-    text-decoration: none;
-    font-weight: 600;
+  color: rgb(255, 255, 255);
+  background-color: #f7761a;
+  text-decoration: none;
+  font-weight: 600;
 }
 .form-group label {
-    font-family: "Montserrat",sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Media */
@@ -210,8 +208,9 @@ caption {
 
 /* This adjustment allows gallery dropdown items to remain visible for mobile users in landscape */
 @media (max-height: 380px) {
-    .dropdown-menu {
-          height: 100px;
-          overflow-y: auto;
-       }
-    }
+  .dropdown-menu {
+    height: 100px;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+}
