@@ -85,6 +85,7 @@ body {
 .heading-gallery,
 .heading-signup {
   text-align: center;
+  margin-bottom: 25px;
 }
 
 .heading-gallery-category {
@@ -100,8 +101,8 @@ body {
   width: auto;
   background: url("../assets/images/landscapes/fieldscape.jpg");
   background-repeat: no-repeat;
-background-attachment: fixed;
-background-position: center;
+  background-attachment: fixed;
+  background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -124,6 +125,10 @@ background-position: center;
 
 /* Footer */
 
+footer {
+    margin-top: 80px;
+}
+
 .footer-container a {
   color: rgb(255, 255, 255);
 }
@@ -140,7 +145,7 @@ background-position: center;
 /* About */
 
 .about-container {
-    height: 100vh;
+
 }
 
 /* Pricing */
@@ -152,7 +157,7 @@ caption {
 /* Gallery */
 
 .gallery-container {
-  padding-top: 50px;
+  
 }
 
 .pic {
@@ -180,15 +185,33 @@ caption {
 /* Sign Up */
 
 .btn-red {
-    background-color: rgba(148, 54, 52, 0.8);
-    color: rgb(255,255,255);
+  background-color: rgb(148, 54, 52);
+  color: rgb(255, 255, 255);
+}
+
+.btn-red:hover {
+    color: rgb(255, 255, 255);
+    background-color: #f7761a;
+    text-decoration: none;
+    font-weight: 600;
+}
+.form-group label {
+    font-family: "Montserrat",sans-serif;
 }
 
 /* Media */
 
 /* This adjustment allows the hero image to be displayed on mobile devices (iOS) */
-@media screen and (max-device-width: 1024px){
-.callout-container {
+@media screen and (max-device-width: 1024px) {
+  .callout-container {
     background-attachment: scroll;
+  }
 }
-}
+
+/* This adjustment allows gallery dropdown items to remain visible for mobile users in landscape */
+@media (max-height: 380px) {
+    .dropdown-menu {
+          height: 100px;
+          overflow-y: auto;
+       }
+    }
