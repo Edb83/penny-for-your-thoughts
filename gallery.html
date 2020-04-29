@@ -91,6 +91,7 @@
     </div>
 
     <!-- Gallery -->
+
     <div class="container">
       <div class="row">
         <div class="col-12 pt-5 mt-5 mx-auto">
@@ -102,7 +103,7 @@
         </div>
       </div>
     </div>
-    <div class="container gallery-container my-5">
+    <div class="container gallery-container my-5 inner-page-contents">
       <section id="canals">
         <div class="row">
           <div class="col-12">
@@ -942,7 +943,7 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
-    <!-- Script to collapse dropdowns in burger menu when clicked. This is only needed on gallery.html where anchors are in same page -->
+    <!-- Script to collapse dropdowns in mobile navbar burger menu when clicked NB this is different from other pages due to gallery dropdown anchors (dropdown-item vs nav-item) -->
    <script> $('.dropdown-item').on('click', function() {
         $('.navbar-collapse').collapse('hide');
     });</script>

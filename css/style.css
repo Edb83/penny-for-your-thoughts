@@ -4,14 +4,18 @@
 
 /* Site-wide */
 
-html,
 body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
-  /* These properties are used in conjunction with footer to position the footer at the bottom of pages which do not have much content */
-  /* height: 100%;
+
+/* These settings are used to position the footer at the bottom of the page where there is insufficient content to naturally position it there (About, Pricing, Signup) */
   display: flex;
-  flex-direction: column; */
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.inner-page-contents {
+    flex: 1;
 }
 
 /* Special paddings/margins/text */
@@ -22,19 +26,9 @@ body {
 
 /* Colors */
 
-.bg-color--red {
-  background-color: rgba(148, 54, 52, 1);
-  color: rgb(255, 255, 255);
-}
-
 .bg-color--green {
   background-color: rgb(38, 77, 38);
   color: rgb(255, 255, 255);
-}
-
-.bg-color--white {
-  background-color: rgb(255, 255, 255);
-  color: rgb(43, 41, 41);
 }
 
 .shadow--red {
@@ -144,8 +138,6 @@ footer {
 
 /* About */
 
-.about-container {
-}
 
 /* Pricing */
 
@@ -155,12 +147,16 @@ table {
 
 .table thead th {
     vertical-align: bottom;
-    border-bottom: 2px solid rgb(148, 54, 52) ;
+    border-bottom: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(148, 54, 52);
 }
 
 .table td,
 .table th {
-    border-top: 1px solid rgb(38, 77, 38);
+    border-top: 1px;
+    border-top-style: solid;
+    border-top-color:  rgb(38, 77, 38);
 }
 
 table caption {
