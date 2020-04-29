@@ -92,91 +92,116 @@
       </nav>
     </div>
     <!-- Sign Up -->
-    <div class="container mb-5">
+    <div class="container">
       <div class="row">
         <div class="col pt-5 mt-5 mx-auto">
           <h2 class="heading-signup">Sign Up</h2>
+          <hr>
           <p>
-            Please enter your details below to register with Penny for your Thoughts and confirm your purchase.
+            Please enter your details below to register with Penny for your
+            Thoughts and confirm your purchase.
           </p>
         </div>
       </div>
-
-      <div class="form-row">
-        <div class="form-group col-md-6">
-          <label for="inputFirstName">First Name</label>
-          <input required
-            type="text"
-            class="form-control"
-            id="inputFirstName"
-            placeholder="First Name"/>
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputFirstName">First Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputFirstName"
+              placeholder="First Name"
+              required
+            />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputSurname">Surname</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputSurname"
+              placeholder="Surname"
+              required
+            />
+          </div>
         </div>
-        <div class="form-group col-md-6">
-          <label for="inputSurname">Surname</label>
-          <input
-            type="text"
-            class="form-control"
-            id="inputSurname"
-            placeholder="Surname"/>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="inputEmail"
+              placeholder="Email"
+              required
+            />
+            <small class="form-text text-muted"
+              >We'll never share your email with anyone else.</small
+            >
+          </div>
         </div>
-      </div>
-      <div class="form-row">
-        <div class="form-group col-md-6">
-          <label for="inputEmai">Email</label>
-          <input
-            type="email"
-            class="form-control"
-            id="inputEmai"
-            placeholder="Email"/>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputPassword1">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="inputPassword1"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword2">Confirm Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="inputPassword2"
+              placeholder="Password"
+              required
+            />
+          </div>
         </div>
-      </div>
-      <div class="form-row">
-        <div class="form-group col-md-6">
-          <label for="inputPassword1">Password</label>
-          <input
-            type="password"
-            class="form-control"
-            id="inputPassword1"
-            placeholder="Password"/>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputAddress1">Address 1</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputAddress"
+              placeholder="House name / House number"
+              required
+            />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputAddress2">Address 2</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputAddress2"
+              placeholder="Street"
+              required
+            />
+          </div>
         </div>
-        <div class="form-group col-md-6">
-          <label for="inputPassword2">Confirm Password</label>
-          <input
-            type="password"
-            class="form-control"
-            id="inputPassword2"
-            placeholder="Password"/>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">City</label>
+            <input type="text" class="form-control" id="inputCity" required />
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputPostcode">Postcode</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputPostcode"
+              required
+            />
+          </div>
         </div>
-      </div>
-      <div class="form-row">
-        <div class="form-group col-md-6">
-          <label for="inputAddress1">Address 1</label>
-          <input
-            type="text"
-            class="form-control"
-            id="inputAddress"
-            placeholder="House name / House number" />
-        </div>
-        <div class="form-group col-md-6">
-          <label for="inputAddress2">Address 2</label>
-          <input
-            type="text"
-            class="form-control"
-            id="inputAddress2"
-            placeholder="Street" />
-        </div>
-      </div>
-      <div class="form-row">
-        <div class="form-group col-md-6">
-          <label for="inputCity">City</label>
-          <input type="text" class="form-control" id="inputCity" />
-        </div>
-        <div class="form-group col-md-2">
-          <label for="inputPostcode">Postcode</label>
-          <input type="text" class="form-control" id="inputPostcode" />
-        </div>
-      </div>
-      <button type="submit" class="btn btn-red">Sign Up</button>
+        <button type="submit" class="btn btn-red">Sign Up</button>
+      </form>
     </div>
 
     <!-- Footer -->
@@ -231,7 +256,7 @@
               <p class="small">
                 © 2020 Copyright:
                 <a
-                  href="mailto:penny.holland77@gmail.com?Subect=Penny%20for%20your%20Thoughts"
+                  href="mailto:penny.holland77@gmail.com?Subject=Penny%20for%20your%20Thoughts"
                   >Penny Holland</a
                 >
               </p>

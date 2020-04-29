@@ -149,7 +149,21 @@ footer {
 
 /* Pricing */
 
-caption {
+table {
+    text-align: center;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid rgb(148, 54, 52) ;
+}
+
+.table td,
+.table th {
+    border-top: 1px solid rgb(38, 77, 38);
+}
+
+table caption {
   text-align: right;
 }
 
@@ -191,13 +205,20 @@ caption {
   color: rgb(255, 255, 255);
   background-color: #f7761a;
   text-decoration: none;
-  font-weight: 600;
 }
+
 .form-group label {
   font-family: "Montserrat", sans-serif;
 }
 
 /* Media */
+
+/* This adjustment shrinks the font size of the navbar brand on smaller mobile devices to prevent spilling onto the next line */
+@media screen and (max-device-width: 349px) {
+  .navbar-brand {
+    font-size: 15px;
+  }
+}
 
 /* This adjustment allows the hero image to be displayed on mobile devices (iOS) */
 @media screen and (max-device-width: 1024px) {
@@ -206,7 +227,7 @@ caption {
   }
 }
 
-/* This adjustment allows gallery dropdown items to remain visible for mobile users in landscape */
+/* This adjustment adds ability to scroll navbar dropdown items on mobile devices where they would be hidden/inaccessible */
 @media screen and (max-width: 767px) and (max-height: 475px) {
   .dropdown-menu {
     height: 100px;
