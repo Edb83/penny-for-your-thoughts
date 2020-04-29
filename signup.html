@@ -92,18 +92,19 @@
       </nav>
     </div>
     <!-- Sign Up -->
+
     <div class="container">
       <div class="row">
-        <div class="col pt-5 mt-5 mx-auto">
+        <div class="col-12 pt-5 mt-5 mx-auto">
           <h2 class="heading-signup">Sign Up</h2>
-          <hr>
+          <hr />
           <p>
             Please enter your details below to register with Penny for your
             Thoughts and confirm your purchase.
           </p>
         </div>
       </div>
-      <form>
+      <form id="signup-form" class="mt-5">
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="inputFirstName">First Name</label>
@@ -137,7 +138,7 @@
               required
             />
             <small class="form-text text-muted"
-              >We'll never share your email with anyone else.</small
+              >We'll never share your email with anyone else</small
             >
           </div>
         </div>
@@ -163,7 +164,7 @@
             />
           </div>
         </div>
-        <div class="form-row">
+        <!-- <div class="form-row">
           <div class="form-group col-md-6">
             <label for="inputAddress1">Address 1</label>
             <input
@@ -199,6 +200,16 @@
               required
             />
           </div>
+        </div> -->
+        <div class="form-group form-check">
+          <input
+            type="checkbox"
+            class="form-check-input form-control-slim"
+            id="acceptUpdates"
+          />
+          <label class="form-check-label" for="acceptUpdates"
+            >I want to receive product updates</label
+          >
         </div>
         <button type="submit" class="btn btn-red">Sign Up</button>
       </form>
@@ -282,5 +293,10 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
+    <!-- Script to collapse dropdowns in mobile navbar burger menu when clicked -->
+   <script> $('.nav-item').on('click', function() {
+        $('.navbar-collapse').collapse('hide');
+    });</script>
+
   </body>
 </html>
