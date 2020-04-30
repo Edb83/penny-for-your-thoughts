@@ -104,7 +104,9 @@
           </p>
         </div>
       </div>
-      <form id="signup-form" class="mt-5">
+    <!-- Invalid-feedback display disabled until fix for jumping on submit -->
+
+      <form class="needs-validation mt-5" novalidate>
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="inputFirstName">First Name</label>
@@ -115,6 +117,9 @@
               placeholder="First Name"
               required
             />
+            <!-- <div class="invalid-feedback">
+                Please enter your First Name
+             </div> -->
           </div>
           <div class="form-group col-md-6">
             <label for="inputSurname">Surname</label>
@@ -125,7 +130,11 @@
               placeholder="Surname"
               required
             />
+            <!-- <div class="invalid-feedback">
+                Please enter your Surname
+             </div> -->
           </div>
+          
         </div>
         <div class="form-row">
           <div class="form-group col-md-6">
@@ -137,6 +146,9 @@
               placeholder="Email"
               required
             />
+            <!-- <div class="invalid-feedback">
+                Please enter a valid email address
+             </div> -->
             <small class="form-text text-muted"
               >We'll never share your email with anyone else</small
             >
@@ -152,6 +164,9 @@
               placeholder="Password"
               required
             />
+            <!-- <div class="invalid-feedback">
+                Please choose a password
+             </div> -->
           </div>
           <div class="form-group col-md-6">
             <label for="inputPassword2">Confirm Password</label>
@@ -162,9 +177,15 @@
               placeholder="Password"
               required
             />
+            <!-- <div class="invalid-feedback">
+                Please confirm your password
+             </div> -->
           </div>
         </div>
-        <!-- <div class="form-row">
+
+        <!-- Additional form fields for use when ordering cards/prints via email
+            
+            <div class="form-row">
           <div class="form-group col-md-6">
             <label for="inputAddress1">Address 1</label>
             <input
@@ -174,6 +195,9 @@
               placeholder="House name / House number"
               required
             />
+            <div class="invalid-feedback">
+                Please enter the first line of your address
+             </div>
           </div>
           <div class="form-group col-md-6">
             <label for="inputAddress2">Address 2</label>
@@ -184,6 +208,9 @@
               placeholder="Street"
               required
             />
+            <div class="invalid-feedback">
+                Please enter the second line of your address
+             </div>
           </div>
         </div>
         <div class="form-row">
@@ -199,6 +226,9 @@
               id="inputPostcode"
               required
             />
+            <div class="invalid-feedback">
+                Please enter a valid postcode
+             </div>
           </div>
         </div> -->
         <div class="form-group form-check">
@@ -293,10 +323,32 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
+   
     <!-- Script to collapse dropdowns in mobile navbar burger menu when clicked -->
    <script> $('.nav-item').on('click', function() {
         $('.navbar-collapse').collapse('hide');
     });</script>
 
+    <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+    'use strict';
+    window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+        form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+        }, false);
+        });
+    }, false);
+    })();
+    </script>
+    
   </body>
 </html>

@@ -62,6 +62,10 @@ https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
 
 https://css-tricks.com/examples/hrs/
 
+https://tinyjpg.com/
+
+https://www.howtogeek.com/354015/how-to-resize-images-and-photos-in-windows/
+
 	• The text for section Y was copied from the Wikipedia article Z
 
 Media
