@@ -58,6 +58,8 @@ https://stackoverflow.com/questions/48482944/how-to-fit-the-image-inside-the-boo
 
 https://stackoverflow.com/questions/11757537/css-image-size-how-to-fill-not-stretch
 
+https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
+
 	• The text for section Y was copied from the Wikipedia article Z
 
 Media

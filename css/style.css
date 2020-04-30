@@ -18,6 +18,29 @@ body {
     flex: 1;
 }
 
+/* Horizontal rules */
+
+.hr-gradient {
+    border: 0;
+    height: 1px;
+}
+
+.hr-gradient--green {
+    background-image: linear-gradient(to right, rgba(38, 77, 38, 0), rgba(38, 77, 38, 0.75), rgba(38, 77, 38, 0));
+}
+
+.hr-gradient--red {
+    background-image: linear-gradient(to right, rgba(148, 54, 52, 0), rgba(148, 54, 52, 0.75), rgba(148, 54, 52, 0));
+}
+
+.hr-gradient--blue {
+    background-image: linear-gradient(to right, rgba(92, 173, 201, 0), rgba(92, 173, 201, 0.75), rgba(92, 173, 201, 0));
+}
+
+.hr-gradient--yellow {
+    background-image: linear-gradient(to right, rgba(179, 150, 24, 0), rgba(179, 150, 24, 0.75), rgba(179, 150, 24, 0));
+}
+
 /* Special paddings/margins/text */
 
 .uppercase {
@@ -121,6 +144,11 @@ body {
 
 footer {
   margin-top: 80px;
+border: 1px;
+  border-style: solid;
+  border-color: transparent;
+  border-top-color: rgba(148, 54, 52, 0.7)
+
 }
 
 .footer-container a {
