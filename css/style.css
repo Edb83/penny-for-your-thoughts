@@ -14,8 +14,27 @@ body {
   flex-direction: column;
 }
 
+/* These settings are used to position the footer at the bottom of the page where there is insufficient content to naturally position it there (About, Pricing, Signup) */
 .inner-page-contents {
     flex: 1;
+}
+
+
+/* Special paddings/margins/text */
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* Colors */
+
+.bg-color--green {
+  background-color: rgb(38, 77, 38);
+  color: rgb(255, 255, 255);
+}
+
+.shadow--red {
+  box-shadow: 2px 2px 5px rgba(148, 54, 52, 0.5);
 }
 
 /* Horizontal rules */
@@ -39,23 +58,6 @@ body {
 
 .hr-gradient--yellow {
     background-image: linear-gradient(to right, rgba(179, 150, 24, 0), rgba(179, 150, 24, 0.75), rgba(179, 150, 24, 0));
-}
-
-/* Special paddings/margins/text */
-
-.uppercase {
-  text-transform: uppercase;
-}
-
-/* Colors */
-
-.bg-color--green {
-  background-color: rgb(38, 77, 38);
-  color: rgb(255, 255, 255);
-}
-
-.shadow--red {
-  box-shadow: 2px 2px 5px rgba(148, 54, 52, 0.5);
 }
 
 /* Navbar */
@@ -193,11 +195,16 @@ table caption {
 
 /* Gallery */
 
+
+/* test */
+
+
+
 .gallery-container {
 }
 
 .pic {
-  position: relative;
+  position: flex;
   padding: 0;
 }
 
@@ -212,8 +219,8 @@ table caption {
 .pic button {
   position: absolute;
   top: 95%;
-  left: 95%;
-  transform: translate(-90%, -100%);
+  left: 87%;
+  transform: translate(-100%, -100%);
   -ms-transform: translate(-90%, -100%);
   opacity: 0.85;
 }
@@ -257,5 +264,12 @@ table caption {
     height: 100px;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* This adjustment alters the height of gallery images to prevent them becoming stretched on mobile devices when displayed one per row */
+@media screen and (max-width: 575px) {
+.pic img {
+    height: 100%;
   }
 }

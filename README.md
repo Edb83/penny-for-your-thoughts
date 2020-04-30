@@ -60,6 +60,8 @@ https://stackoverflow.com/questions/11757537/css-image-size-how-to-fill-not-stre
 
 https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
 
+https://css-tricks.com/examples/hrs/
+
 	• The text for section Y was copied from the Wikipedia article Z
 
 Media
