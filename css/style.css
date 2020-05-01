@@ -8,7 +8,7 @@ body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
 
-/* These settings are used to position the footer at the bottom of the page where there is insufficient content to naturally position it there (About, Pricing, Signup) */
+  /* These settings are used to position the footer at the bottom of the page where there is insufficient content to naturally position it there (About, Pricing, Signup) */
   display: flex;
   min-height: 100vh;
   flex-direction: column;
@@ -16,9 +16,8 @@ body {
 
 /* These settings are used to position the footer at the bottom of the page where there is insufficient content to naturally position it there (About, Pricing, Signup) */
 .inner-page-contents {
-    flex: 1;
+  flex: 1;
 }
-
 
 /* Special paddings/margins/text */
 
@@ -40,24 +39,44 @@ body {
 /* Horizontal rules */
 
 .hr-gradient {
-    border: 0;
-    height: 1px;
+  border: 0;
+  height: 1px;
 }
 
 .hr-gradient--green {
-    background-image: linear-gradient(to right, rgba(38, 77, 38, 0), rgba(38, 77, 38, 0.75), rgba(38, 77, 38, 0));
+  background-image: linear-gradient(
+    to right,
+    rgba(38, 77, 38, 0),
+    rgba(38, 77, 38, 0.75),
+    rgba(38, 77, 38, 0)
+  );
 }
 
 .hr-gradient--red {
-    background-image: linear-gradient(to right, rgba(148, 54, 52, 0), rgba(148, 54, 52, 0.75), rgba(148, 54, 52, 0));
+  background-image: linear-gradient(
+    to right,
+    rgba(148, 54, 52, 0),
+    rgba(148, 54, 52, 0.75),
+    rgba(148, 54, 52, 0)
+  );
 }
 
 .hr-gradient--blue {
-    background-image: linear-gradient(to right, rgba(92, 173, 201, 0), rgba(92, 173, 201, 0.75), rgba(92, 173, 201, 0));
+  background-image: linear-gradient(
+    to right,
+    rgba(92, 173, 201, 0),
+    rgba(92, 173, 201, 0.75),
+    rgba(92, 173, 201, 0)
+  );
 }
 
 .hr-gradient--yellow {
-    background-image: linear-gradient(to right, rgba(179, 150, 24, 0), rgba(179, 150, 24, 0.75), rgba(179, 150, 24, 0));
+  background-image: linear-gradient(
+    to right,
+    rgba(179, 150, 24, 0),
+    rgba(179, 150, 24, 0.75),
+    rgba(179, 150, 24, 0)
+  );
 }
 
 /* Navbar */
@@ -118,7 +137,7 @@ body {
 .callout-container {
   height: 100vh;
   width: auto;
-  background: url("../assets/images/landscapes/sm-fieldscape.jpg");
+  background: url("../assets/images/landscapes/lg-fieldscape.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -131,6 +150,19 @@ body {
   border-bottom: solid;
   border-bottom-width: 1px;
   border-bottom-color: rgba(148, 54, 52, 0.7);
+}
+
+/* COVID alert */
+
+.covid-alert {
+  position: fixed;
+  padding: 0.75rem 1.25rem;
+  border: 1px;
+  border-style: solid;
+  border-radius: 0.25rem;
+  width: 100%;
+  margin-top: 65px;
+  text-align: center;
 }
 
 /* Welcome */
@@ -146,11 +178,10 @@ body {
 
 footer {
   margin-top: 80px;
-border: 1px;
+  border: 1px;
   border-style: solid;
   border-color: transparent;
-  border-top-color: rgba(148, 54, 52, 0.7)
-
+  border-top-color: rgba(148, 54, 52, 0.7);
 }
 
 .footer-container a {
@@ -168,25 +199,24 @@ border: 1px;
 
 /* About */
 
-
 /* Pricing */
 
 table {
-    text-align: center;
+  text-align: center;
 }
 
 .table thead th {
-    vertical-align: bottom;
-    border-bottom: 2px;
-    border-bottom-style: solid;
-    border-bottom-color: rgb(148, 54, 52);
+  vertical-align: bottom;
+  border-bottom: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(148, 54, 52);
 }
 
 .table td,
 .table th {
-    border-top: 1px;
-    border-top-style: solid;
-    border-top-color:  rgb(38, 77, 38);
+  border-top: 1px;
+  border-top-style: solid;
+  border-top-color: rgb(38, 77, 38);
 }
 
 table caption {
@@ -195,10 +225,7 @@ table caption {
 
 /* Gallery */
 
-
 /* test */
-
-
 
 .gallery-container {
 }
@@ -269,7 +296,7 @@ table caption {
 
 /* This adjustment alters the height of gallery images to prevent them becoming stretched on mobile devices when displayed one per row */
 @media screen and (max-width: 575px) {
-.pic img {
+  .pic img {
     height: 100%;
   }
 }
