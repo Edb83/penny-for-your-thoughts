@@ -137,7 +137,7 @@ body {
 .callout-container {
   height: 100vh;
   width: auto;
-  background: url("../assets/images/landscapes/lg-fieldscape.jpg");
+  background: url("../../assets/images/landscapes/lg-fieldscape.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
