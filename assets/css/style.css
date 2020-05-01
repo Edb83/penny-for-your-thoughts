@@ -185,6 +185,23 @@ body {
   padding: 10px 0px;
 }
 
+.intro-gallery {
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-gallery img {
+    margin: 20px auto;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(148,54,52,0.7);
+    box-shadow: 3px 5px 10px rgba(148, 54, 52, 0.3);
+  }
+
 /* Footer */
 
 footer {
@@ -249,7 +266,7 @@ table caption {
   object-fit: cover;
   margin-top: 20px;
   border-radius: 5px;
-  box-shadow: 7px 7px 7px rgba(148, 54, 52, 0.3);
+  box-shadow: 3px 5px 10px rgba(148, 54, 52, 0.3);
 }
 
 .pic button {
