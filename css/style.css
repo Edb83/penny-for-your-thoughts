@@ -201,9 +201,10 @@ footer {
 
 /* Pricing */
 
-.mark, mark {
-    padding: .1em;
-    background-color: rgb(227, 252, 228);
+.mark,
+mark {
+  padding: 0.1em;
+  background-color: rgb(227, 252, 228);
 }
 
 table {
@@ -230,8 +231,6 @@ table caption {
 
 /* Gallery */
 
-/* test */
-
 .gallery-container {
 }
 
@@ -255,6 +254,15 @@ table caption {
   transform: translate(-100%, -100%);
   -ms-transform: translate(-90%, -100%);
   opacity: 0.85;
+  background-color: rgb(148, 54, 52);
+  color: rgb(255, 255, 255);
+}
+
+.btn:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  background-color: rgb(54, 167, 40);
+  opacity: 1;
 }
 
 /* Sign Up */
