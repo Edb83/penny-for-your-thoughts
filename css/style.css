@@ -152,7 +152,7 @@ body {
   border-bottom-color: rgba(148, 54, 52, 0.7);
 }
 
-/* COVID alert */
+/* Alerts */
 
 .covid-alert {
   position: fixed;
@@ -286,7 +286,7 @@ table caption {
 }
 
 /* This adjustment adds ability to scroll navbar dropdown items on mobile devices where they would be hidden/inaccessible */
-@media screen and (max-width: 767px) and (max-height: 475px) {
+@media screen and (max-device-width: 767px) and (max-device-height: 475px) {
   .dropdown-menu {
     height: 100px;
     overflow-y: scroll;
@@ -295,7 +295,7 @@ table caption {
 }
 
 /* This adjustment alters the height of gallery images to prevent them becoming stretched on mobile devices when displayed one per row */
-@media screen and (max-width: 575px) {
+@media screen and (max-device-width: 575px) {
   .pic img {
     height: 100%;
   }
