@@ -66,6 +66,8 @@ https://tinyjpg.com/
 
 https://www.howtogeek.com/354015/how-to-resize-images-and-photos-in-windows/
 
+https://zyro.com/logo-maker
+
 	• The text for section Y was copied from the Wikipedia article Z
 
 Media

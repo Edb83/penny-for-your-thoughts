@@ -201,6 +201,11 @@ footer {
 
 /* Pricing */
 
+.mark, mark {
+    padding: .1em;
+    background-color: rgb(227, 252, 228);
+}
+
 table {
   text-align: center;
 }
