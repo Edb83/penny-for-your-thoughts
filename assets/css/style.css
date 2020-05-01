@@ -152,6 +152,17 @@ body {
   border-bottom-color: rgba(148, 54, 52, 0.7);
 }
 
+/* Jumbotron */
+
+.hero-contents {
+    align-self: center;
+    width: 100%;
+    background-color: transparent;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    margin: 0;
+}
+
 /* Alerts */
 
 .covid-alert {
