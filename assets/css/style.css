@@ -154,7 +154,7 @@ body {
 
 /* Jumbotron */
 
-.hero-contents {
+.callout-contents {
     align-self: center;
     width: 100%;
     background-color: transparent;
@@ -165,7 +165,7 @@ body {
 
 /* Alerts */
 
-.covid-alert {
+.site-alert {
   position: fixed;
   padding: 0.75rem 1.25rem;
   border: 1px;
@@ -212,12 +212,6 @@ footer {
 
 /* Pricing */
 
-.mark,
-mark {
-  padding: 0.1em;
-  background-color: rgb(227, 252, 228);
-}
-
 table {
   text-align: center;
 }
@@ -251,7 +245,7 @@ table caption {
 }
 
 .pic img {
-  height: 20vh;
+  height: 200px;
   object-fit: cover;
   margin-top: 20px;
   border-radius: 5px;
