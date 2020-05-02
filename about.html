@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,7 +18,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
     />
-    <link rel="shortcut icon" type="image/png" href="assets/icons/favicon.png"/>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="assets/icons/favicon.png"
+    />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <title>
       Penny for your Thoughts | Beautiful cards delivered to your doorstep
@@ -27,7 +30,6 @@
   </head>
 
   <body>
-
     <!-- Navbar -->
 
     <div class="container">
@@ -89,9 +91,7 @@
           </ul>
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link nav-signup" href="signup.html">
-                Sign Up</a
-              >
+              <a class="nav-link nav-signup" href="signup.html"> Sign Up</a>
             </li>
           </ul>
         </div>
@@ -102,9 +102,9 @@
 
     <div class="container mb-5 inner-page-contents">
       <div class="row">
-        <div class="col-12 pt-5 mt-5 mx-auto">
+        <div class="col-12 col-xl-6 pt-5 mt-5 mx-auto">
           <h2 class="heading-about">About Me</h2>
-          <hr class="hr-gradient hr-gradient--green">
+          <hr class="hr-gradient hr-gradient--green" />
           <p>
             I got hooked on photography after my first session in a darkroom
             when I was eighteen (many decades ago). Photoshop is great but lacks
@@ -126,17 +126,21 @@
             exhibited locally and these photo cards seemed like a good
             retirement project. I hope you enjoy them.
           </p>
-          <p><a
-                  href="mailto:penny.holland77@gmail.com?Subject=Penny%20for%20your%20Thoughts"
-                  >Contact me</a
-                > for more information about my work.</p>
-        </div>
+          <p>
+            <a
+              href="mailto:penny.holland77@gmail.com?Subject=Penny%20for%20your%20Thoughts"
+              >Contact me</a
+            >
+            for more information about my work.
+          </p>
+        </div><div class="col-6 d-none d-xl-block pt-5 mt-5 mx-auto penny-pic"><img class="img-responsive" src="assets/images/penny/penny.jpg" alt="" /></div>
       </div>
     </div>
+
     <!-- Footer -->
 
     <footer class="bg-color--green">
-      <div class="container footer-container ">
+      <div class="container footer-container">
         <div class="row">
           <div class="col-12 py-5">
             <div class="text-center">
@@ -210,9 +214,10 @@
     ></script>
 
     <!-- Script to collapse dropdowns in mobile navbar burger menu when clicked -->
-   <script> $('.nav-item').on('click', function() {
-        $('.navbar-collapse').collapse('hide');
-    });</script>
-
+    <script>
+      $(".nav-item").on("click", function () {
+        $(".navbar-collapse").collapse("hide");
+      });
+    </script>
   </body>
 </html>

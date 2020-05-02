@@ -239,6 +239,16 @@ footer {
 
 /* About */
 
+.penny-pic img {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(148,54,52);
+    border-radius: 5px;
+    margin-top: 65px;
+    box-shadow: 3px 5px 10px rgba(148, 54, 52, 0.3);
+    height: 85%;
+}
+
 /* Pricing */
 
 table {
@@ -338,6 +348,14 @@ table caption {
     height: 100px;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* This adjustment alters the height of gallery images to prevent them becoming stretched on mobile devices when displayed one per row */
+@media screen and (max-width: 991px) {
+  .penny-pic {
+    margin: 0 auto;
+    padding: 0;
   }
 }
 
