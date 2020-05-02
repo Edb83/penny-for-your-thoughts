@@ -155,12 +155,12 @@ body {
 /* Jumbotron */
 
 .callout-contents {
-    align-self: center;
-    width: 100%;
-    background-color: transparent;
-    text-align: center;
-    color: rgba(255, 255, 255, 1);
-    margin: 0;
+  align-self: center;
+  width: 100%;
+  background-color: transparent;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  margin: 0;
 }
 
 /* Alerts */
@@ -186,32 +186,32 @@ body {
 }
 
 .intro-gallery {
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .intro-gallery img {
-    margin: 20px auto;
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgba(148,54,52,0.7);
-    box-shadow: 3px 5px 10px rgba(148, 54, 52, 0.3);
-  }
+  margin: 20px auto;
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(148, 54, 52, 0.7);
+  box-shadow: 3px 5px 10px rgba(148, 54, 52, 0.3);
+}
 
 .intro-gallery p {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 25px;
-    color: rgb(255,255,255);
-    text-align: center;
-    max-width: 150px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  max-width: 150px;
 }
 
 /* Footer */
@@ -239,14 +239,20 @@ footer {
 
 /* About */
 
-.penny-pic img {
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(148,54,52);
-    border-radius: 5px;
-    margin-top: 65px;
-    box-shadow: 3px 5px 10px rgba(148, 54, 52, 0.3);
-    height: 85%;
+.about-container {
+}
+
+.about-image {
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(148, 54, 52);
+  border-radius: 5px;
+  box-shadow: 3px 5px 10px rgba(148, 54, 52, 0.3);
 }
 
 /* Pricing */
@@ -351,11 +357,9 @@ table caption {
   }
 }
 
-/* This adjustment alters the height of gallery images to prevent them becoming stretched on mobile devices when displayed one per row */
-@media screen and (max-width: 991px) {
-  .penny-pic {
-    margin: 0 auto;
-    padding: 0;
+@media screen and (max-width: 1199px) {
+  .about-image img {
+    margin-top: 50px;
   }
 }
 
