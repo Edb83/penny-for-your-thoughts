@@ -211,6 +211,7 @@ body {
     font-size: 25px;
     color: rgb(255,255,255);
     text-align: center;
+    max-width: 150px;
 }
 
 /* Footer */
