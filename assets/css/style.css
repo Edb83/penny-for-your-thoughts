@@ -277,20 +277,21 @@ footer {
 
 table {
   text-align: center;
+  table-layout: fixed;
 }
 
 .table thead th {
   vertical-align: bottom;
   border-bottom: 2px;
   border-bottom-style: solid;
-  border-bottom-color: rgb(148, 54, 52);
+  border-bottom-color: rgba(148, 54, 52, 0.5);
 }
 
 .table td,
 .table th {
   border-top: 1px;
   border-top-style: solid;
-  border-top-color: rgb(38, 77, 38);
+  border-top-color: rgba(38, 77, 38, 0.5);
 }
 
 table caption {
