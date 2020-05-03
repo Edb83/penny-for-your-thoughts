@@ -363,6 +363,14 @@ table caption {
 
 /* Media */
 
+
+@media screen and (max-width: 409px) {
+.heading-welcome {
+    font-size: 197%;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+}
 /* This adjustment shrinks the font size of the navbar brand on smaller mobile devices to prevent spilling onto the next line */
 @media screen and (max-width: 349px) {
   .navbar-brand {
