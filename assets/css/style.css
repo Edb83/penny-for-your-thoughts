@@ -191,9 +191,13 @@ body {
 
 /* Intro */
 
+.intro-container {
+    margin: 50px auto;
+}
+
 .intro-container p {
   margin: 0;
-  padding: 10px 0px;
+  padding: 20px;
 }
 
 .intro-gallery {
