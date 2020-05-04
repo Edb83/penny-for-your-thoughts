@@ -36,6 +36,103 @@ body {
   box-shadow: 2px 2px 5px rgba(148, 54, 52, 0.5);
 }
 
+/* Color scheme test */
+
+/* .navbar {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-bottom-color: rgba(148, 54, 52, 0.7);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: rgba(148, 54, 52, 0.7);
+}
+
+.callout-container {
+  border-bottom-color: rgba(148, 54, 52, 0.7);
+}
+
+.callout-contents {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 1);
+}
+
+.intro-gallery img {
+  border-color: rgba(148, 54, 52, 0.7);
+  box-shadow: 3px 5px 10px rgba(148, 54, 52, 0.3);
+}
+
+.intro-gallery p {
+  color: rgb(255, 255, 255);
+}
+
+footer {
+  border-top-color: rgba(148, 54, 52, 0.7);
+}
+
+.footer-container a {
+  color: rgb(255, 255, 255);
+}
+
+.footer-container a:hover {
+  color: rgb(92, 173, 201);
+}
+
+.copyright-container a {
+  color: rgb(255, 255, 255);
+}
+
+.about-image img {
+  border-color: rgb(148, 54, 52);
+  box-shadow: 3px 5px 10px rgba(148, 54, 52, 0.3);
+}
+
+.table thead th {
+  border-bottom-color: rgba(148, 54, 52, 0.5);
+}
+
+.table td,
+.table th {
+  border-top-color: rgba(38, 77, 38, 0.5);
+}
+
+.pic img {
+  height: 200px;
+  object-fit: cover;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 3px 5px 10px rgba(148, 54, 52, 0.3);
+}
+
+.pic button {
+  background-color: rgb(148, 54, 52);
+  color: rgb(255, 255, 255);
+}
+
+.btn:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(54, 167, 40);
+}
+
+.btn-red {
+  background-color: rgb(148, 54, 52);
+  color: rgb(255, 255, 255);
+}
+
+.btn-red:hover {
+  color: rgb(255, 255, 255);
+  background-color: #f7761a;
+}
+
+.hr-gradient--custom {
+  background-image: linear-gradient(
+    to right,
+    rgba(38, 77, 38, 0),
+    rgba(38, 77, 38, 0.75),
+    rgba(38, 77, 38, 0)
+  );
+} */
+
+
 /* Horizontal rules */
 
 .hr-gradient {
