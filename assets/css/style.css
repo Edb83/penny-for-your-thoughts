@@ -39,20 +39,21 @@ body {
 /* Color scheme test */
 
 .navbar {
-  background-color: #3399CC;
+  background-color: #3399cc;
   border-bottom-color: #ffcc00;
 }
 
 .navbar-dark .navbar-brand {
-    color: #ffffff;
+  color: #ffffff;
 }
 
-.navbar-dark .navbar-brand:focus, .navbar-light .navbar-brand:hover {
-    color: #003366;
+.navbar-dark .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+  color: #003366;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
@@ -78,7 +79,7 @@ body {
 }
 
 .bg-color-footer {
-    background-color: #cc9900;
+  background-color: #cc9900;
 }
 
 footer {
@@ -119,7 +120,6 @@ footer {
   box-shadow: 3px 5px 10px #003366;
 }
 
-
 .hr-gradient--custom {
   background-image: linear-gradient(
     to right,
@@ -130,13 +130,13 @@ footer {
 }
 
 .btn {
-    background-color: #3399cc;
-    color: #ffffff;
+  background-color: #3399cc;
+  color: #ffffff;
 }
 
 .btn:hover {
-    background-color: #003366;
-    color: #ffffff;
+  background-color: #003366;
+  color: #ffffff;
 }
 
 /* Horizontal rules */
@@ -177,9 +177,9 @@ footer {
 .hr-gradient--yellow {
   background-image: linear-gradient(
     to right,
-    rgba(179, 150, 24, 0),
-    rgba(179, 150, 24, 0.75),
-    rgba(179, 150, 24, 0)
+    rgba(38, 77, 38, 0),
+    rgb(204, 153, 0),
+    rgba(38, 77, 38, 0)
   );
 }
 
@@ -293,9 +293,9 @@ footer {
 /* Intro */
 
 .intro-reasons p {
-    margin: 0;
-    padding: 20px 25px;
-    letter-spacing: 2px;
+  margin: 0;
+  padding: 20px 25px;
+  letter-spacing: 2px;
 }
 
 .intro-gallery {
@@ -440,10 +440,7 @@ table caption {
   color: rgb(255, 255, 255); */
 }
 
-
 /* Sign Up */
-
-
 
 .form-group label {
   font-family: "Montserrat", sans-serif;
@@ -455,6 +452,21 @@ table caption {
 @media screen and (min-width: 350px) {
   .navbar-brand {
     font-size: 18px;
+  }
+}
+
+/* This query increases the size of callout-contents on larger displays */
+@media screen and (min-width: 768px) {
+  .callout-contents h1 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+
+  .callout-contents p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.2;
   }
 }
 
