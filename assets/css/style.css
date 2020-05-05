@@ -65,8 +65,8 @@ body {
 }
 
 .intro-gallery img {
-  border-color: rgba(148, 54, 52, 0.7);
-  box-shadow: 3px 5px 10px rgba(148, 54, 52, 0.3);
+  border-color: #003366;
+  box-shadow: 3px 5px 10px #003366;
 }
 
 .intro-gallery p {
@@ -94,17 +94,17 @@ footer {
 }
 
 .about-image img {
-  border-color: rgb(148, 54, 52);
-  box-shadow: 3px 5px 10px rgba(148, 54, 52, 0.3);
+  border-color: #003366;
+  box-shadow: 3px 5px 10px #003366;
 }
 
 .table thead th {
-  border-bottom-color: rgba(148, 54, 52, 0.5);
+  border-bottom-color: #003366;
 }
 
 .table td,
 .table th {
-  border-top-color: rgba(38, 77, 38, 0.5);
+  border-top-color: #996600;
 }
 
 .pic img {
@@ -112,7 +112,7 @@ footer {
   object-fit: cover;
   margin-top: 20px;
   border-radius: 5px;
-  box-shadow: 3px 5px 10px rgba(148, 54, 52, 0.3);
+  box-shadow: 3px 5px 10px #003366;
 }
 
 .pic button {
