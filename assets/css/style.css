@@ -119,25 +119,6 @@ footer {
   box-shadow: 3px 5px 10px #003366;
 }
 
-.pic button {
-  background-color: rgb(148, 54, 52);
-  color: rgb(255, 255, 255);
-}
-
-.btn:hover {
-  color: rgb(255, 255, 255);
-  background-color: rgb(54, 167, 40);
-}
-
-.btn-red {
-  background-color: rgb(148, 54, 52);
-  color: rgb(255, 255, 255);
-}
-
-.btn-red:hover {
-  color: rgb(255, 255, 255);
-  background-color: #f7761a;
-}
 
 .hr-gradient--custom {
   background-image: linear-gradient(
@@ -300,15 +281,9 @@ footer {
   z-index: 2;
 }
 
-/* Welcome */
-
 /* Intro */
 
-/* .intro-container {
-    margin: 50px auto;
-} */
-
-.intro-container p {
+.intro-reasons p {
     margin: 0;
     padding: 20px 25px;
     letter-spacing: 2px;
@@ -451,30 +426,24 @@ table caption {
   left: 87%;
   transform: translate(-100%, -100%);
   -ms-transform: translate(-90%, -100%);
-  opacity: 0.85;
+  opacity: 1;
   /* background-color: rgb(148, 54, 52);
   color: rgb(255, 255, 255); */
 }
 
+.btn {
+    background-color: #003366;
+    color: #ffffff;
+}
+
 .btn:hover {
-  /* color: rgb(255, 255, 255); */
-  text-decoration: none;
-  /* background-color: rgb(54, 167, 40); */
-  opacity: 1;
+    background-color: #3399CC;
+    color: #ffffff;
 }
 
 /* Sign Up */
 
-.btn-red {
-  /* background-color: rgb(148, 54, 52); */
-  color: rgb(255, 255, 255);
-}
 
-.btn-red:hover {
-  /* color: rgb(255, 255, 255);
-  background-color: #f7761a; */
-  text-decoration: none;
-}
 
 .form-group label {
   font-family: "Montserrat", sans-serif;
