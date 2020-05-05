@@ -4,7 +4,7 @@ This site is a showcase for an aspiring photographer's work, which is available 
 
 ## UX
 
-PFYT is aimed at people looking for greeting cards, specifically those who value supporting local endeavours rather than large, established corporations. The site’s intended audience are people who value the personal touch and ability to communicate directly with the seller.
+The site is aimed at people looking for greeting cards, specifically those who value supporting local endeavours rather than large, established corporations. The site’s intended audience are people who value the personal touch and ability to communicate directly with the seller.
 
 The enterprise is humble but, as evidenced by the quality of the pictures, has a wealth of emotive images from the English countryside to share.
 
@@ -29,8 +29,6 @@ As a site user I want:
   * For the image gallery to be fast to load and easy to navigate
   * For the signup form to show me if I have inputted incorrectly
   * For links to external sites to open in a separate tab to prevent loss of focus
-
-
 
 
 ## Features
@@ -82,7 +80,7 @@ Simple form to allow user to sign up for more information and news of additional
 Validation of fields inputted by user, indicating clearly any errors
 
 
-## Features left to implement
+### Features left to implement
 
   * Shopping basket and purchasing functions - including purchase history, payment options, saving delivery address/card details for repeat purchases
   * When purchasing, choose number, size etc
@@ -93,18 +91,16 @@ Validation of fields inputted by user, indicating clearly any errors
 
 
 
-
-
-
-
-## Bugs / Issues
+## Issues and resolutions
 
   * iOS hero image not displaying -
   * Navbar collapsing of anchor links -
   * Navbar dropdown not visible on landscape mobile devices -
   * Signup form validation messages displaying poorly on iOS -
 
+### Known bugs
 
+  * None at present
 
 ## Technologies Used
 
@@ -149,40 +145,43 @@ In this section, you need to convince the assessor that you have conducted enoug
 
 ## Deployment
 
-To deploy this page to GitHub Pages from its [GitHub repository](https://github.com/D0nni387/Luxury-Door-Solutions), the following steps were taken: 
+To deploy this page to GitHub Pages from its [GitHub repository](https://github.com/Edb83/milestone1), the following steps were taken: 
 
-1. From the menu items near the top of the page, select **Settings**.
-2. Scroll down to the **GitHub Pages** section.
+1. From the menu items near the top of the page, select **Settings**
+2. Scroll down to the **GitHub Pages** section
 3. Under **Source** click the drop-down menu labelled **None** and select **Master Branch**
-4. On selecting Master Branch the page is automatically refreshed, the website is now deployed. 
-5. Scroll back down to the **GitHub Pages** section to retrieve the link to the deployed website.
+4. On selecting Master Branch the page is automatically refreshed, the website is now deployed
+5. Scroll back down to the **GitHub Pages** section to retrieve the link to the deployed website
  
 
 ### How to run this project locally
 
 To clone this project from GitHub:
 
-1. Under the repository name, click "Clone or download".
-2. In the Clone with HTTPs section, copy the clone URL for the repository. 
-3. In your local IDE open Git Bash.
-4. Change the current working directory to the location where you want the cloned directory to be made.
-5. Type ```git clone```, and then paste the URL you copied in Step 3.
+1. Under the repository name, click "Clone or download"
+2. In the Clone with HTTPs section, copy the clone URL for the repository
+3. In your local IDE open Git Bash
+4. Change the current working directory to the location where you want the cloned directory to be made
+5. Type ```git clone```, and then paste the URL you copied in Step 3
 ```console
 git clone https://github.com/Edb83/milestone1.git
 ```
-6. Press Enter. Your local clone will be created.
+6. Press Enter. Your local clone will be created
 
-Further reading and troubleshooting on cloning a repository from GitHub [here](https://help.github.com/en/articles/cloning-a-repository).
+Further reading and troubleshooting on cloning a repository from GitHub can be found [here](https://help.github.com/en/articles/cloning-a-repository).
 
 
 ## Credits
 
-My Code Institute mentor, Jonathan Munz
+Jonathan Munz (Code Institute mentor)
 
 ## Content
 
-The text in the About page and photos used throughout this site were obtained from the client, Penny Holland
+The text in the About page and photos used throughout this site were obtained from the client, Penny Holland. All other text was agreed with the client.
 
 ## Acknowledgements
 
 I received inspiration for this project from Penny Holland
+
+## Disclaimer
+
