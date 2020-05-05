@@ -47,6 +47,10 @@ body {
     color: #ffffff;
 }
 
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+    color: #003366;
+}
+
 .navbar-light .navbar-nav .nav-link {
     color: #ffffff;
 }
@@ -300,13 +304,14 @@ footer {
 
 /* Intro */
 
-.intro-container {
+/* .intro-container {
     margin: 50px auto;
-}
+} */
 
 .intro-container p {
-  margin: 0;
-  padding: 20px;
+    margin: 0;
+    padding: 20px 25px;
+    letter-spacing: 2px;
 }
 
 .intro-gallery {

@@ -69,6 +69,8 @@ https://ianlunn.github.io/Hover/
 
 https://fancyapps.com/fancybox/3/
 
+https://colorschemedesigner.com/csd-3.5/
+
     • The text for section Y was copied from the Wikipedia article Z
 
 Media
