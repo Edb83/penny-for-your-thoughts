@@ -103,15 +103,6 @@ footer {
   box-shadow: 3px 5px 10px #003366;
 }
 
-.table thead th {
-  border-bottom-color: #00336685;
-}
-
-.table td,
-.table th {
-  border-top-color: #99660085;
-}
-
 .pic img {
   height: 200px;
   object-fit: cover;
@@ -183,7 +174,7 @@ footer {
   width: 100%;
   /* background-color: rgba(255, 255, 255, 0.9); */
   border-color: transparent;
-  /* border-bottom-color: rgba(148, 54, 52, 0.7); */
+  border-bottom-color: #00336691;
   opacity: 1;
 
   position: fixed;
@@ -316,10 +307,10 @@ footer {
 
 footer {
   margin-top: 80px;
-  border: 1px;
+  border: 0px;
   border-style: solid;
   border-color: transparent;
-  /* border-top-color: rgba(148, 54, 52, 0.7); */
+  border-top-color: rgba(148, 54, 52, 0.7);
 }
 
 .footer-container a {
