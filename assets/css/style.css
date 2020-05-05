@@ -104,12 +104,12 @@ footer {
 }
 
 .table thead th {
-  border-bottom-color: #003366;
+  border-bottom-color: #00336685;
 }
 
 .table td,
 .table th {
-  border-top-color: #996600;
+  border-top-color: #99660085;
 }
 
 .pic img {
@@ -118,15 +118,6 @@ footer {
   margin-top: 20px;
   border-radius: 5px;
   box-shadow: 3px 5px 10px #003366;
-}
-
-.hr-gradient--custom {
-  background-image: linear-gradient(
-    to right,
-    rgba(38, 77, 38, 0),
-    rgba(38, 77, 38, 0.75),
-    rgba(38, 77, 38, 0)
-  );
 }
 
 .btn {
@@ -226,22 +217,16 @@ footer {
 .heading-pricing,
 .heading-gallery,
 .heading-signup {
-  font-size: 185%;
+  font-size: 2rem;
   text-align: center;
   margin-bottom: 30px;
   letter-spacing: 4px;
 }
 
-.heading-welcome {
-  font-size: 250%;
-  letter-spacing: 2px;
-  margin-bottom: 40px;
-}
-
 .heading-gallery-category {
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  padding-top: 18px;
+  font-weight: 300;
+  padding-top: 1rem;
   letter-spacing: 1px;
 }
 
@@ -397,14 +382,14 @@ table {
   vertical-align: bottom;
   border-bottom: 2px;
   border-bottom-style: solid;
-  /* border-bottom-color: rgba(148, 54, 52, 0.5); */
+  border-bottom-color: #0033668e;
 }
 
 .table td,
 .table th {
   border-top: 1px;
   border-top-style: solid;
-  /* border-top-color: rgba(38, 77, 38, 0.5); */
+  border-top-color: #9966008a;
 }
 
 table caption {
