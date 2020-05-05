@@ -43,19 +43,19 @@ body {
   border-bottom-color: #ffcc00;
 }
 
-.navbar-light .navbar-brand {
+.navbar-dark .navbar-brand {
     color: #ffffff;
 }
 
-.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+.navbar-dark .navbar-brand:focus, .navbar-light .navbar-brand:hover {
     color: #003366;
 }
 
-.navbar-light .navbar-nav .nav-link {
+.navbar-dark .navbar-nav .nav-link {
     color: #ffffff;
 }
 
-.navbar-light .navbar-nav .nav-link:hover {
+.navbar-dark .navbar-nav .nav-link:hover {
   color: #003366;
 }
 
@@ -129,6 +129,15 @@ footer {
   );
 }
 
+.btn {
+    background-color: #3399cc;
+    color: #ffffff;
+}
+
+.btn:hover {
+    background-color: #003366;
+    color: #ffffff;
+}
 
 /* Horizontal rules */
 
@@ -431,15 +440,6 @@ table caption {
   color: rgb(255, 255, 255); */
 }
 
-.btn {
-    background-color: #003366;
-    color: #ffffff;
-}
-
-.btn:hover {
-    background-color: #3399CC;
-    color: #ffffff;
-}
 
 /* Sign Up */
 
