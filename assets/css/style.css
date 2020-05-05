@@ -203,7 +203,7 @@ footer {
 .navbar-brand {
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
-  font-size: 18px;
+  font-size: 15px;
   letter-spacing: 1px;
 }
 
@@ -451,44 +451,30 @@ table caption {
 
 /* Media */
 
-/* This adjustment reduces the size and spacing of the welcome heading to accommodate smaller mobile devices */
-@media screen and (max-width: 409px) {
-.heading-welcome {
-    font-size: 197%;
-    letter-spacing: 1px;
-    margin-bottom: 40px;
-}
-}
-/* This adjustment shrinks the font size of the navbar brand on smaller mobile devices to prevent spilling onto the next line */
-@media screen and (max-width: 349px) {
+/* This adjustment increases the font size of the navbar brand on larger displays */
+@media screen and (min-width: 350px) {
   .navbar-brand {
-    font-size: 15px;
+    font-size: 18px;
   }
 }
 
-/* This adjustment allows the hero image to be displayed on mobile devices (iOS) */
+/* This query allows the hero image to be displayed on mobile devices (iOS) */
 @media screen and (max-width: 1024px) {
   .callout-container {
     background-attachment: scroll;
   }
 }
 
-/* This adjustment adds ability to scroll navbar dropdown items on mobile devices where they would be hidden/inaccessible */
+/* This query adds ability to scroll navbar dropdown items on mobile devices where they would be hidden/inaccessible */
 @media screen and (max-width: 767px) and (max-height: 475px) {
   .dropdown-menu {
-    height: 100px;
+    height: 115px;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
   }
 }
 
-@media screen and (max-width: 1199px) {
-  .about-image img {
-    margin-top: 50px;
-  }
-}
-
-/* This adjustment alters the height of gallery images to prevent them becoming stretched on mobile devices when displayed one per row */
+/* This query alters the height of gallery images to prevent them becoming stretched on mobile devices when displayed one per row */
 @media screen and (max-width: 575px) {
   .pic img {
     height: 100%;
