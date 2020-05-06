@@ -19,6 +19,28 @@ body {
   flex: 1;
 }
 
+CSS
+textarea,
+input.text,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+.input-checkbox {
+-webkit-appearance: none;
+border-radius: 0;
+}
+
+/* iOS webkit fix */
+textarea,
+input.text,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+.input-checkbox {
+-webkit-appearance: none;
+border-radius: 0;
+}
+
 /* Special paddings/margins/text */
 
 .uppercase {
@@ -160,9 +182,6 @@ body {
   width: 150px;
   object-fit: cover;
   border-radius: 50%;
-  /* border-style: solid;
-  border-width: 1px;
-  border-color: #003366; */
   box-shadow: 3px 5px 10px #003366;
 }
 
@@ -235,9 +254,6 @@ footer {
 }
 
 .about-image img {
-  /* border-style: solid;
-  border-width: 1px;
-  border-color: #003366; */
   border-radius: 5px;
   box-shadow: 3px 5px 10px #003366;
 }
