@@ -241,7 +241,7 @@ footer {
 /* Pricing */
 
 .table-container {
-        padding: 0;
+        padding: 0 15px;
     }
 
 table {
@@ -373,7 +373,7 @@ table caption {
     .table-container {
         padding: 0rem 1.5rem;
     }
-
+    }
     @media screen and (min-width: 992px) {
     .table td,
     .table th {    
@@ -388,5 +388,5 @@ table caption {
 @media screen and (max-width: 575px) {
   .pic img {
     height: 100%;
-  }
+    }
 }
