@@ -19,17 +19,6 @@ body {
   flex: 1;
 }
 
-/* iOS webkit test */
-textarea,
-input.text,
-input[type="text"],
-input[type="button"],
-input[type="submit"],
-.input-checkbox {
--webkit-appearance: none;
-border-radius: 0;
-}
-
 /* Special paddings/margins/text */
 
 .uppercase {
@@ -240,11 +229,13 @@ footer {
 .about-image {
   display: flex;
   justify-content: center;
+  margin-top: 3rem;
 }
 
 .about-image img {
   border-radius: 5px;
   box-shadow: 0px 5px 8px #003366;
+  height: fit-content;
 }
 
 /* Pricing */
@@ -358,6 +349,13 @@ table caption {
     height: 115px;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* This query reduces the margin above the about-image on larger displays */
+@media screen and (min-width: 992px) {
+  .about-image {
+    margin-top: 0;
   }
 }
 
