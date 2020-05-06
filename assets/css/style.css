@@ -240,6 +240,10 @@ footer {
 
 /* Pricing */
 
+.table-container {
+        padding: 0;
+    }
+
 table {
   text-align: center;
   table-layout: fixed;
@@ -357,6 +361,27 @@ table caption {
   .about-image {
     margin-top: 0;
   }
+}
+
+/* This query increases the external padding and reduces the horizontal padding of tables on larger displays  */
+    
+    @media screen and (min-width: 768px) {
+    .table td,
+    .table th {    
+    padding: 0.75rem 0.17rem;
+    }
+    .table-container {
+        padding: 0rem 1.5rem;
+    }
+
+    @media screen and (min-width: 992px) {
+    .table td,
+    .table th {    
+    padding: 0.75rem 0.17rem;
+    }
+    .table-container {
+        padding: 0rem 3rem;
+    }
 }
 
 /* This query alters the height of gallery images to prevent them becoming stretched on mobile devices when displayed one per row */
