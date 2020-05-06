@@ -58,9 +58,10 @@ body {
 .navbar-brand {
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
-  font-size: 15px;
+  font-size: 1rem;
   letter-spacing: 1px;
   color: #ffffff;
+  margin-right: 0;
 }
 
 .navbar-dark .navbar-brand:focus,
@@ -72,7 +73,9 @@ body {
   color: #ffffff;
 }
 
-.navbar-dark .navbar-nav .nav-link:hover {
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .active > .nav-link {
   color: #003366;
   font-weight: 600;
 }
@@ -318,7 +321,8 @@ table caption {
 /* This adjustment increases the font size of the navbar brand on larger displays */
 @media screen and (min-width: 370px) {
   .navbar-brand {
-    font-size: 18px;
+    font-size: 1.1rem;
+    margin-right: 1rem;
   }
 }
 
