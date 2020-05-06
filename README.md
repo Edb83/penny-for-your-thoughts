@@ -97,6 +97,7 @@ Validation of fields inputted by user, indicating clearly any errors
   * Navbar collapsing of anchor links -
   * Navbar dropdown not visible on landscape mobile devices -
   * Signup form validation messages displaying poorly on iOS -
+  * Signup form password and confirmation password can be different
 
 ### Known bugs
 
