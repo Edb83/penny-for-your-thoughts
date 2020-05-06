@@ -73,7 +73,6 @@ body {
   color: #ffffff;
 }
 
-
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .active > .nav-link {
   color: #003366;
@@ -172,7 +171,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 25px;
+  font-size: 1.6rem;
   color: #fff;
   text-align: center;
   max-width: 150px;
@@ -189,17 +188,14 @@ footer {
   border-top-color: #003366;
 }
 
-.footer-container a {
+.footer-container a,
+.copyright-container p {
   color: #fff;
 }
 
 .footer-container a:hover {
   color: #996600;
   text-decoration: none;
-}
-
-.copyright-container p {
-  color: #fff;
 }
 
 .bg-color-footer {
@@ -318,7 +314,7 @@ table caption {
 
 /* Media */
 
-/* This adjustment increases the font size of the navbar brand on larger displays */
+/* Increases the font size of the navbar brand on larger displays */
 @media screen and (min-width: 370px) {
   .navbar-brand {
     font-size: 1.1rem;
@@ -326,8 +322,8 @@ table caption {
   }
 }
 
-/* This query increases the size of callout-contents on larger displays */
 @media screen and (min-width: 768px) {
+  /* Increases the size of callout-contents on larger displays */
   .callout-contents h1 {
     font-size: 3.5rem;
     font-weight: 300;
@@ -339,16 +335,25 @@ table caption {
     font-weight: 300;
     line-height: 1.2;
   }
+
+  /* Increases the external padding and reduces the horizontal padding of tables on larger displays  */
+  .table td,
+  .table th {
+    padding: 0.75rem 0.17rem;
+  }
+  .table-container {
+    padding: 0rem 1.5rem;
+  }
 }
 
-/* This query allows the hero image to be displayed on mobile devices (iOS) */
+/* Allows the hero image to be displayed on mobile devices (iOS) */
 @media screen and (max-width: 1024px) {
   .callout-container {
     background-attachment: scroll;
   }
 }
 
-/* This query adds ability to scroll navbar dropdown items on mobile devices where they would be hidden/inaccessible */
+/* Adds ability to scroll navbar dropdown items on mobile devices where they would be hidden/inaccessible */
 @media screen and (max-width: 767px) and (max-height: 475px) {
   .dropdown-menu {
     height: 115px;
@@ -357,7 +362,7 @@ table caption {
   }
 }
 
-/* This query reduces the margin above the about-image on larger displays and adjusts image to fit container */
+/* Reduces the margin above the about-image on larger displays and adjusts image to fit container */
 @media screen and (min-width: 992px) {
   .about-image {
     margin-top: 0;
@@ -368,21 +373,7 @@ table caption {
     max-height: 100%;
     max-width: 100%;
   }
-}
-
-/* This query increases the external padding and reduces the horizontal padding of tables on larger displays  */
-
-@media screen and (min-width: 768px) {
-  .table td,
-  .table th {
-    padding: 0.75rem 0.17rem;
-  }
-  .table-container {
-    padding: 0rem 1.5rem;
-  }
-}
-
-@media screen and (min-width: 992px) {
+  /* Increases the external padding and reduces the horizontal padding of tables on larger displays  */
   .table td,
   .table th {
     padding: 0.75rem;
@@ -392,7 +383,7 @@ table caption {
   }
 }
 
-/* This query alters the height of gallery images to prevent them becoming stretched on mobile devices when displayed one per row */
+/* Alters the height of gallery images to prevent them becoming stretched on mobile devices when displayed one per row */
 @media screen and (max-width: 575px) {
   .pic img {
     height: 100%;
