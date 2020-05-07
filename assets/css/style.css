@@ -323,13 +323,13 @@ table caption {
 }
 
 @media screen and (min-width: 768px) {
+    
   /* Increases the size of callout-contents on larger displays */
   .callout-contents h1 {
     font-size: 3.5rem;
     font-weight: 300;
     line-height: 1.2;
   }
-
   .callout-contents p {
     font-size: 1.5rem;
     font-weight: 300;
@@ -362,17 +362,19 @@ table caption {
   }
 }
 
-/* Reduces the margin above the about-image on larger displays and adjusts image to fit container */
+
 @media screen and (min-width: 992px) {
+
+    /* Reduces the margin above the about-image on larger displays and adjusts image to fit container */
   .about-image {
     margin-top: 0;
     height: fit-content;
   }
-
   .about-image img {
     max-height: 100%;
     max-width: 100%;
   }
+
   /* Increases the external padding and reduces the horizontal padding of tables on larger displays  */
   .table td,
   .table th {
