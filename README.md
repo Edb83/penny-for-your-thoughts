@@ -45,50 +45,50 @@ As a site user I want:
 ## Features
 
 1. Navbar
-  * Hamburger collapse for mobile first
-  * Responsive Brand @media query to prevent spill
-  * Brand is home to avoid duplication
-  * Drop down @media query for mobile scrolling
-  * Hover links for feedback
-  * Active links for clarity of current location on site
-  * Shopping basket (for future implementation)
+  * Navbar collapses into a hamburger icon to support mobile first
+  * Responsive Brand @media query to maintain visibility on all device sizes
+  * Brand acts as the Home button to avoid duplication, clutter
+  * Drop down @media query for mobile scrolling in landscape orientation
+  * High contrast hoverable links provide responsive user feedback
+  * Active links clearly indicate current location on site
+  * Shopping basket for quick access to purchasing selected items (currently disabled for future implementation)
 
 2. Footer
-  * Social media links with blank target
+  * Social media links with blank target to prevent disruption to browsing experience
   * Copyright
   * Footer always positioned at bottom of page (primarily for larger displays on pages where content would otherwise not fill viewport) for consistency and aesthetics
 
 ### Sections
 
 3. Landing page
-  * Hero image to showcase imagery and tie in with colour scheme
-  * Jumbotron to emphasise name of site
-  * CTA to buy linking to gallery (main purpose of site)
-  * Clear purpose of site laid out succinctly in site introduction
-  * Mini/gallery showcasing the different themes of available images with responsive feedback on hover and links to relevant section of gallery
+  * Full viewport hero image to showcase imagery (primary goal) and promote site colour scheme
+  * Transparent jumbotron to emphasise name of site
+  * Call to action button linking to gallery and option to purchase (primary goal)
+  * Succinct and clear introduction outlining purpose of site
+  * Mini gallery showcasing the different themes of available images with links for quick access to relevant sections of the full gallery and responsive hover feedback
 
 4. About
   * Voice of the photographer and their background, credentials and reason for setting up site
-  * Link to email them directly with subject placeholder to encourage completion
+  * Link to email photographer directly with email subject placeholder to encourage completion
 
 5. Pricing
   * Brief description of product
-  * Tables with prices for both cards and prints, including price per unit for multiple orders and postage not included
+  * Two clear tables with prices for both cards and prints, including price per unit for multiple orders and postage not included
 
 6. Gallery
-  * Brief introduction explaining how to add to basket and view in full aspect ratio
+  * Brief introduction explaining how to add items to basket and how to view in full aspect ratio
   * Six themed sections (Canals, Coast, Flora and Fauna, Flowers, Landscapes, Trees)
-  * Images arranged in columns and set width/height for clear, consistent display
-  * @media query prevents stretching of images in single column view, which would otherwise be dependent on viewport size. On mobile this presents images in original aspect ratio and reduces click needed to learn this, mitigating inability to see multiple columns at once
-  * Clear Add to basket button in consistent position on all images enables users to add an item to shooing cart (2 clicks from landing page). Visual feedback on click
-  * Ability to open images by clicking on them, and to scroll through pop up gallery of images in full aspect ratio. Click outside viewing area to return to normal gallery
-  * Within pop up gallery, user can view thumbnails of all images and use mouse wheel or precious/next links to scroll through
-  * Names of each image are included in pop up gallery, proving some context for each scene and enabling specific questions of the photographer
-  * Image sizes reduced below 300kb for faster loading, while preserving FHD resolution for showcasing high quality
+  * Images arranged in responsive grid and set width/height to maintain image integrity and provide a consistent display
+  * @media query prevents stretching of images in single column view. On mobile this presents images in original aspect ratio and reduces click needed to learn this, mitigating inability to see multiple columns at once
+  * Clear 'Add (to basket)' button in consistent position on all images. Enables users to add an item to shooing cart (2 clicks from landing page) and includes feedback on hover
+  * Ability to enlarge images by clicking on them, and to scroll through a pop-up gallery of images in full aspect ratio. Clicking outside viewing area (or swiping up/down on mobile) returns visitor to the normal gallery
+  * Within pop-up gallery, user can view thumbnails of all images and use mouse wheel or previous/next buttons to scroll through
+  * Names of each image are included at bottom of pop-up gallery, providing some context for each scene and allowing for specific questions of the photographer
+  * Image sizes are all below 300kb for faster loading, while preserving FHD resolution to showcase their quality
 
 7. Signup
   * Simple form to allow user to sign up for more information and news of additional images being added to gallery
-  * Validation of fields inputted by user, indicating clearly any errors
+  * Validation of fields inputted by user, indicating any errors clearly
 
 
 ## Features left to implement
