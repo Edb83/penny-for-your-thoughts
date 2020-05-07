@@ -1,11 +1,18 @@
 # Penny for your Thoughts
 
-<div style="text-align:center">
+<div>
 <img src="responsive.jpg" alt="Responsive sample">
 </div>
 
+**[Live site](https://edb83.github.io/milestone1/)**
 
-This site is a showcase for an aspiring photographer's work, which is available to purchase either on card or enlarged print. Since moving to the countryside, Penny has found herself increasingly inspired by her beautiful surroundings and is keen to share them with a wider audience. More than ever in these uncertain, digital times, there's comfort to be found in a personal message written on a physical card, adorned with beautiful, candid pictures of nature.
+---
+
+## Site purpose
+
+This site is a showcase for an aspiring photographer's work, which is available to purchase either on card or enlarged print.
+
+Since moving to the countryside, Penny has found herself increasingly inspired by her beautiful surroundings and is keen to share them with a wider audience. More than ever in these uncertain, digital times, there's comfort to be found in a personal message written on a physical card, adorned with beautiful, candid pictures of nature.
 
 ## UX
 
@@ -13,20 +20,18 @@ This site is a showcase for an aspiring photographer's work, which is available 
 
 The site is aimed at people looking for greeting cards, specifically those who value supporting local endeavours rather than large, established corporations. The site’s intended audience are people who value the personal touch and ability to communicate directly with the seller.
 
-The enterprise is humble but, as evidenced by the quality of the pictures, has a wealth of emotive images from the English countryside to share.
-
-These are the scenes we may all have witnessed but which are seldom captured.
+The enterprise is humble but, as evidenced by the quality of the pictures, has a wealth of emotive images from the English countryside to share. These are the scenes we may all have witnessed but which are seldom captured.
 
 ### User stories
 
-As the client I want:
+As the **client** I want:
   * Visitors to be immediately aware of what the product is
   * A clean, consistent interface which will not confuse visitors
   * My work to be showcased from the outset
   * An immediate link to the gallery
   * A gallery which allows visitors to quickly browse through high quality images and add them to a shopping basket
 
-As a site user I want:
+As a **visitor** I want:
   * For it to be immediately clear what the purpose of the site is and what it has to offer
   * A clean interface and layout which allows me to focus on browsing the images and purchasing them
   * To be able to quickly navigate the site using navbar and clear links
@@ -59,60 +64,71 @@ As a site user I want:
 
 ### Site-wide
 
-1. Navbar
-  * Navbar collapses into a hamburger icon to support mobile first
-  * Responsive Brand @media query to maintain visibility on all device sizes
-  * Brand acts as the Home button to avoid duplication, clutter
-  * Drop down @media query for mobile scrolling in landscape orientation
-  * High contrast hoverable links provide responsive user feedback
+**1. Navbar**
+  * Collapses into a hamburger icon to support the mobile browsing experience
+  * Brand maintains visibility on all device sizes
+  * Brand acts as the Home button to avoid duplication and clutter
+  * Drop down options are scrollable on mobile devices in landscape orientation to prevent frustrating case of hidden options
+  * High contrast hoverable links provide responsive visual feedback
   * Active links clearly indicate current location on site
   * Shopping basket for quick access to purchasing selected items (currently disabled for future implementation)
 
-2. Footer
-  * Social media links with blank target to prevent disruption to browsing experience
+**2. Footer**
+  * Social media links with a blank target to prevent disruption to the browsing experience
   * Copyright
-  * Footer always positioned at bottom of page (primarily for larger displays on pages where content would otherwise not fill viewport) for consistency and aesthetics
+  * Footer is always positioned at the bottom of the page for consistency and visual appeal (primarily for larger displays where content would otherwise not fill the viewport)
 
 ### Sections
 
-3. Landing page
-  * Full viewport hero image to showcase imagery (primary goal) and promote site colour scheme
-  * Transparent jumbotron to emphasise name of site
-  * Call to action button linking to gallery and option to purchase (primary goal)
-  * Succinct and clear introduction outlining purpose of site
-  * Mini gallery showcasing the different themes of available images with links for quick access to relevant sections of the full gallery and responsive hover feedback
+**3. Landing page**
+  * Full viewport hero image to showcase the photographer's imagery (primary goal) and promote the site's colour scheme
+  * Transparent jumbotron to emphasise the name of the site
+  * Call to action button linking to the gallery andand  invitation to purchase (primary goal)
+  * Succinct and clear introduction outlining the purpose of the site
+  * Mini gallery showcasing the different themes of images, including links for quick access to the respective sections of the full gallery and responsive visual feedback
 
-4. About
-  * Voice of the photographer and their background, credentials and reason for setting up site
+**4. About**
+  * Provides the voice of the photographer, plus their background, credentials and reason for setting up the site
   * Link to email photographer directly with email subject placeholder to encourage completion
 
-5. Pricing
+**5. Pricing**
   * Brief description of product
   * Two clear tables with prices for both cards and prints, including price per unit for multiple orders and postage not included
 
-6. Gallery
+**6. Gallery**
   * Brief introduction explaining how to add items to basket and how to view in full aspect ratio
   * Six themed sections (Canals, Coast, Flora and Fauna, Flowers, Landscapes, Trees)
   * Images arranged in responsive grid and set width/height to maintain image integrity and provide a consistent display
-  * @media query prevents stretching of images in single column view. On mobile this presents images in original aspect ratio and reduces click needed to learn this, mitigating inability to see multiple columns at once
-  * Clear 'Add (to basket)' button in consistent position on all images. Enables users to add an item to shooing cart (2 clicks from landing page) and includes feedback on hover
+  * On mobile, images are clearly displayed in their original aspect ratio, while on larger devices they are displayed uniformly cropped and in a responsive grid for easy browsing 
+  * Clear 'Add (to basket)' button in consistent position on all images. Enables users to add an item to shooing cart (with just two clicks from the landing page) and includes visual feedback on hover
   * Ability to enlarge images by clicking on them, and to scroll through a pop-up gallery of images in full aspect ratio. Clicking outside viewing area (or swiping up/down on mobile) returns visitor to the normal gallery
-  * Within pop-up gallery, user can view thumbnails of all images and use mouse wheel or previous/next buttons to scroll through
+  * Within pop-up gallery, user can view thumbnails of all images and use the mouse wheel or swipe to scroll through
   * Names of each image are included at bottom of pop-up gallery, providing some context for each scene and allowing for specific questions of the photographer
   * Image sizes are all below 300kb for faster loading, while preserving FHD resolution to showcase their quality
 
-7. Signup
-  * Simple form to allow user to sign up for more information and news of additional images being added to gallery
-  * Validation of fields inputted by user, indicating any errors clearly
+**7. Signup**
+  * Simple form allows the user to sign up for more information and news of fresh images being added to gallery
+  * Validation of user inputs (blank fields, typical email format), indicating any errors clearly
+  * *NB at present this form is not linked up to any database and will not record inputs*
 
 ### Features left to implement
 
-  * Shopping basket and purchasing functions - including purchase history, payment options, saving delivery address/card details for repeat purchases
-  * When purchasing, choose number, size etc
-  * Searching for specific images / metadata - e.g results for ‘deer’, ‘butterfly’, ‘water’, ‘water’, ‘sunset’, ‘rocks’, ‘tractor’
-  * Browsing by other criteria e.g seasons, landscape/portrait -
-  * Mockup of image on chosen options e.g ‘twisted tree’ on a card and print in various sizes
-  * Option to order card with chosen/bespoke message inside
+  * Shopping basket and purchasing functions
+  
+    *This crucial missing feature will include payment options (multiple item purchase, choice of size), purchase history and the option to save delivery address and card details for repeat purchases*
+
+  * Ability to search for specific images / metadata
+  
+    *e.g results for ‘deer’, ‘butterfly’, ‘water’, ‘water’, ‘sunset’, ‘rocks’, ‘tractor’*
+
+  * Additional browsing criteria
+
+  *e.g seasons, landscape / portrait*
+
+  * Mockup of image for chosen options
+  *e.g 'Show me what Twisted Tree looks like on a card / in large print'*
+
+  * Option to order cards with a choice of messages / bespoke messages
 
 
 ## Issues and resolutions
@@ -139,7 +155,7 @@ As a site user I want:
 
   * **There is white space beneath footer on pages with little content (Pricing and About)**
 
-    Resolved by using a suggestion from [Philip Walton](https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/) to set body element ```flex-direction: column``` and ```min-height: 100vh```. This was a more elegant solution than changing the structure of the site e.g. by combining the Pricing and About pages into the Landing Page, or by simply increasing the content on each of the affected pages
+    Resolved by using a suggestion from [Philip Walton](https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/) to set body element ```flex-direction: column``` and ```min-height: 100vh```. This was a more elegant solution than changing the structure of the site e.g. by adding the Pricing and About pages further down the Landing Page and relying on achor links, or by simply increasing the content on each of the affected pages
 
   * **Gallery image buttons do not stay inside their respective images where images have different aspect ratios**
 
@@ -149,7 +165,7 @@ As a site user I want:
 
   * **Gallery images on small displays appear too wide**
 
-    Resolved by setting image ```height: 200px``` and adding a media query which changes image ```height: 100%```. This has the added benefit of displaying images in their original aspect ratio on mobile
+    Resolved by giving the image ```height: 200px``` and adding a media query which changes this to ```height: 100%``` on smaller devices. This has the added benefit of displaying images in their original aspect ratio on mobile
 
   * **Signup form validation messages display poorly on iOS**
 
@@ -161,6 +177,7 @@ As a site user I want:
 
     **NOT RESOLVED**
 
+
 ### Known bugs
 
   * None at present
@@ -170,7 +187,7 @@ As a site user I want:
 
   * HTML
   * CSS
-  * Javascript
+  * Javascript - notably for collapsable navbar and modal gallery
 
 ### Project management
 
@@ -180,7 +197,7 @@ As a site user I want:
 
 ### Style and theme
 
-  * [Bootstrap](https://getbootstrap.com/) - Responsive grid system and boilerplate styling
+  * [Bootstrap](https://getbootstrap.com/) - Responsive grid system (prioritising a mobile-first design philosophy) and boilerplate styling
   * [Color Scheme Designer](https://colorschemedesigner.com/csd-3.5/) - Complimentary color scheme for the site
   * [CSS Tricks](https://css-tricks.com/examples/hrs/) - Specifically for linear-gradiant horizontal rule
   * [Font Awesome](https://fontawesome.com/) - Icons used for shopping cart in navbar
@@ -206,12 +223,12 @@ As a site user I want:
 
 ## Testing
 
-8 individuals contributed to testing the site and provided feedback on its layout, responsiveness and styling at various points in its development
+Eight individuals contributed to testing the site and provided feedback on its layout, responsiveness and styling at various points in development
 
 ### Automated
 
-[W3C - HTML](https://validator.w3.org/) - no issues detected
-[W3C - CSS](https://jigsaw.w3.org/css-validator/) - no issues detected
+  * [W3C - HTML](https://validator.w3.org/) - no issues detected
+  * [W3C - CSS](https://jigsaw.w3.org/css-validator/) - no issues detected
 
 ### Manual
 
@@ -228,7 +245,7 @@ To deploy this page to GitHub Pages from its [GitHub repository](https://github.
 2. Scroll down to the **GitHub Pages** section
 3. Under **Source** click the drop-down menu labelled **None** and select **Master Branch**
 4. On selecting Master Branch the page is automatically refreshed, the website is now deployed
-5. Scroll back down to the **GitHub Pages** section to retrieve the link to the deployed website
+5. Scroll back down to the **GitHub Pages** section in **Settings** to retrieve the link to the deployed website. It may take a short time to go live, but typically less than 60 seconds
  
 ### How to run this project locally
 
@@ -268,4 +285,4 @@ I received inspiration for this project from Penny Holland
 
 ## Disclaimer
 
-This site was developed for educational purposes but a real client
+This site was developed for educational purposes but will be used as envisaged once the remaining features have been implemented
