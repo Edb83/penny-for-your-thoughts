@@ -6,6 +6,8 @@ This site is a showcase for an aspiring photographer's work, which is available 
 
 ## UX
 
+### Overview
+
 The site is aimed at people looking for greeting cards, specifically those who value supporting local endeavours rather than large, established corporations. The site’s intended audience are people who value the personal touch and ability to communicate directly with the seller.
 
 The enterprise is humble but, as evidenced by the quality of the pictures, has a wealth of emotive images from the English countryside to share.
@@ -41,8 +43,18 @@ As a site user I want:
   * For the signup form to show me if I have inputted incorrectly
   * For links to external sites to open in a separate tab to prevent loss of focus
 
+### Wireframes
+
+--TBC--
+
+### Site theme
+
+--TBC--
+
 
 ## Features
+
+### Site-wide
 
 1. Navbar
   * Navbar collapses into a hamburger icon to support mobile first
@@ -90,8 +102,7 @@ As a site user I want:
   * Simple form to allow user to sign up for more information and news of additional images being added to gallery
   * Validation of fields inputted by user, indicating any errors clearly
 
-
-## Features left to implement
+### Features left to implement
 
   * Shopping basket and purchasing functions - including purchase history, payment options, saving delivery address/card details for repeat purchases
   * When purchasing, choose number, size etc
@@ -151,6 +162,7 @@ As a site user I want:
 
   * None at present
 
+
 ## Technologies Used
 
   * HTML
@@ -198,8 +210,9 @@ As a site user I want:
 [W3C - HTML](https://validator.w3.org/) - no issues detected
 [W3C - CSS](https://jigsaw.w3.org/css-validator/) - no issues detected
 
-
 ### Manual
+
+--TBC--
 
 In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals. Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them. For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as: 1. Contact form: 1. Go to the "Contact Us" page 2. Try to submit the empty form and verify that an error message about the required fields appears 3. Try to submit the form with an invalid email address and verify that a relevant error message appears 4. Try to submit the form with all inputs valid and verify that a success message appears. In addition, you should mention in this section how your project looks and works on different browsers and screen sizes. You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet. If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
@@ -214,7 +227,6 @@ To deploy this page to GitHub Pages from its [GitHub repository](https://github.
 4. On selecting Master Branch the page is automatically refreshed, the website is now deployed
 5. Scroll back down to the **GitHub Pages** section to retrieve the link to the deployed website
  
-
 ### How to run this project locally
 
 To clone this project from GitHub:
@@ -238,13 +250,19 @@ Carlos (Code Institute student)
 Jonathan Munz (Code Institute mentor)
 Richard Wells (Code Institute lead)
 
+Extremely useful feedback on appearance and user experience was provided by Lola, Tash, Mims, Beckx and Peter!
+
+
 ## Content
 
 The text in the About page and photos used throughout this site were obtained from the client, Penny Holland. All other text was written by me and agreed with the client.
+
 
 ## Acknowledgements
 
 I received inspiration for this project from Penny Holland
 
+
 ## Disclaimer
 
+This site was developed for educational purposes but a real client
