@@ -1,6 +1,6 @@
 # Penny for your Thoughts
 
-![alt text](https://github.com/edb83/milestone1.jpg "Responsive sample")
+![alt text](https://github.com/edb83/milestone1/responsive.jpg "Responsive sample")
 
 [image produced using amiresponsivedesign](http://ami.responsivedesign.is/)
 
