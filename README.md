@@ -1,8 +1,9 @@
 # Penny for your Thoughts
 
-![alt text](https://github.com/edb83/milestone1/responsive.jpg "Responsive sample")
+<div style="text-align:center">
+<img src="responsive.jpg" alt="Responsive sample">
+</div>
 
-[image produced using amiresponsivedesign](http://ami.responsivedesign.is/)
 
 This site is a showcase for an aspiring photographer's work, which is available to purchase either on card or enlarged print. Since moving to the countryside, Penny has found herself increasingly inspired by her beautiful surroundings and is keen to share them with a wider audience. More than ever in these uncertain, digital times, there's comfort to be found in a personal message written on a physical card, adorned with beautiful, candid pictures of nature.
 
