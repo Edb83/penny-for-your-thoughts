@@ -1,5 +1,7 @@
 # Penny for your Thoughts
 
+[image produced using amiresponsivedesign](http://ami.responsivedesign.is/)
+
 This site is a showcase for an aspiring photographer's work, which is available to purchase either on card or enlarged print. Since moving to the countryside, Penny has found herself increasingly inspired by her beautiful surroundings and is keen to share them with a wider audience. More than ever in these uncertain, digital times, there's comfort to be found in a personal message written on a physical card, adorned with beautiful, candid pictures of nature.
 
 ## UX
@@ -111,13 +113,13 @@ As a site user I want:
 
   * **Navbar does not collapse when clicking links within the same page**
 
-    When the Gallery or hamburger dropdowns are expanded in the navbar, anchor links within the same page will not collapse the navbar (most noticeable on the Gallery page)
+    *When the Gallery or hamburger dropdowns are expanded in the navbar, anchor links within the same page will not collapse the navbar (most noticeable on the Gallery page)*
     
     Resolved by customising a Javascript snippet from [Stack Overflow](https://stackoverflow.com/questions/42401606/how-to-hide-collapsible-bootstrap-4-navbar-on-click) to point to the relevant classes in the navbar
 
   * **Navbar dropdown not visible on landscape mobile devices**
 
-    When expanding the Gallery nav-item in the navbar while in landscape mode on a mobile device, not all list items are visible and cannot be clicked
+    *When expanding the Gallery nav-item in the navbar while in landscape mode on a mobile device, not all list items are visible and cannot be clicked*
     
     Resolved by using a suggestion found on [Github](https://github.com/twbs/bootstrap/issues/23374) and adding a media query for smaller displays which sets ```overflow-y: scroll``` and ```height: 115px``` to ensure the list items are visible on all displays
 
@@ -127,7 +129,7 @@ As a site user I want:
 
   * **Gallery image buttons do not stay inside their respective images where images have different aspect ratios**
 
-    Due to having ```position: abolute``` buttons were left floating outside of their images
+    *Due to having ```position: abolute``` buttons were left floating outside of their images*
     
     Initially resolved by fixing the height of images to ```vh20``` but this had the unintended side-effect of making them appear too wide on mobile devices
 
@@ -137,7 +139,7 @@ As a site user I want:
 
   * **Signup form validation messages display poorly on iOS**
 
-    Despite displaying correctly in Chrome devtools, the display on iOS leaves validation error messages appearing clipped and ugly
+    *Despite displaying correctly in Chrome devtools, the display on iOS leaves validation error messages appearing clipped and ugly*
     
     Resolved by using Bootstrap's recommended ```needs-validation``` class and ```novalidate```. A block styled with ```invalid-feedback``` was avoided to prevent error messages appearing and shifting the lines of input fields 
 
@@ -154,32 +156,38 @@ As a site user I want:
   * HTML
   * CSS
   * Javascript
-  * [Bootstrap]
-  * [Font Awesome]
-  * [Hover.css](https://ianlunn.github.io/Hover/)
-  * [Fancybox](https://fancyapps.com/fancybox/3/)
-  * [Color Scheme Designer](https://colorschemedesigner.com/csd-3.5/)
-  * [Tiny JPG](https://tinyjpg.com/)
 
+### Project management
+
+  * [Balsamiq](https://balsamiq.com/wireframes/) - Wireframe creation tool
+  * [GitHub](https://github.com/) - Version control and deployment
+  * [GitPod](https://gitpod.io/) - IDE used to code the site
+
+### Style and theme
+
+  * [Bootstrap](https://getbootstrap.com/) - Responsive grid system and boilerplate styling
+  * [Color Scheme Designer](https://colorschemedesigner.com/csd-3.5/) - Complimentary color scheme for the site
+  * [CSS Tricks](https://css-tricks.com/examples/hrs/) - Specifically for linear-gradiant horizontal rule
+  * [Font Awesome](https://fontawesome.com/) - Icons used for shopping cart in navbar
+  * [Google Fonts](https://fonts.google.com/) - Open Sans and Monserrat fonts
+  * [Zyro Logo Maker](https://zyro.com/logo-maker) - Creating the favicon
+  
+### Visual effects
+
+  * [Fancybox](https://fancyapps.com/fancybox/3/) - Simple to use Javascript package for modal gallery
+  * [Hover.css](https://ianlunn.github.io/Hover/) - Effect applied to intro gallery section previews
+
+### Image manipulation
+
+  * [IrfanView](https://www.irfanview.com/) - Program for cropping image batches to the same aspect ratio
+  * [Tiny JPG](https://tinyjpg.com/) - Reducing the size of all images without noticeable loss of quality
+  
 ### Online resources
 
-  * [W3 Schools]
-  * [Stack Overflow]
-  * [CSS Tricks](https://css-tricks.com/)
-  * [How to Geek]
-
-https://stackoverflow.com/questions/48482944/how-to-fit-the-image-inside-the-bootstrap-div/48483068
-https://stackoverflow.com/questions/11757537/css-image-size-how-to-fill-not-stretch
-https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
-https://css-tricks.com/examples/hrs/
-https://tinyjpg.com/
-https://www.howtogeek.com/354015/how-to-resize-images-and-photos-in-windows/
-https://zyro.com/logo-maker
-https://ianlunn.github.io/Hover/
-https://fancyapps.com/fancybox/3/
-https://colorschemedesigner.com/csd-3.5/
-http://ami.responsivedesign.is/
-
+  * [How to Geek](https://www.howtogeek.com/354015/how-to-resize-images-and-photos-in-windows/) - specifically advice on how to efficiently handle a large number of images
+  * [Stack Overflow](https://stackoverflow.com/)
+  * [W3 Schools](https://www.w3schools.com/)
+  
 
 ## Testing
 
@@ -187,8 +195,9 @@ http://ami.responsivedesign.is/
 
 ### Automated
 
-https://tools.pingdom.com/
-https://validator.w3.org/
+[W3C - HTML](https://validator.w3.org/) - no issues detected
+[W3C - CSS](https://jigsaw.w3.org/css-validator/) - no issues detected
+
 
 ### Manual
 
@@ -225,11 +234,13 @@ Further reading and troubleshooting on cloning a repository from GitHub can be f
 
 ## Credits
 
+Carlos (Code Institute student)
 Jonathan Munz (Code Institute mentor)
+Richard Wells (Code Institute lead)
 
 ## Content
 
-The text in the About page and photos used throughout this site were obtained from the client, Penny Holland. All other text was agreed with the client.
+The text in the About page and photos used throughout this site were obtained from the client, Penny Holland. All other text was written by me and agreed with the client.
 
 ## Acknowledgements
 
