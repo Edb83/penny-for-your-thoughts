@@ -101,33 +101,49 @@ As a site user I want:
 
 ## Issues and resolutions
 
-  * iOS hero image not displaying
+  * **Hero image does not display on iOS mobile devices**
+
     Resolved by adding a media query for smaller displays which sets ```background-attachment: scroll```
 
-  * iOS browser adding unwanted styling to 'Pricing' button in hero image
-    NOT RESOLVED: attempts were made to override Apple's styling using ```-webkit-``` but were unsuccesful
+  * **iOS browser adds unwanted styling to Pricing button in hero image**
 
-  * Navbar collapsing of anchor links
+    **NOT RESOLVED**: attempts were made to override Apple's styling using ```-webkit-``` but were unsuccesful
+
+  * **Navbar does not collapse when clicking links within the same page**
+
     When the Gallery or hamburger dropdowns are expanded in the navbar, anchor links within the same page will not collapse the navbar (most noticeable on the Gallery page)
-    Resolved by customising a Javascript snippet (NEED STACKOVERFLOW SOURCE) to point to the relevant classes in the navbar
+    
+    Resolved by customising a Javascript snippet from [Stack Overflow](https://stackoverflow.com/questions/42401606/how-to-hide-collapsible-bootstrap-4-navbar-on-click) to point to the relevant classes in the navbar
 
-  * Navbar dropdown not visible on landscape mobile devices
+  * **Navbar dropdown not visible on landscape mobile devices**
+
     When expanding the Gallery nav-item in the navbar while in landscape mode on a mobile device, not all list items are visible and cannot be clicked
-    Resolved by adding a media query for smaller displays which sets ```overflow-y: scroll``` and ```height: 115px``` to ensure the list items are visible on all displays
+    
+    Resolved by using a suggestion found on [Github](https://github.com/twbs/bootstrap/issues/23374) and adding a media query for smaller displays which sets ```overflow-y: scroll``` and ```height: 115px``` to ensure the list items are visible on all displays
 
-  * Gallery image buttons do not stay inside their respective images where images have different aspect ratios
+  * **There is white space beneath footer on pages with little content (Pricing and About)**
+
+    Resolved by using a suggestion from [Philip Walton](https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/) to set body element ```flex-direction: column``` and ```min-height: 100vh```. This was a more elegant solution than changing the structure of the site e.g. by combining the Pricing and About pages into the Landing Page, or by simply increasing the content on each of the affected pages
+
+  * **Gallery image buttons do not stay inside their respective images where images have different aspect ratios**
+
     Due to having ```position: abolute``` buttons were left floating outside of their images
+    
     Initially resolved by fixing the height of images to ```vh20``` but this had the unintended side-effect of making them appear too wide on mobile devices
 
-  * Gallery images on small displays / single column appear too wide
+  * **Gallery images on small displays appear too wide**
+
     Resolved by setting image ```height: 200px``` and adding a media query which changes image ```height: 100%```. This has the added benefit of displaying images in their original aspect ratio on mobile
 
-  * Signup form validation messages displaying poorly on iOS
-    Despite displaying correctly in Chrome devtools, the display on iOS leaves validation error messages clipped and ugly
-    Resolved by using Bootstrap's recommended ```needs-validation``` class and ```novalidate```. ```invalid-feedback``` div was avoided to prevent error messages appearing and shifting the lines of input fields 
+  * **Signup form validation messages display poorly on iOS**
 
-  * Signup form password and confirmation password can be different
-    NOT RESOLVED
+    Despite displaying correctly in Chrome devtools, the display on iOS leaves validation error messages appearing clipped and ugly
+    
+    Resolved by using Bootstrap's recommended ```needs-validation``` class and ```novalidate```. A block styled with ```invalid-feedback``` was avoided to prevent error messages appearing and shifting the lines of input fields 
+
+  * **Signup form password and confirmation password can be different**
+
+    **NOT RESOLVED**
 
 ### Known bugs
 
@@ -138,19 +154,19 @@ As a site user I want:
   * HTML
   * CSS
   * Javascript
-  * Bootstrap
-  * Font Awesome
-  * Hover.css
-  * Fancybox
-  * Color Scheme Designer
-  * Tiny JPG
+  * [Bootstrap]
+  * [Font Awesome]
+  * [Hover.css](https://ianlunn.github.io/Hover/)
+  * [Fancybox](https://fancyapps.com/fancybox/3/)
+  * [Color Scheme Designer](https://colorschemedesigner.com/csd-3.5/)
+  * [Tiny JPG](https://tinyjpg.com/)
 
-## Online resources
+### Online resources
 
-  * W3 Schools
-  * Stack Overflow
-  * CSS Tricks
-  * How to Geek
+  * [W3 Schools]
+  * [Stack Overflow]
+  * [CSS Tricks](https://css-tricks.com/)
+  * [How to Geek]
 
 https://stackoverflow.com/questions/48482944/how-to-fit-the-image-inside-the-bootstrap-div/48483068
 https://stackoverflow.com/questions/11757537/css-image-size-how-to-fill-not-stretch
