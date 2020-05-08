@@ -29,56 +29,75 @@ For ease of reference, the means by which a user's expectations have been met ar
 As the **client** I want
 
 - Visitors to be immediately aware of what the product is
-    - The sub-heading over the hero image, call to action (Purchase button) and the three introductory statements make it immediately clear what the product is
+  - The sub-heading over the hero image, call to action (Purchase button) and the three introductory statements make it immediately clear what the product is
 - A clean, consistent interface which will not confuse visitors
-    - The navbar, footer and headings of each page are clear, simple and consistent, as are the spacing, typography, image styling and colours
+  - The navbar, footer and headings of each page are clear, simple and consistent, as are the spacing, typography, image styling and colours
 - My work to be showcased from the outset
-    - The landing page is dedicated to the 100% viewport wide hero image and samples of the various themes of image below that. This ensures the photographer's work is centre stage
+  - The landing page is dedicated to the 100% viewport wide hero image and samples of the various themes of image below that. This ensures the photographer's work is centre stage
 - An immediate link to the gallery
-    - The gallery is accessible in the nav bar, call to action and intro gallery images
+  - The gallery is accessible in the nav bar, call to action and intro gallery images
 - A gallery which allows visitors to quickly browse through high quality images in their original aspect ration and to add them to a shopping basket
-    - The gallery has a clean and effective modal which displays Full HD images in their original aspect ration and allows the entire gallery to be browsed with just the mouse wheel / swiping.  There is an "Add (to basket)" buttons on each image for a shopping experience which is expected on sites nowadays
-
+  - The gallery has a clean and effective modal which displays Full HD images in their original aspect ration and allows the entire gallery to be browsed with just the mouse wheel / swiping. There is an "Add (to basket)" buttons on each image for a shopping experience which is expected on sites nowadays
 
 As a **visitor** I want:
 
 - For it to be immediately clear what the purpose of the site is and what it has to offer
-    - Aligns with client's expectations
+  - Aligns with client's expectations
 - A clean interface and layout which allows me to focus on browsing the images and purchasing them
-    - Aligns with client's expectations
+  - Aligns with client's expectations
 - To be able to quickly navigate the site using navbar and clear links
-    - Aligns with client's expectations
+  - Aligns with client's expectations
 - To see a striking image which is indicative of the product’s nature and quality
-    - Aligns with client's expectations
+  - Aligns with client's expectations
 - To learn something about the photographer
-    - The About page is separate from the rest of the content but is easily accessible for those wishing to learn more about the photographer, and the information itself is not overly dense or excessive
+  - The About page is separate from the rest of the content but is easily accessible for those wishing to learn more about the photographer, and the information itself is not overly dense or excessive
 - To be able to contact the photographer directly
-    - The About page includes a contact email
+  - The About page includes a contact email
 - To be able to quickly find out more about the product, specifically its price and available options
-    - The Pricing page is currently separate and provides an acceptible means of sharing this information, which is laid out in a pair of easily digestible tables containly only pertinent information. As the project develops and the shopping basket is implemented, this information may be conveyed more effectively elsewhere
+  - The Pricing page is currently separate and provides an acceptible means of sharing this information, which is laid out in a pair of easily digestible tables containly only pertinent information. As the project develops and the shopping basket is implemented, this information may be conveyed more effectively elsewhere
 - To be able to access the gallery quickly and browse its entire contents at once
-    - Aligns with client's expectations
+  - Aligns with client's expectations
 - To be able to choose themes from the image gallery, and access them quickly
-    - Currently this expectation is met (and promoted) using the navbar Gallery dropdown list and intro gallery below the hero image. This method will be re-examined as new images are added and when future functionality enables advanced search options
+  - Currently this expectation is met (and promoted) using the navbar Gallery dropdown list and intro gallery below the hero image. This method will be re-examined as new images are added and when future functionality enables advanced search options
 - To be able to click an image to see its true aspect ratio, if it isn’t immediately obvious
-    - Aligns with client's expectations
+  - Aligns with client's expectations
 - To be able to quickly add desired images to my shopping basket
-    - Aligns with client's expectations
+  - Aligns with client's expectations
 - To be able to quickly find the photographer’s social media presence
-    - The minimalist footer provides available social media links, as is expected by all web users today
+  - The minimalist footer provides available social media links, as is expected by all web users today
 - To be able to sign up for more information and updates on the photographer’s work
-    - The Sign Up page has the singular purpose of establishing a connection with potential clients in the hope of securing repeat business
+  - The Sign Up page has the singular purpose of establishing a connection with potential clients in the hope of securing repeat business
 - For the site to be responsive on all devices
-    - Addressed in the Responsiveness section below
+  - Addressed in the Responsiveness section below
 - For there to be clear but aesthetically pleasing visual feedback when hovering over clickable links
-    - All clickable links have consistent visual feedback, including the subtle hover effect on the intro gallery images
+  - All clickable links have consistent visual feedback, including the subtle hover effect on the intro gallery images
 - For the image gallery to be fast to load and easy to navigate
-    - Efforts have been made to reduce the size of files to what is acceptible on the web today, but there is scope to utilise thumbnails of an even smaller size to improve the speed at which the Gallery loads
+  - Efforts have been made to reduce the size of files to what is acceptible on the web today, but there is scope to utilise thumbnails of an even smaller size to improve the speed at which the Gallery loads
 - For the signup form to show me if I have inputted incorrectly
-    - Addressed in the Manual testing section below
+  - Addressed in the Manual testing section below
 - For links to external sites to open in a separate tab to prevent loss of focus
-    - This currently only applies to the social media links in the footer, but they all open in a separate browser tab
+  - This currently only applies to the social media links in the footer, but they all open in a separate browser tab
 
+| Visitor's expectation                                                                               | How is this met?                                                                                                                                                                                                                                                                                                               |
+| --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| For it to be immediately clear what the purpose of the site is and what it has to offer             | Aligns with client's expectations                                                                                                                                                                                                                                                                                              |
+| A clean interface and layout which allows me to focus on browsing the images and purchasing them    | Aligns with client's expectations                                                                                                                                                                                                                                                                                              |
+| To be able to quickly navigate the site using navbar and clear links                                | Aligns with client's expectations                                                                                                                                                                                                                                                                                              |
+| To see a striking image which is indicative of the product’s nature and quality                     | Aligns with client's expectations                                                                                                                                                                                                                                                                                              |
+| To learn something about the photographer                                                           | The About page is separate from the rest of the content but is easily accessible for those wishing to learn more about the photographer, and the information itself is not overly dense or excessive                                                                                                                           |
+| To be able to contact the photographer directly                                                     | The About page includes a contact email                                                                                                                                                                                                                                                                                        |
+| To be able to quickly find out more about the product, specifically its price and available options | The Pricing page is currently separate and provides an acceptible means of sharing this information, which is laid out in a pair of easily digestible tables containly only pertinent information. As the project develops and the shopping basket is implemented, this information may be conveyed more effectively elsewhere |
+| To be able to access the gallery quickly and browse its entire contents at once                     | Aligns with client's expectations                                                                                                                                                                                                                                                                                              |
+| To be able to choose themes from the image gallery, and access them quickly                         | Currently this expectation is met (and promoted) using the navbar Gallery dropdown list and intro gallery below the hero image. This method will be re-examined as new images are added and when future functionality enables advanced search options                                                                          |
+| To be able to click an image to see its true aspect ratio, if it isn’t immediately obvious          | Aligns with client's expectations                                                                                                                                                                                                                                                                                              |
+| To be able to quickly add desired images to my shopping basket                                      | Aligns with client's expectations                                                                                                                                                                                                                                                                                              |
+| To be able to quickly find the photographer’s social media presence                                 | The minimalist footer provides available social media links, as is expected by all web users today                                                                                                                                                                                                                             |
+| To be able to sign up for more information and updates on the photographer’s work                   | The Sign Up page has the singular purpose of establishing a connection with potential clients in the hope of securing repeat business                                                                                                                                                                                          |
+| For the site to be responsive on all devices                                                        | Addressed in the Responsiveness section below                                                                                                                                                                                                                                                                                  |
+| For there to be clear but aesthetically pleasing visual feedback when hovering over clickable links | All clickable links have consistent visual feedback, including the subtle hover effect on the intro gallery images                                                                                                                                                                                                             |
+| For the image gallery to be fast to load and easy to navigate                                       | Efforts have been made to reduce the size of files to what is acceptible on the web today, but there is scope to utilise thumbnails of an even smaller size to improve the speed at which the Gallery loads                                                                                                                    |
+| For the signup form to show me if I have inputted incorrectly                                       | Addressed in the Manual testing section below                                                                                                                                                                                                                                                                                  |
+| For links to external sites to open in a separate tab to prevent loss of focus                      | This currently only applies to the social media links in the footer, but they all open in a separate browser tab                                                                                                                                                                                                               |
 
 ### Wireframes
 
@@ -224,16 +243,16 @@ The following scenarios were tested to ensure that the site is functioning as ex
 **1. Nav bar**
 
 - From each page
-    - check that nav bar links take you to the correct page - **PASS**
-    - check that each Gallery dropdown link takes you to the correct section of the Gallery page - **PASS**
-    - check that nav bar links (including Brand) have the correct styling (blue) when hovered over on desktop devices - **PASS**
-    - check that the active / current nav bar link (excluding Brand) is correctly styled and distinguished from the others - **PASS**
+  - check that nav bar links take you to the correct page - **PASS**
+  - check that each Gallery dropdown link takes you to the correct section of the Gallery page - **PASS**
+  - check that nav bar links (including Brand) have the correct styling (blue) when hovered over on desktop devices - **PASS**
+  - check that the active / current nav bar link (excluding Brand) is correctly styled and distinguished from the others - **PASS**
 
 **2. Footer**
 
 - From each page
-    - check that all social media links take you to the relevant external site, and open in a separate browser tab - **PASS**
-    - check that all social media icons have the correct styling (dark yellow) when hovered over on desktop devices - **PASS**
+  - check that all social media links take you to the relevant external site, and open in a separate browser tab - **PASS**
+  - check that all social media icons have the correct styling (dark yellow) when hovered over on desktop devices - **PASS**
 
 **3. Landing page**
 
@@ -271,10 +290,11 @@ _Note: initially some file names were incorrect but were all amended_
 
 - On desktop, hover over the Sign Up button to check visual feedback is provided (dark blue) - **PASS**
 - On sign-up form
-    - leave all fields blank and click Sign Up button to check validation displays an input issue - **PASS**
-    - enter all fields correctly and click Sign Up button to check validation confirms correct inputs - **PASS**
-    - enter all fields correctly apart from one (in turn) and check validation correctly identifies issues - **PASS**
-    - enter an email address in an incorrect format to check validation displays an input issue. Results:
+
+  - leave all fields blank and click Sign Up button to check validation displays an input issue - **PASS**
+  - enter all fields correctly and click Sign Up button to check validation confirms correct inputs - **PASS**
+  - enter all fields correctly apart from one (in turn) and check validation correctly identifies issues - **PASS**
+  - enter an email address in an incorrect format to check validation displays an input issue. Results:
 
   | Entry   | Test result | Comments                                                                |
   | ------- | ----------- | ----------------------------------------------------------------------- |
@@ -285,8 +305,8 @@ _Note: initially some file names were incorrect but were all amended_
   | `a@_b`  | **PASS**    |
   | `a_@b`  | **PASS**    |
 
-    - enter something different for Password and Confirm Password to check validation displays an input issue - **FAIL**
-    - enter a space (" ") as either password to check validation displays an input issue - **FAIL**
+  - enter something different for Password and Confirm Password to check validation displays an input issue - **FAIL**
+  - enter a space (" ") as either password to check validation displays an input issue - **FAIL**
 
 Additionally, eight individuals contributed to testing the site and provided feedback on its layout, responsiveness and styling at various points in development.
 
@@ -308,53 +328,53 @@ Additionally, eight individuals contributed to testing the site and provided fee
 
 - **Hero image does not display on iOS mobile devices**
 
-    - Resolved by adding a media query for smaller displays which sets `background-attachment: scroll`
+  - Resolved by adding a media query for smaller displays which sets `background-attachment: scroll`
 
 - **Navbar does not collapse when clicking links within the same page**
 
   _When the Gallery or hamburger dropdowns are expanded in the navbar, anchor links within the same page will not collapse the navbar (most noticeable on the Gallery page)_
 
-    - Resolved by customising a Javascript snippet from [Stack Overflow](https://stackoverflow.com/questions/42401606/how-to-hide-collapsible-bootstrap-4-navbar-on-click) to point to the relevant classes in the navbar
+  - Resolved by customising a Javascript snippet from [Stack Overflow](https://stackoverflow.com/questions/42401606/how-to-hide-collapsible-bootstrap-4-navbar-on-click) to point to the relevant classes in the navbar
 
 - **Navbar dropdown not visible on landscape mobile devices**
 
   _When expanding the Gallery nav-item in the navbar while in landscape mode on a mobile device, not all list items are visible and cannot be clicked_
 
-    - Resolved by using a suggestion found on [Github](https://github.com/twbs/bootstrap/issues/23374) and adding a media query for smaller displays which sets `overflow-y: scroll` and `height: 115px` to ensure the list items are visible on all displays
+  - Resolved by using a suggestion found on [Github](https://github.com/twbs/bootstrap/issues/23374) and adding a media query for smaller displays which sets `overflow-y: scroll` and `height: 115px` to ensure the list items are visible on all displays
 
 - **Intro gallery circular images on right margin cause overflow when hvr-grow effect is appled**
 
-    - Resolved by incrementally reducing the width of intro-gallery and finally settling on `width: 91%`
+  - Resolved by incrementally reducing the width of intro-gallery and finally settling on `width: 91%`
 
 - **There is white space beneath footer on pages with little content (Pricing and About)**
 
-    - Resolved by using a suggestion from [Philip Walton](https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/) to set body element `flex-direction: column` and `min-height: 100vh`. This was a more elegant solution than changing the structure of the site e.g. by adding the Pricing and About pages further down the Landing Page and relying on achor links, or by simply increasing the content on each of the affected pages
+  - Resolved by using a suggestion from [Philip Walton](https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/) to set body element `flex-direction: column` and `min-height: 100vh`. This was a more elegant solution than changing the structure of the site e.g. by adding the Pricing and About pages further down the Landing Page and relying on achor links, or by simply increasing the content on each of the affected pages
 
 - **Gallery image buttons do not stay inside their respective images where images have different aspect ratios**
 
   _Due to having_ `position: abolute` _buttons were left floating outside of their images_
 
-    - Initially resolved by fixing the height of images to `vh20` but this had the unintended side-effect of making them appear too wide on mobile devices
+  - Initially resolved by fixing the height of images to `vh20` but this had the unintended side-effect of making them appear too wide on mobile devices
 
 - **Gallery images on small displays appear too wide**
 
-    - Resolved by giving the image `height: 200px` and adding a media query which changes this to `height: 100%` on smaller devices. This has the added benefit of displaying images in their original aspect ratio on mobile
+  - Resolved by giving the image `height: 200px` and adding a media query which changes this to `height: 100%` on smaller devices. This has the added benefit of displaying images in their original aspect ratio on mobile
 
 - **Signup form validation messages display poorly on iOS**
 
   _Despite displaying correctly in Chrome devtools, the display on iOS leaves validation error messages appearing clipped and ugly_
 
-    - Resolved by using Bootstrap's recommended `needs-validation` class and `novalidate`. A block styled with `invalid-feedback` was avoided to prevent error messages appearing and shifting the lines of input fields
+  - Resolved by using Bootstrap's recommended `needs-validation` class and `novalidate`. A block styled with `invalid-feedback` was avoided to prevent error messages appearing and shifting the lines of input fields
 
 #### Unresolved
 
 - **iOS browser adds unwanted styling to Pricing button in hero image**
 
-    - Attempts were made to override Apple's styling using `-webkit-` but were unsuccesful
+  - Attempts were made to override Apple's styling using `-webkit-` but were unsuccesful
 
 - **Signup form password and confirmation password can be different**
 
-    - This is a key issue which needs to be resolved but is outside the scope of this project
+  - This is a key issue which needs to be resolved but is outside the scope of this project
 
 ### Known bugs
 
