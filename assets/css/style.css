@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /* Google fonts */
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap");
@@ -9,14 +16,21 @@ body {
   margin: 0;
 
   /* These settings are used to position the footer at the bottom of the page where there is insufficient content to naturally position it there (About, Pricing, Signup) */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   min-height: 100vh;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 /* These settings are used to position the footer at the bottom of the page where there is insufficient content to naturally position it there (About, Pricing, Signup) */
 .inner-page-contents {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 /* Special paddings/margins/text */
@@ -34,6 +48,19 @@ body {
 }
 
 .hr-gradient--yellow {
+  background-image: -webkit-gradient(
+    linear,
+    left top, right top,
+    from(rgba(38, 77, 38, 0)),
+    color-stop(rgb(204, 153, 0)),
+    to(rgba(38, 77, 38, 0))
+  );
+  background-image: -o-linear-gradient(
+    left,
+    rgba(38, 77, 38, 0),
+    rgb(204, 153, 0),
+    rgba(38, 77, 38, 0)
+  );
   background-image: linear-gradient(
     to right,
     rgba(38, 77, 38, 0),
@@ -47,7 +74,7 @@ body {
 .navbar {
   margin-bottom: 0;
   width: 100%;
-  background-color: #3399cc;
+  background-color: #39c;
   opacity: 1;
 
   position: fixed;
@@ -60,22 +87,22 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   letter-spacing: 1px;
-  color: #ffffff;
+  color: #fff;
   margin-right: 0;
 }
 
 .navbar-dark .navbar-brand:focus,
 .navbar-dark .navbar-brand:hover {
-  color: #003366;
+  color: #036;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: #ffffff;
+  color: #fff;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .active > .nav-link {
-  color: #003366;
+  color: #036;
   font-weight: 600;
 }
 
@@ -108,21 +135,22 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
   border-bottom: solid;
   border-bottom-width: 1px;
-  border-bottom-color: #003366;
+  border-bottom-color: #036;
 }
 
 /* Jumbotron */
 
 .callout-contents {
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   width: 100%;
   background-color: transparent;
   text-align: center;
@@ -160,9 +188,11 @@ body {
   margin: 20px auto;
   height: 150px;
   width: 150px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 50%;
-  box-shadow: 0px 5px 8px #003366;
+  -webkit-box-shadow: 0px 5px 8px #036;
+          box-shadow: 0px 5px 8px #036;
 }
 
 .intro-gallery p {
@@ -170,7 +200,9 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   font-size: 1.6rem;
   color: #fff;
   text-align: center;
@@ -185,7 +217,7 @@ footer {
   border: 0px;
   border-style: solid;
   border-color: transparent;
-  border-top-color: #003366;
+  border-top-color: #036;
 }
 
 .footer-container a,
@@ -194,12 +226,12 @@ footer {
 }
 
 .footer-container a:hover {
-  color: #996600;
+  color: #960;
   text-decoration: none;
 }
 
 .bg-color-footer {
-  background-color: #cc9900;
+  background-color: #c90;
 }
 
 /* Grow */
@@ -207,34 +239,55 @@ footer {
 .hvr-grow {
   display: inline-block;
   vertical-align: middle;
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
-  transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+       -o-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  -o-transition-property: transform;
   transition-property: transform;
+  transition-property: transform, -webkit-transform;
 }
 
 .hvr-grow:hover,
 .hvr-grow:focus,
 .hvr-grow:active {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 /* About */
 
 .about-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 3rem;
 }
 
 .about-image img {
   border-radius: 5px;
-  box-shadow: 0px 5px 8px #003366;
+  -webkit-box-shadow: 0px 5px 8px #036;
+          box-shadow: 0px 5px 8px #036;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
   max-height: fit-content;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
   max-width: fit-content;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 /* Pricing */
@@ -275,26 +328,29 @@ table caption {
 
 .pic img {
   height: 200px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin-top: 20px;
   border-radius: 5px;
-  box-shadow: 0px 5px 8px #003366;
+  -webkit-box-shadow: 0px 5px 8px #036;
+          box-shadow: 0px 5px 8px #036;
 }
 
 .pic button {
   position: absolute;
   top: 95%;
   left: 87%;
-  transform: translate(-100%, -100%);
+  -webkit-transform: translate(-100%, -100%);
+          transform: translate(-100%, -100%);
   -ms-transform: translate(-90%, -100%);
   opacity: 1;
-  background-color: #3399cc;
-  color: #ffffff;
+  background-color: #39c;
+  color: #fff;
 }
 
 .pic button:hover {
-  background-color: #003366;
-  color: #ffffff;
+  background-color: #036;
+  color: #fff;
 }
 /* Sign Up */
 
@@ -303,13 +359,13 @@ table caption {
 }
 
 #signup-form button {
-  background-color: #3399cc;
-  color: #ffffff;
+  background-color: #39c;
+  color: #fff;
 }
 
 #signup-form button:hover {
-  background-color: #003366;
-  color: #ffffff;
+  background-color: #036;
+  color: #fff;
 }
 
 /* Media */
@@ -368,6 +424,8 @@ table caption {
     /* Reduces the margin above the about-image on larger displays and adjusts image to fit container */
   .about-image {
     margin-top: 0;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
   }
   .about-image img {
