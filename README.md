@@ -39,7 +39,7 @@ As the **client** I want
 - A gallery which allows visitors to quickly browse through high quality images in their original aspect ration and to add them to a shopping basket
   - The gallery has a clean and effective modal which displays Full HD images in their original aspect ration and allows the entire gallery to be browsed with just the mouse wheel / swiping. There is an "Add (to basket)" buttons on each image for a shopping experience which is expected on sites nowadays
 
-| <div style="width: 50%">Client's expectations</div>                                                                                                | How is this met?                                                                                                                                                                                                                                                                                             |
+| Client's expectations                                                                                                                              | How is this met?                                                                                                                                                                                                                                                                                             |
 | :------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Visitors to be immediately aware of what the product is                                                                                            | The sub-heading over the hero image, call to action (Purchase button) and the three introductory statements make it immediately clear what the product is                                                                                                                                                    |
 | Clean, consistent interface which will not confuse visitors                                                                                        | The navbar, footer and headings of each page are clear, simple and consistent, as are the spacing, typography, image styling and colours                                                                                                                                                                     |
@@ -86,12 +86,12 @@ As a **visitor** I want:
 - For links to external sites to open in a separate tab to prevent loss of focus
   - This currently only applies to the social media links in the footer, but they all open in a separate browser tab
 
-| <div style="width: 50%">Visitor's expectation</div>                                              | How is this met?                                                                                                                                                                                                                                                                                                               |
+| Visitor's expectation                                                                            | How is this met?                                                                                                                                                                                                                                                                                                               |
 | :----------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Immediately clear what the purpose of the site is and what it has to offer                       | Aligns with client's expectations                                                                                                                                                                                                                                                                                              |
 | A clean interface and layout which allows me to focus on browsing the images and purchasing them | Aligns with client's expectations                                                                                                                                                                                                                                                                                              |
 | Quickly navigate the site using navbar and clear links                                           | Aligns with client's expectations                                                                                                                                                                                                                                                                                              |
-| Sriking image which is indicative of the product’s nature and quality                            | Aligns with client's expectations                                                                                                                                                                                                                                                                                              |
+| Striking image which is indicative of the product’s nature and quality                           | Aligns with client's expectations                                                                                                                                                                                                                                                                                              |
 | Learn something about the photographer                                                           | The About page is separate from the rest of the content but is easily accessible for those wishing to learn more about the photographer, and the information itself is not overly dense or excessive                                                                                                                           |
 | Contact the photographer directly                                                                | The About page includes a contact email                                                                                                                                                                                                                                                                                        |
 | Quickly find out more about the product, specifically its price and available options            | The Pricing page is currently separate and provides an acceptible means of sharing this information, which is laid out in a pair of easily digestible tables containly only pertinent information. As the project develops and the shopping basket is implemented, this information may be conveyed more effectively elsewhere |
@@ -113,7 +113,7 @@ As a **visitor** I want:
 
 ### Site theme
 
---TBC--
+Based on the client's brief and visitors' expectations for the site, a clean, simple aesthetic has been adopted. In previous iterations the theme was more minimalistic in an attempt to focus purely on the content, but this was counterintuitive as the lack of contrast reduced the visibility of important and the site lacked identity. At this point user feedback suggested changing the chosen hero image and after doing so, [Color Scheme Designer](https://colorschemedesigner.com/csd-3.5/) was used to pull out several complimentary colours which tied in with the new hero image. The result is a much more vibrant aesthetic based on blues and gold, which gives the site a bolder appearance and more character. Furthermore, visual feedback for user actions became much clearer and the identity of separate elements (e.g images with shadows, golden horizontal rules to indicate consitent headings etc) became more apparent.
 
 ## Features
 
@@ -304,14 +304,14 @@ _Note: initially some file names were incorrect but were all amended_
   - enter all fields correctly apart from one (in turn) and check validation correctly identifies issues - **PASS**
   - enter an email address in an incorrect format to check validation displays an input issue. Results:
 
-  | Entry   | Test result | Comments                                                                |
-  | ------- | ----------- | ----------------------------------------------------------------------- |
-  | `@`     | **PASS**    |
-  | `_@_`   | **PASS**    |
-  | `a@b`   | **FAIL**    | this would need to be corrected but is beyond the scope of this project |
-  | `a_@_b` | **PASS**    |
-  | `a@_b`  | **PASS**    |
-  | `a_@b`  | **PASS**    |
+  |  Entry  | Test result | Comments                                                                |
+  | :-----: | :---------: | :---------------------------------------------------------------------- |
+  |   `@`   |  **PASS**   |
+  |  `_@_`  |  **PASS**   |
+  |  `a@b`  |  **FAIL**   | this would need to be corrected but is beyond the scope of this project |
+  | `a_@_b` |  **PASS**   |
+  | `a@_b`  |  **PASS**   |
+  | `a_@b`  |  **PASS**   |
 
   - enter something different for Password and Confirm Password to check validation displays an input issue - **FAIL**
   - enter a space (" ") as either password to check validation displays an input issue - **FAIL**
@@ -320,7 +320,18 @@ Additionally, eight individuals contributed to testing the site and provided fee
 
 ### Responsiveness
 
---TBC--
+The site has been designed with a mobile-first philosophy and, supported by [Bootstrap](https://getbootstrap.com/), has been thoroughly tested at all stages of development using [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools).
+
+The following issues arose and have each been addressed:
+
+| Responsiveness issue | Solution |
+| :---- | :------- |
+Navbar Brand causes hamburger icon to spill | Reduced starting `font-size`, removed `margin-right`and added media query to increase above `min-width: 370px`
+Navbar dropdown not visible on landscape mobile devices | Added media query to set `overflow-y: scroll`. See Issues and resolutions section below 
+Landing page main heading ran to several lines on smaller displays | Reduced starting `font-size` of callout header and paragraph and added media query to increase above `min-width: 768px`
+Pricing tables appear too elongated on larger displays when filling two columns | Added two media queries to increase `padding` above above `min-width: 768px` and `min-width: 992px`
+Image of photographer in About suffered from unwanted top margin (which was needed in single-column views) when sharing row with text | Added media query to remove `margin-top` of the container and change `max-height` and `max-width` of the image
+Gallery images on small displays appear too wide | See Issues and resolutions below
 
 #### Browsers
 
