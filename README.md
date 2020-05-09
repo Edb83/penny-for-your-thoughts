@@ -109,7 +109,7 @@ As a **visitor** I want:
 
 ### Wireframes
 
-- [Sitemap](wireframes/sitemap.png)
+- [Sitemap](tree/master/wireframes/sitemap.png)
 
 #### Desktop
 
