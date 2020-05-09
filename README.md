@@ -109,31 +109,31 @@ As a **visitor** I want:
 
 ### Wireframes
 
-- [Sitemap](tree/master/wireframes/sitemap.png)
+- [Sitemap](assets/wireframes/sitemap.png)
 
 #### Desktop
 
-- [Home](wireframes/home-desktop.png)
-- [About](wireframes/about-desktop.png)
-- [Pricing](wireframes/pricing-desktop.png)
-- [Gallery](wireframes/gallery-desktop.png)
-- [Signup](wireframes/signup-desktop.png)
+- [Home](assets/wireframes/home-desktop.png)
+- [About](assets/wireframes/about-desktop.png)
+- [Pricing](assets/wireframes/pricing-desktop.png)
+- [Gallery](assets/wireframes/gallery-desktop.png)
+- [Signup](assets/wireframes/signup-desktop.png)
 
 #### Tablet
 
-- [Home](wireframes/home-tablet.png)
-- [About](wireframes/about-tablet.png)
-- [Pricing](wireframes/pricing-tablet.png)
-- [Gallery](wireframes/gallery-tablet.png)
-- [Signup](wireframes/signup-desktop.png)
+- [Home](assets/wireframes/home-tablet.png)
+- [About](assets/wireframes/about-tablet.png)
+- [Pricing](assets/wireframes/pricing-tablet.png)
+- [Gallery](assets/wireframes/gallery-tablet.png)
+- [Signup](assets/wireframes/signup-desktop.png)
 
 #### Mobile
 
-- [Home](wireframes/home-mobile.png)
-- [About](wireframes/about-mobile.png)
-- [Pricing](wireframes/pricing-mobile.png)
-- [Gallery](wireframes/gallery-mobile.png)
-- [Signup](wireframes/signup-mobile.png)
+- [Home](assets/wireframes/home-mobile.png)
+- [About](assets/wireframes/about-mobile.png)
+- [Pricing](assets/wireframes/pricing-mobile.png)
+- [Gallery](assets/wireframes/gallery-mobile.png)
+- [Signup](assets/wireframes/signup-mobile.png)
 
 ### Site theme
 
