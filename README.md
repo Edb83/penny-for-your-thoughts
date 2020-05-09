@@ -335,11 +335,39 @@ Gallery images on small displays appear too wide | See Issues and resolutions be
 
 #### Browsers
 
---TBC--
+Tested on:
+- Chrome
+- Edge
+- Firefox
+- Safari (iOS) - issue with styles being overwritten on call to action (Purchase button on landing page). See Unresolved issues section below
 
 #### Screen sizes
 
---TBC--
+Tested with Chrome DevTools using profiles for:
+- Moto G4
+- Galaxy S5
+- Pixel 2
+- Pixel 2 XL
+- iPhone 5 SE
+- iPhone 6/7/8
+- iPhone 6/7/8 Plus
+- iPhone X
+- iPad
+- iPad Pro 
+
+... and also using the responsive profiles of:
+- Mobile S (320px)
+- Mobile M (375px)
+- Mobile L (425px)
+- Tablet (768px)
+- Laptop (1024px)
+- Laptop L (1440px)
+
+Real world testing on:
+- iPhone 6
+- iPhone 11 Pro
+- Asus ZenBook
+
 
 ### Issues and resolutions
 
@@ -445,4 +473,4 @@ I received inspiration for this project from Penny Holland
 
 ## Disclaimer
 
-This site was developed for educational purposes but will be used as envisaged once the remaining features have been implemented
+This site was developed for educational purposes but will likely be put to real world use once the remaining features have been implemented according to client's wishes.
