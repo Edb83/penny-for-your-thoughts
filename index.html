@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Penny for your Thoughts | Beautiful cards and prints delivered to your doorstep | Gallery of images: Canals, Coast, Flora and Fauna, Flowers, Landscapes, Trees" />
+    <meta
+      name="description"
+      content="Penny for your Thoughts | Beautiful cards and prints delivered to your doorstep | Gallery of images: Canals, Coast, Flora and Fauna, Flowers, Landscapes, Trees"
+    />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
       rel="stylesheet"
@@ -29,7 +32,7 @@
     <!-- Navbar -->
     <div class="container">
       <nav class="navbar navbar-expand-md navbar-dark">
-        <a class="navbar-brand" href="#">Penny for your Thoughts</a>
+        <a class="navbar-brand" href="#">Penny for your Thoughts <span class="sr-only">(current)</span></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -43,17 +46,21 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
-            <!-- Home button  -->
-            <!-- <li class="nav-item d-none d-md-block active">
-                     <a class="nav-link" href="#"
-                       >Home <span class="sr-only">(current)</span></a
-                     >
-                     </li> -->
             <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
+              <a
+                class="nav-link"
+                href="about.html"
+                aria-label="About the photographer"
+                >About</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pricing.html">Pricing</a>
+              <a
+                class="nav-link"
+                href="pricing.html"
+                aria-label="Card and print pricing"
+                >Pricing</a
+              >
             </li>
             <li class="nav-item-alt dropdown">
               <a
@@ -64,6 +71,7 @@
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
+                aria-label="Choose section of Gallery"
               >
                 Gallery
               </a>
@@ -87,10 +95,18 @@
           </ul>
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link nav-signup" href="signup.html">Sign Up </a>
+              <a
+                class="nav-link nav-signup"
+                href="signup.html"
+                aria-label="Sign up for updates"
+                >Sign Up
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#"
+              <a
+                class="nav-link disabled"
+                href="#"
+                aria-label="Shopping cart (currently disabled)"
                 ><i class="fas fa-shopping-cart fa-lg"></i
               ></a>
             </li>
@@ -110,6 +126,7 @@
           class="btn btn-cta btn-outline-light"
           role="button"
           href="gallery.html"
+          aria-label="Purchase from Gallery"
           >Purchase</a
         >
       </div>
@@ -144,7 +161,7 @@
     <div class="container-fluid intro-gallery">
       <div class="row">
         <div class="col-12 col-md-4 col-xl-2 hvr-grow">
-          <a href="gallery.html#canals">
+          <a href="gallery.html#canals" aria-label="Canals section of Gallery">
             <p>Canals</p>
             <img
               class="mx-auto d-block"
@@ -154,7 +171,7 @@
           </a>
         </div>
         <div class="col-12 col-md-4 col-xl-2 hvr-grow">
-          <a href="gallery.html#coast">
+          <a href="gallery.html#coast" aria-label="Coast section of Gallery">
             <p>Coast</p>
             <img
               class="mx-auto d-block"
@@ -164,7 +181,10 @@
           </a>
         </div>
         <div class="col-12 col-md-4 col-xl-2 hvr-grow">
-          <a href="gallery.html#flora-and-fauna">
+          <a
+            href="gallery.html#flora-and-fauna"
+            aria-label="Flora and Fauna section of Gallery"
+          >
             <p>Flora and Fauna</p>
             <img
               class="mx-auto d-block"
@@ -174,7 +194,10 @@
           </a>
         </div>
         <div class="col-12 col-md-4 col-xl-2 hvr-grow">
-          <a href="gallery.html#flowers">
+          <a
+            href="gallery.html#flowers"
+            aria-label="Flowers section of Gallery"
+          >
             <p>Flowers</p>
             <img
               class="mx-auto d-block"
@@ -184,7 +207,10 @@
           </a>
         </div>
         <div class="col-12 col-md-4 col-xl-2 hvr-grow">
-          <a href="gallery.html#landscapes">
+          <a
+            href="gallery.html#landscapes"
+            aria-label="Flowers section of Gallery"
+          >
             <p>Landscapes</p>
             <img
               class="mx-auto d-block"
@@ -194,7 +220,7 @@
           </a>
         </div>
         <div class="col-12 col-md-4 col-xl-2 hvr-grow">
-          <a href="gallery.html#trees">
+          <a href="gallery.html#trees" aria-label="Trees section of Gallery">
             <p>Trees</p>
             <img
               class="mx-auto d-block"
@@ -216,11 +242,17 @@
                 href="https://www.facebook.com/"
                 target="_blank"
                 rel="noopener"
+                aria-label="Find out more on Facebook"
               >
                 <i class="fab fa-facebook-f fa-lg mr-md-5 mr-3 fa-2x"> </i>
               </a>
               <!-- Twitter -->
-              <a href="https://www.twitter.com/" target="_blank" rel="noopener">
+              <a
+                href="https://www.twitter.com/"
+                target="_blank"
+                rel="noopener"
+                aria-label="Find out more on Twitter"
+              >
                 <i class="fab fa-twitter fa-lg mr-md-5 mr-3 fa-2x"> </i>
               </a>
               <!--Linkedin -->
@@ -228,6 +260,7 @@
                 href="https://www.linkedin.com/"
                 target="_blank"
                 rel="noopener"
+                aria-label="Find out more on LinkedIn"
               >
                 <i class="fab fa-linkedin-in fa-lg mr-md-5 mr-3 fa-2x"> </i>
               </a>
@@ -236,6 +269,7 @@
                 href="https://www.instagram.com/"
                 target="_blank"
                 rel="noopener"
+                aria-label="Find out more on Instagram"
               >
                 <i class="fab fa-instagram fa-lg mr-md-5 mr-3 fa-2x"> </i>
               </a>
@@ -244,6 +278,7 @@
                 href="https://www.pinterest.com/"
                 target="_blank"
                 rel="noopener"
+                aria-label="Find out more on Pinterest"
               >
                 <i class="fab fa-pinterest fa-lg fa-2x"> </i>
               </a>

@@ -29,9 +29,7 @@
     <!-- Navbar -->
     <div class="container">
       <nav class="navbar navbar-expand-md navbar-dark">
-        <a class="navbar-brand" href="index.html"
-          >Penny for your Thoughts <span class="sr-only">(current)</span></a
-        >
+        <a class="navbar-brand" href="index.html">Penny for your Thoughts</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -45,19 +43,21 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
-            <!-- Home button  -->
-            <!-- <li class="nav-item d-none d-md-block">
-                     <a class="nav-link" href="#"
-                       >Home</a
-                     >
-                     </li> -->
             <li class="nav-item active">
-              <a class="nav-link" href="#"
+              <a
+                class="nav-link"
+                href="#"
+                aria-label="About the photographer"
                 >About <span class="sr-only">(current)</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pricing.html">Pricing</a>
+              <a
+                class="nav-link"
+                href="pricing.html"
+                aria-label="Card and print pricing"
+                >Pricing</a
+              >
             </li>
             <li class="nav-item-alt dropdown">
               <a
@@ -68,6 +68,7 @@
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
+                aria-label="Choose section of Gallery"
               >
                 Gallery
               </a>
@@ -91,10 +92,18 @@
           </ul>
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link nav-signup" href="signup.html"> Sign Up</a>
+              <a
+                class="nav-link nav-signup"
+                href="signup.html"
+                aria-label="Sign up for updates"
+                >Sign Up
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#"
+              <a
+                class="nav-link disabled"
+                href="#"
+                aria-label="Shopping cart (currently disabled)"
                 ><i class="fas fa-shopping-cart fa-lg"></i
               ></a>
             </li>
@@ -154,20 +163,21 @@
     </div>
     <!-- Footer -->
     <footer class="bg-color-footer">
-      <div class="container footer-container">
+      <div class="container">
         <div class="row">
           <div class="col-12 py-5">
-            <div class="text-center">
+            <div class="footer-container text-center">
               <!-- Facebook -->
               <a
                 href="https://www.facebook.com/"
                 target="_blank"
                 rel="noopener"
+                aria-label="Find out more on Facebook"
               >
                 <i class="fab fa-facebook-f fa-lg mr-md-5 mr-3 fa-2x"> </i>
               </a>
               <!-- Twitter -->
-              <a href="https://www.twitter.com/" target="_blank" rel="noopener">
+              <a href="https://www.twitter.com/" target="_blank" rel="noopener" aria-label="Find out more on Twitter">
                 <i class="fab fa-twitter fa-lg mr-md-5 mr-3 fa-2x"> </i>
               </a>
               <!--Linkedin -->
@@ -175,6 +185,7 @@
                 href="https://www.linkedin.com/"
                 target="_blank"
                 rel="noopener"
+                aria-label="Find out more on LinkedIn"
               >
                 <i class="fab fa-linkedin-in fa-lg mr-md-5 mr-3 fa-2x"> </i>
               </a>
@@ -183,6 +194,7 @@
                 href="https://www.instagram.com/"
                 target="_blank"
                 rel="noopener"
+                aria-label="Find out more on Instagram"
               >
                 <i class="fab fa-instagram fa-lg mr-md-5 mr-3 fa-2x"> </i>
               </a>
@@ -191,6 +203,7 @@
                 href="https://www.pinterest.com/"
                 target="_blank"
                 rel="noopener"
+                aria-label="Find out more on Pinterest"
               >
                 <i class="fab fa-pinterest fa-lg fa-2x"> </i>
               </a>
