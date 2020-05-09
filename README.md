@@ -139,7 +139,9 @@ As a **visitor** I want:
 
 ### Site theme
 
-Based on the client's brief and visitors' expectations for the site, a clean, simple aesthetic has been adopted. In previous iterations the theme was more minimalistic in an attempt to focus purely on the content, but this was counterintuitive as the lack of contrast reduced the visibility of important and the site lacked identity. At this point user feedback suggested changing the chosen hero image and after doing so, [Color Scheme Designer](https://colorschemedesigner.com/csd-3.5/) was used to pull out several complimentary colours which tied in with the new hero image. The result is a much more vibrant aesthetic based on blues and gold, which gives the site a bolder appearance and more character. Furthermore, visual feedback for user actions became much clearer and the identity of separate elements (e.g images with shadows, golden horizontal rules to indicate consitent headings etc) became more apparent.
+Based on the client's brief and visitors' expectations for the site, a clean, simple aesthetic has been adopted. In previous iterations the theme was more minimalistic in an attempt to focus purely on the content, but this was counterintuitive as the lack of contrast reduced the visibility of important and the site lacked identity.
+
+At this point user feedback suggested changing the chosen hero image and after doing so, [Color Scheme Designer](https://colorschemedesigner.com/csd-3.5/) was used to pull out several complimentary colours which tied in with the new hero image. The result is a much more vibrant aesthetic based on blues and gold, which gives the site a bolder appearance and more character. Furthermore, visual feedback for user actions became much clearer and the identity of separate elements (e.g images with shadows, golden horizontal rules to indicate consitent headings etc) became more apparent.
 
 ## Features
 
@@ -264,10 +266,18 @@ Based on the client's brief and visitors' expectations for the site, a clean, si
 ### Automated testing
 
 - [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) - ran an audit on all pages for both desktop and mobile. Summary:
-    - Performance - the worst metric due to issues around image size and not using next-gen filetypes, particularly on gallery.html where the score was 82% on mobile devices. It is beyond the scope of this project to address this
-    - Accessibility - navbar links missing discernable names, despite there being relevant text within the links (and no icon links without text) and aria-labels. Need to resolve this. Score still 90%+
-    - Best Practices - 
-    - SEO - was missing `<meta name="description" content="..." />` but once added now scores 100% across all pages
+    - Performance = **Average**
+        - The worst metric due to issues around image size and not using next-gen filetypes, particularly on gallery.html where the score was 81% on desktop - it is beyond the scope of this project to address this
+        - Unused CSS - removed hover.min.css from all but index.html where it is used on the intro gallery images
+    - Accessibility = **Good**
+        - Various links missing discernable names (mainly nav bar and footer) - fixed
+        - Insufficient contrast ratio on hero image and nav bar Brand
+        - Lowest score 96% on desktop following amendments
+    - Best Practices = **Good**
+        - Front-end Javascript libraries with known security vulnerabilities (Bootstrap and jQuery) - it is beyond the scope of this project to address this
+    - SEO = **Good**
+        - `head` was missing `<meta name="description" content="..." />` - fixed
+        - Scores 100% across all pages following amendments
 - [W3C - HTML](https://validator.w3.org/) - once `alt` tags had been filled, no HTML issues detected - **PASS**
 - [W3C - CSS](https://jigsaw.w3.org/css-validator/) - no CSS issues detected - **PASS**
 - [Unicorn revealer - overflow](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln/related) - tested all pages and no evidence of overflow - **PASS**
