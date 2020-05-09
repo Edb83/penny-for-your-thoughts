@@ -33,8 +33,6 @@ body {
           flex: 1;
 }
 
-/* Special paddings/margins/text */
-
 .uppercase {
   text-transform: uppercase;
 }
@@ -252,7 +250,6 @@ footer {
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
   -o-transition-property: transform;
-  transition-property: transform;
   transition-property: transform, -webkit-transform;
 }
 

@@ -235,10 +235,11 @@ Based on the client's brief and visitors' expectations for the site, a clean, si
 
 ### Style and theme
 
-- [Bootstrap](https://getbootstrap.com/) - Responsive grid system (prioritising a mobile-first design philosophy) and boilerplate styling
+- [Bootstrap](https://getbootstrap.com/) - Responsive grid and boilerplate styling framework
 - [Color Scheme Designer](https://colorschemedesigner.com/csd-3.5/) - Complimentary color scheme for the site
 - [CSS Tricks](https://css-tricks.com/examples/hrs/) - Specifically for linear-gradiant horizontal rule
-- [Font Awesome](https://fontawesome.com/) - Icons used for shopping cart in navbar
+- [Font Awesome](https://fontawesome.com/) - Icon used for shopping cart in navbar
+- [Free Formatter](https://www.freeformatter.com/html-formatter.html) - Formatting HTML code
 - [Google Fonts](https://fonts.google.com/) - Open Sans and Monserrat fonts
 - [Zyro Logo Maker](https://zyro.com/logo-maker) - Creating the favicon
 
