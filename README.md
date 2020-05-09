@@ -263,6 +263,11 @@ Based on the client's brief and visitors' expectations for the site, a clean, si
 
 ### Automated testing
 
+- [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) - ran an audit on all pages for both desktop and mobile. Summary:
+    - Performance - the worst metric due to issues around image size and not using next-gen filetypes, particularly on gallery.html where the score was 82% on mobile devices. It is beyond the scope of this project to address this
+    - Accessibility - navbar links missing discernable names, despite there being relevant text within the links (and no icon links without text) and aria-labels. Need to resolve this. Score still 90%+
+    - Best Practices - 
+    - SEO - was missing `<meta name="description" content="..." />` but once added now scores 100% across all pages
 - [W3C - HTML](https://validator.w3.org/) - once `alt` tags had been filled, no HTML issues detected - **PASS**
 - [W3C - CSS](https://jigsaw.w3.org/css-validator/) - no CSS issues detected - **PASS**
 - [Unicorn revealer - overflow](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln/related) - tested all pages and no evidence of overflow - **PASS**
