@@ -109,7 +109,31 @@ As a **visitor** I want:
 
 ### Wireframes
 
---TBC--
+- [Sitemap](wireframes/sitemap.png)
+
+#### Desktop
+
+- [Home](wireframes/home-desktop.png)
+- [About](wireframes/about-desktop.png)
+- [Pricing](wireframes/pricing-desktop.png)
+- [Gallery](wireframes/gallery-desktop.png)
+- [Signup](wireframes/signup-desktop.png)
+
+#### Tablet
+
+- [Home](wireframes/home-tablet.png)
+- [About](wireframes/about-tablet.png)
+- [Pricing](wireframes/pricing-tablet.png)
+- [Gallery](wireframes/gallery-tablet.png)
+- [Signup](wireframes/signup-desktop.png)
+
+#### Mobile
+
+- [Home](wireframes/home-mobile.png)
+- [About](wireframes/about-mobile.png)
+- [Pricing](wireframes/pricing-mobile.png)
+- [Gallery](wireframes/gallery-mobile.png)
+- [Signup](wireframes/signup-mobile.png)
 
 ### Site theme
 
@@ -324,26 +348,29 @@ The site has been designed with a mobile-first philosophy and, supported by [Boo
 
 The following issues arose and have each been addressed:
 
-| Responsiveness issue | Solution |
-| :---- | :------- |
-Navbar Brand causes hamburger icon to spill | Reduced starting `font-size`, removed `margin-right`and added media query to increase above `min-width: 370px`
-Navbar dropdown not visible on landscape mobile devices | Added media query to set `overflow-y: scroll`. See Issues and resolutions section below 
-Landing page main heading ran to several lines on smaller displays | Reduced starting `font-size` of callout header and paragraph and added media query to increase above `min-width: 768px`
-Pricing tables appear too elongated on larger displays when filling two columns | Added two media queries to increase `padding` above above `min-width: 768px` and `min-width: 992px`
-Image of photographer in About suffered from unwanted top margin (which was needed in single-column views) when sharing row with text | Added media query to remove `margin-top` of the container and change `max-height` and `max-width` of the image
-Gallery images on small displays appear too wide | See Issues and resolutions below
+| Responsiveness issue                                                                                                                  | Solution                                                                                                                |
+| :------------------------------------------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------------------- |
+| Navbar Brand causes hamburger icon to spill                                                                                           | Reduced starting `font-size`, removed `margin-right`and added media query to increase above `min-width: 370px`          |
+| Navbar dropdown not visible on landscape mobile devices                                                                               | Added media query to set `overflow-y: scroll`. See Issues and resolutions section below                                 |
+| Landing page main heading ran to several lines on smaller displays                                                                    | Reduced starting `font-size` of callout header and paragraph and added media query to increase above `min-width: 768px` |
+| Pricing tables appear too elongated on larger displays when filling two columns                                                       | Added two media queries to increase `padding` above above `min-width: 768px` and `min-width: 992px`                     |
+| Image of photographer in About suffered from unwanted top margin (which was needed in single-column views) when sharing row with text | Added media query to remove `margin-top` of the container and change `max-height` and `max-width` of the image          |
+| Gallery images on small displays appear too wide                                                                                      | See Issues and resolutions below                                                                                        |
 
 #### Browsers
 
 Tested on:
+
 - Chrome
 - Edge
 - Firefox
-- Safari (iOS) - issue with styles being overwritten on call to action (Purchase button on landing page). See Unresolved issues section below
+- Safari (iOS)
+  - Noted issue with styles being overwritten on call to action (Purchase button on landing page). See Unresolved issues section below
 
 #### Screen sizes
 
 Tested with Chrome DevTools using profiles for:
+
 - Moto G4
 - Galaxy S5
 - Pixel 2
@@ -353,9 +380,10 @@ Tested with Chrome DevTools using profiles for:
 - iPhone 6/7/8 Plus
 - iPhone X
 - iPad
-- iPad Pro 
+- iPad Pro
 
 ... and also using the responsive profiles of:
+
 - Mobile S (320px)
 - Mobile M (375px)
 - Mobile L (425px)
@@ -364,10 +392,10 @@ Tested with Chrome DevTools using profiles for:
 - Laptop L (1440px)
 
 Real world testing on:
+
 - iPhone 6
 - iPhone 11 Pro
 - Asus ZenBook
-
 
 ### Issues and resolutions
 
@@ -458,7 +486,9 @@ Further reading and troubleshooting on cloning a repository from GitHub can be f
 ## Credits
 
 Carlos (Code Institute student)
+
 Jonathan Munz (Code Institute mentor)
+
 Richard Wells (Code Institute lead)
 
 Extremely useful feedback on appearance and user experience was provided by Lola, Tash, Mims, Beckx and Peter!
