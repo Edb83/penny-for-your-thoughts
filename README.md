@@ -1,8 +1,6 @@
 # Penny for your Thoughts
 
-<div>
-<img src="responsive.jpg" alt="Responsive sample">
-</div>
+![alt text](responsive.jpg "Responsive sample")
 
 **[Live site](https://edb83.github.io/milestone1/)**
 
