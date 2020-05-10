@@ -314,8 +314,6 @@ _Note: the unwanted styling applied by Safari (noted as Unresolved issue below)_
 - Click each intro gallery circular image to check it takes you to the relevant anchor within the Gallery page - **PASS**
 - On desktop, hover over each intro gallery circular image to check visual feedback is provided (hvr-grow effect) - **PASS**
 
-_Note: minor distortion of the text. A decision was made to apply this effect to the entire block to provide a smoother application of the effect when sweeping over the images_
-
 **4. About page**
 
 - Click the "Contact me" email link to check it creates a new email to the photographer - **PASS**
@@ -439,6 +437,14 @@ Real world testing on:
 
   - Resolved by incrementally reducing the width of intro-gallery and finally settling on `width: 91%`
 
+  - **Links on social media icons in footer apply to the entire containing div**
+
+  - Resolved by
+
+- **Links / hover effects on intro gallery circular images apply to the entire containing div**
+
+  - Resolved using suggestion from [Stack Overflow](https://stackoverflow.com/questions/29978500/only-make-a-centered-image-a-link-instead-of-the-whole-parent-div) moving size styling from the image to the `<a>` element within a newly created container class `.intro-gallery-image` and then adding `display: flex`
+  
 - **There is white space beneath footer on pages with little content (Pricing and About)**
 
   - Resolved by using a suggestion from [Philip Walton](https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/) to set body element `flex-direction: column` and `min-height: 100vh`. This was a more elegant solution than changing the structure of the site e.g. by adding the Pricing and About pages further down the Landing Page and relying on achor links, or by simply increasing the content on each of the affected pages

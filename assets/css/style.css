@@ -229,11 +229,18 @@ footer {
   
 }
 
+/* .sm-links-container a {
+    display: inline-block;
+    position: relative;
+    padding: 0px 10px;
+} */
+
 .sm-links-container i,
 .copyright-container p {
   color: #fff;
 }
 
+.sm-links-container a:hover,
 .sm-links-container i:hover {
   color: #960;
   text-decoration: none;
