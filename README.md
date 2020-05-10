@@ -35,6 +35,7 @@ As the **client** I want
 - An immediate link to the gallery
   - The gallery is accessible in the nav bar, call to action and intro gallery images
 - A gallery which allows visitors to quickly browse through high quality images in their original aspect ration and to add them to a shopping basket
+
   - The gallery has a clean and effective modal which displays Full HD images in their original aspect ration and allows the entire gallery to be browsed with just the mouse wheel / swiping. There is an "Add (to basket)" buttons on each image for a shopping experience which is expected on sites nowadays
 
     _NB the table below is a repeat of info above_
@@ -84,6 +85,7 @@ As a **visitor** I want:
 - For the signup form to show me if I have inputted incorrectly
   - Addressed in the Manual testing section below
 - For links to external sites to open in a separate tab to prevent loss of focus
+
   - This currently only applies to the social media links in the footer, but they all open in a separate browser tab
 
     _NB the table below is a repeat of info above_
@@ -266,18 +268,18 @@ At this point user feedback suggested changing the chosen hero image and after d
 ### Automated testing
 
 - [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) - ran an audit on all pages for both desktop and mobile. Summary:
-    - Performance = **Average**
-        - The worst metric due to issues around image size and not using next-gen filetypes, particularly on gallery.html where the score was 81% on desktop - it is beyond the scope of this project to address this
-        - Unused CSS - removed hover.min.css from all but index.html where it is used on the intro gallery images
-    - Accessibility = **Good**
-        - Various links missing discernable names (mainly nav bar and footer) - fixed by adding aria labels to all links across the site
-        - Insufficient contrast ratio on hero image and nav bar Brand
-        - Lowest score 96% on desktop following amendments
-    - Best Practices = **Good**
-        - Front-end Javascript libraries with known security vulnerabilities (Bootstrap and jQuery) - it is beyond the scope of this project to address this
-    - SEO = **Good**
-        - `head` was missing `<meta name="description" content="..." />` - fixed
-        - Scores 100% across all pages following amendments
+  - Performance = **Average**
+    - The worst metric due to issues around image size and not using next-gen filetypes, particularly on gallery.html where the score was 81% on desktop - it is beyond the scope of this project to address this
+    - Unused CSS - removed hover.min.css from all but index.html where it is used on the intro gallery images
+  - Accessibility = **Good**
+    - Various links missing discernable names (mainly nav bar and footer) - fixed by adding aria labels to all links across the site
+    - Insufficient contrast ratio on hero image and nav bar Brand
+    - Lowest score 96% on desktop following amendments
+  - Best Practices = **Good**
+    - Front-end Javascript libraries with known security vulnerabilities (Bootstrap and jQuery) - it is beyond the scope of this project to address this
+  - SEO = **Good**
+    - `head` was missing `<meta name="description" content="..." />` - fixed
+    - Scores 100% across all pages following amendments
 - [W3C - HTML](https://validator.w3.org/) - once `alt` tags had been filled, no HTML issues detected - **PASS**
 - [W3C - CSS](https://jigsaw.w3.org/css-validator/) - no CSS issues detected - **PASS**
 - [Unicorn revealer - overflow](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln/related) - tested all pages and no evidence of overflow - **PASS**
@@ -368,6 +370,7 @@ The following issues arose and have each been addressed:
 | :------------------------------------------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------------------- |
 | Navbar Brand causes hamburger icon to spill                                                                                           | Reduced starting `font-size`, removed `margin-right`and added media query to increase above `min-width: 370px`          |
 | Navbar dropdown not visible on landscape mobile devices                                                                               | Added media query to set `overflow-y: scroll`. See Issues and resolutions section below                                 |
+| Footer social media icons appear cramped on larger displays                                                                           | Added media query to increase `margin: 0 1rem;`                                                                         |
 | Landing page main heading ran to several lines on smaller displays                                                                    | Reduced starting `font-size` of callout header and paragraph and added media query to increase above `min-width: 768px` |
 | Pricing tables appear too elongated on larger displays when filling two columns                                                       | Added two media queries to increase `padding` above above `min-width: 768px` and `min-width: 992px`                     |
 | Image of photographer in About suffered from unwanted top margin (which was needed in single-column views) when sharing row with text | Added media query to remove `margin-top` of the container and change `max-height` and `max-width` of the image          |
@@ -439,12 +442,12 @@ Real world testing on:
 
   - **Links on social media icons in footer apply to the entire containing div**
 
-  - Resolved by
+  - Resolved by switching to an `inline-flex` list and adding class `sm-list` to `a` elements. Subsequently recognised that playing with margins bypasses this issue when compared with padding, however overall the approach is now more flexible. Further issues arose relating to spacing of the icons so it was necessary to include media queries to increase the starting value of `margin: 0 1rem`
 
 - **Links / hover effects on intro gallery circular images apply to the entire containing div**
 
   - Resolved using suggestion from [Stack Overflow](https://stackoverflow.com/questions/29978500/only-make-a-centered-image-a-link-instead-of-the-whole-parent-div) moving size styling from the image to the `<a>` element within a newly created container class `.intro-gallery-image` and then adding `display: flex`
-  
+
 - **There is white space beneath footer on pages with little content (Pricing and About)**
 
   - Resolved by using a suggestion from [Philip Walton](https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/) to set body element `flex-direction: column` and `min-height: 100vh`. This was a more elegant solution than changing the structure of the site e.g. by adding the Pricing and About pages further down the Landing Page and relying on achor links, or by simply increasing the content on each of the affected pages
