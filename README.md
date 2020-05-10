@@ -279,7 +279,8 @@ At this point user feedback suggested changing the chosen hero image and after d
     - Front-end Javascript libraries with known security vulnerabilities (Bootstrap and jQuery) - it is beyond the scope of this project to address this
   - SEO = **Good**
     - `head` was missing `<meta name="description" content="..." />` - fixed
-    - Scores 100% across all pages following amendments
+    - Scores 95% on Gallery due to 'Add' button being smaller than 48px x 48px. Tested with larger button sizes but they took up too much real estate - it is beyond the scope of this project to address this
+    - Scores 100% across all other pages following amendments
 - [W3C - HTML](https://validator.w3.org/) - once `alt` tags had been filled, no HTML issues detected - **PASS**
 - [W3C - CSS](https://jigsaw.w3.org/css-validator/) - no CSS issues detected - **PASS**
 - [Unicorn revealer - overflow](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln/related) - tested all pages and no evidence of overflow - **PASS**

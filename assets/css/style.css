@@ -473,7 +473,7 @@ table caption {
   }
 }
 
-    /* Allows the hero image to be displayed on mobile devices (iOS) */
+    /* Allows the hero image to be displayed on mobile devices (iOS), however it will appear as a static image and will not 'reveal' itself when scrolling down the page */
 @media screen and (max-width: 1024px) {
   .callout-container {
     background-attachment: scroll;
