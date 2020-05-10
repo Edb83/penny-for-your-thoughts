@@ -270,7 +270,7 @@ At this point user feedback suggested changing the chosen hero image and after d
         - The worst metric due to issues around image size and not using next-gen filetypes, particularly on gallery.html where the score was 81% on desktop - it is beyond the scope of this project to address this
         - Unused CSS - removed hover.min.css from all but index.html where it is used on the intro gallery images
     - Accessibility = **Good**
-        - Various links missing discernable names (mainly nav bar and footer) - fixed
+        - Various links missing discernable names (mainly nav bar and footer) - fixed by adding aria labels to all links across the site
         - Insufficient contrast ratio on hero image and nav bar Brand
         - Lowest score 96% on desktop following amendments
     - Best Practices = **Good**

@@ -79,7 +79,7 @@ body {
   z-index: 1;
   left: 0;
 }
-
+/* Navbar - "Penny for your Thoughts" */
 .navbar-brand {
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
@@ -88,16 +88,16 @@ body {
   color: #fff;
   margin-right: 0;
 }
-
+/* Navbar - "Penny for your Thoughts" hover */
 .navbar-dark .navbar-brand:focus,
 .navbar-dark .navbar-brand:hover {
   color: #036;
 }
-
+/* Navbar - items */
 .navbar-dark .navbar-nav .nav-link {
   color: #fff;
 }
-
+/* Navbar - items hover & active */
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .active > .nav-link {
   color: #036;
@@ -116,7 +116,7 @@ body {
   margin-bottom: 30px;
   letter-spacing: 4px;
 }
-
+/* Headings - gallery section headings */
 .heading-gallery-category {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
@@ -143,7 +143,7 @@ body {
   border-bottom-color: #036;
 }
 
-/* Jumbotron */
+/* Jumbotron - main title "Penny for your Thoughts and subheading */
 
 .callout-contents {
   -ms-flex-item-align: center;
@@ -172,28 +172,37 @@ body {
 
 /* Intro */
 
+/* Three text blocks below Hero image */
 .intro-reasons p {
   margin: 0;
   padding: 20px 0px;
   letter-spacing: 1px;
 }
-
+/* Container for the circular images below Hero image - reduced width prevents overflow caused by hvr.grow effect */
 .intro-gallery {
   width: 91%;
 }
+/* Circular images below Hero image */
 
-.intro-gallery img {
+.intro-gallery-image a {
+  display: flex;
   margin: 20px auto;
   height: 150px;
   width: 150px;
-  -o-object-fit: cover;
+  border-radius: 50%;
+}
+.intro-gallery-image img {
+  height: 100%;
+  width: 100%;
+      -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
   -webkit-box-shadow: 0px 5px 8px #036;
           box-shadow: 0px 5px 8px #036;
 }
 
-.intro-gallery p {
+/* Text inside circular images below Hero image. Works with hvr.grow effect */
+.intro-gallery-image p {
   margin: 0;
   position: absolute;
   top: 50%;
@@ -216,20 +225,18 @@ footer {
   border-style: solid;
   border-color: transparent;
   border-top-color: #036;
+  background-color: #c90;
+  
 }
 
-.footer-container a,
+.sm-links-container i,
 .copyright-container p {
   color: #fff;
 }
 
-.footer-container a:hover {
+.sm-links-container i:hover {
   color: #960;
   text-decoration: none;
-}
-
-.bg-color-footer {
-  background-color: #c90;
 }
 
 /* Grow */
