@@ -242,15 +242,17 @@ footer {
     margin: 0;
     padding: 0;
 }
-
 .sm-links {
-    margin: 1rem;
+    margin: 0 2rem;
     display: flex;
 }
 
 .sm-links-container i,
 .copyright-container p {
   color: #fff;
+  display: inline-block;
+  /* Line height is used to vertically center the social media icons within the block */
+  line-height: 27px; 
 }
 
 .sm-links-container a:hover,
