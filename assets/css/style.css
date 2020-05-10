@@ -226,14 +226,27 @@ footer {
   border-color: transparent;
   border-top-color: #036;
   background-color: #c90;
-  
+  }
+
+
+
+.sm-links-container {
+    align-content: center;
+    justify-content: center;
+    display: flex;
 }
 
-/* .sm-links-container a {
-    display: inline-block;
-    position: relative;
-    padding: 0px 10px;
-} */
+.sm-links-container ul {
+    display: inline-flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sm-links {
+    margin: 1rem;
+    display: flex;
+}
 
 .sm-links-container i,
 .copyright-container p {
