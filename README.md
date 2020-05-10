@@ -2,7 +2,7 @@
 
 ![alt text](responsive.jpg "Responsive sample")
 
-**[Live site](https://edb83.github.io/milestone1/)**
+**[Live site](https://edb83.github.io/penny-for-your-thoughts/)**
 
 ---
 
