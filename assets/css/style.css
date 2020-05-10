@@ -22,15 +22,15 @@ body {
   min-height: 100vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 /* These settings are used to position the footer at the bottom of the page where there is insufficient content to naturally position it there (About, Pricing, Signup) */
 .inner-page-contents {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .uppercase {
@@ -48,7 +48,8 @@ body {
 .hr-gradient--yellow {
   background-image: -webkit-gradient(
     linear,
-    left top, right top,
+    left top,
+    right top,
     from(rgba(38, 77, 38, 0)),
     color-stop(rgb(204, 153, 0)),
     to(rgba(38, 77, 38, 0))
@@ -147,8 +148,8 @@ body {
 
 .callout-contents {
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
   width: 100%;
   background-color: transparent;
   text-align: center;
@@ -194,11 +195,11 @@ body {
 .intro-gallery-image img {
   height: 100%;
   width: 100%;
-      -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: cover;
+  object-fit: cover;
   border-radius: 50%;
   -webkit-box-shadow: 0px 5px 8px #036;
-          box-shadow: 0px 5px 8px #036;
+  box-shadow: 0px 5px 8px #036;
 }
 
 /* Text inside circular images below Hero image. Works with hvr.grow effect */
@@ -208,8 +209,8 @@ body {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   font-size: 1.6rem;
   color: #fff;
   text-align: center;
@@ -226,25 +227,19 @@ footer {
   border-color: transparent;
   border-top-color: #036;
   background-color: #c90;
-  }
-
-
-
+}
+/* Social media container */
 .sm-links-container {
-    align-content: center;
-    justify-content: center;
-    display: flex;
+  align-content: center;
+  justify-content: center;
+  display: flex;
 }
 
 .sm-links-container ul {
-    display: inline-flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-.sm-links {
-    margin: 0 2rem;
-    display: flex;
+  display: inline-flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .sm-links-container i,
@@ -252,13 +247,19 @@ footer {
   color: #fff;
   display: inline-block;
   /* Line height is used to vertically center the social media icons within the block */
-  line-height: 27px; 
+  line-height: 27px;
 }
 
+/* Social media icon hover styling */
 .sm-links-container a:hover,
 .sm-links-container i:hover {
   color: #960;
   text-decoration: none;
+}
+
+/* Social media icon margins - this has responsive media queries for larger displays. NB adding padding here will increase the 'clickable' area of links */
+.sm-links {
+  margin: 0 1rem;
 }
 
 /* Grow */
@@ -267,15 +268,15 @@ footer {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  transform: translateZ(0);
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   -webkit-transition-duration: 0.3s;
-       -o-transition-duration: 0.3s;
-          transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
   -o-transition-property: transform;
@@ -286,8 +287,8 @@ footer {
 .hvr-grow:focus,
 .hvr-grow:active {
   -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 /* About */
@@ -297,15 +298,15 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-top: 3rem;
 }
 
 .about-image img {
   border-radius: 5px;
   -webkit-box-shadow: 0px 5px 8px #036;
-          box-shadow: 0px 5px 8px #036;
+  box-shadow: 0px 5px 8px #036;
   max-height: -webkit-fit-content;
   max-height: -moz-fit-content;
   max-height: fit-content;
@@ -313,7 +314,7 @@ footer {
   max-width: -moz-fit-content;
   max-width: fit-content;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 /* Pricing */
@@ -355,11 +356,11 @@ table caption {
 .pic img {
   height: 200px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin-top: 20px;
   border-radius: 5px;
   -webkit-box-shadow: 0px 5px 8px #036;
-          box-shadow: 0px 5px 8px #036;
+  box-shadow: 0px 5px 8px #036;
 }
 
 .pic button {
@@ -367,7 +368,7 @@ table caption {
   top: 95%;
   left: 87%;
   -webkit-transform: translate(-100%, -100%);
-          transform: translate(-100%, -100%);
+  transform: translate(-100%, -100%);
   -ms-transform: translate(-90%, -100%);
   opacity: 1;
   background-color: #39c;
@@ -405,7 +406,6 @@ table caption {
 }
 
 @media screen and (min-width: 768px) {
-    
   /* Increases the size of callout-contents on larger displays */
   .callout-contents h1 {
     font-size: 3.5rem;
@@ -428,26 +428,14 @@ table caption {
   }
 }
 
-/* Allows the hero image to be displayed on mobile devices (iOS) */
-@media screen and (max-width: 1024px) {
-  .callout-container {
-    background-attachment: scroll;
-  }
-}
-
-/* Adds ability to scroll navbar dropdown items on mobile devices where they would be hidden/inaccessible */
-@media screen and (max-width: 767px) and (max-height: 475px) {
-  .dropdown-menu {
-    height: 115px;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
-  }
-}
-
-
 @media screen and (min-width: 992px) {
-
-    /* Reduces the margin above the about-image on larger displays and adjusts image to fit container */
+  
+    /* Increases the margin of social media link icons on larger displays */
+  .sm-links {
+    margin: 0 2rem;
+  }
+  
+  /* Reduces the margin above the about-image on larger displays and adjusts image to fit container */
   .about-image {
     margin-top: 0;
     height: -webkit-fit-content;
@@ -469,9 +457,34 @@ table caption {
   }
 }
 
+
+
+@media screen and (min-width: 1200px) {
+  /* Increases the margin of social media link icons on larger displays */
+  .sm-links {
+    margin: 0 3rem;
+  }
+}
+
 /* Alters the height of gallery images to prevent them becoming stretched on mobile devices when displayed one per row */
 @media screen and (max-width: 575px) {
   .pic img {
     height: 100%;
+  }
+}
+
+/* Adds ability to scroll navbar dropdown items on mobile devices where they would be hidden/inaccessible */
+@media screen and (max-width: 767px) and (max-height: 475px) {
+  .dropdown-menu {
+    height: 115px;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Allows the hero image to be displayed on mobile devices (iOS) */
+@media screen and (max-width: 1024px) {
+  .callout-container {
+    background-attachment: scroll;
   }
 }
