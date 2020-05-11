@@ -6,11 +6,39 @@
 
 ---
 
+## Index
+
+- <a href="#project">Context</a>
+- <a href="#ux">UX</a>
+    - <a href="#ux-stories">User stories</a>
+    - <a href="#ux-wireframes">Wireframes</a>
+    - <a href="#ux-theme">Theme</a>
+- <a href="#features">Features</a>
+    - <a href="#features-all">Site wide</a>
+    - <a href="#features-pages">Pages</a>
+    - <a href="#features-future">Still to implement</a>
+- <a href="#technologies">Technologies Used</a>
+- <a href="#testing">Testing</a>
+    - <a href="#testing-auto">Automated</a>
+    - <a href="#testing-manual">Manual</a>
+    - <a href="#testing-responsive">Responsive</a>
+    - <a href="#testing-resolved">Resolved issues</a>
+    - <a href="#testing-unresolved">Unresolved issues</a>
+    - <a href="#testing-bugs">Known bugs</a>
+- <a href="#deployment">Deployment</a>
+- <a href="#credits">Credits</a>
+
+---
+
+<span id="context"></span>
+
 ## Context
 
 This site is a showcase for an aspiring photographer's work, which is available to purchase either on card or enlarged print.
 
 Since moving to the countryside, Penny has found herself increasingly inspired by her beautiful surroundings and is keen to share them with a wider audience. More than ever in these uncertain, digital times, there's comfort to be found in a personal message written on a physical card, adorned with beautiful, candid pictures of nature.
+
+<span id="ux"></span>
 
 ## UX
 
@@ -19,6 +47,8 @@ Since moving to the countryside, Penny has found herself increasingly inspired b
 The site is aimed at people looking for greeting cards, specifically those who value supporting local endeavours rather than large, established corporations. The site’s intended audience are people who value the personal touch and ability to communicate directly with the seller.
 
 The enterprise is humble but, as evidenced by the quality of the pictures, has a wealth of emotive images from the English countryside to share. These are the scenes we may all have witnessed but which are seldom captured.
+
+<span id="ux-stories"></span>
 
 ### User stories
 
@@ -153,6 +183,8 @@ As a **visitor** I want:
 | Signup form to show me if I have inputted incorrectly                                            | Addressed in the Manual testing section below                                                                                                                                                                                                                                                                                  |
 | Links to external sites to open in a separate tab to prevent loss of focus                       | This currently only applies to the social media links in the footer, but they all open in a separate browser tab                                                                                                                                                                                                               |
 
+<span id="ux-wireframes"></span>
+
 ### Wireframes
 
 - [Sitemap](assets/wireframes/sitemap.png)
@@ -187,7 +219,11 @@ Based on the client's brief and visitors' expectations for the site, a clean, si
 
 At this point, user feedback suggested changing the hero image and after doing so, [Color Scheme Designer](https://colorschemedesigner.com/csd-3.5/) was used to pull out several complimentary colours which tied in with the new hero image. The result is a much more vibrant aesthetic based on blues and gold, which gives the site a bolder appearance and more character. Furthermore, visual feedback for user actions became much clearer and the identity of separate elements (e.g images with shadows, golden horizontal rules to indicate consitent headings etc) became more apparent.
 
+<span id="features"></span>
+
 ## Features
+
+<span id="features-all"></span>
 
 ### Site-wide
 
@@ -206,6 +242,8 @@ At this point, user feedback suggested changing the hero image and after doing s
 - Social media links with a blank target to prevent disruption to the browsing experience
 - Copyright
 - Footer is always positioned at the bottom of the page for consistency and visual appeal (primarily for larger displays where content would otherwise not fill the viewport)
+
+<span id="features-pages"></span>
 
 ### Pages
 
@@ -244,6 +282,8 @@ At this point, user feedback suggested changing the hero image and after doing s
 - Validation of user inputs (blank fields, typical email format), indicating any errors clearly
 - _NB at present this form is not linked up to any database and will not record inputs_
 
+<span id="features-future"></span>
+
 ### Features left to implement
 
 - Shopping basket and purchasing functions
@@ -263,6 +303,8 @@ At this point, user feedback suggested changing the hero image and after doing s
   _e.g 'Show me what Twisted Tree looks like on a card / in large print'_
 
 - Option to order cards with a choice of messages / bespoke messages
+
+<span id="technologies"></span>
 
 ## Technologies Used
 
@@ -305,7 +347,11 @@ At this point, user feedback suggested changing the hero image and after doing s
 - [Stack Overflow](https://stackoverflow.com/)
 - [W3 Schools](https://www.w3schools.com/)
 
+<span id="testing"></span>
+
 ## Testing
+
+<span id="testing-auto"></span>
 
 ### Automated testing
 
@@ -327,6 +373,8 @@ At this point, user feedback suggested changing the hero image and after doing s
 - [W3C - CSS](https://jigsaw.w3.org/css-validator/) - no CSS errors detected - **PASS**
     - Update: passing CSS code through [Autoprefixer](https://autoprefixer.github.io/) produced 47 warnings related to unknown vendor extensions
 - [Unicorn revealer - overflow](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln/related) - tested all pages and no evidence of overflow - **PASS**
+
+<span id="testing-manual"></span>
 
 ### Manual testing
 
@@ -404,6 +452,7 @@ _Note: initially some file names were incorrect but were all amended_
   - enter something different for Password and Confirm Password to check validation displays an input issue - **FAIL**
   - enter a space (" ") as either password to check validation displays an input issue - **FAIL**
 
+<span id="testing-responsive"></span>
 
 ### Responsiveness
 
@@ -461,7 +510,10 @@ Real world testing on:
 - iPhone 11 Pro
 - Asus ZenBook
 
+
 ### Issues and resolutions
+
+<span id="testing-resolved"></span>
 
 #### Resolved
 
@@ -513,6 +565,8 @@ Real world testing on:
 
   - Resolved by using Bootstrap's recommended `needs-validation` class and `novalidate`. A block styled with `invalid-feedback` was avoided to prevent error messages appearing and shifting the lines of input fields
 
+<span id="testing-unresolved"></span>
+
 #### Unresolved
 
 - **iOS browser adds unwanted styling to Pricing button in hero image**
@@ -523,11 +577,17 @@ Real world testing on:
 
   - This is a key issue which needs to be resolved but is outside the scope of this project
 
+<span id="testing-bugs"></span>
+
 ### Known bugs
 
 - None at present
 
+<span id="deployment"></span>
+
 ## Deployment
+
+### How to deploy
 
 To deploy this page to GitHub Pages from its [GitHub repository](https://github.com/Edb83/milestone1), the following steps were taken:
 
@@ -537,7 +597,7 @@ To deploy this page to GitHub Pages from its [GitHub repository](https://github.
 4. On selecting Master Branch the page is automatically refreshed, the website is now deployed
 5. Scroll back down to the **GitHub Pages** section in **Settings** to retrieve the link to the deployed website. It may take a short time to go live, but typically less than 60 seconds
 
-### How to run this project locally
+### How to run locally
 
 To clone this project from GitHub:
 
@@ -555,6 +615,8 @@ git clone https://github.com/Edb83/milestone1.git
 
 Further reading and troubleshooting on cloning a repository from GitHub can be found [here](https://help.github.com/en/articles/cloning-a-repository).
 
+<span id="credits"></span>
+
 ## Credits
 
 Carlos (Code Institute Slack Community Lead)
@@ -565,14 +627,14 @@ Richard Wells (Code Institute Lead)
 
 Extremely useful feedback on appearance and user experience was provided by Lola, Tash, Mims, Beckx and Peter!
 
-## Content
+### Content
 
 The text in the About page and photos used throughout this site were obtained from the client, Penny Holland. All other text was written by me and agreed with the client.
 
-## Acknowledgements
+### Acknowledgements
 
 I received inspiration for this project from Penny Holland
 
-## Disclaimer
+### Disclaimer
 
 This site was developed for educational purposes but will likely be put to real world use once the remaining features have been implemented according to client's wishes.
