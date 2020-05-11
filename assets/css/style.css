@@ -7,7 +7,7 @@
 
 /* Google fonts */
 
-@import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600|Open+Sans&display:300,400=swap");
 
 /* Site-wide */
 
@@ -82,7 +82,7 @@ body {
 }
     /* Navbar - "Penny for your Thoughts" */
 .navbar-brand {
-  font-weight: bold;
+  font-weight: 600;
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   letter-spacing: 1px;
@@ -119,7 +119,7 @@ body {
     /* Headings - gallery section headings */
 .heading-gallery-category {
   font-family: "Montserrat", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   padding-top: 1rem;
   letter-spacing: 1px;
 }
@@ -402,13 +402,9 @@ table caption {
   /* Increases the size of callout-contents on larger displays */
   .callout-contents h1 {
     font-size: 3.5rem;
-    font-weight: 300;
-    line-height: 1.2;
   }
   .callout-contents p {
     font-size: 1.5rem;
-    font-weight: 300;
-    line-height: 1.2;
   }
 
   /* Increases the external padding and reduces the horizontal padding of tables on larger displays  */

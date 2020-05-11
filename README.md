@@ -280,7 +280,6 @@ At this point, user feedback suggested changing the hero image and after doing s
 
 - Simple form allows the user to sign up for more information and news of fresh images being added to gallery
 - Validation of user inputs (blank fields, typical email format), indicating any errors clearly
-- _NB at present this form is not linked up to any database and will not record inputs_
 
 <span id="features-future"></span>
 
@@ -303,6 +302,8 @@ At this point, user feedback suggested changing the hero image and after doing s
   _e.g 'Show me what Twisted Tree looks like on a card / in large print'_
 
 - Option to order cards with a choice of messages / bespoke messages
+
+- Sign-up form submission functionality
 
 <span id="technologies"></span>
 
@@ -605,10 +606,10 @@ To clone this project from GitHub:
 2. In the Clone with HTTPs section, copy the clone URL for the repository
 3. In your local IDE open Git Bash
 4. Change the current working directory to the location where you want the cloned directory to be made
-5. Type `git clone`, and then paste the URL you copied in Step 3
+5. Type `git clone`, and then paste the URL you copied in Step 2
 
 ```console
-git clone https://github.com/Edb83/milestone1.git
+git clone https://github.com/Edb83/penny-for-your-thoughts.git
 ```
 
 6. Press Enter. Your local clone will be created
