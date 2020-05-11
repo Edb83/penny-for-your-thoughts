@@ -341,7 +341,6 @@ table caption {
 
     /* Gallery image container */
 .pic {
-  position: flex;
   padding: 0;
 }
     /* Gallery image - set height on larger displays to preserve consistency and absolute positioning of 'Add' pic button, but media query changes height to 100% for smaller displays to prevent a narrow image and provide full aspect ratio */

@@ -281,6 +281,7 @@ At this point user feedback suggested changing the chosen hero image and after d
 
 ### Style and theme
 
+- [Autoprefixer](https://autoprefixer.github.io/) - PostCSS plugin which parses your CSS and adds vendor prefixes
 - [Bootstrap](https://getbootstrap.com/) - Responsive grid and boilerplate styling framework
 - [Color Scheme Designer](https://colorschemedesigner.com/csd-3.5/) - Complimentary color scheme for the site
 - [CSS Tricks](https://css-tricks.com/examples/hrs/) - Specifically for linear-gradiant horizontal rule
@@ -323,8 +324,9 @@ At this point user feedback suggested changing the chosen hero image and after d
     - `head` was missing `<meta name="description" content="..." />` - fixed
     - Scores 95% on Gallery due to 'Add' button being smaller than 48px x 48px. Tested with larger button sizes but they took up too much real estate - it is beyond the scope of this project to address this
     - Scores 100% across all other pages following amendments
-- [W3C - HTML](https://validator.w3.org/) - once `alt` tags had been filled, no HTML issues detected - **PASS**
+- [W3C - HTML](https://validator.w3.org/) - `alt` tags were missing and call to action `button` with `type="button"` was identified as an issue. On update no HTML issues detected - **PASS**
 - [W3C - CSS](https://jigsaw.w3.org/css-validator/) - no CSS issues detected - **PASS**
+    - Update: passing CSS code through [Autoprefixer](https://autoprefixer.github.io/) produced a large number of warnings related to unknown vendor extensions
 - [Unicorn revealer - overflow](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln/related) - tested all pages and no evidence of overflow - **PASS**
 
 ### Manual testing
