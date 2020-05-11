@@ -217,7 +217,7 @@ As a **visitor** I want:
 
 Based on the client's brief and visitors' expectations for the site, a clean, simple aesthetic has been adopted. In previous iterations the theme was more minimalistic in an attempt to focus purely on the content, but this was counterintuitive as the lack of contrast reduced the visibility of important elements and overall the site lacked identity.
 
-At this point, user feedback suggested changing the hero image and after doing so, [Color Scheme Designer](https://colorschemedesigner.com/csd-3.5/) was used to pull out several complimentary colours which tied in with the new hero image. The result is a much more vibrant aesthetic based on blues and gold, which gives the site a bolder appearance and more character. Furthermore, visual feedback for user actions became much clearer and the identity of separate elements (e.g images with shadows, golden horizontal rules to indicate consitent headings etc) became more apparent.
+At this point, user feedback suggested changing the hero image and after doing so, [Color Scheme Designer](https://colorschemedesigner.com/csd-3.5/) was used to pull out several complimentary and web-friendly colours (#036, #39C, #960) which tied in with the new hero image. The result is a much more vibrant aesthetic based on blues and gold, which gives the site a bolder appearance and more character. Furthermore, visual feedback for user actions became much clearer and the identity of separate elements (e.g images with shadows, golden horizontal rules to indicate consitent headings etc) became more apparent.
 
 <span id="features"></span>
 
@@ -588,6 +588,8 @@ Real world testing on:
 
 ## Deployment
 
+There is just one branch of this project (master) and deployed version of this site is the most current version in the repository.
+
 ### How to deploy
 
 To deploy this page to GitHub Pages from its [GitHub repository](https://github.com/Edb83/milestone1), the following steps were taken:
@@ -595,7 +597,7 @@ To deploy this page to GitHub Pages from its [GitHub repository](https://github.
 1. From the menu items near the top of the page, select **Settings**
 2. Scroll down to the **GitHub Pages** section
 3. Under **Source** click the drop-down menu labelled **None** and select **Master Branch**
-4. On selecting Master Branch the page is automatically refreshed, the website is now deployed
+4. On selecting Master Branch the page will be automatically refreshed and the website is now deployed
 5. Scroll back down to the **GitHub Pages** section in **Settings** to retrieve the link to the deployed website. It may take a short time to go live, but typically less than 60 seconds
 
 ### How to run locally

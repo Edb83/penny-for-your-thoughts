@@ -107,10 +107,10 @@ body {
 
 /* Headings - applies to headings of all pages for consistent typography and spacing */
 
-.heading-about,
-.heading-pricing,
-.heading-gallery,
-.heading-signup {
+#heading-about,
+#heading-pricing,
+#heading-gallery,
+#heading-signup {
   font-size: 2rem;
   text-align: center;
   margin-bottom: 30px;
@@ -126,7 +126,7 @@ body {
 
 /* Hero image */
 
-.callout-container {
+#callout-container {
   height: 100vh;
   width: auto;
   background: url("../../assets/images/trees/lg-winter-woods.jpg");
@@ -145,7 +145,7 @@ body {
 
 /* Jumbotron - main title "Penny for your Thoughts and subheading */
 
-.callout-contents {
+#callout-contents {
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
@@ -159,13 +159,13 @@ body {
 /* Intro */
 
     /* Three text blocks below Hero image */
-.intro-reasons p {
+#intro-reasons p {
   margin: 0;
   padding: 20px 0px;
   letter-spacing: 1px;
 }
     /* Container for the circular images below Hero image - reduced width prevents overflow caused by hvr.grow effect */
-.intro-gallery {
+#intro-gallery {
   width: 91%;
 }
     /* Circular images below Hero image */
@@ -216,13 +216,13 @@ footer {
   background-color: #c90;
 }
     /* Social media container */
-.sm-links-container {
+#sm-links-container {
   align-content: center;
   justify-content: center;
   display: flex;
 }
 
-.sm-links-container ul {
+#sm-links-container ul {
   display: inline-flex;
   list-style: none;
   margin: 0;
@@ -230,8 +230,8 @@ footer {
 }
 
     /* Social media icons and copyright styling */
-.sm-links-container i,
-.copyright-container p {
+#sm-links-container i,
+#copyright-container p {
   color: #fff;
   display: inline-block;
   /* Line height is used to vertically center the social media icons within the block */
@@ -239,8 +239,8 @@ footer {
 }
 
     /* Social media icon hover styling */
-.sm-links-container a:hover,
-.sm-links-container i:hover {
+#sm-links-container a:hover,
+#sm-links-container i:hover {
   color: #960;
   text-decoration: none;
 }
@@ -281,8 +281,8 @@ footer {
 
 /* About */
 
-    /* About image container */
-.about-image {
+    /* About image */
+#about-image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -293,7 +293,7 @@ footer {
   margin-top: 3rem;
 }
     /* About image - Media query restricts the dimensions of the image to its container on larger displays; NB should be applied to <a> class if wanting to make the picture a clickable link.*/
-.about-image img {
+#about-image img {
   border-radius: 5px;
   -webkit-box-shadow: 0px 5px 8px #036;
   box-shadow: 0px 5px 8px #036;
@@ -400,10 +400,10 @@ table caption {
 
 @media screen and (min-width: 768px) {
   /* Increases the size of callout-contents on larger displays */
-  .callout-contents h1 {
+  #callout-contents h1 {
     font-size: 3.5rem;
   }
-  .callout-contents p {
+  #callout-contents p {
     font-size: 1.5rem;
   }
 
@@ -424,13 +424,13 @@ table caption {
   }
 
   /* Reduces the margin above the about-image on larger displays and adjusts image to fit container */
-  .about-image {
+  #about-image {
     margin-top: 0;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
   }
-  .about-image img {
+  #about-image img {
     max-height: 100%;
     max-width: 100%;
   }
@@ -449,6 +449,11 @@ table caption {
   /* Increases the margin of social media link icons on larger displays */
   .sm-links {
     margin: 0 3rem;
+  }
+
+/* Increases the external padding around tables */
+  .table-container {
+    padding: 0rem 5rem;
   }
 }
 
@@ -470,7 +475,7 @@ table caption {
 
     /* Allows the hero image to be displayed on mobile devices (iOS), however it will appear as a static image and will not 'reveal' itself when scrolling down the page */
 @media screen and (max-width: 1024px) {
-  .callout-container {
+  #callout-container {
     background-attachment: scroll;
   }
 }
