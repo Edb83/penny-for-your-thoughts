@@ -27,28 +27,28 @@ For ease of reference, the means by which a user's expectations have been met ar
 As the **client** I want
 
 - Visitors to be immediately aware of what the product is
-  
+
   **Response:** The sub-heading over the hero image, call to action (Purchase button) and the three introductory statements make it immediately clear what the product is
 
 - A clean, consistent interface which will not confuse visitors
-  
+
   **Response:** The navbar, footer and headings of each page are clear, simple and consistent, as are the spacing, typography, image styling and colours
 
 - My work to be showcased from the outset
-  
+
   **Response:** The landing page is dedicated to the 100% viewport wide hero image and samples of the various themes of image below that. This ensures the photographer's work is centre stage
 
 - An immediate link to the gallery
-  
+
   **Response:** The gallery is accessible in the nav bar, call to action and intro gallery images
 
 - A gallery which allows visitors to quickly browse through high quality images in their original aspect ration and to add them to a shopping basket
 
   **Response:** The gallery has a clean and effective modal which displays Full HD images in their original aspect ration and allows the entire gallery to be browsed with just the mouse wheel / swiping. There is an "Add (to basket)" buttons on each image for a shopping experience which is expected on sites nowadays
 
-    _NB the table below is a repeat of info above_
+  _NB the table below is a repeat of info above_
 
-| <div style="min-width: 160px">Client's expectations</div>                                                                                                                              | How is this met?                                                                                                                                                                                                                                                                                             |
+| <div style="width: 50%">Client's expectations</div>                                                                                                | How is this met?                                                                                                                                                                                                                                                                                             |
 | :------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Visitors to be immediately aware of what the product is                                                                                            | The sub-heading over the hero image, call to action (Purchase button) and the three introductory statements make it immediately clear what the product is                                                                                                                                                    |
 | Clean, consistent interface which will not confuse visitors                                                                                        | The navbar, footer and headings of each page are clear, simple and consistent, as are the spacing, typography, image styling and colours                                                                                                                                                                     |
@@ -59,51 +59,51 @@ As the **client** I want
 As a **visitor** I want:
 
 - For it to be immediately clear what the purpose of the site is and what it has to offer
-  
+
   **Response:** Aligns with client's expectations
 
 - A clean interface and layout which allows me to focus on browsing the images and purchasing them
-  
+
   **Response:** Aligns with client's expectations
 
 - To be able to quickly navigate the site using navbar and clear links
-  
+
   **Response:** Aligns with client's expectations
 
 - To see a striking image which is indicative of the product’s nature and quality
-  
+
   **Response:** Aligns with client's expectations
 
 - To learn something about the photographer
-  
+
   **Response:** The About page is separate from the rest of the content but is easily accessible for those wishing to learn more about the photographer, and the information itself is not overly dense or excessive
 
 - To be able to contact the photographer directly
-  
+
   **Response:** The About page includes a contact email
 
 - To be able to quickly find out more about the product, specifically its price and available options
-  
+
   **Response:** The Pricing page is currently separate and provides an acceptible means of sharing this information, which is laid out in a pair of easily digestible tables containly only pertinent information. As the project develops and the shopping basket is implemented, this information may be conveyed more effectively elsewhere
 
 - To be able to access the gallery quickly and browse its entire contents at once
-  
+
   **Response:** Aligns with client's expectations
 
 - To be able to choose themes from the image gallery, and access them quickly
-  
+
   **Response:** Currently this expectation is met (and promoted) using the navbar Gallery dropdown list and intro gallery below the hero image. This method will be re-examined as new images are added and when future functionality enables advanced search options
 
 - To be able to click an image to see its true aspect ratio, if it isn’t immediately obvious
-  
+
   **Response:** Aligns with client's expectations
 
 - To be able to quickly add desired images to my shopping basket
-  
+
   **Response:** Aligns with client's expectations
 
 - To be able to quickly find the photographer’s social media presence
-  
+
   **Response:** The minimalist footer provides available social media links, as is expected by all web users today
 
 - To be able to sign up for more information and updates on the photographer’s work
@@ -115,24 +115,24 @@ As a **visitor** I want:
   **Response:** Addressed in the Responsiveness section below
 
 - For there to be clear but aesthetically pleasing visual feedback when hovering over clickable links
-  
+
   **Response:** All clickable links have consistent visual feedback, including the subtle hover effect on the intro gallery images
 
 - For the image gallery to be fast to load and easy to navigate
-  
+
   **Response:** Efforts have been made to reduce the size of files to what is acceptible on the web today, but there is scope to utilise thumbnails of an even smaller size to improve the speed at which the Gallery loads
 
 - For the signup form to show me if I have inputted incorrectly
-  
+
   **Response:** Addressed in the Manual testing section below
 
 - For links to external sites to open in a separate tab to prevent loss of focus
 
   **Response:** This currently only applies to the social media links in the footer, but they all open in a separate browser tab
 
-    _NB the table below is a repeat of info above_
+  _NB the table below is a repeat of info above_
 
-| <div style="min-width: 160px">Visitor's expectation</div>                                                                            | How is this met?                                                                                                                                                                                                                                                                                                               |
+| <div style="width: 50%">Visitor's expectation</div>                                              | How is this met?                                                                                                                                                                                                                                                                                                               |
 | :----------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Immediately clear what the purpose of the site is and what it has to offer                       | Aligns with client's expectations                                                                                                                                                                                                                                                                                              |
 | A clean interface and layout which allows me to focus on browsing the images and purchasing them | Aligns with client's expectations                                                                                                                                                                                                                                                                                              |
