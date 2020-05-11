@@ -36,15 +36,15 @@ As the **client** I want
 
 - My work to be showcased from the outset
 
-  **Response:** The landing page is dedicated to the 100% viewport wide hero image and samples of the various themes of image below that. This ensures the photographer's work is centre stage
+  **Response:** The landing page is dedicated to the 100% viewport hero image and samples of the various themes of image below that. This ensures the photographer's work is centre stage
 
 - An immediate link to the gallery
 
   **Response:** The gallery is accessible in the nav bar, call to action and intro gallery images
 
-- A gallery which allows visitors to quickly browse through high quality images in their original aspect ration and to add them to a shopping basket
+- A gallery which allows visitors to quickly browse through high quality images in their original aspect ratio and to add them to a shopping basket
 
-  **Response:** The gallery has a clean and effective modal which displays Full HD images in their original aspect ration and allows the entire gallery to be browsed with just the mouse wheel / swiping. There is an "Add (to basket)" buttons on each image for a shopping experience which is expected on sites nowadays
+  **Response:** The gallery has a clean and effective modal which displays Full HD images in their original aspect ratio and allows the entire gallery to be browsed with just the mouse wheel / swiping. There is an "Add (to basket)" button on each image for a shopping experience which is expected on sites nowadays
 
   _NB the table below is a repeat of info above_
 
@@ -52,9 +52,9 @@ As the **client** I want
 | :------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Visitors to be immediately aware of what the product is                                                                                            | The sub-heading over the hero image, call to action (Purchase button) and the three introductory statements make it immediately clear what the product is                                                                                                                                                    |
 | Clean, consistent interface which will not confuse visitors                                                                                        | The navbar, footer and headings of each page are clear, simple and consistent, as are the spacing, typography, image styling and colours                                                                                                                                                                     |
-| My work to be showcased from the outset                                                                                                            | The landing page is dedicated to the 100% viewport wide hero image and samples of the various themes of image below that. This ensures the photographer's work is centre stage                                                                                                                               |
+| My work to be showcased from the outset                                                                                                            | The landing page is dedicated to the 100% viewport hero image and samples of the various themes of image below that. This ensures the photographer's work is centre stage                                                                                                                               |
 | An immediate link to the gallery                                                                                                                   | The gallery is accessible in the nav bar, call to action and intro gallery images                                                                                                                                                                                                                            |
-| A gallery which allows visitors to quickly browse through high quality images in their original aspect ration and to add them to a shopping basket | The gallery has a clean and effective modal which displays Full HD images in their original aspect ration and allows the entire gallery to be browsed with just the mouse wheel / swiping. There is an "Add (to basket)" buttons on each image for a shopping experience which is expected on sites nowadays |
+| A gallery which allows visitors to quickly browse through high quality images in their original aspect ratio and to add them to a shopping basket | The gallery has a clean and effective modal which displays Full HD images in their original aspect ratio and allows the entire gallery to be browsed with just the mouse wheel / swiping. There is an "Add (to basket)" button on each image for a shopping experience which is expected on sites nowadays |
 
 As a **visitor** I want:
 
@@ -183,9 +183,9 @@ As a **visitor** I want:
 
 ### Site theme
 
-Based on the client's brief and visitors' expectations for the site, a clean, simple aesthetic has been adopted. In previous iterations the theme was more minimalistic in an attempt to focus purely on the content, but this was counterintuitive as the lack of contrast reduced the visibility of important and the site lacked identity.
+Based on the client's brief and visitors' expectations for the site, a clean, simple aesthetic has been adopted. In previous iterations the theme was more minimalistic in an attempt to focus purely on the content, but this was counterintuitive as the lack of contrast reduced the visibility of important elements and overall the site lacked identity.
 
-At this point user feedback suggested changing the chosen hero image and after doing so, [Color Scheme Designer](https://colorschemedesigner.com/csd-3.5/) was used to pull out several complimentary colours which tied in with the new hero image. The result is a much more vibrant aesthetic based on blues and gold, which gives the site a bolder appearance and more character. Furthermore, visual feedback for user actions became much clearer and the identity of separate elements (e.g images with shadows, golden horizontal rules to indicate consitent headings etc) became more apparent.
+At this point, user feedback suggested changing the hero image and after doing so, [Color Scheme Designer](https://colorschemedesigner.com/csd-3.5/) was used to pull out several complimentary colours which tied in with the new hero image. The result is a much more vibrant aesthetic based on blues and gold, which gives the site a bolder appearance and more character. Furthermore, visual feedback for user actions became much clearer and the identity of separate elements (e.g images with shadows, golden horizontal rules to indicate consitent headings etc) became more apparent.
 
 ## Features
 
@@ -199,7 +199,7 @@ At this point user feedback suggested changing the chosen hero image and after d
 - Drop down options are scrollable on mobile devices in landscape orientation to prevent frustrating case of hidden options
 - High contrast hoverable links provide responsive visual feedback
 - Active links clearly indicate current location on site
-- Shopping basket for quick access to purchasing selected items (currently disabled for future implementation)
+- Shopping basket for quick access to purchasing selected items (for future implementation and currently disabled)
 
 **2. Footer**
 
@@ -213,9 +213,9 @@ At this point user feedback suggested changing the chosen hero image and after d
 
 - Full viewport hero image to showcase the photographer's imagery (primary goal) and promote the site's colour scheme
 - Transparent jumbotron to emphasise the name of the site
-- Call to action button linking to the gallery andand invitation to purchase (primary goal)
+- Call to action button linking to the gallery and inviting to purchase (primary goal)
 - Succinct and clear introduction outlining the purpose of the site
-- Mini gallery showcasing the different themes of images, including links for quick access to the respective sections of the full gallery and responsive visual feedback
+- Mini gallery showcasing the different themes of images, including links for quick access to the respective sections of the full gallery as well as responsive visual feedback
 
 **4. About**
 
@@ -225,18 +225,17 @@ At this point user feedback suggested changing the chosen hero image and after d
 **5. Pricing**
 
 - Brief description of product
-- Two clear tables with prices for both cards and prints, including price per unit for multiple orders and postage not included
+- Two clear tables with prices for both cards and prints, including price per unit for multiple orders and statement that postage not included
 
 **6. Gallery**
 
 - Brief introduction explaining how to add items to basket and how to view in full aspect ratio
 - Six themed sections (Canals, Coast, Flora and Fauna, Flowers, Landscapes, Trees)
-- Images arranged in responsive grid and set width/height to maintain image integrity and provide a consistent display
 - On mobile, images are clearly displayed in their original aspect ratio, while on larger devices they are displayed uniformly cropped and in a responsive grid for easy browsing
 - Clear 'Add (to basket)' button in consistent position on all images. Enables users to add an item to shopping cart (with just two clicks from the landing page) and includes visual feedback on hover
 - Ability to enlarge images by clicking on them, and to scroll through a pop-up gallery of images in full aspect ratio. Clicking outside viewing area (or swiping up/down on mobile) returns visitor to the normal gallery
 - Within pop-up gallery, user can view thumbnails of all images and use the mouse wheel or swipe to scroll through
-- Names of each image are included at bottom of pop-up gallery, providing some context for each scene and allowing for specific questions of the photographer
+- Names of each image are included at bottom of pop-up gallery, providing some context for each scene and enabling visitors to ask specific questions of the photographer
 - Image sizes are all below 300kb for faster loading, while preserving FHD resolution to showcase their quality
 
 **7. Signup**
@@ -281,7 +280,7 @@ At this point user feedback suggested changing the chosen hero image and after d
 
 ### Style and theme
 
-- [Autoprefixer](https://autoprefixer.github.io/) - PostCSS plugin which parses your CSS and adds vendor prefixes
+- [Autoprefixer](https://autoprefixer.github.io/) - Post CSS plugin which parses CSS and adds vendor prefixes
 - [Bootstrap](https://getbootstrap.com/) - Responsive grid and boilerplate styling framework
 - [Color Scheme Designer](https://colorschemedesigner.com/csd-3.5/) - Complimentary color scheme for the site
 - [CSS Tricks](https://css-tricks.com/examples/hrs/) - Specifically for linear-gradiant horizontal rule
@@ -324,16 +323,18 @@ At this point user feedback suggested changing the chosen hero image and after d
     - `head` was missing `<meta name="description" content="..." />` - fixed
     - Scores 95% on Gallery due to 'Add' button being smaller than 48px x 48px. Tested with larger button sizes but they took up too much real estate - it is beyond the scope of this project to address this
     - Scores 100% across all other pages following amendments
-- [W3C - HTML](https://validator.w3.org/) - `alt` tags were missing and call to action `button` with `type="button"` was identified as an issue. On update no HTML issues detected - **PASS**
-- [W3C - CSS](https://jigsaw.w3.org/css-validator/) - no CSS issues detected - **PASS**
-    - Update: passing CSS code through [Autoprefixer](https://autoprefixer.github.io/) produced a large number of warnings related to unknown vendor extensions
+- [W3C - HTML](https://validator.w3.org/) - `alt` tags were missing and call to action `button` with `type="button"` was identified as an issue. On update no HTML errors or warnings detected - **PASS**
+- [W3C - CSS](https://jigsaw.w3.org/css-validator/) - no CSS errors detected - **PASS**
+    - Update: passing CSS code through [Autoprefixer](https://autoprefixer.github.io/) produced 47 warnings related to unknown vendor extensions
 - [Unicorn revealer - overflow](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln/related) - tested all pages and no evidence of overflow - **PASS**
 
 ### Manual testing
 
 **Summary**:
 
-The only manual tests which failed are related to the in-built form validation settings. These test were carried out initially with the boilerplate Bootstrap form and then using the `novalidate` property but the results were the same.
+Alongside the manual tests described below, eight individuals contributed to testing the site and provided feedback on its layout, responsiveness and styling at various points in development.
+
+Of the manual tests conducted, the only ones to fail were those related to predetermined form validation settings. These test were initially carried out on a boilerplate Bootstrap form and subsequently using the `novalidate` JS method described in Bootstrap, but the results were the same.
 
 The following scenarios were tested to ensure that the site is functioning as expected:
 
@@ -403,7 +404,6 @@ _Note: initially some file names were incorrect but were all amended_
   - enter something different for Password and Confirm Password to check validation displays an input issue - **FAIL**
   - enter a space (" ") as either password to check validation displays an input issue - **FAIL**
 
-Additionally, eight individuals contributed to testing the site and provided feedback on its layout, responsiveness and styling at various points in development.
 
 ### Responsiveness
 
@@ -557,11 +557,11 @@ Further reading and troubleshooting on cloning a repository from GitHub can be f
 
 ## Credits
 
-Carlos (Code Institute student)
+Carlos (Code Institute Slack Community Lead)
 
-Jonathan Munz (Code Institute mentor)
+Jonathan Munz (Code Institute Mentor)
 
-Richard Wells (Code Institute lead)
+Richard Wells (Code Institute Lead)
 
 Extremely useful feedback on appearance and user experience was provided by Lola, Tash, Mims, Beckx and Peter!
 
