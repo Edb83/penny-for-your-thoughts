@@ -15,7 +15,7 @@ body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
 
-    /* These settings are used to position the footer at the bottom of the page where there is insufficient content to naturally position it there (About, Pricing, Signup) */
+  /* These settings are used to position the footer at the bottom of the page where there is insufficient content to naturally position it there (About, Pricing, Signup) */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -26,7 +26,7 @@ body {
   flex-direction: column;
 }
 
-    /* These settings are used to position the footer at the bottom of the page where there is insufficient content to naturally position it there (About, Pricing, Signup) */
+/* These settings are used to position the footer at the bottom of the page where there is insufficient content to naturally position it there (About, Pricing, Signup) */
 .inner-page-contents {
   -webkit-box-flex: 1;
   -ms-flex: 1;
@@ -35,37 +35,6 @@ body {
 
 .uppercase {
   text-transform: uppercase;
-}
-
-/* Horizontal rules */
-
-.hr-gradient {
-  border: 0;
-  height: 1px;
-  margin-bottom: 2rem;
-}
-
-.hr-gradient--yellow {
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(rgba(38, 77, 38, 0)),
-    color-stop(rgb(204, 153, 0)),
-    to(rgba(38, 77, 38, 0))
-  );
-  background-image: -o-linear-gradient(
-    left,
-    rgba(38, 77, 38, 0),
-    rgb(204, 153, 0),
-    rgba(38, 77, 38, 0)
-  );
-  background-image: linear-gradient(
-    to right,
-    rgba(38, 77, 38, 0),
-    rgb(204, 153, 0),
-    rgba(38, 77, 38, 0)
-  );
 }
 
 /* Navbar */
@@ -80,7 +49,7 @@ body {
   z-index: 1;
   left: 0;
 }
-    /* Navbar - "Penny for your Thoughts" */
+/* Navbar - "Penny for your Thoughts" */
 .navbar-brand {
   font-weight: 600;
   font-family: "Montserrat", sans-serif;
@@ -89,16 +58,16 @@ body {
   color: #fff;
   margin-right: 0;
 }
-    /* Navbar - "Penny for your Thoughts" hover */
+/* Navbar - "Penny for your Thoughts" hover */
 .navbar-dark .navbar-brand:focus,
 .navbar-dark .navbar-brand:hover {
   color: #036;
 }
-    /* Navbar - items */
+/* Navbar - items */
 .navbar-dark .navbar-nav .nav-link {
   color: #fff;
 }
-    /* Navbar - items hover & active */
+/* Navbar - items hover & active */
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .active > .nav-link {
   color: #036;
@@ -115,8 +84,13 @@ body {
   text-align: center;
   margin-bottom: 30px;
   letter-spacing: 4px;
+  padding-bottom: 10px;
+  /* Linear gradient as background to mimic horizonal rule. Percentages refer to point on the block (the size of which can in turn by determined by background-size) at which the color starts i.e. 0% is where block begins, 50% half way across block etc, 100% is where block ends */
+  background: linear-gradient(to right, #fff 25%, #c90 50%, #fff 75%) left
+    bottom #fff no-repeat;
+  background-size: 100% 1px;
 }
-    /* Headings - gallery section headings */
+/* Headings - gallery section headings */
 .heading-gallery-category {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -158,19 +132,19 @@ body {
 
 /* Intro */
 
-    /* Three text blocks below Hero image */
+/* Three text blocks below Hero image */
 #intro-reasons p {
   margin: 0;
   padding: 20px 0px;
   letter-spacing: 1px;
 }
-    /* Container for the circular images below Hero image - reduced width prevents overflow caused by hvr.grow effect */
+/* Container for the circular images below Hero image - reduced width prevents overflow caused by hvr.grow effect */
 #intro-gallery {
   width: 91%;
 }
-    /* Circular images below Hero image */
+/* Circular images below Hero image */
 
-    /* <a> element targeted here in order to create a clickable area which matches the desired shape of the image contained within */
+/* <a> element targeted here in order to create a clickable area which matches the desired shape of the image contained within */
 .intro-gallery-image a {
   display: flex;
   margin: 20px auto;
@@ -189,7 +163,7 @@ body {
   box-shadow: 0px 5px 8px #036;
 }
 
-    /* Text inside circular images below Hero image. Works with hvr.grow effect */
+/* Text inside circular images below Hero image. Works with hvr.grow effect */
 .intro-gallery-image p {
   margin: 0;
   position: absolute;
@@ -215,7 +189,7 @@ footer {
   border-top-color: #036;
   background-color: #c90;
 }
-    /* Social media container */
+/* Social media container */
 #sm-links-container {
   align-content: center;
   justify-content: center;
@@ -229,7 +203,7 @@ footer {
   padding: 0;
 }
 
-    /* Social media icons and copyright styling */
+/* Social media icons and copyright styling */
 #sm-links-container i,
 #copyright-container p {
   color: #fff;
@@ -238,19 +212,19 @@ footer {
   line-height: 27px;
 }
 
-    /* Social media icon hover styling */
+/* Social media icon hover styling */
 #sm-links-container a:hover,
 #sm-links-container i:hover {
   color: #960;
   text-decoration: none;
 }
 
-    /* Social media icon margins - this has responsive media queries for larger displays. NB adding padding here will increase the 'clickable' area of links */
+/* Social media icon margins - this has responsive media queries for larger displays. NB adding padding here will increase the 'clickable' area of links */
 .sm-links {
   margin: 0 1rem;
 }
 
-    /* 'Grow' hover effect from Ian Lunn can be applied to most blocks to provide subtle visual feedback. Currently only applied to intro gallery images in index.html. Also affects the absolutely positioned text within the image, but there is some visual distortion */
+/* 'Grow' hover effect from Ian Lunn can be applied to most blocks to provide subtle visual feedback. Currently only applied to intro gallery images in index.html. Also affects the absolutely positioned text within the image, but there is some visual distortion */
 
 .hvr-grow {
   display: inline-block;
@@ -281,7 +255,7 @@ footer {
 
 /* About */
 
-    /* About image */
+/* About image */
 #about-image {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -292,7 +266,7 @@ footer {
   /* This top margin is removed in media query to prevent unwanted spacing where two columns present on larger displays */
   margin-top: 3rem;
 }
-    /* About image - Media query restricts the dimensions of the image to its container on larger displays; NB should be applied to <a> class if wanting to make the picture a clickable link.*/
+/* About image - Media query restricts the dimensions of the image to its container on larger displays; NB should be applied to <a> class if wanting to make the picture a clickable link.*/
 #about-image img {
   border-radius: 5px;
   -webkit-box-shadow: 0px 5px 8px #036;
@@ -312,12 +286,12 @@ footer {
 .table-container {
   padding: 0 15px;
 }
-    /* Fixed-layout keeps the column widths identical on both tables so that in single column display they are aligned on the page */
+/* Fixed-layout keeps the column widths identical on both tables so that in single column display they are aligned on the page */
 table {
   text-align: center;
   table-layout: fixed;
 }
-    /* Table border styling - separating top and bottom borders across two rules allows for a minimalist display and greater precision across the tables' rows  */
+/* Table border styling - separating top and bottom borders across two rules allows for a minimalist display and greater precision across the tables' rows  */
 .table thead th {
   vertical-align: bottom;
   border-bottom: 2px;
@@ -332,18 +306,18 @@ table {
   border-top-color: #9966008a;
 }
 
-    /* Appears below tables as "Postage not included" and is otherwise not styled */
+/* Appears below tables as "Postage not included" and is otherwise not styled */
 table caption {
   text-align: right;
 }
 
 /* Gallery */
 
-    /* Gallery image container */
+/* Gallery image container */
 .pic {
   padding: 0;
 }
-    /* Gallery image - set height on larger displays to preserve consistency and absolute positioning of 'Add' pic button, but media query changes height to 100% for smaller displays to prevent a narrow image and provide full aspect ratio */
+/* Gallery image - set height on larger displays to preserve consistency and absolute positioning of 'Add' pic button, but media query changes height to 100% for smaller displays to prevent a narrow image and provide full aspect ratio */
 .pic img {
   height: 200px;
   -o-object-fit: cover;
@@ -354,7 +328,7 @@ table caption {
   box-shadow: 0px 5px 8px #036;
 }
 
-    /* 'Add' button on gallery images, which has been incrementally changed to provide best absolute positioning. This will break if image dimensions are not fixed  */
+/* 'Add' button on gallery images, which has been incrementally changed to provide best absolute positioning. This will break if image dimensions are not fixed  */
 .pic button {
   position: absolute;
   top: 95%;
@@ -366,7 +340,7 @@ table caption {
   background-color: #39c;
   color: #fff;
 }
-    /* Hover styling for Gallery 'Add' buttons */
+/* Hover styling for Gallery 'Add' buttons */
 .pic button:hover {
   background-color: #036;
   color: #fff;
@@ -390,7 +364,7 @@ table caption {
 
 /* Media */
 
-    /* Increases the font size of the navbar brand on larger displays */
+/* Increases the font size of the navbar brand on larger displays */
 @media screen and (min-width: 370px) {
   .navbar-brand {
     font-size: 1.1rem;
@@ -451,20 +425,20 @@ table caption {
     margin: 0 3rem;
   }
 
-/* Increases the external padding around tables */
+  /* Increases the external padding around tables */
   .table-container {
     padding: 0rem 5rem;
   }
 }
 
-    /* Alters the height of gallery images to prevent them becoming stretched on mobile devices when displayed one per row */
+/* Alters the height of gallery images to prevent them becoming stretched on mobile devices when displayed one per row */
 @media screen and (max-width: 575px) {
   .pic img {
     height: 100%;
   }
 }
 
-    /* Adds ability to scroll navbar dropdown items on mobile devices where they would be hidden/inaccessible */
+/* Adds ability to scroll navbar dropdown items on mobile devices where they would be hidden/inaccessible */
 @media screen and (max-width: 767px) and (max-height: 475px) {
   .dropdown-menu {
     height: 115px;
@@ -473,7 +447,7 @@ table caption {
   }
 }
 
-    /* Allows the hero image to be displayed on mobile devices (iOS), however it will appear as a static image and will not 'reveal' itself when scrolling down the page */
+/* Allows the hero image to be displayed on mobile devices (iOS), however it will appear as a static image and will not 'reveal' itself when scrolling down the page */
 @media screen and (max-width: 1024px) {
   #callout-container {
     background-attachment: scroll;
