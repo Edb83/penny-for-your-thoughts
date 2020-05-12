@@ -405,9 +405,6 @@ The following scenarios were tested to ensure that the site is functioning as ex
 
 - Click the Purchase button to check it goes to the top of the Gallery page - **PASS**
 - On desktop, hover over the Purchase button to check visual feedback is provided (white background, black text) - **PASS**
-
-_Note: the unwanted styling applied by Safari (noted as Unresolved issue below)_
-
 - Click each intro gallery circular image to check it takes you to the relevant anchor within the Gallery page - **PASS**
 - On desktop, hover over each intro gallery circular image to check visual feedback is provided (hvr-grow effect) - **PASS**
 
@@ -479,7 +476,7 @@ Tested on:
 - Edge
 - Firefox
 - Safari (iOS)
-  - Noted issue with styles being overwritten on call to action (Purchase button on landing page). See Unresolved issues section below
+  - Noted issue with styles being overwritten on call to action (Purchase button on landing page). See Resolved issues section below
 
 #### Screen sizes
 
@@ -538,7 +535,11 @@ Real world testing on:
 
   - Resolved by incrementally reducing the width of intro-gallery and finally settling on `width: 91%`
 
-  - **Links on social media icons in footer apply to the entire containing div**
+- **iOS browser adds unwanted styling to Pricing button in hero image**
+
+  - Resolved by using code from [Dare to Think](https://www.daretothink.co.uk/stop-ios-styling-your-input-fields-and-buttons/) to target `input[type="button"]` and override using `-webkit-appearance: none`
+
+- **Links on social media icons in footer apply to the entire containing div**
 
   - Resolved by switching to an `inline-flex` list and adding class `sm-list` to `a` elements. Subsequently recognised that playing with margins bypasses this issue when compared with padding, however overall the approach is now more flexible. Further issues arose relating to spacing of the icons so it was necessary to include media queries to increase the starting value of `margin: 0 1rem`
 
@@ -573,10 +574,6 @@ Real world testing on:
 <span id="testing-unresolved"></span>
 
 #### Unresolved
-
-- **iOS browser adds unwanted styling to Pricing button in hero image**
-
-  - Attempts were made to override Apple's styling using `-webkit-` but were unsuccesful
 
 - **Signup form password and confirmation password can be different**
 

@@ -15,8 +15,6 @@ body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
 
-
-
   /* These settings are used to position the footer at the bottom of the page where there is insufficient content to naturally position it there (About, Pricing, Signup) */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -27,6 +25,8 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
 }
+
+/* This code from Dare to Think overrides iOS styling on buttons and more, specifically the call to action ("Purchase") on the hero image */
 
 textarea,
 input.text,
