@@ -546,6 +546,10 @@ Real world testing on:
 
   - Resolved using suggestion from [Stack Overflow](https://stackoverflow.com/questions/29978500/only-make-a-centered-image-a-link-instead-of-the-whole-parent-div) moving size styling from the image to the `<a>` element within a newly created container class `.intro-gallery-image` and then adding `display: flex`
 
+- **Use of horizontal rules (`<hr>`) considered poor practice and outdated**
+
+  - Resolved using suggestion from [Stack Overflow](https://stackoverflow.com/questions/23751274/can-we-set-a-gradient-color-to-border-bottom-property) and switching to styling headings with `background: linear-gradient`
+
 - **There is white space beneath footer on pages with little content (Pricing and About)**
 
   - Resolved by using a suggestion from [Philip Walton](https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/) to set body element `flex-direction: column` and `min-height: 100vh`. This was a more elegant solution than changing the structure of the site e.g. by adding the Pricing and About pages further down the Landing Page and relying on achor links, or by simply increasing the content on each of the affected pages

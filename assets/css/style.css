@@ -44,7 +44,6 @@ body {
   width: 100%;
   background-color: #39c;
   opacity: 1;
-
   position: fixed;
   z-index: 1;
   left: 0;
@@ -74,13 +73,13 @@ body {
   font-weight: 600;
 }
 
-/* Headings - applies to headings of all pages for consistent typography and spacing */
+/* Headings - applies to headings of all pages for consistent typography and spacing. These have been given separate ids to give options for unique styling */
 
 #heading-about,
 #heading-pricing,
 #heading-gallery,
 #heading-signup {
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-align: center;
   margin-bottom: 30px;
   letter-spacing: 4px;
@@ -88,7 +87,7 @@ body {
   /* Linear gradient as background to mimic horizonal rule. Percentages refer to point on the block (the size of which can in turn by determined by background-size) at which the color starts i.e. 0% is where block begins, 50% half way across block etc, 100% is where block ends */
   background: linear-gradient(to right, #fff 25%, #c90 50%, #fff 75%) left
     bottom #fff no-repeat;
-  background-size: 100% 1px;
+  background-size: 100% 2px;
 }
 /* Headings - gallery section headings */
 .heading-gallery-category {
@@ -100,7 +99,7 @@ body {
 
 /* Hero image */
 
-#callout-container {
+#callout {
   height: 100vh;
   width: auto;
   background: url("../../assets/images/trees/lg-winter-woods.jpg");
@@ -133,7 +132,7 @@ body {
 /* Intro */
 
 /* Three text blocks below Hero image */
-#intro-reasons p {
+#intro p {
   margin: 0;
   padding: 20px 0px;
   letter-spacing: 1px;
