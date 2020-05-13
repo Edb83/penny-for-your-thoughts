@@ -5,7 +5,7 @@
 **[Live site](https://edb83.github.io/penny-for-your-thoughts/)**
 
 ---
-
+<span id="top"></span>
 ## Index
 
 - <a href="#project">Context</a>
@@ -642,3 +642,4 @@ I received inspiration for this project from Penny Holland
 ### Disclaimer
 
 This site was developed for educational purposes but will likely be put to real world use once the remaining features have been implemented according to client's wishes.
+<div style="position:relative; text-align:right;"><a href="#top">Go to index :arrow_double_up:</a></div>

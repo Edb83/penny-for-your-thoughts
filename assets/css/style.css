@@ -27,7 +27,6 @@ body {
 }
 
 /* This code from Dare to Think overrides iOS styling on buttons and more, specifically the call to action ("Purchase") on the hero image */
-
 textarea,
 input.text,
 input[type="text"],
@@ -83,6 +82,8 @@ border-radius: 0;
 .navbar-dark .navbar-nav .active > .nav-link {
   color: #036;
   font-weight: 600;
+/* background: linear-gradient(to right, #39c 20%, #fff 40%, #39c 60%) left bottom #39c no-repeat;
+    background-size: 100% 4px; */
 }
 
 /* Headings - applies to headings of all pages for consistent typography and spacing. These have been given separate ids to give options for unique styling */
