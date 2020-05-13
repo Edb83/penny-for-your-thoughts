@@ -362,9 +362,12 @@ At this point, user feedback suggested changing the hero image and after doing s
 
 ### Automated testing
 
-- [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) - ran an audit on all pages for both desktop and mobile. Summary:
+- [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) - ran an audit on all pages for both desktop and mobile.
+
+Summary:
+
   - Performance = **Average**
-    - The worst metric due to issues around image size and not using next-gen filetypes, particularly on gallery.html where the score was 81% on desktop - it is beyond the scope of this project to address this
+    - The worst metric due to issues around image size and not using next-gen filetypes, particularly on gallery.html where the score was 74% on mobile - it is beyond the scope of this project to address this
     - Unused CSS - removed hover.min.css from all but index.html where it is used on the intro gallery images
   - Accessibility = **Good**
     - Various links missing discernable names (mainly nav bar and footer) - fixed by adding aria labels to all links across the site
@@ -376,6 +379,15 @@ At this point, user feedback suggested changing the hero image and after doing s
     - `head` was missing `<meta name="description" content="..." />` - fixed
     - Scores 95% on Gallery due to 'Add' button being smaller than 48px x 48px. Tested with larger button sizes but they took up too much real estate - it is beyond the scope of this project to address this
     - Scores 100% across all other pages following amendments
+
+Mobile scores:
+
+![Landing](assets/audit/audit-home.jpg "Landing page scores")
+![About](assets/audit/audit-about.jpg "About page scores")
+![Pricing](assets/audit/audit-pricing.jpg "Pricing page scores")
+![Gallery](assets/audit/audit-gallery.jpg "Gallery page scores")
+![Sign Up](assets/audit/audit-signup.jpg "Sign Up page scores")
+
 - [W3C - HTML](https://validator.w3.org/) - `alt` tags were missing and call to action `button` with `type="button"` was identified as an issue. On update no HTML errors or warnings detected - **PASS**
 - [W3C - CSS](https://jigsaw.w3.org/css-validator/) - no CSS errors detected - **PASS**
     - Update: passing CSS code through [Autoprefixer](https://autoprefixer.github.io/) produced 47 warnings related to unknown vendor extensions
