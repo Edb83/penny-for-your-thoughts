@@ -37,7 +37,7 @@
 This site is a showcase for an aspiring photographer's work, which is available to purchase either on card or enlarged print.
 
 Since moving to the countryside, Penny has found herself increasingly inspired by her beautiful surroundings and is keen to share them with a wider audience. More than ever in these uncertain, digital times, there's comfort to be found in a personal message written on a physical card, adorned with beautiful, candid pictures of nature.
-<div style="position:relative; text-align:right;"><a href="#top">Go to index :arrow_double_up:</a></div>
+<div align="right"><a style="text-align:right" href="#top">Go to index :arrow_double_up:</a></div>
 <span id="ux"></span>
 
 ## UX
@@ -218,7 +218,9 @@ As a **visitor** I want:
 Based on the client's brief and visitors' expectations for the site, a clean, simple aesthetic has been adopted. In previous iterations the theme was more minimalistic in an attempt to focus purely on the content, but this was counterintuitive as the lack of contrast reduced the visibility of important elements and overall the site lacked identity.
 
 At this point, user feedback suggested changing the hero image and after doing so, [Color Scheme Designer](https://colorschemedesigner.com/csd-3.5/) was used to pull out several complimentary and web-friendly colours (#036, #39C, #960) which tied in with the new hero image. The result is a much more vibrant aesthetic based on blues and gold, which gives the site a bolder appearance and more character. Furthermore, visual feedback for user actions became much clearer and the identity of separate elements (e.g images with shadows, golden horizontal rules to indicate consitent headings etc) became more apparent.
-<div style="position:relative; text-align:right;"><a href="#top">Go to index :arrow_double_up:</a></div>
+
+<div align="right"><a style="text-align:right" href="#top">Go to index :arrow_double_up:</a></div>
+
 <span id="features"></span>
 
 ## Features
@@ -304,7 +306,9 @@ At this point, user feedback suggested changing the hero image and after doing s
 - Option to order cards with a choice of messages / bespoke messages
 
 - Sign-up form submission functionality
-<div style="position:relative; text-align:right;"><a href="#top">Go to index :arrow_double_up:</a></div>
+
+<div align="right"><a style="text-align:right" href="#top">Go to index :arrow_double_up:</a></div>
+
 <span id="technologies"></span>
 
 ## Technologies Used
@@ -347,7 +351,9 @@ At this point, user feedback suggested changing the hero image and after doing s
 - [How to Geek](https://www.howtogeek.com/354015/how-to-resize-images-and-photos-in-windows/) - specifically advice on how to efficiently handle a large number of images
 - [Stack Overflow](https://stackoverflow.com/)
 - [W3 Schools](https://www.w3schools.com/)
-<div style="position:relative; text-align:right;"><a href="#top">Go to index :arrow_double_up:</a></div>
+
+<div align="right"><a style="text-align:right" href="#top">Go to index :arrow_double_up:</a></div>
+
 <span id="testing"></span>
 
 ## Testing
@@ -584,7 +590,9 @@ Real world testing on:
 ### Known bugs
 
 - None at present
-<div style="position:relative; text-align:right;"><a href="#top">Go to index :arrow_double_up:</a></div>
+
+<div align="right"><a style="text-align:right" href="#top">Go to index :arrow_double_up:</a></div>
+
 <span id="deployment"></span>
 
 ## Deployment
@@ -618,7 +626,9 @@ git clone https://github.com/Edb83/penny-for-your-thoughts.git
 6. Press Enter. Your local clone will be created
 
 Further reading and troubleshooting on cloning a repository from GitHub can be found [here](https://help.github.com/en/articles/cloning-a-repository).
-<div style="position:relative; text-align:right;"><a href="#top">Go to index :arrow_double_up:</a></div>
+
+<div align="right"><a style="text-align:right" href="#top">Go to index :arrow_double_up:</a></div>
+
 <span id="credits"></span>
 
 
@@ -643,4 +653,5 @@ I received inspiration for this project from Penny Holland
 ### Disclaimer
 
 This site was developed for educational purposes but will likely be put to real world use once the remaining features have been implemented according to client's wishes.
-<div style="position:relative; text-align:right;"><a href="#top">Go to index :arrow_double_up:</a></div>
+
+<div align="right"><a style="text-align:right" href="#top">Go to index :arrow_double_up:</a></div>
