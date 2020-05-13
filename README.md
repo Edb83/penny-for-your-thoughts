@@ -383,9 +383,13 @@ Summary:
 Mobile scores:
 
 ![Landing](assets/audit/audit-home.jpg "Landing page scores")
+
 ![About](assets/audit/audit-about.jpg "About page scores")
+
 ![Pricing](assets/audit/audit-pricing.jpg "Pricing page scores")
+
 ![Gallery](assets/audit/audit-gallery.jpg "Gallery page scores")
+
 ![Sign Up](assets/audit/audit-signup.jpg "Sign Up page scores")
 
 - [W3C - HTML](https://validator.w3.org/) - `alt` tags were missing and call to action `button` with `type="button"` was identified as an issue. On update no HTML errors or warnings detected - **PASS**
