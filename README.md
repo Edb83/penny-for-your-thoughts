@@ -362,14 +362,23 @@ Summary:
     - Scores 100% across all other pages following amendments
 
 Mobile scores:
+ - Home
 
 ![Landing](assets/audit/audit-home.jpg "Landing page scores")
 
+ - About
+
 ![About](assets/audit/audit-about.jpg "About page scores")
+
+- Pricing
 
 ![Pricing](assets/audit/audit-pricing.jpg "Pricing page scores")
 
+- Gallery
+
 ![Gallery](assets/audit/audit-gallery.jpg "Gallery page scores")
+
+- Sign Up
 
 ![Sign Up](assets/audit/audit-signup.jpg "Sign Up page scores")
 

@@ -82,8 +82,6 @@ border-radius: 0;
 .navbar-dark .navbar-nav .active > .nav-link {
   color: #036;
   font-weight: 600;
-/* background: linear-gradient(to right, #39c 20%, #fff 40%, #39c 60%) left bottom #39c no-repeat;
-    background-size: 100% 4px; */
 }
 
 /* Headings - applies to headings of all pages for consistent typography and spacing. These have been given separate ids to give options for unique styling */
@@ -97,7 +95,9 @@ border-radius: 0;
   margin-bottom: 30px;
   letter-spacing: 4px;
   padding-bottom: 10px;
-  /* Linear gradient as background to mimic horizonal rule. Percentages refer to point on the block (the size of which can in turn by determined by background-size) at which the color starts i.e. 0% is where block begins, 50% half way across block etc, 100% is where block ends */
+  /* Linear gradient as background to mimic horizonal rule.
+  *  Percentages refer to point on the block (the size of which can in turn by determined by background-size) at which the color starts
+  *  i.e. 0% is where block begins, 50% half way across block etc, 100% is where block ends */
   background: linear-gradient(to right, #fff 25%, #c90 50%, #fff 75%) left
     bottom #fff no-repeat;
   background-size: 100% 2px;
@@ -240,7 +240,8 @@ footer {
   margin: 0 1rem;
 }
 
-/* 'Grow' hover effect from Ian Lunn can be applied to most blocks to provide subtle visual feedback. Currently only applied to intro gallery images in index.html. Also affects the absolutely positioned text within the image, but there is some visual distortion */
+/* 'Grow' hover effect from Ian Lunn can be applied to most blocks to provide subtle visual feedback.
+*   Currently only applied to intro gallery images in index.html. Also affects the absolutely positioned text within the image, but there is some visual distortion */
 
 .hvr-grow {
   display: inline-block;
@@ -282,7 +283,8 @@ footer {
   /* This top margin is removed in media query to prevent unwanted spacing where two columns present on larger displays */
   margin-top: 3rem;
 }
-/* About image - Media query restricts the dimensions of the image to its container on larger displays; NB should be applied to <a> class if wanting to make the picture a clickable link.*/
+/* About image - Media query restricts the dimensions of the image to its container on larger displays;
+*  NB should be applied to <a> class if wanting to make the picture a clickable link.*/
 #about-image img {
   border-radius: 5px;
   -webkit-box-shadow: 0px 5px 8px #036;
@@ -333,7 +335,8 @@ table caption {
 .pic {
   padding: 0;
 }
-/* Gallery image - set height on larger displays to preserve consistency and absolute positioning of 'Add' pic button, but media query changes height to 100% for smaller displays to prevent a narrow image and provide full aspect ratio */
+/* Gallery image - set height on larger displays to preserve consistency and absolute positioning of 'Add' pic button
+*  Media query changes height to 100% for smaller displays to prevent a narrow image and provide full aspect ratio */
 .pic img {
   height: 200px;
   -o-object-fit: cover;

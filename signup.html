@@ -5,16 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="description" content="Penny for your Thoughts | Beautiful cards and prints delivered to your doorstep | Gallery of images: Canals, Coast, Flora and Fauna, Flowers, Landscapes, Trees" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://kit.fontawesome.com/62998f70b3.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/62998f70b3.js" crossorigin="anonymous" ></script>
     <link rel="shortcut icon" type="image/png" href="favicon.png" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <title>
@@ -25,90 +17,46 @@
 
     <!-- Navbar -->
 
-      <nav class="container-fluid navbar navbar-expand-md navbar-dark">
+    <nav class="container-fluid navbar navbar-expand-md navbar-dark">
         <a class="navbar-brand" href="index.html">Penny for your Thoughts</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="about.html"
-                aria-label="About the photographer"
-                >About</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="pricing.html"
-                aria-label="Card and print pricing"
-                >Pricing</a
-              >
-            </li>
-            <!-- nav-item-alt class used to prevent Javascript to collapse dropdowns from interrupting clicks on Gallery -->
-            <li class="nav-item-alt dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdownMenuLink"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-                aria-label="Choose section of Gallery"
-              >
-                Gallery
-              </a>
-              <div
-                class="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <a class="dropdown-item" href="gallery.html">All</a>
-                <a class="dropdown-item" href="gallery.html#canals">Canals</a>
-                <a class="dropdown-item" href="gallery.html#coast">Coast</a>
-                <a class="dropdown-item" href="gallery.html#flora-and-fauna"
-                  >Flora and Fauna</a
-                >
-                <a class="dropdown-item" href="gallery.html#flowers">Flowers</a>
-                <a class="dropdown-item" href="gallery.html#landscapes"
-                  >Landscapes</a
-                >
-                <a class="dropdown-item" href="gallery.html#trees">Trees</a>
-              </div>
-            </li>
-          </ul>
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a
-                class="nav-link nav-signup"
-                href="#"
-                aria-label="Sign up for updates"
-                >Sign Up <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-            <!-- 'disabled' class greys-out the shopping cart until implemented -->
-              <a
-                class="nav-link disabled"
-                href="#"
-                aria-label="Shopping cart (currently disabled)"
-                ><i class="fas fa-shopping-cart fa-lg"></i
-              ></a>
-            </li>
-          </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html" aria-label="About the photographer">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pricing.html" aria-label="Card and print pricing">Pricing</a>
+                </li>
+                <!-- nav-item-alt class used to prevent Javascript to collapse dropdowns from interrupting clicks on Gallery -->
+                <li class="nav-item-alt dropdown">
+                    <a
+                        class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Choose section of Gallery">Gallery
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="gallery.html" aria-label="Top of Gallery">All</a>
+                    <a class="dropdown-item" href="gallery.html#canals" aria-label="Canals section of Gallery">Canals</a>
+                    <a class="dropdown-item" href="gallery.html#coast" aria-label="Coast section of Gallery">Coast</a>
+                    <a class="dropdown-item" href="gallery.html#flora-and-fauna" aria-label="Flora and Fauna section of Gallery">Flora and Fauna</a>
+                    <a class="dropdown-item" href="gallery.html#flowers" aria-label="Flowers section of Gallery">Flowers</a>
+                    <a class="dropdown-item" href="gallery.html#landscapes" aria-label="Landscapes section of Gallery">Landscapes</a>
+                    <a class="dropdown-item" href="gallery.html#trees" aria-label="Trees section of Gallery">Trees</a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link nav-signup" href="#" aria-label="Sign up for updates">Sign Up <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <!-- 'disabled' class greys-out the shopping cart until implemented -->
+                    <a class="nav-link disabled" href="#" aria-label="Shopping cart (currently disabled)"><i class="fas fa-shopping-cart fa-lg"></i></a>
+                </li>
+            </ul>
         </div>
-      </nav>
+    </nav>
 
     <!-- Sign Up -->
 
@@ -123,7 +71,6 @@
           </p>
         </div>
       </div>
-      <!-- Invalid-feedback display disabled until fix for jumping on submit -->
       <form class="needs-validation mt-5" id="signup-form" novalidate>
         <div class="form-row">
           <div class="form-group col-md-6">
@@ -135,9 +82,6 @@
               placeholder="First Name"
               required
             />
-            <!-- <div class="invalid-feedback">
-                     Please enter your First Name
-                     </div> -->
           </div>
           <div class="form-group col-md-6">
             <label for="inputSurname">Surname</label>
@@ -148,9 +92,6 @@
               placeholder="Surname"
               required
             />
-            <!-- <div class="invalid-feedback">
-                     Please enter your Surname
-                     </div> -->
           </div>
         </div>
         <div class="form-row">
@@ -163,9 +104,6 @@
               placeholder="Email"
               required
             />
-            <!-- <div class="invalid-feedback">
-                     Please enter a valid email address
-                     </div> -->
             <small class="form-text text-muted"
               >We'll never share your email with anyone else</small
             >
@@ -181,9 +119,6 @@
               placeholder="Password"
               required
             />
-            <!-- <div class="invalid-feedback">
-                     Please choose a password
-                     </div> -->
           </div>
           <div class="form-group col-md-6">
             <label for="inputPassword2">Confirm Password</label>
@@ -194,58 +129,8 @@
               placeholder="Password"
               required
             />
-            <!-- <div class="invalid-feedback">
-                     Please confirm your password
-                     </div> -->
           </div>
         </div>
-        <!-- Additional form fields for use when ordering cards/prints via email
-               <div class="form-row">
-               <div class="form-group col-md-6">
-               <label for="inputAddress1">Address 1</label>
-               <input
-                 type="text"
-                 class="form-control"
-                 id="inputAddress"
-                 placeholder="House name / House number"
-                 required
-               />
-               <div class="invalid-feedback">
-                   Please enter the first line of your address
-                </div>
-               </div>
-               <div class="form-group col-md-6">
-               <label for="inputAddress2">Address 2</label>
-               <input
-                 type="text"
-                 class="form-control"
-                 id="inputAddress2"
-                 placeholder="Street"
-                 required
-               />
-               <div class="invalid-feedback">
-                   Please enter the second line of your address
-                </div>
-               </div>
-               </div>
-               <div class="form-row">
-               <div class="form-group col-md-6">
-               <label for="inputCity">City</label>
-               <input type="text" class="form-control" id="inputCity" required />
-               </div>
-               <div class="form-group col-md-2">
-               <label for="inputPostcode">Postcode</label>
-               <input
-                 type="text"
-                 class="form-control"
-                 id="inputPostcode"
-                 required
-               />
-               <div class="invalid-feedback">
-                   Please enter a valid postcode
-                </div>
-               </div>
-               </div> -->
         <div class="form-group form-check">
           <input
             type="checkbox"
