@@ -63,8 +63,8 @@ border-radius: 0;
 .navbar-brand {
   font-weight: 600;
   font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
-  letter-spacing: 1px;
+  font-size: 0.9375rem;
+  letter-spacing: 0.0625rem;
   color: #fff;
   margin-right: 0;
 }
@@ -92,22 +92,22 @@ border-radius: 0;
 #heading-signup {
   font-size: 1.8rem;
   text-align: center;
-  margin-bottom: 30px;
-  letter-spacing: 4px;
-  padding-bottom: 10px;
+  margin-bottom: 1.875rem;
+  letter-spacing: 0.25rem;
+  padding-bottom: 0.625rem;
   /* Linear gradient as background to mimic horizonal rule.
   *  Percentages refer to point on the block (the size of which can in turn by determined by background-size) at which the color starts
   *  i.e. 0% is where block begins, 50% half way across block etc, 100% is where block ends */
   background: linear-gradient(to right, #fff 25%, #c90 50%, #fff 75%) left
     bottom #fff no-repeat;
-  background-size: 100% 2px;
+  background-size: 100% 0.125rem;
 }
 /* Headings - gallery section headings */
 .heading-gallery-category {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     padding-top: 2.5rem;
-    letter-spacing: 1px;
+    letter-spacing: 0.0625rem;
     font-size: 1.75rem;
     text-transform: uppercase;
     margin-bottom: 0;
@@ -151,8 +151,8 @@ border-radius: 0;
 /* Three text blocks below Hero image */
 #intro p {
   margin: 0;
-  padding: 20px 0px;
-  letter-spacing: 1px;
+  padding: 1.25rem 0;
+  letter-spacing: 0.0625rem;
 }
 /* Container for the circular images below Hero image - reduced width prevents overflow caused by hvr.grow effect */
 #intro-gallery {
@@ -163,7 +163,7 @@ border-radius: 0;
 /* <a> element targeted here in order to create a clickable area which matches the desired shape of the image contained within */
 .intro-gallery-image a {
   display: flex;
-  margin: 20px auto;
+  margin: 1.25rem auto;
   height: 150px;
   width: 150px;
   border-radius: 50%;
@@ -198,8 +198,8 @@ border-radius: 0;
 /* Footer */
 
 footer {
-  margin-top: 80px;
-  border: 0px;
+  margin-top: 5rem;
+  border: 0;
   border-style: solid;
   border-color: transparent;
   border-top-color: #036;
@@ -225,7 +225,7 @@ footer {
   color: #fff;
   display: inline-block;
   /* Line height is used to vertically center the social media icons within the block */
-  line-height: 27px;
+  line-height: 1.6875rem;
 }
 
 /* Social media icon hover styling */
@@ -281,7 +281,7 @@ footer {
   -ms-flex-pack: center;
   justify-content: center;
   /* This top margin is removed in media query to prevent unwanted spacing where two columns present on larger displays */
-  margin-top: 3rem;
+  margin-top: 0.1875rem;
 }
 /* About image - Media query restricts the dimensions of the image to its container on larger displays;
 *  NB should be applied to <a> class if wanting to make the picture a clickable link.*/
@@ -302,7 +302,7 @@ footer {
 /* Pricing */
 
 .table-container {
-  padding: 0 15px;
+  padding: 0 0.9375rem;
 }
 /* Fixed-layout keeps the column widths identical on both tables so that in single column display they are aligned on the page */
 table {
@@ -341,7 +341,7 @@ table caption {
   height: 200px;
   -o-object-fit: cover;
   object-fit: cover;
-  margin-top: 20px;
+  margin-top: 1.25rem;
   border-radius: 5px;
   -webkit-box-shadow: 0px 5px 8px #036;
   box-shadow: 0px 5px 8px #036;
@@ -391,6 +391,22 @@ table caption {
   }
 }
 
+/* Adds ability to scroll navbar dropdown items on mobile devices where they would be hidden/inaccessible */
+@media screen and (max-width: 767px) and (max-height: 475px) {
+  .dropdown-menu {
+    height: 115px;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Alters the height of gallery images to prevent them becoming stretched on mobile devices when displayed one per row */
+@media screen and (max-width: 575px) {
+  .pic img {
+    height: 100%;
+  }
+}
+
 @media screen and (min-width: 768px) {
   /* Increases the size of callout-contents on larger displays */
   #callout-contents h1 {
@@ -434,7 +450,14 @@ table caption {
     padding: 0.75rem;
   }
   .table-container {
-    padding: 0rem 3rem;
+    padding: 0 3rem;
+  }
+}
+
+/* Allows the hero image to be displayed on mobile devices (iOS), however it will appear as a static image and will not 'reveal' itself when scrolling down the page */
+@media screen and (max-width: 1024px) {
+  #callout {
+    background-attachment: scroll;
   }
 }
 
@@ -446,29 +469,6 @@ table caption {
 
   /* Increases the external padding around tables */
   .table-container {
-    padding: 0rem 5rem;
-  }
-}
-
-/* Alters the height of gallery images to prevent them becoming stretched on mobile devices when displayed one per row */
-@media screen and (max-width: 575px) {
-  .pic img {
-    height: 100%;
-  }
-}
-
-/* Adds ability to scroll navbar dropdown items on mobile devices where they would be hidden/inaccessible */
-@media screen and (max-width: 767px) and (max-height: 475px) {
-  .dropdown-menu {
-    height: 115px;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
-  }
-}
-
-/* Allows the hero image to be displayed on mobile devices (iOS), however it will appear as a static image and will not 'reveal' itself when scrolling down the page */
-@media screen and (max-width: 1024px) {
-  #callout {
-    background-attachment: scroll;
+    padding: 0 5rem;
   }
 }
