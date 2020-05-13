@@ -526,13 +526,13 @@ Real world testing on:
 
   _When the Gallery or hamburger dropdowns are expanded in the navbar, anchor links within the same page will not collapse the navbar (most noticeable on the Gallery page)_
 
-  - Resolved by customising a Javascript snippet from [Stack Overflow](https://stackoverflow.com/questions/42401606/how-to-hide-collapsible-bootstrap-4-navbar-on-click) to point to the relevant classes in the navbar
+  - Resolved by customising a Javascript snippet from [Stack Overflow: How to hide a collapsible Bootstrap 4 navbar on click](https://stackoverflow.com/questions/42401606/how-to-hide-collapsible-bootstrap-4-navbar-on-click) to point to the relevant classes in the navbar
 
 - **Navbar dropdown not visible on landscape mobile devices**
 
   _When expanding the Gallery nav-item in the navbar while in landscape mode on a mobile device, not all list items are visible and cannot be clicked_
 
-  - Resolved by using a suggestion found on [Github](https://github.com/twbs/bootstrap/issues/23374) and adding a media query for smaller displays which sets `overflow-y: scroll` and `height: 115px` to ensure the list items are visible on all displays
+  - Resolved by using a suggestion found on [Github: Issues](https://github.com/twbs/bootstrap/issues/23374) and adding a media query for smaller displays which sets `overflow-y: scroll` and `height: 115px` to ensure the list items are visible on all displays
 
 - **Intro gallery circular images on right margin cause overflow when hvr-grow effect is appled**
 
@@ -540,7 +540,7 @@ Real world testing on:
 
 - **iOS browser adds unwanted styling to Pricing button in hero image**
 
-  - Resolved by using code from [Dare to Think](https://www.daretothink.co.uk/stop-ios-styling-your-input-fields-and-buttons/) to target `input[type="button"]` and override using `-webkit-appearance: none`
+  - Resolved by using code from [Dare to Think: Stop iOS styling your input fields and buttons](https://www.daretothink.co.uk/stop-ios-styling-your-input-fields-and-buttons/) to target `input[type="button"]` and override using `-webkit-appearance: none`
 
 - **Links on social media icons in footer apply to the entire containing div**
 
@@ -548,11 +548,11 @@ Real world testing on:
 
 - **Links / hover effects on intro gallery circular images apply to the entire containing div**
 
-  - Resolved using suggestion from [Stack Overflow](https://stackoverflow.com/questions/29978500/only-make-a-centered-image-a-link-instead-of-the-whole-parent-div) moving size styling from the image to the `<a>` element within a newly created container class `.intro-gallery-image` and then adding `display: flex`
+  - Resolved using suggestion from [Stack Overflow: Only make a centered-image a link instead of the whole parent div](https://stackoverflow.com/questions/29978500/only-make-a-centered-image-a-link-instead-of-the-whole-parent-div) moving size styling from the image to the `<a>` element within a newly created container class `.intro-gallery-image` and then adding `display: flex`
 
 - **Use of horizontal rules (`<hr>`) considered poor practice and outdated**
 
-  - Resolved using suggestion from [Stack Overflow](https://stackoverflow.com/questions/23751274/can-we-set-a-gradient-color-to-border-bottom-property) and switching to styling headings with `background: linear-gradient`
+  - Resolved using suggestion from [Stack Overflow: Can we set a gradient color to border-bottom property?](https://stackoverflow.com/questions/23751274/can-we-set-a-gradient-color-to-border-bottom-property) and switching to styling headings with `background: linear-gradient`
 
 - **There is white space beneath footer on pages with little content (Pricing and About)**
 
@@ -572,7 +572,7 @@ Real world testing on:
 
   _Despite displaying correctly in Chrome devtools, the display on iOS leaves validation error messages appearing clipped and ugly_
 
-  - Resolved by using Bootstrap's recommended `needs-validation` class and `novalidate`. A block styled with `invalid-feedback` was avoided to prevent error messages appearing and shifting the lines of input fields
+  - Resolved by using Bootstrap's recommended `needs-validation` class and `novalidate` ([Source](https://getbootstrap.com/docs/4.1/components/forms/#custom-styles)). A block styled with `invalid-feedback` was avoided to prevent error messages appearing and shifting the lines of input fields
 
 <span id="testing-unresolved"></span>
 
@@ -598,7 +598,7 @@ There is just one branch of this project (master) and deployed version of this s
 
 ### How to deploy
 
-To deploy this page to GitHub Pages from its [GitHub repository](https://github.com/Edb83/milestone1), the following steps were taken:
+To deploy this page to GitHub Pages from its [GitHub repository](https://github.com/Edb83/penny-for-your-thoughts), the following steps were taken:
 
 1. From the menu items near the top of the page, select **Settings**
 2. Scroll down to the **GitHub Pages** section
