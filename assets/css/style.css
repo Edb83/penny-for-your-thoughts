@@ -104,12 +104,14 @@ border-radius: 0;
 }
 /* Headings - gallery section headings */
 .heading-gallery-category {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  padding-top: 1rem;
-  letter-spacing: 1px;
-  font-size: 1.75rem;
-  text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    padding-top: 2.5rem;
+    letter-spacing: 1px;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    color: #366;
 }
 
 /* Hero image */
