@@ -27,8 +27,9 @@ body {
 }
 
  .page-text p {
-    margin-bottom: 2rem;
-    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    text-align: center;
 }
 
 /* This code from Dare to Think overrides iOS styling on buttons and more, specifically the call to action ("Purchase") on the hero image
@@ -77,12 +78,7 @@ nav {
   color: #fff;
   margin-right: 0;
 }
-/* Navbar - "Penny for your Thoughts" hover */
-.navbar-dark .navbar-brand:focus,
-.navbar-dark .navbar-brand:hover {
-  /* color: #036;
-  font-weight: 600; */
-}
+
 /* Navbar - items */
 .navbar-dark .navbar-nav .nav-link {
   color: #fff;
@@ -297,7 +293,7 @@ footer {
   -ms-flex-pack: center;
   justify-content: center;
   /* This top margin is removed in media query to prevent unwanted spacing where two columns present on larger displays */
-  margin-top: 0.1875rem;
+  margin-top: 2.5rem;
 }
 /* About image - Media query restricts the dimensions of the image to its container on larger displays;
 *  NB should be applied to <a> class if wanting to make the picture a clickable link.*/
@@ -398,6 +394,7 @@ table caption {
   color: #fff;
 }
 
+
 /* Media */
 
 /* Increases the font size of the navbar brand on larger displays */
@@ -442,6 +439,11 @@ table caption {
   font-size: 1.25rem;
 }
 
+ .page-text p {
+    margin-bottom: 2rem;
+    font-size: 1.25rem;
+}
+
   /* Increases the external padding and reduces the horizontal padding of tables on larger displays  */
   .table td,
   .table th {
@@ -450,6 +452,12 @@ table caption {
   .table-container {
     padding: 0rem 1.5rem;
   }
+
+  
+.sign-up-button-container {
+    text-align: center;
+}
+
 }
 
 @media screen and (min-width: 992px) {
