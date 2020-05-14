@@ -13,6 +13,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  font-size: 16px;
   margin: 0;
 
   /* These settings are used to position the footer at the bottom of the page where there is insufficient content to naturally position it there (About, Pricing, Signup) */

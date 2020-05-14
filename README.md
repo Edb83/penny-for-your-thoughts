@@ -5,26 +5,28 @@
 **[Live site](https://edb83.github.io/penny-for-your-thoughts/)**
 
 ---
+
 <span id="top"></span>
+
 ## Index
 
-- <a href="#project">Context</a>
+- <a href="#context">Context</a>
 - <a href="#ux">UX</a>
-    - <a href="#ux-stories">User stories</a>
-    - <a href="#ux-wireframes">Wireframes</a>
-    - <a href="#ux-theme">Theme</a>
+  - <a href="#ux-stories">User stories</a>
+  - <a href="#ux-wireframes">Wireframes</a>
+  - <a href="#ux-theme">Theme</a>
 - <a href="#features">Features</a>
-    - <a href="#features-all">Site wide</a>
-    - <a href="#features-pages">Pages</a>
-    - <a href="#features-future">Still to implement</a>
+  - <a href="#features-all">Site wide</a>
+  - <a href="#features-pages">Pages</a>
+  - <a href="#features-future">Still to implement</a>
 - <a href="#technologies">Technologies Used</a>
 - <a href="#testing">Testing</a>
-    - <a href="#testing-auto">Automated</a>
-    - <a href="#testing-manual">Manual</a>
-    - <a href="#testing-responsive">Responsive</a>
-    - <a href="#testing-resolved">Resolved issues</a>
-    - <a href="#testing-unresolved">Unresolved issues</a>
-    - <a href="#testing-bugs">Known bugs</a>
+  - <a href="#testing-auto">Automated</a>
+  - <a href="#testing-manual">Manual</a>
+  - <a href="#testing-responsive">Responsive</a>
+  - <a href="#testing-resolved">Resolved issues</a>
+  - <a href="#testing-unresolved">Unresolved issues</a>
+  - <a href="#testing-bugs">Known bugs</a>
 - <a href="#deployment">Deployment</a>
 - <a href="#credits">Credits</a>
 
@@ -37,6 +39,7 @@
 This site is a showcase for an aspiring photographer's work, which is available to purchase either on card or enlarged print.
 
 Since moving to the countryside, Penny has found herself increasingly inspired by her beautiful surroundings and is keen to share them with a wider audience. More than ever in these uncertain, digital times, there's comfort to be found in a personal message written on a physical card, adorned with beautiful, candid pictures of nature.
+
 <div align="right"><a style="text-align:right" href="#top">Go to index :arrow_double_up:</a></div>
 <span id="ux"></span>
 
@@ -52,136 +55,23 @@ The enterprise is humble but, as evidenced by the quality of the pictures, has a
 
 ### User stories
 
-For ease of reference, the means by which a user's expectations have been met are summarised below each user story:
+For ease of reference, the means by which a user's expectations have been met are summarised in the table below:
 
-As the **client** I want
+| As a **client** I want                                                                                                                                    | How this is achieved                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Visitors to be immediately aware of what the product is                                                                                                   | The sub-heading over the hero image, call to action (Purchase button) and the three introductory statements make it immediately clear what the product is                                                                                                                                                                                                                                                                                                                                                                                                               |
+| A clean, consistent interface which will not confuse visitors                                                                                             | The navbar, footer and headings of each page are clear, simple and consistent, as are the spacing, typography, image styling and colours. All clickable links have consistent visual feedback, including the subtle hover effect on the intro gallery images                                                                                                                                                                                                                                                                                                            |
+| My work to be showcased from the outset, with a gallery allowing visitors to quickly browse through high quality images and add them to a shopping basket | The landing page is dedicated to a full-viewport hero image and samples of the various themes of image below it, ensuring the photographer's work is centre stage. <br>The gallery is accessible via the nav bar, call to action and intro gallery images. It benefits from a clean, effective modal which displays Full HD images in their original aspect ratio, and allows the entire gallery to be browsed with just the mouse wheel / swiping. There is an "Add (to basket)" button on each image for a shopping experience matching typical browsing expectations |
 
-- Visitors to be immediately aware of what the product is
-
-  **Response:** The sub-heading over the hero image, call to action (Purchase button) and the three introductory statements make it immediately clear what the product is
-
-- A clean, consistent interface which will not confuse visitors
-
-  **Response:** The navbar, footer and headings of each page are clear, simple and consistent, as are the spacing, typography, image styling and colours
-
-- My work to be showcased from the outset
-
-  **Response:** The landing page is dedicated to the 100% viewport hero image and samples of the various themes of image below that. This ensures the photographer's work is centre stage
-
-- An immediate link to the gallery
-
-  **Response:** The gallery is accessible in the nav bar, call to action and intro gallery images
-
-- A gallery which allows visitors to quickly browse through high quality images in their original aspect ratio and to add them to a shopping basket
-
-  **Response:** The gallery has a clean and effective modal which displays Full HD images in their original aspect ratio and allows the entire gallery to be browsed with just the mouse wheel / swiping. There is an "Add (to basket)" button on each image for a shopping experience which is expected on sites nowadays
-
-  _NB the table below is a repeat of info above_
-
-| <div style="width: 50%">Client's expectations</div>                                                                                                | How is this met?                                                                                                                                                                                                                                                                                             |
-| :------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Visitors to be immediately aware of what the product is                                                                                            | The sub-heading over the hero image, call to action (Purchase button) and the three introductory statements make it immediately clear what the product is                                                                                                                                                    |
-| Clean, consistent interface which will not confuse visitors                                                                                        | The navbar, footer and headings of each page are clear, simple and consistent, as are the spacing, typography, image styling and colours                                                                                                                                                                     |
-| My work to be showcased from the outset                                                                                                            | The landing page is dedicated to the 100% viewport hero image and samples of the various themes of image below that. This ensures the photographer's work is centre stage                                                                                                                               |
-| An immediate link to the gallery                                                                                                                   | The gallery is accessible in the nav bar, call to action and intro gallery images                                                                                                                                                                                                                            |
-| A gallery which allows visitors to quickly browse through high quality images in their original aspect ratio and to add them to a shopping basket | The gallery has a clean and effective modal which displays Full HD images in their original aspect ratio and allows the entire gallery to be browsed with just the mouse wheel / swiping. There is an "Add (to basket)" button on each image for a shopping experience which is expected on sites nowadays |
-
-As a **visitor** I want:
-
-- For it to be immediately clear what the purpose of the site is and what it has to offer
-
-  **Response:** Aligns with client's expectations
-
-- A clean interface and layout which allows me to focus on browsing the images and purchasing them
-
-  **Response:** Aligns with client's expectations
-
-- To be able to quickly navigate the site using navbar and clear links
-
-  **Response:** Aligns with client's expectations
-
-- To see a striking image which is indicative of the product’s nature and quality
-
-  **Response:** Aligns with client's expectations
-
-- To learn something about the photographer
-
-  **Response:** The About page is separate from the rest of the content but is easily accessible for those wishing to learn more about the photographer, and the information itself is not overly dense or excessive
-
-- To be able to contact the photographer directly
-
-  **Response:** The About page includes a contact email
-
-- To be able to quickly find out more about the product, specifically its price and available options
-
-  **Response:** The Pricing page is currently separate and provides an acceptible means of sharing this information, which is laid out in a pair of easily digestible tables containly only pertinent information. As the project develops and the shopping basket is implemented, this information may be conveyed more effectively elsewhere
-
-- To be able to access the gallery quickly and browse its entire contents at once
-
-  **Response:** Aligns with client's expectations
-
-- To be able to choose themes from the image gallery, and access them quickly
-
-  **Response:** Currently this expectation is met (and promoted) using the navbar Gallery dropdown list and intro gallery below the hero image. This method will be re-examined as new images are added and when future functionality enables advanced search options
-
-- To be able to click an image to see its true aspect ratio, if it isn’t immediately obvious
-
-  **Response:** Aligns with client's expectations
-
-- To be able to quickly add desired images to my shopping basket
-
-  **Response:** Aligns with client's expectations
-
-- To be able to quickly find the photographer’s social media presence
-
-  **Response:** The minimalist footer provides available social media links, as is expected by all web users today
-
-- To be able to sign up for more information and updates on the photographer’s work
-
-  **Response:** The Sign Up page has the singular purpose of establishing a connection with potential clients in the hope of securing repeat business
-
-- For the site to be responsive on all devices
-
-  **Response:** Addressed in the Responsiveness section below
-
-- For there to be clear but aesthetically pleasing visual feedback when hovering over clickable links
-
-  **Response:** All clickable links have consistent visual feedback, including the subtle hover effect on the intro gallery images
-
-- For the image gallery to be fast to load and easy to navigate
-
-  **Response:** Efforts have been made to reduce the size of files to what is acceptible on the web today, but there is scope to utilise thumbnails of an even smaller size to improve the speed at which the Gallery loads
-
-- For the signup form to show me if I have inputted incorrectly
-
-  **Response:** Addressed in the Manual testing section below
-
-- For links to external sites to open in a separate tab to prevent loss of focus
-
-  **Response:** This currently only applies to the social media links in the footer, but they all open in a separate browser tab
-
-  _NB the table below is a repeat of info above_
-
-| <div style="width: 50%">Visitor's expectation</div>                                              | How is this met?                                                                                                                                                                                                                                                                                                               |
-| :----------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Immediately clear what the purpose of the site is and what it has to offer                       | Aligns with client's expectations                                                                                                                                                                                                                                                                                              |
-| A clean interface and layout which allows me to focus on browsing the images and purchasing them | Aligns with client's expectations                                                                                                                                                                                                                                                                                              |
-| Quickly navigate the site using navbar and clear links                                           | Aligns with client's expectations                                                                                                                                                                                                                                                                                              |
-| Striking image which is indicative of the product’s nature and quality                           | Aligns with client's expectations                                                                                                                                                                                                                                                                                              |
-| Learn something about the photographer                                                           | The About page is separate from the rest of the content but is easily accessible for those wishing to learn more about the photographer, and the information itself is not overly dense or excessive                                                                                                                           |
-| Contact the photographer directly                                                                | The About page includes a contact email                                                                                                                                                                                                                                                                                        |
-| Quickly find out more about the product, specifically its price and available options            | The Pricing page is currently separate and provides an acceptible means of sharing this information, which is laid out in a pair of easily digestible tables containly only pertinent information. As the project develops and the shopping basket is implemented, this information may be conveyed more effectively elsewhere |
-| Access the gallery quickly and browse its entire contents at once                                | Aligns with client's expectations                                                                                                                                                                                                                                                                                              |
-| Choose themes from the image gallery, and access them quickly                                    | Currently this expectation is met (and promoted) using the navbar Gallery dropdown list and intro gallery below the hero image. This method will be re-examined as new images are added and when future functionality enables advanced search options                                                                          |
-| Click an image to see its true aspect ratio, if it isn’t immediately obvious                     | Aligns with client's expectations                                                                                                                                                                                                                                                                                              |
-| Quickly add desired images to my shopping basket                                                 | Aligns with client's expectations                                                                                                                                                                                                                                                                                              |
-| Quickly find the photographer’s social media presence                                            | The minimalist footer provides available social media links, as is expected by all web users today                                                                                                                                                                                                                             |
-| Sign up for more information and updates on the photographer’s work                              | The Sign Up page has the singular purpose of establishing a connection with potential clients in the hope of securing repeat business                                                                                                                                                                                          |
-| Responsive on all devices                                                                        | Addressed in the Responsiveness section below                                                                                                                                                                                                                                                                                  |
-| Clear but aesthetically pleasing visual feedback when hovering over clickable links              | All clickable links have consistent visual feedback, including the subtle hover effect on the intro gallery images                                                                                                                                                                                                             |
-| Image gallery to be fast to load and easy to navigate                                            | Efforts have been made to reduce the size of files to what is acceptible on the web today, but there is scope to utilise thumbnails of an even smaller size to improve the speed at which the Gallery loads                                                                                                                    |
-| Signup form to show me if I have inputted incorrectly                                            | Addressed in the Manual testing section below                                                                                                                                                                                                                                                                                  |
-| Links to external sites to open in a separate tab to prevent loss of focus                       | This currently only applies to the social media links in the footer, but they all open in a separate browser tab                                                                                                                                                                                                               |
+| As a **visitor** I want                                                                                                                                                               | How this is achieved                                                                                                                                                                                                                                                                                                                                 |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| For it to be immediately clear what the purpose of the site is and what it has to offer. The interface and layout should be clean, with a focus on showcasing the images for purchase | Aligns with client's expectations                                                                                                                                                                                                                                                                                                                    |
+| To learn something about the photographer and to be able to contact them directly or find them on social media                                                                        | The About page is separate from the rest of the content but is easily accessible for those wishing to learn more about the photographer, and the information itself is not overly dense or excessive. The About page includes a contact email and the minimalist footer provides available social media links, as is expected by all web users today |
+| To be able to quickly find out more about the product, specifically its price and available options                                                                                   | The Pricing page is currently separate and provides an acceptible means of sharing this information, which is laid out in a pair of easily digestible tables containly only pertinent information. As the project develops and the shopping basket is implemented, this information may be conveyed more effectively elsewhere                       |
+| Quick access to the gallery, with the option to sort by theme                                                                                                                         | Currently this expectation is met (and promoted) using the nav bar Gallery dropdown list and intro gallery below the hero image. This method will be re-examined as new images are added and when future functionality enables advanced search options                                                                                               |
+| To be able to sign up for more information and updates on the photographer’s work                                                                                                     | The Sign Up page has the singular purpose of establishing a connection with potential clients in the hope of securing repeat business                                                                                                                                                                                                                |
+| To be able to access all information on a range of devices                                                                                                                            | Addressed in the <a href="#testing-responsive">Responsive</a> section below                                                                                                                                                                                                                                                                          |
+| Images to be fast to load and easy to navigate                                                                                                                                        | Efforts have been made to reduce the size of files to what is acceptible on the web today, but there is scope to utilise thumbnails of an even smaller size to improve the speed at which the Gallery loads                                                                                                                                          |
 
 <span id="ux-wireframes"></span>
 
@@ -192,7 +82,7 @@ Overall the wireframes were successfully converted into a functioning website, h
 1. A circular image divided up into four seasons (with the same functionality as the intro gallery images on the landing page) was originally envisaged, however it was not possible to create this to the desired standard in the time available, so the idea was dropped. Furthermore, the page structure required would have been unnecessarily complex and ultimately misleading and repetitive.
 2. The option to Sign In was planned to appear below the Sign Up form, however as the project advanced it became apparent that this was not a needed feature in this first iteration. The decision was made to simplify the design and stick to the core requirement of providing a means to subscribe to information rather than to log in with no purpose. The benefits of signing into the site are more closely tied to the (as yet) unrealised shopping basket feature and will be explored in future.
 
-The full suite of wireframes for **desktop**, **tablet** and **mobile** devices, plus a **sitemap**, can be accessed [here](wireframes/). 
+The full suite of wireframes for **desktop**, **tablet** and **mobile** devices, plus a **sitemap**, can be accessed [here](wireframes/).
 
 ### Site theme
 
@@ -299,9 +189,9 @@ At this point, user feedback suggested changing the hero image and after doing s
 - HTML
 - CSS
 - Javascript
-    - [Fancybox](https://fancyapps.com/fancybox/3/) - modal gallery
-    - [jQuery](https://jquery.com/) - collapsable nav bar
-    - [popper.js](https://popper.js.org/) - collapsable nav bar
+  - [Fancybox](https://fancyapps.com/fancybox/3/) - modal gallery
+  - [jQuery](https://jquery.com/) - collapsable nav bar
+  - [popper.js](https://popper.js.org/) - collapsable nav bar
 
 ### Project management
 
@@ -332,6 +222,7 @@ At this point, user feedback suggested changing the hero image and after doing s
 ### Online resources
 
 - [How to Geek](https://www.howtogeek.com/354015/how-to-resize-images-and-photos-in-windows/) - specifically advice on how to efficiently handle a large number of images
+- [PX-to-REM Calculator](https://daniellamb.com/experiments/px-to-rem-calc/)
 - [Stack Overflow](https://stackoverflow.com/)
 - [W3 Schools](https://www.w3schools.com/)
 
@@ -349,26 +240,27 @@ At this point, user feedback suggested changing the hero image and after doing s
 
 Summary:
 
-  - Performance = **Average**
-    - The worst metric due to issues around image size and not using next-gen filetypes, particularly on gallery.html where the score was 74% on mobile - it is beyond the scope of this project to address this
-    - Unused CSS - removed hover.min.css from all but index.html where it is used on the intro gallery images
-  - Accessibility = **Good**
-    - Various links missing discernable names (mainly nav bar and footer) - fixed by adding aria labels to all links across the site
-    - Insufficient contrast ratio on hero image and nav bar Brand
-    - Lowest score 96% on desktop following amendments
-  - Best Practices = **Good**
-    - Front-end Javascript libraries with known security vulnerabilities (Bootstrap and jQuery) - it is beyond the scope of this project to address this
-  - SEO = **Good**
-    - `head` was missing `<meta name="description" content="..." />` - fixed
-    - Scores 95% on Gallery due to 'Add' button being smaller than 48px x 48px. Tested with larger button sizes but they took up too much real estate - it is beyond the scope of this project to address this
-    - Scores 100% across all other pages following amendments
+- Performance = **Average**
+  - The worst metric due to issues around image size and not using next-gen filetypes, particularly on gallery.html where the score was 74% on mobile - it is beyond the scope of this project to address this
+  - Unused CSS - removed hover.min.css from all but index.html where it is used on the intro gallery images
+- Accessibility = **Good**
+  - Various links missing discernable names (mainly nav bar and footer) - fixed by adding aria labels to all links across the site
+  - Insufficient contrast ratio on hero image and nav bar Brand
+  - Lowest score 96% on desktop following amendments
+- Best Practices = **Good**
+  - Front-end Javascript libraries with known security vulnerabilities (Bootstrap and jQuery) - it is beyond the scope of this project to address this
+- SEO = **Good**
+  - `head` was missing `<meta name="description" content="..." />` - fixed
+  - Scores 95% on Gallery due to 'Add' button being smaller than 48px x 48px. Tested with larger button sizes but they took up too much real estate - it is beyond the scope of this project to address this
+  - Scores 100% across all other pages following amendments
 
 Mobile scores:
- - Home
+
+- Home
 
 ![Landing](assets/audit/audit-home.jpg "Landing page scores")
 
- - About
+- About
 
 ![About](assets/audit/audit-about.jpg "About page scores")
 
@@ -386,7 +278,7 @@ Mobile scores:
 
 - [W3C - HTML](https://validator.w3.org/) - `alt` tags were missing and call to action `button` with `type="button"` was identified as an issue. On update no HTML errors or warnings detected - **PASS**
 - [W3C - CSS](https://jigsaw.w3.org/css-validator/) - no CSS errors detected - **PASS**
-    - Update: passing CSS code through [Autoprefixer](https://autoprefixer.github.io/) produced 47 warnings related to unknown vendor extensions
+  - Update: passing CSS code through [Autoprefixer](https://autoprefixer.github.io/) produced 47 warnings related to unknown vendor extensions
 - [Unicorn revealer - overflow](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln/related) - tested all pages and no evidence of overflow - **PASS**
 
 <span id="testing-manual"></span>
@@ -522,7 +414,6 @@ Real world testing on:
 - iPhone 11 Pro
 - Asus ZenBook
 
-
 ### Issues and resolutions
 
 <span id="testing-resolved"></span>
@@ -638,7 +529,6 @@ Further reading and troubleshooting on cloning a repository from GitHub can be f
 <div align="right"><a style="text-align:right" href="#top">Go to index :arrow_double_up:</a></div>
 
 <span id="credits"></span>
-
 
 ## Credits
 
