@@ -34,8 +34,8 @@ input[type="text"],
 input[type="button"],
 input[type="submit"],
 .input-checkbox {
--webkit-appearance: none;
-border-radius: 0;
+  -webkit-appearance: none;
+  border-radius: 0;
 }
 
 /* These settings are used to position the footer at the bottom of the page where there is insufficient content to naturally position it there (About, Pricing, Signup) */
@@ -52,7 +52,7 @@ border-radius: 0;
 /* Navbar */
 
 nav {
-    font-family: "Open Sans",sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .navbar {
@@ -63,7 +63,6 @@ nav {
   position: fixed;
   z-index: 1;
   left: 0;
-  
 }
 /* Navbar - "Penny for your Thoughts" */
 .navbar-brand {
@@ -110,13 +109,13 @@ nav {
 }
 /* Headings - gallery section headings */
 .heading-gallery-category {
-    font-weight: 400;
-    padding-top: 2.5rem;
-    letter-spacing: 0.0625rem;
-    font-size: 1.75rem;
-    text-transform: uppercase;
-    margin-bottom: 0;
-    color: #366;
+  font-weight: 400;
+  padding-top: 2.5rem;
+  letter-spacing: 0.0625rem;
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  color: #366;
 }
 
 /* Hero image */
@@ -155,19 +154,20 @@ nav {
 
 /* Three text blocks below Hero image */
 .intro-title {
-    margin: 0;
-    padding: 1.25rem 0;
-    letter-spacing: 0.0625rem;
-    text-align: center;
-    font-size: 2rem;
-    color: #3399cc;
+
+  padding: 1.25rem 0;
+  letter-spacing: 0.0625rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #3399cc;
 }
 .intro-text {
-  margin: 0;
+ 
   padding: 0 0.625rem;
   text-align: center;
   font-size: 1rem;
-  
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
 }
 /* Container for the circular images below Hero image - reduced width prevents overflow caused by hvr.grow effect */
 #intro-gallery {
@@ -319,7 +319,7 @@ footer {
 
 .table-container {
   padding: 0 0.9375rem;
-  font-family: "Open Sans",sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 /* Fixed-layout keeps the column widths identical on both tables so that in single column display they are aligned on the page */
 table {
@@ -449,10 +449,10 @@ table caption {
     margin: 0 2rem;
   }
 
-/* Sets a minimum intro-title height to prevent uneven headings when there are three columns */
+  /* Sets a minimum intro-title height to prevent uneven headings when there are three columns */
   .intro-title {
     min-height: 136px;
-}
+  }
 
   /* Reduces the margin above the about-image on larger displays and adjusts image to fit container */
   #about-image {
@@ -483,15 +483,14 @@ table caption {
   }
 }
 
-/*  */
+/* Increases padding on intro titles to preserve spacing on larger displays */
 @media screen and (min-width: 1189px) {
-
-.intro-title {
+  .intro-title {
     padding: 1.25rem 3.125rem;
-}    
-.intro-text {
+  }
+  .intro-text {
     padding: 1rem 3.125rem;
-}
+  }
 }
 
 @media screen and (min-width: 1200px) {
