@@ -12,7 +12,7 @@
 /* Site-wide */
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 0;
 
   /* These settings are used to position the footer at the bottom of the page where there is insufficient content to naturally position it there (About, Pricing, Signup) */
@@ -50,6 +50,10 @@ border-radius: 0;
 
 /* Navbar */
 
+nav {
+    font-family: "Open Sans",sans-serif;
+}
+
 .navbar {
   margin-bottom: 0;
   width: 100%;
@@ -58,12 +62,12 @@ border-radius: 0;
   position: fixed;
   z-index: 1;
   left: 0;
+  
 }
 /* Navbar - "Penny for your Thoughts" */
 .navbar-brand {
-  font-weight: 600;
-  font-family: "Montserrat", sans-serif;
-  font-size: 0.9375rem;
+  font-weight: 500;
+  font-size: 1rem;
   letter-spacing: 0.0625rem;
   color: #fff;
   margin-right: 0;
@@ -72,6 +76,7 @@ border-radius: 0;
 .navbar-dark .navbar-brand:focus,
 .navbar-dark .navbar-brand:hover {
   color: #036;
+  font-weight: 600;
 }
 /* Navbar - items */
 .navbar-dark .navbar-nav .nav-link {
@@ -104,7 +109,6 @@ border-radius: 0;
 }
 /* Headings - gallery section headings */
 .heading-gallery-category {
-    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     padding-top: 2.5rem;
     letter-spacing: 0.0625rem;
@@ -149,14 +153,22 @@ border-radius: 0;
 /* Intro */
 
 /* Three text blocks below Hero image */
-#intro p {
-  margin: 0;
-  padding: 1.25rem 0;
-  letter-spacing: 0.0625rem;
+.intro-title {
+    margin: 0;
+    padding: 1.25rem 0;
+    letter-spacing: 0.0625rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #3399cc;
+}
+.intro-text {
+  font-size: 1rem;
+  text-align: center;
 }
 /* Container for the circular images below Hero image - reduced width prevents overflow caused by hvr.grow effect */
 #intro-gallery {
   width: 91%;
+  font-family: "Open Sans", sans-serif;
 }
 /* Circular images below Hero image */
 
@@ -303,6 +315,7 @@ footer {
 
 .table-container {
   padding: 0 0.9375rem;
+  font-family: "Open Sans",sans-serif;
 }
 /* Fixed-layout keeps the column widths identical on both tables so that in single column display they are aligned on the page */
 table {
@@ -431,6 +444,11 @@ table caption {
   .sm-links {
     margin: 0 2rem;
   }
+
+/* Sets a minimum intro-title height to prevent uneven headings when there are three columns */
+  .intro-title {
+    min-height: 136px;
+}
 
   /* Reduces the margin above the about-image on larger displays and adjusts image to fit container */
   #about-image {
