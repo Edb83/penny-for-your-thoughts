@@ -298,7 +298,10 @@ At this point, user feedback suggested changing the hero image and after doing s
 
 - HTML
 - CSS
-- Javascript - notably for collapsable navbar and modal gallery
+- Javascript
+    - [Fancybox](https://fancyapps.com/fancybox/3/) - modal gallery
+    - [jQuery](https://jquery.com/) - collapsable nav bar
+    - [popper.js](https://popper.js.org/) - collapsable nav bar
 
 ### Project management
 
@@ -319,7 +322,7 @@ At this point, user feedback suggested changing the hero image and after doing s
 
 ### Visual effects
 
-- [Fancybox](https://fancyapps.com/fancybox/3/) - Simple to use Javascript package for modal gallery
+
 - [Hover.css](https://ianlunn.github.io/Hover/) - Effect applied to intro gallery circular previews
 
 ### Image manipulation
