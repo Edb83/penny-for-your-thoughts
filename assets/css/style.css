@@ -5,7 +5,7 @@
 * Browsers: last 4 version
 */
 
-/* Google fonts */
+/* Google fonts: Open Sans & Montserrat */
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600|Open+Sans&display:300,400=swap");
 
@@ -26,7 +26,8 @@ body {
   flex-direction: column;
 }
 
-/* This code from Dare to Think overrides iOS styling on buttons and more, specifically the call to action ("Purchase") on the hero image */
+/* This code from Dare to Think overrides iOS styling on buttons and more, specifically the call to action ("Purchase") on the hero image
+*  Source: https://www.daretothink.co.uk/stop-ios-styling-your-input-fields-and-buttons/ */
 textarea,
 input.text,
 input[type="text"],
@@ -162,8 +163,11 @@ nav {
     color: #3399cc;
 }
 .intro-text {
-  font-size: 1rem;
+  margin: 0;
+  padding: 0 0.625rem;
   text-align: center;
+  font-size: 1rem;
+  
 }
 /* Container for the circular images below Hero image - reduced width prevents overflow caused by hvr.grow effect */
 #intro-gallery {
@@ -477,6 +481,17 @@ table caption {
   #callout {
     background-attachment: scroll;
   }
+}
+
+/*  */
+@media screen and (min-width: 1189px) {
+
+.intro-title {
+    padding: 1.25rem 3.125rem;
+}    
+.intro-text {
+    padding: 1rem 3.125rem;
+}
 }
 
 @media screen and (min-width: 1200px) {
