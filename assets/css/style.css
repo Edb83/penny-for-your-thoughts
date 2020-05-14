@@ -25,11 +25,11 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
 }
-
+  /* This changes the size size and inline position of text below page headers */
  .page-text p {
     margin-bottom: 1.5rem;
     font-size: 1rem;
-    text-align: center;
+
 }
 
 /* This code from Dare to Think overrides iOS styling on buttons and more, specifically the call to action ("Purchase") on the hero image
@@ -54,6 +54,13 @@ input[type="submit"],
 .uppercase {
   text-transform: uppercase;
 }
+
+.blue-shadow {
+  -webkit-box-shadow: 0px 5px 8px #036;
+  box-shadow: 0px 5px 8px #036;
+}
+
+
 
 /* Navbar */
 
@@ -114,6 +121,7 @@ nav {
   text-transform: uppercase;
   margin-bottom: 0;
   color: #366;
+  text-align: center;
 }
 
 /* Hero image */
@@ -314,10 +322,13 @@ footer {
 /* Pricing */
 
 .table-container {
-  padding: 0 0.9375rem;
+  padding: 1.25rem 0.9375rem;
   font-family: "Open Sans", sans-serif;
+    -webkit-box-shadow: 0px 5px 8px #036;
+  box-shadow: 0px 5px 8px #036;
+  border-radius: 5px;
 }
-/* Fixed-layout keeps the column widths identical on both tables so that in single column display they are aligned on the page */
+/* Fixed layout keeps the column widths identical on both tables so that in single column display they are aligned on the page */
 table {
   text-align: center;
   table-layout: fixed;
@@ -381,7 +392,7 @@ table caption {
 /* Sign Up */
 
 .form-group label {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 #signup-form button {
@@ -450,7 +461,7 @@ table caption {
     padding: 0.75rem 0.17rem;
   }
   .table-container {
-    padding: 0rem 1.5rem;
+    padding: 1.25rem 0.5rem;
   }
 
   
@@ -490,7 +501,7 @@ table caption {
     padding: 0.75rem;
   }
   .table-container {
-    padding: 0 3rem;
+    padding: 1.25rem 2.5rem;
   }
 }
 
@@ -517,8 +528,9 @@ table caption {
     margin: 0 3rem;
   }
 
-  /* Increases the external padding around tables */
+  /* Increases the external padding around tables and reduces width for spacing */
   .table-container {
-    padding: 0 5rem;
+    padding: 1.25rem 5rem;
+    width: 98%;
   }
 }
