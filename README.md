@@ -23,7 +23,7 @@
 - <a href="#testing">Testing</a>
   - <a href="#testing-auto">Automated</a>
   - <a href="#testing-manual">Manual</a>
-  - <a href="#testing-responsive">Responsive</a>
+  - <a href="#testing-responsive">Responsiveness</a>
   - <a href="#testing-resolved">Resolved issues</a>
   - <a href="#testing-unresolved">Unresolved issues</a>
   - <a href="#testing-bugs">Known bugs</a>
@@ -55,7 +55,7 @@ The enterprise is humble but, as evidenced by the quality of the pictures, has a
 
 ### User stories
 
-For ease of reference, the means by which a user's expectations have been met are summarised in the table below:
+For ease of reference, the means by which a user's expectations have been met are summarised in the tables below:
 
 | As a **client** I want                                                                                                                                    | How this is achieved                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -70,8 +70,10 @@ For ease of reference, the means by which a user's expectations have been met ar
 | To be able to quickly find out more about the product, specifically its price and available options                                                                                   | The Pricing page is currently separate and provides an acceptible means of sharing this information, which is laid out in a pair of easily digestible tables containly only pertinent information. As the project develops and the shopping basket is implemented, this information may be conveyed more effectively elsewhere                       |
 | Quick access to the gallery, with the option to sort by theme                                                                                                                         | Currently this expectation is met (and promoted) using the nav bar Gallery dropdown list and intro gallery below the hero image. This method will be re-examined as new images are added and when future functionality enables advanced search options                                                                                               |
 | To be able to sign up for more information and updates on the photographer’s work                                                                                                     | The Sign Up page has the singular purpose of establishing a connection with potential clients in the hope of securing repeat business                                                                                                                                                                                                                |
-| To be able to access all information on a range of devices                                                                                                                            | Addressed in the <a href="#testing-responsive">Responsive</a> section below                                                                                                                                                                                                                                                                          |
+| To be able to access all information on a range of devices                                                                                                                            | Addressed in the <a href="#testing-responsive">Responsiveness</a> section below                                                                                                                                                                                                                                                                      |
 | Images to be fast to load and easy to navigate                                                                                                                                        | Efforts have been made to reduce the size of files to what is acceptible on the web today, but there is scope to utilise thumbnails of an even smaller size to improve the speed at which the Gallery loads                                                                                                                                          |
+
+Seven individuals contributed to testing the site and provided feedback on its layout, responsiveness and styling at various points in development.
 
 <span id="ux-wireframes"></span>
 
@@ -88,7 +90,7 @@ The full suite of wireframes for **desktop**, **tablet** and **mobile** devices,
 
 Based on the client's brief and visitors' expectations for the site, a clean, simple aesthetic has been adopted. In previous iterations the theme was more minimalistic in an attempt to focus purely on the content, but this was counterintuitive as the lack of contrast reduced the visibility of important elements and overall the site lacked identity.
 
-At this point, user feedback suggested changing the hero image and after doing so, [Color Scheme Designer](https://colorschemedesigner.com/csd-3.5/) was used to pull out several complimentary and web-friendly colours (#036, #39C, #960) which tied in with the new hero image. The result is a much more vibrant aesthetic based on blues and gold, which gives the site a bolder appearance and more character. Furthermore, visual feedback for user actions became much clearer and the identity of separate elements (e.g images with shadows, golden horizontal rules to indicate consitent headings etc) became more apparent.
+At this point, user feedback suggested changing the hero image and after doing so, [Color Scheme Designer](https://colorschemedesigner.com/csd-3.5/) was used to pull out several complimentary and web-friendly colours (#036, #39C, #960) which tied in with the new hero image. The result is a much more vibrant aesthetic based on blues and gold, which gives the site a bolder appearance and more character. Furthermore, visual feedback for user actions became much clearer and the identity of separate elements (e.g images with shadows, golden horizontal rules to indicate consitent headings etc) became more apparent. At a late stage in development the Pricing tables were given a border shadow consistent with the rest of the site, as feedback suggested the Pricing page was the weakest page, aesthetically.
 
 <div align="right"><a style="text-align:right" href="#top">Go to index :arrow_double_up:</a></div>
 
@@ -170,13 +172,13 @@ At this point, user feedback suggested changing the hero image and after doing s
 
   _e.g seasons, landscape / portrait_
 
-- Mockup of image for chosen options
+- Mock-up of image for chosen options
 
   _e.g 'Show me what Twisted Tree looks like on a card / in large print'_
 
 - Option to order cards with a choice of messages / bespoke messages
 
-- Sign-up form submission functionality
+- Improved form validation
 
 <div align="right"><a style="text-align:right" href="#top">Go to index :arrow_double_up:</a></div>
 
@@ -287,9 +289,7 @@ Mobile scores:
 
 **Summary**:
 
-Alongside the manual tests described below, eight individuals contributed to testing the site and provided feedback on its layout, responsiveness and styling at various points in development.
-
-Of the manual tests conducted, the only ones to fail were those related to predetermined form validation settings. These test were initially carried out on a boilerplate Bootstrap form and subsequently using the `novalidate` JS method described in Bootstrap, but the results were the same.
+Of the manual tests conducted, the only ones to fail were those related to default form validation settings. These test were initially carried out on a boilerplate Bootstrap form and subsequently using the `novalidate` JS method described in Bootstrap, but the results were the same. Research shows that the `pattern` property could address this, but has stated by [Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email#Validation): "HTML form validation is not a substitute for scripts that ensure that the entered data is in the proper format". Solving this is beyond the scope of the project.
 
 The following scenarios were tested to ensure that the site is functioning as expected:
 
@@ -344,11 +344,11 @@ _Note: initially some file names were incorrect but were all amended_
   - enter all fields correctly apart from one (in turn) and check validation correctly identifies issues - **PASS**
   - enter an email address in an incorrect format to check validation displays an input issue. Results:
 
-  |  Entry  | Test result | Comments                                                                |
-  | :-----: | :---------: | :---------------------------------------------------------------------- |
+  |  Entry  | Test result |
+  | :-----: | :---------: |
   |   `@`   |  **PASS**   |
   |  `_@_`  |  **PASS**   |
-  |  `a@b`  |  **FAIL**   | this would need to be corrected but is beyond the scope of this project |
+  |  `a@b`  |  **FAIL**   |
   | `a_@_b` |  **PASS**   |
   | `a@_b`  |  **PASS**   |
   | `a_@b`  |  **PASS**   |
@@ -360,11 +360,11 @@ _Note: initially some file names were incorrect but were all amended_
 
 ### Responsiveness
 
-The site has been designed with a mobile-first philosophy and, supported by [Bootstrap](https://getbootstrap.com/), has been thoroughly tested at all stages of development using [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools).
+The site has been designed with a mobile-first philosophy and, supported by [Bootstrap](https://getbootstrap.com/), has been thoroughly tested at all stages of development using [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools). In addition to Bootstrap's breakpoints, various media queries have been used to maximise the legibility of text and provide sufficient spacing for all contents. These queries include altered `font-size`, `height`, `margin`, `max-height`, `max-width`, `padding`, `text-align` and `width`.
 
 The following issues arose and have each been addressed:
 
-| Responsiveness issue                                                                                                                  | Solution                                                                                                                |
+| Issue                                                                                                                  | Solution                                                                                                                |
 | :------------------------------------------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------------------- |
 | Navbar Brand causes hamburger icon to spill                                                                                           | Reduced starting `font-size`, removed `margin-right`and added media query to increase above `min-width: 370px`          |
 | Navbar dropdown not visible on landscape mobile devices                                                                               | Added media query to set `overflow-y: scroll`. See Issues and resolutions section below                                 |
@@ -382,7 +382,7 @@ Tested on:
 - Edge
 - Firefox
 - Safari (iOS)
-  - Noted issue with styles being overwritten on call to action (Purchase button on landing page). See Resolved issues section below
+  - NB issue with styles being overwritten on call to action (Purchase button on landing page). See Resolved issues section below
 
 #### Screen sizes
 
@@ -410,7 +410,7 @@ Tested with Chrome DevTools using profiles for:
 
 Real world testing on:
 
-- iPhone 6
+- iPhone 6S
 - iPhone 11 Pro
 - Asus ZenBook
 
@@ -434,7 +434,7 @@ Real world testing on:
 
   _When expanding the Gallery nav-item in the navbar while in landscape mode on a mobile device, not all list items are visible and cannot be clicked_
 
-  - Resolved by using a suggestion found on [Github: Issues](https://github.com/twbs/bootstrap/issues/23374) and adding a media query for smaller displays which sets `overflow-y: scroll` and `height: 115px` to ensure the list items are visible on all displays
+  - Resolved by using a suggestion found on [Github: Cannot scroll down a collapsed navbar on mobile devices](https://github.com/twbs/bootstrap/issues/23374) and adding a media query for smaller displays which sets `overflow-y: scroll` and `height: 115px` to ensure the list items are visible on all displays
 
 - **Intro gallery circular images on right margin cause overflow when hvr-grow effect is appled**
 
@@ -458,7 +458,7 @@ Real world testing on:
 
 - **There is white space beneath footer on pages with little content (Pricing and About)**
 
-  - Resolved by using a suggestion from [Philip Walton](https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/) to set body element `flex-direction: column` and `min-height: 100vh`. This was a more elegant solution than changing the structure of the site e.g. by adding the Pricing and About pages further down the Landing Page and relying on achor links, or by simply increasing the content on each of the affected pages
+  - Resolved by using a suggestion from [Philip Walton: Sticky footer](https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/) to set body element `flex-direction: column` and `min-height: 100vh`. This was a more elegant solution than changing the structure of the site e.g. by adding the Pricing and About pages further down the Landing Page and relying on achor links, or by simply increasing the content on each of the affected pages
 
 - **Gallery image buttons do not stay inside their respective images where images have different aspect ratios**
 
@@ -482,7 +482,7 @@ Real world testing on:
 
 - **Signup form password and confirmation password can be different**
 
-  - This is a key issue which needs to be resolved but is outside the scope of this project
+  - This needs to be resolved but is not sufficiently problematic with regards to its intended purpose and is outside the scope of its project. A solution will need to be found when implementing payment options in a future iteration
 
 <span id="testing-bugs"></span>
 
@@ -496,7 +496,7 @@ Real world testing on:
 
 ## Deployment
 
-There is just one branch of this project (master) and deployed version of this site is the most current version in the repository.
+There is just one branch of this project (master) and the deployed version of this site is the most current version in the repository.
 
 ### How to deploy
 
@@ -532,21 +532,35 @@ Further reading and troubleshooting on cloning a repository from GitHub can be f
 
 ## Credits
 
-Carlos (Code Institute Slack Community Lead)
+Code was either directly copied or modified from the following sources:
 
-Jonathan Munz (Code Institute Mentor)
-
-Richard Wells (Code Institute Lead)
-
-Extremely useful feedback on appearance and user experience was provided by Lola, Tash, Mims, Beckx and Peter!
+- [Bootstrap: Custom form styles](https://getbootstrap.com/docs/4.1/components/forms/#custom-styles)
+- [Dare to Think: Stop iOS styling your input fields and buttons](https://www.daretothink.co.uk/stop-ios-styling-your-input-fields-and-buttons/)
+- [Github: Cannot scroll down a collapsed navbar on mobile devices](https://github.com/twbs/bootstrap/issues/23374)
+- [Philip Walton: Sticky footer](https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/)
+- [Stack Overflow: Can we set a gradient color to border-bottom property?](https://stackoverflow.com/questions/23751274/can-we-set-a-gradient-color-to-border-bottom-property)
+- [Stack Overflow: How to hide a collapsible Bootstrap 4 navbar on click](https://stackoverflow.com/questions/42401606/how-to-hide-collapsible-bootstrap-4-navbar-on-click)
+- [Stack Overflow: Only make a centered-image a link instead of the whole parent div](https://stackoverflow.com/questions/29978500/only-make-a-centered-image-a-link-instead-of-the-whole-parent-div)
 
 ### Content
 
-The text in the About page and photos used throughout this site were obtained from the client, Penny Holland. All other text was written by me and agreed with the client.
+The text in the About page and beautiful photos used throughout this site were obtained from Penny Holland, with permission granted to use them. All other text was written by me and agreed with Penny.
+
+The Deployment section was copied from Richard Wells' README ([Source](https://github.com/D0nni387/Luxury-Door-Solutions/blob/master/README.md))
 
 ### Acknowledgements
 
-I received inspiration for this project from Penny Holland
+- Carlos R (Code Institute Slack Community Lead) - for his general help and pointers on CSS autoprefixing
+
+- Chris Palmer (Code Institute student) - for his detailed peer review and pointed UX suggestions
+
+- Jonathan Munz (Code Institute Mentor) - for his sage advice, prompts to find solutions, and calm reassurances during the project
+
+- Richard Wells (Code Institute Slack Lead) - for his webinar on writing the README and Chrome DevTools 
+
+- The Code Institute Slack Community - for many tips and tricks discovered while browsing
+
+- Lola, Tash, Mims, Beckx and Peter - for their unfiltered feedback on overall appearance and responsiveness
 
 ### Disclaimer
 
