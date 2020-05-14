@@ -192,7 +192,7 @@ Overall the wireframes were successfully converted into a functioning website, h
 1. A circular image divided up into four seasons (with the same functionality as the intro gallery images on the landing page) was originally envisaged, however it was not possible to create this to the desired standard in the time available, so the idea was dropped. Furthermore, the page structure required would have been unnecessarily complex and ultimately misleading and repetitive.
 2. The option to Sign In was planned to appear below the Sign Up form, however as the project advanced it became apparent that this was not a needed feature in this first iteration. The decision was made to simplify the design and stick to the core requirement of providing a means to subscribe to information rather than to log in with no purpose. The benefits of signing into the site are more closely tied to the (as yet) unrealised shopping basket feature and will be explored in future.
 
-The full suite of wireframes for **desktop**, **tablet** and **mobile** devices, plus a **sitemap**, can be accessed [here](assets/wireframes/). 
+The full suite of wireframes for **desktop**, **tablet** and **mobile** devices, plus a **sitemap**, can be accessed [here](wireframes/). 
 
 ### Site theme
 
@@ -321,7 +321,6 @@ At this point, user feedback suggested changing the hero image and after doing s
 - [Zyro Logo Maker](https://zyro.com/logo-maker) - Creating the favicon
 
 ### Visual effects
-
 
 - [Hover.css](https://ianlunn.github.io/Hover/) - Effect applied to intro gallery circular previews
 
