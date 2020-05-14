@@ -90,6 +90,8 @@ The full suite of wireframes for **desktop**, **tablet** and **mobile** devices,
 
 Based on the client's brief and visitors' expectations for the site, a clean, simple aesthetic has been adopted. In previous iterations the theme was more minimalistic in an attempt to focus purely on the content, but this was counterintuitive as the lack of contrast reduced the visibility of important elements and overall the site lacked identity.
 
+Two fonts with a soft, warm style have been used across the site: [Montserrat](https://fonts.google.com/specimen/Montserrat) and [Open Sans](https://fonts.google.com/specimen/Open+Sans).
+
 At this point, user feedback suggested changing the hero image and after doing so, [Color Scheme Designer](https://colorschemedesigner.com/csd-3.5/) was used to pull out several complimentary and web-friendly colours (#036, #39C, #960) which tied in with the new hero image. The result is a much more vibrant aesthetic based on blues and gold, which gives the site a bolder appearance and more character. Furthermore, visual feedback for user actions became much clearer and the identity of separate elements (e.g images with shadows, golden horizontal rules to indicate consitent headings etc) became more apparent. At a late stage in development the Pricing tables were given a border shadow consistent with the rest of the site, as feedback suggested the Pricing page was the weakest page, aesthetically.
 
 <div align="right"><a style="text-align:right" href="#top">Go to index :arrow_double_up:</a></div>
@@ -382,7 +384,7 @@ Tested on:
 - Edge
 - Firefox
 - Safari (iOS)
-  - NB issue with styles being overwritten on call to action (Purchase button on landing page). See Resolved issues section below
+  - NB issue with styles being overwritten on call to action (Purchase button on landing page). See <a href="#testing-resolved">Resolved issues</a> below
 
 #### Screen sizes
 
