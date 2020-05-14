@@ -26,6 +26,11 @@ body {
   flex-direction: column;
 }
 
+ .page-text p {
+    margin-bottom: 2rem;
+    font-size: 1.25rem;
+}
+
 /* This code from Dare to Think overrides iOS styling on buttons and more, specifically the call to action ("Purchase") on the hero image
 *  Source: https://www.daretothink.co.uk/stop-ios-styling-your-input-fields-and-buttons/ */
 textarea,
@@ -75,8 +80,8 @@ nav {
 /* Navbar - "Penny for your Thoughts" hover */
 .navbar-dark .navbar-brand:focus,
 .navbar-dark .navbar-brand:hover {
-  color: #036;
-  font-weight: 600;
+  /* color: #036;
+  font-weight: 600; */
 }
 /* Navbar - items */
 .navbar-dark .navbar-nav .nav-link {
@@ -91,11 +96,8 @@ nav {
 
 /* Headings - applies to headings of all pages for consistent typography and spacing. These have been given separate ids to give options for unique styling */
 
-#heading-about,
-#heading-pricing,
-#heading-gallery,
-#heading-signup {
-  font-size: 1.8rem;
+.page-heading {
+  font-size: 2rem;
   text-align: center;
   margin-bottom: 1.875rem;
   letter-spacing: 0.25rem;
@@ -154,15 +156,13 @@ nav {
 
 /* Three text blocks below Hero image */
 .intro-title {
-
   padding: 1.25rem 0;
   letter-spacing: 0.0625rem;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #3399cc;
 }
 .intro-text {
- 
   padding: 0 0.625rem;
   text-align: center;
   font-size: 1rem;
@@ -433,6 +433,15 @@ table caption {
     font-size: 1.5rem;
   }
 
+  /* Increase the font-size of intro titles and text on larger displays */
+.intro-title {
+    font-size: 2rem;
+}
+
+.intro-text {
+  font-size: 1.25rem;
+}
+
   /* Increases the external padding and reduces the horizontal padding of tables on larger displays  */
   .table td,
   .table th {
@@ -453,6 +462,7 @@ table caption {
   .intro-title {
     min-height: 136px;
   }
+
 
   /* Reduces the margin above the about-image on larger displays and adjusts image to fit container */
   #about-image {
