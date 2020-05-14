@@ -96,6 +96,12 @@ nav {
   color: #036;
   font-weight: 600;
 }
+/* Navbar - dropdown hover */
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #39c;
+}
 
 /* Headings - applies to headings of all pages for consistent typography and spacing. These have been given separate ids to give options for unique styling */
 
@@ -395,6 +401,10 @@ table caption {
   font-family: "Open Sans", sans-serif;
 }
 
+.sign-up-button-container {
+    margin-top: 3rem;
+}
+
 #signup-form button {
   background-color: #39c;
   color: #fff;
@@ -404,7 +414,6 @@ table caption {
   background-color: #036;
   color: #fff;
 }
-
 
 /* Media */
 
@@ -442,13 +451,17 @@ table caption {
   }
 
   /* Increase the font-size of intro titles and text on larger displays */
-.intro-title {
+  .intro-title {
     font-size: 2rem;
 }
 
-.intro-text {
+  .intro-text {
   font-size: 1.25rem;
 }
+
+  .page-heading {
+      font-size: 2.5rem;
+  }
 
  .page-text p {
     margin-bottom: 2rem;
@@ -464,8 +477,8 @@ table caption {
     padding: 1.25rem 0.5rem;
   }
 
-  
-.sign-up-button-container {
+  /* Centers the sign-up button for ease of clicking when form is not inline */
+  .sign-up-button-container {
     text-align: center;
 }
 
