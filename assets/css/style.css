@@ -298,6 +298,10 @@ footer {
 
 /* About */
 
+#about-me-text {
+    text-align: center;
+}
+
 /* About image */
 #about-image {
   display: -webkit-box;
@@ -450,19 +454,16 @@ table caption {
     font-size: 1.5rem;
   }
 
-  /* Increase the font-size of intro titles and text on larger displays */
+  /* Increase the font-size of headings and text on larger displays */
   .intro-title {
     font-size: 2rem;
 }
-
   .intro-text {
   font-size: 1.25rem;
 }
-
   .page-heading {
       font-size: 2.5rem;
   }
-
  .page-text p {
     margin-bottom: 2rem;
     font-size: 1.25rem;
@@ -495,6 +496,10 @@ table caption {
     min-height: 136px;
   }
 
+/* Aligns text left when sharing row with about-image */
+  #about-me-text {
+    text-align: left;
+}
 
   /* Reduces the margin above the about-image on larger displays and adjusts image to fit container */
   #about-image {
