@@ -29,8 +29,6 @@ body {
   /* This changes the size size and inline position of text below page headers */
  .page-text p {
     margin-bottom: 1.5rem;
-    font-size: 1rem;
-
 }
 
 /* This code from Dare to Think overrides iOS styling on buttons and more, specifically the call to action ("Purchase") on the hero image
@@ -57,8 +55,8 @@ input[type="submit"],
 }
 
 .blue-shadow {
-  -webkit-box-shadow: 0px 5px 8px #036;
-  box-shadow: 0px 5px 8px #036;
+  -webkit-box-shadow: 0 5px 8px #036;
+  box-shadow: 0 5px 8px #036;
 }
 
 
@@ -202,8 +200,8 @@ nav {
   -o-object-fit: cover;
   object-fit: cover;
   border-radius: 50%;
-  -webkit-box-shadow: 0px 5px 8px #036;
-  box-shadow: 0px 5px 8px #036;
+  -webkit-box-shadow: 0 5px 8px #036;
+  box-shadow: 0 5px 8px #036;
 }
 
 /* Text inside circular images below Hero image. Works with hvr.grow effect */
@@ -318,8 +316,8 @@ footer {
 *  NB should be applied to <a> class if wanting to make the picture a clickable link.*/
 #about-image img {
   border-radius: 5px;
-  -webkit-box-shadow: 0px 5px 8px #036;
-  box-shadow: 0px 5px 8px #036;
+  -webkit-box-shadow: 0 5px 8px #036;
+  box-shadow: 0 5px 8px #036;
   max-height: -webkit-fit-content;
   max-height: -moz-fit-content;
   max-height: fit-content;
@@ -335,8 +333,8 @@ footer {
 .table-container {
   padding: 1.25rem 0.9375rem;
   font-family: "Open Sans", sans-serif;
-    -webkit-box-shadow: 0px 5px 8px #036;
-  box-shadow: 0px 5px 8px #036;
+    -webkit-box-shadow: 0 5px 8px #036;
+  box-shadow: 0 5px 8px #036;
   border-radius: 5px;
 }
 /* Fixed layout keeps the column widths identical on both tables so that in single column display they are aligned on the page */
@@ -378,8 +376,8 @@ table caption {
   object-fit: cover;
   margin-top: 1.25rem;
   border-radius: 5px;
-  -webkit-box-shadow: 0px 5px 8px #036;
-  box-shadow: 0px 5px 8px #036;
+  -webkit-box-shadow: 0 5px 8px #036;
+  box-shadow: 0 5px 8px #036;
 }
 
 /* 'Add' button on gallery images, which has been incrementally changed to provide best absolute positioning. This will break if image dimensions are not fixed  */
