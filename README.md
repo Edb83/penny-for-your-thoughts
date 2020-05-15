@@ -280,7 +280,10 @@ Mobile scores:
 
 ![Sign Up](assets/audit/audit-signup.jpg "Sign Up page scores")
 
-- [W3C - HTML](https://validator.w3.org/) - `alt` tags were missing and call to action `button` with `type="button"` was identified as an issue. On update no HTML errors or warnings detected - **PASS**
+- [W3C - HTML](https://validator.w3.org/) - On update no HTML errors or warnings detected - **PASS**
+  - `alt` tags missing
+  - call to action `button` with `type="button"` identified as an issue
+  - `section` without heading element
 - [W3C - CSS](https://jigsaw.w3.org/css-validator/) - no CSS errors detected - **PASS**
   - Update: passing CSS code through [Autoprefixer](https://autoprefixer.github.io/) produced 47 warnings related to unknown vendor extensions
 - [Unicorn revealer - overflow](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln/related) - tested all pages and no evidence of overflow - **PASS**

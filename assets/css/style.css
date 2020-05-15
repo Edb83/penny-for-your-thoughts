@@ -54,12 +54,11 @@ input[type="submit"],
   text-transform: uppercase;
 }
 
-.blue-shadow {
+/* Shadow */
+/* .blue-shadow {
   -webkit-box-shadow: 0 5px 8px #036;
   box-shadow: 0 5px 8px #036;
-}
-
-
+} */
 
 /* Navbar */
 
@@ -113,6 +112,10 @@ nav {
   /* Linear gradient as background to mimic horizonal rule.
   *  Percentages refer to point on the block (the size of which can in turn by determined by background-size) at which the color starts
   *  i.e. 0% is where block begins, 50% half way across block etc, 100% is where block ends */
+  background: -webkit-gradient(linear, left top, right top, color-stop(25%, #fff), color-stop(50%, #c90), color-stop(75%, #fff)) left
+    bottom #fff no-repeat;
+  background: -o-linear-gradient(left, #fff 25%, #c90 50%, #fff 75%) left
+    bottom #fff no-repeat;
   background: linear-gradient(to right, #fff 25%, #c90 50%, #fff 75%) left
     bottom #fff no-repeat;
   background-size: 100% 0.125rem;
@@ -187,6 +190,8 @@ nav {
 
 /* <a> element targeted here in order to create a clickable area which matches the desired shape of the image contained within */
 .intro-gallery-image a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 1.25rem auto;
   height: 150px;
@@ -232,12 +237,19 @@ footer {
 }
 /* Social media container */
 #sm-links-container {
-  align-content: center;
-  justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 #sm-links-container ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   list-style: none;
   margin: 0;
