@@ -1,947 +1,589 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="description" content="Penny for your Thoughts | Beautiful cards and prints delivered to your doorstep | Gallery of images: Canals, Coast, Flora and Fauna, Flowers, Landscapes, Trees" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <script src="https://kit.fontawesome.com/62998f70b3.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
-    <!-- Fancybox stylesheet for gallery modal. Source: https://fancyapps.com/fancybox/3/ -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-    <link rel="shortcut icon" type="image/png" href="favicon.png" />
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    <title>
-      Penny for your Thoughts | Beautiful cards delivered to your doorstep
-    </title>
-  </head>
-  <body>
-  
-    <!-- Navbar -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="description" content="Penny for your Thoughts | Beautiful cards and prints delivered to your doorstep | Gallery of images: Canals, Coast, Flora and Fauna, Flowers, Landscapes, Trees" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+		<script src="https://kit.fontawesome.com/62998f70b3.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+		<!-- Fancybox stylesheet for gallery modal. Source: https://fancyapps.com/fancybox/3/ -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+		<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+		<link rel="shortcut icon" type="image/png" href="favicon.png" />
+		<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+		<title>Penny for your Thoughts | Beautiful cards delivered to your doorstep</title>
+	</head>
+	
+		<body>
+		
+			<!-- Navbar -->
+			
+			<nav class="container-fluid navbar navbar-expand-md navbar-dark">
+				<a class="navbar-brand" href="index.html">Penny for your Thoughts</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavDropdown">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="about.html" aria-label="About the photographer">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="pricing.html" aria-label="Card and print pricing">Pricing</a>
+						</li>
+						<li class="nav-item-alt dropdown active">
+							<!-- nav-item-alt class used to prevent Javascript to collapse dropdowns from interrupting clicks on Gallery -->
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Choose section of Gallery">Gallery 
+								<span class="sr-only">(current)</span>
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+								<a class="dropdown-item" href="#" aria-label="Top of Gallery">All</a>
+								<a class="dropdown-item" href="#canals" aria-label="Canals section of Gallery">Canals</a>
+								<a class="dropdown-item" href="#coast" aria-label="Coast section of Gallery">Coast</a>
+								<a class="dropdown-item" href="#flora-and-fauna" aria-label="Flora and Fauna section of Gallery">Flora and Fauna</a>
+								<a class="dropdown-item" href="#flowers" aria-label="Flowers section of Gallery">Flowers</a>
+								<a class="dropdown-item" href="#landscapes" aria-label="Landscapes section of Gallery">Landscapes</a>
+								<a class="dropdown-item" href="#trees" aria-label="Trees section of Gallery">Trees</a>
+							</div>
+						</li>
+					</ul>
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link nav-signup" href="signup.html" aria-label="Sign up for updates">Sign Up</a>
+						</li>
+						<li class="nav-item">
+							<!-- 'disabled' class greys-out the shopping cart until implemented -->
+							<a class="nav-link disabled" href="#" aria-label="Shopping cart (currently disabled)">
+								<span class="d-md-none">Shopping Cart </span>
+								<i class="fas fa-shopping-cart fa-lg"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<section class="container mb-5 inner-page-contents">
+				<div class="row">
+					<div class="col-12 pt-5 mt-5 mx-auto page-text text-center">
+						<h2 class="page-heading">Gallery</h2>
+						<p>Browse the gallery below and select items to add to your basket. Click on an image to view a full-sized version.</p>
+					</div>
+				</div>
+                
+                <!-- Canals -->
 
-    <nav class="container-fluid navbar navbar-expand-md navbar-dark">
-        <a class="navbar-brand" href="index.html">Penny for your Thoughts</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html" aria-label="About the photographer">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="pricing.html" aria-label="Card and print pricing">Pricing</a>
-                </li>
-                <!-- nav-item-alt class used to prevent Javascript to collapse dropdowns from interrupting clicks on Gallery -->
-                <li class="nav-item-alt dropdown active">
-                    <a
-                        class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Choose section of Gallery">Gallery <span class="sr-only">(current)</span>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#" aria-label="Top of Gallery">All</a>
-                    <a class="dropdown-item" href="#canals" aria-label="Canals section of Gallery">Canals</a>
-                    <a class="dropdown-item" href="#coast" aria-label="Coast section of Gallery">Coast</a>
-                    <a class="dropdown-item" href="#flora-and-fauna" aria-label="Flora and Fauna section of Gallery">Flora and Fauna</a>
-                    <a class="dropdown-item" href="#flowers" aria-label="Flowers section of Gallery">Flowers</a>
-                    <a class="dropdown-item" href="#landscapes" aria-label="Landscapes section of Gallery">Landscapes</a>
-                    <a class="dropdown-item" href="#trees" aria-label="Trees section of Gallery">Trees</a>
-                    </div>
-                </li>
-            </ul>
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link nav-signup" href="signup.html" aria-label="Sign up for updates">Sign Up</a>
-                </li>
-                <li class="nav-item">
-                    <!-- 'disabled' class greys-out the shopping cart until implemented -->
-                    <a class="nav-link disabled" href="#" aria-label="Shopping cart (currently disabled)"><span class="d-md-none">Shopping Cart </span><i class="fas fa-shopping-cart fa-lg"></i></a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+				<section id="canals">
+					<div class="row">
+						<div class="col-12">
+							<h2 class="heading-gallery-category">Canals</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="pic">
+								<a data-fancybox="gallery" href="assets/images/canals/sm-bridge.jpg" data-caption="Bridge">
+									<img class="img-responsive w-100" src="assets/images/canals/sm-bridge.jpg" alt="Close up of a bridge over a canal on a sunny day"/>
+								</a>
+								<button type="button" class="btn btn-sm">Add</button>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="pic">
+								<a data-fancybox="gallery" href="assets/images/canals/sm-grand-union-2.jpg" data-caption="Grand Union 2">
+									<img class="img-responsive w-100" src="assets/images/canals/sm-grand-union-2.jpg" alt="Sun reflected on canal with barge in foreground and bridge in distance" />
+								</a>
+								<button type="button" class="btn btn-sm">Add</button>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="pic">
+								<a data-fancybox="gallery" href="assets/images/canals/sm-grand-union-lock.jpg" data-caption="Grand Union Lock">
+									<img class="img-responsive w-100" src="assets/images/canals/sm-grand-union-lock.jpg" alt="Close shot of Grand Union Lock with grassy banks"/>
+								</a>
+								<button type="button" class="btn btn-sm">Add</button>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="pic">
+								<a data-fancybox="gallery" href="assets/images/canals/sm-grand-union-tree-reflection.jpg" data-caption="Grand Union Tree Reflection">
+									<img class="img-responsive w-100" src="assets/images/canals/sm-grand-union-tree-reflection.jpg" alt="Grand Union Tree Reflection" />
+								</a>
+								<button type="button" class="btn btn-sm">Add</button>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="pic">
+								<a data-fancybox="gallery" href="assets/images/canals/sm-green-grand-union.jpg" data-caption="Green Grand Union">
+									<img class="img-responsive w-100" src="assets/images/canals/sm-green-grand-union.jpg" alt="Bridge in the distance looking down Green Grand Union, with trees reflected in canal"/>
+								</a>
+								<button type="button" class="btn btn-sm">Add</button>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="pic">
+								<a data-fancybox="gallery" href="assets/images/canals/sm-swan-song.jpg" data-caption="Swan Song">
+									<img class="img-responsive w-100" src="assets/images/canals/sm-swan-song.jpg" alt="Two swans swimming towards you" />
+								</a>
+								<button type="button" class="btn btn-sm">Add</button>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="pic">
+								<a data-fancybox="gallery" href="assets/images/canals/sm-through-the-bridge.jpg" data-caption="Through the Bridge">
+									<img class="img-responsive w-100" src="assets/images/canals/sm-through-the-bridge.jpg" alt="Looking down and through a bridge over the canal, with a number 5 placard"/>
+								</a>
+								<button type="button" class="btn btn-sm">Add</button>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="pic">
+								<a data-fancybox="gallery" href="assets/images/canals/sm-two-suns.jpg" data-caption="Two Suns">
+									<img class="img-responsive w-100" src="assets/images/canals/sm-two-suns.jpg" alt="Early evening canal with low sun shining through trees and reflected in the water" />
+								</a>
+								<button type="button" class="btn btn-sm">Add</button>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="pic">
+								<a data-fancybox="gallery" href="assets/images/canals/sm-winter-canal.jpg" data-caption="Winter Canal" >
+									<img class="img-responsive w-100" src="assets/images/canals/sm-winter-canal.jpg" alt="Looking down the canal on a bleak winter's day with bare trees and clear sky" />
+								</a>
+								<button type="button" class="btn btn-sm">Add</button>
+							</div>
+						</div>
+					</div>
+				</section>
 
-    <!-- Gallery -->
+                <!-- Coast -->
 
-    <section class="container mb-5 inner-page-contents">
-      <div class="row">
-        <div class="col-12 pt-5 mt-5 mx-auto page-text text-center">
-          <h2 class="page-heading">Gallery</h2>
-          <p>
-            Browse the gallery below and select items to add to your basket. Click on an
-            image to view a full-sized version.
-          </p>
-        </div>
-      </div>
-      <section id="canals">
-        <div class="row">
-          <div class="col-12">
-            <h2 class="heading-gallery-category">Canals</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="pic">
-              <a
-                data-fancybox="gallery"
-                href="assets/images/canals/sm-bridge.jpg"
-                data-caption="Bridge"
-              >
-                <img
-                  class="img-responsive w-100"
-                  src="assets/images/canals/sm-bridge.jpg"
-                  alt="Close up of a bridge over a canal on a sunny day"
-              /></a>
-              <button type="button" class="btn btn-sm">Add</button>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="pic">
-              <a
-                data-fancybox="gallery"
-                href="assets/images/canals/sm-grand-union-2.jpg"
-                data-caption="Grand Union 2"
-              >
-                <img
-                  class="img-responsive w-100"
-                  src="assets/images/canals/sm-grand-union-2.jpg"
-                  alt="Sun reflected on canal with barge in foreground and bridge in distance"
-              /></a>
-              <button type="button" class="btn btn-sm">Add</button>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="pic">
-              <a
-                data-fancybox="gallery"
-                href="assets/images/canals/sm-grand-union-lock.jpg"
-                data-caption="Grand Union Lock"
-              >
-                <img
-                  class="img-responsive w-100"
-                  src="assets/images/canals/sm-grand-union-lock.jpg"
-                  alt="Close shot of Grand Union Lock with grassy banks"
-              /></a>
-              <button type="button" class="btn btn-sm">Add</button>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="pic">
-              <a
-                data-fancybox="gallery"
-                href="assets/images/canals/sm-grand-union-tree-reflection.jpg"
-                data-caption="Grand Union Tree Reflection"
-              >
-                <img
-                  class="img-responsive w-100"
-                  src="assets/images/canals/sm-grand-union-tree-reflection.jpg"
-                  alt="Grand Union Tree Reflection"
-              /></a>
-              <button type="button" class="btn btn-sm">Add</button>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="pic">
-              <a
-                data-fancybox="gallery"
-                href="assets/images/canals/sm-green-grand-union.jpg"
-                data-caption="Green Grand Union"
-              >
-                <img
-                  class="img-responsive w-100"
-                  src="assets/images/canals/sm-green-grand-union.jpg"
-                  alt="Bridge in the distance looking down Green Grand Union, with trees reflected in canal"
-              /></a>
-              <button type="button" class="btn btn-sm">Add</button>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="pic">
-              <a
-                data-fancybox="gallery"
-                href="assets/images/canals/sm-swan-song.jpg"
-                data-caption="Swan Song"
-              >
-                <img
-                  class="img-responsive w-100"
-                  src="assets/images/canals/sm-swan-song.jpg"
-                  alt="Two swans swimming towards you"
-              /></a>
-              <button type="button" class="btn btn-sm">Add</button>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="pic">
-              <a
-                data-fancybox="gallery"
-                href="assets/images/canals/sm-through-the-bridge.jpg"
-                data-caption="Through the Bridge"
-              >
-                <img
-                  class="img-responsive w-100"
-                  src="assets/images/canals/sm-through-the-bridge.jpg"
-                  alt="Looking down and through a bridge over the canal, with a number 5 placard"
-              /></a>
-              <button type="button" class="btn btn-sm">Add</button>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="pic">
-              <a
-                data-fancybox="gallery"
-                href="assets/images/canals/sm-two-suns.jpg"
-                data-caption="Two Suns"
-              >
-                <img
-                  class="img-responsive w-100"
-                  src="assets/images/canals/sm-two-suns.jpg"
-                  alt="Early evening canal with low sun shining through trees and reflected in the water"
-              /></a>
-              <button type="button" class="btn btn-sm">Add</button>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="pic">
-              <a
-                data-fancybox="gallery"
-                href="assets/images/canals/sm-winter-canal.jpg"
-                data-caption="Winter Canal"
-              >
-                <img
-                  class="img-responsive w-100"
-                  src="assets/images/canals/sm-winter-canal.jpg"
-                  alt="Looking down the canal on a bleak winter's day with bare trees and clear sky"
-              /></a>
-              <button type="button" class="btn btn-sm">Add</button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="coast">
-        <div class="row my-3">
-          <div class="col-12">
-            <h2 class="heading-gallery-category">Coast</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="pic">
-              <a
-                data-fancybox="gallery"
-                href="assets/images/coast/sm-coast-1.jpg"
-                data-caption="Coast 1"
-              >
-                <img
-                  class="img-responsive w-100"
-                  src="assets/images/coast/sm-coast-1.jpg"
-                  alt="Clouds over the sea with wet sand and rocks"
-              /></a>
-              <button type="button" class="btn btn-sm">Add</button>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="pic">
-              <a
-                data-fancybox="gallery"
-                href="assets/images/coast/sm-coast-2.jpg"
-                data-caption="Coast 2"
-              >
-                <img
-                  class="img-responsive w-100"
-                  src="assets/images/coast/sm-coast-2.jpg"
-                  alt="Sea wave gently breaking on sandy beach, foam spreading"
-              /></a>
-              <button type="button" class="btn btn-sm">Add</button>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="pic">
-              <a
-                data-fancybox="gallery"
-                href="assets/images/coast/sm-rock-pattern-devon.jpg"
-                data-caption="Rock Pattern Devon"
-              >
-                <img
-                  class="img-responsive w-100"
-                  src="assets/images/coast/sm-rock-pattern-devon.jpg"
-                  alt="Close up of circle patterns in yellow rock looking towards sea in Devon"
-              /></a>
-              <button type="button" class="btn btn-sm">Add</button>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="pic">
-              <a
-                data-fancybox="gallery"
-                href="assets/images/coast/sm-sea-tyre.jpg"
-                data-caption="Sea Tyre"
-              >
-                <img
-                  class="img-responsive w-100"
-                  src="assets/images/coast/sm-sea-tyre.jpg"
-                  alt="Bike tyre filled with sand, stones and debris from the beach"
-              /></a>
-              <button type="button" class="btn btn-sm">Add</button>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="pic">
-              <a
-                data-fancybox="gallery"
-                href="assets/images/coast/sm-wet-sand.jpg"
-                data-caption="Wet Sand"
-              >
-                <img
-                  class="img-responsive w-100"
-                  src="assets/images/coast/sm-wet-sand.jpg"
-                  alt="Close up of wet, patterned sand after the sea has receeded"
-              /></a>
-              <button type="button" class="btn btn-sm">Add</button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="flora-and-fauna">
-        <div class="row my-3">
-          <div class="col-12">
-            <h2 class="heading-gallery-category">Flora and Fauna</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="pic">
-              <a
-                data-fancybox="gallery"
-                href="assets/images/flora-and-fauna/sm-autumn-1.jpg"
-                data-caption="Autumn 1"
-              >
-                <img
-                  class="img-responsive w-100"
-                  src="assets/images/flora-and-fauna/sm-autumn-1.jpg"
-                  alt="Close up of fungi, brachen and autumn leaves coating a fallen tree"
-              /></a>
-              <button type="button" class="btn btn-sm">Add</button>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="pic">
-              <a
-                data-fancybox="gallery"
-                href="assets/images/flora-and-fauna/sm-autumn-buck-1.jpg"
-                data-caption="Autumn Buck 1"
-              >
-                <img
-                  class="img-responsive w-100"
-                  src="assets/images/flora-and-fauna/sm-autumn-buck-1.jpg"
-                  alt="Buck deer grazing on autumn leaves in forest"
-              /></a>
-              <button type="button" class="btn btn-sm">Add</button>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="pic">
-              <a
-                data-fancybox="gallery"
-                href="assets/images/flora-and-fauna/sm-autumn-buck-2.jpg"
-                data-caption="Autumn Buck 2"
-              >
-                <img
-                  class="img-responsive w-100"
-                  src="assets/images/flora-and-fauna/sm-autumn-buck-2.jpg"
-                  alt="Buck deer standing on autumn leaves in forest"
-              /></a>
-              <button type="button" class="btn btn-sm">Add</button>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="pic">
-              <a
-                data-fancybox="gallery"
-                href="assets/images/flora-and-fauna/sm-barley.jpg"
-                data-caption="Barley"
-              >
-                <img
-                  class="img-responsive w-100"
-                  src="assets/images/flora-and-fauna/sm-barley.jpg"
-                  alt="Close up of Barley bent over by a breeze"
-              /></a>
-              <button type="button" class="btn btn-sm">Add</button>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="pic">
-              <a
-                data-fancybox="gallery"
-                href="assets/images/flora-and-fauna/sm-butterfly-1.jpg"
-                data-caption="Butterfly 1"
-              >
-                <img
-                  class="img-responsive w-100"
-                  src="assets/images/flora-and-fauna/sm-butterfly-1.jpg"
-                  alt="Close up of a Red Admiral butterfly on a leaf"
-              /></a>
-              <button type="button" class="btn btn-sm">Add</button>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="pic">
-              <a
-                data-fancybox="gallery"
-                href="assets/images/flora-and-fauna/sm-butterfly-2.jpg"
-                data-caption="Butterfly 2"
-              >
-                <img
-                  class="img-responsive w-100"
-                  src="assets/images/flora-and-fauna/sm-butterfly-2.jpg"
-                  alt="Close up of Cabbage White butterfly and bee on thistles"
-              /></a>
-              <button type="button" class="btn btn-sm">Add</button>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="pic">
-              <a
-                data-fancybox="gallery"
-                href="assets/images/flora-and-fauna/sm-butterfly-3.jpg"
-                data-caption="Butterfly 3"
-              >
-                <img
-                  class="img-responsive w-100"
-                  src="assets/images/flora-and-fauna/sm-butterfly-3.jpg"
-                  alt="Close up of butterfly on pink flower"
-              /></a>
-              <button type="button" class="btn btn-sm">Add</button>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="pic">
-              <a
-                data-fancybox="gallery"
-                href="assets/images/flora-and-fauna/sm-camoflage.jpg"
-                data-caption="Camoflage"
-              >
-                <img
-                  class="img-responsive w-100"
-                  src="assets/images/flora-and-fauna/sm-camoflage.jpg"
-                  alt="Fence post hidden by sea of white, green and yellow flowers"
-              /></a>
-              <button type="button" class="btn btn-sm">Add</button>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="pic">
-              <a
-                data-fancybox="gallery"
-                href="assets/images/flora-and-fauna/sm-frosted-leaf.jpg"
-                data-caption="Frosted Leaf"
-              >
-                <img
-                  class="img-responsive w-100"
-                  src="assets/images/flora-and-fauna/sm-frosted-leaf.jpg"
-                  alt="Close up of thick frost on brown winter leaf"
-              /></a>
-              <button type="button" class="btn btn-sm">Add</button>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="pic">
-              <a
-                data-fancybox="gallery"
-                href="assets/images/flora-and-fauna/sm-fungus-cup.jpg"
-                data-caption="Fungus Cup"
-              >
-                <img
-                  class="img-responsive w-100"
-                  src="assets/images/flora-and-fauna/sm-fungus-cup.jpg"
-                  alt="White Fungus Cup mushroom covered by autumn leaves"
-              /></a>
-              <button type="button" class="btn btn-sm">Add</button>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="pic">
-              <a
-                data-fancybox="gallery"
-                href="assets/images/flora-and-fauna/sm-nectar.jpg"
-                data-caption="Nectar"
-              >
-                <img
-                  class="img-responsive w-100"
-                  src="assets/images/flora-and-fauna/sm-nectar.jpg"
-                  alt="Close up of bee on thistle"
-              /></a>
-              <button type="button" class="btn btn-sm">Add</button>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="pic">
-              <a
-                data-fancybox="gallery"
-                href="assets/images/flora-and-fauna/sm-reflection-1.jpg"
-                data-caption="Reflection 1"
-              >
-                <img
-                  class="img-responsive w-100"
-                  src="assets/images/flora-and-fauna/sm-reflection-1.jpg"
-                  alt="Fallen logs in water surrounded by brown and green brachen"
-              /></a>
-              <button type="button" class="btn btn-sm">Add</button>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="pic">
-              <a
-                data-fancybox="gallery"
-                href="assets/images/flora-and-fauna/sm-summer-field.jpg"
-                data-caption="Summer Field"
-              >
-                <img
-                  class="img-responsive w-100"
-                  src="assets/images/flora-and-fauna/sm-summer-field.jpg"
-                  alt="Several red poppies peeking through sea of summer barley"
-              /></a>
-              <button type="button" class="btn btn-sm">Add</button>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="pic">
-              <a
-                data-fancybox="gallery"
-                href="assets/images/flora-and-fauna/sm-survivor.jpg"
-                data-caption="Survivor"
-              >
-                <img
-                  class="img-responsive w-100"
-                  src="assets/images/flora-and-fauna/sm-survivor.jpg"
-                  alt="Close up of green sprig covered in thick frost"
-              /></a>
-              <button type="button" class="btn btn-sm">Add</button>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="pic">
-              <a
-                data-fancybox="gallery"
-                href="assets/images/flora-and-fauna/sm-wild-fruit.jpg"
-                data-caption="Wild Fruit"
-              >
-                <img
-                  class="img-responsive w-100"
-                  src="assets/images/flora-and-fauna/sm-wild-fruit.jpg"
-                  alt="Close up of wild blackthorn on tree"
-              /></a>
-              <button type="button" class="btn btn-sm">Add</button>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="pic">
-              <a
-                data-fancybox="gallery"
-                href="assets/images/flora-and-fauna/sm-wild-garlic.jpg"
-                data-caption="Wild Garlic"
-              >
-                <img
-                  class="img-responsive w-100"
-                  src="assets/images/flora-and-fauna/sm-wild-garlic.jpg"
-                  alt="Sea of Wild Garlic in dappled sunlight"
-              /></a>
-              <button type="button" class="btn btn-sm">Add</button>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="pic">
-              <a
-                data-fancybox="gallery"
-                href="assets/images/flora-and-fauna/sm-winter-buck.jpg"
-                data-caption="Winter Buck"
-              >
-                <img
-                  class="img-responsive w-100"
-                  src="assets/images/flora-and-fauna/sm-winter-buck.jpg"
-                  alt="A buck deer looking towards you through a break in the snow-covered forest"
-              /></a>
-              <button type="button" class="btn btn-sm">Add</button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="flowers">
-        <div class="row my-3">
-          <div class="col-12">
-            <h2 class="heading-gallery-category">Flowers</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="pic">
-              <a
-                data-fancybox="gallery"
-                href="assets/images/flowers/sm-echinacea.jpg"
-                data-caption="Echinacea"
-              >
-                <img
-                  class="img-responsive w-100"
-                  src="assets/images/flowers/sm-echinacea.jpg"
-                  alt="Large white Echinacea against a leafy background"
-              /></a>
-              <button type="button" class="btn btn-sm">Add</button>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="pic">
-              <a
-                data-fancybox="gallery"
-                href="assets/images/flowers/sm-faded-glory.jpg"
-                data-caption="Faded Glory"
-              >
-                <img
-                  class="img-responsive w-100"
-                  src="assets/images/flowers/sm-faded-glory.jpg"
-                  alt="Close up of a flower in Faded Glory"
-              /></a>
-              <button type="button" class="btn btn-sm">Add</button>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="pic">
-              <a
-                data-fancybox="gallery"
-                href="assets/images/flowers/sm-poppy-1.jpg"
-                data-caption="Poppy 1"
-              >
-                <img
-                  class="img-responsive w-100"
-                  src="assets/images/flowers/sm-poppy-1.jpg"
-                  alt="Close up of a red poppy against a leafy green and pink background"
-              /></a>
-              <button type="button" class="btn btn-sm">Add</button>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="pic">
-              <a
-                data-fancybox="gallery"
-                href="assets/images/flowers/sm-shadows.jpg"
-                data-caption="Shadows"
-              >
-                <img
-                  class="img-responsive w-100"
-                  src="assets/images/flowers/sm-shadows.jpg"
-                  alt="Close up of shadows falling on a purple flower"
-              /></a>
-              <button type="button" class="btn btn-sm">Add</button>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="pic">
-              <a
-                data-fancybox="gallery"
-                href="assets/images/flowers/sm-summer.jpg"
-                data-caption="Summer"
-              >
-                <img
-                  class="img-responsive w-100"
-                  src="assets/images/flowers/sm-summer.jpg"
-                  alt="Close up of shadows falling on a white flower"
-              /></a>
-              <button type="button" class="btn btn-sm">Add</button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="landscapes">
-        <div class="row my-3">
-          <div class="col-12">
-            <h2 class="heading-gallery-category">Landscapes</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="pic">
-              <a
-                data-fancybox="gallery"
-                href="assets/images/landscapes/sm-bale-scape.jpg"
-                data-caption="Bale Scape"
-              >
-                <img
-                  class="img-responsive w-100"
-                  src="assets/images/landscapes/sm-bale-scape.jpg"
-                  alt="Hay bales spread sparsely across an open field with trees on horizon and blue skies"
-              /></a>
-              <button type="button" class="btn btn-sm">Add</button>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="pic">
-              <a
-                data-fancybox="gallery"
-                href="assets/images/landscapes/sm-field-work.jpg"
-                data-caption="Field Work"
-              >
-                <img
-                  class="img-responsive w-100"
-                  src="assets/images/landscapes/sm-field-work.jpg"
-                  alt="Hay baler approaching across a hazy field with tree in background"
-              /></a>
-              <button type="button" class="btn btn-sm">Add</button>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="pic">
-              <a
-                data-fancybox="gallery"
-                href="assets/images/landscapes/sm-fieldscape.jpg"
-                data-caption="Field Scape"
-              >
-                <img
-                  class="img-responsive w-100"
-                  src="assets/images/landscapes/sm-fieldscape.jpg"
-                  alt="White clouds and blue sky over a cornfield"
-              /></a>
-              <button type="button" class="btn btn-sm">Add</button>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="pic">
-              <a
-                data-fancybox="gallery"
-                href="assets/images/landscapes/sm-nobodys-bottom.jpg"
-                data-caption="Nobody's Bottom"
-              >
-                <img
-                  class="img-responsive w-100"
-                  src="assets/images/landscapes/sm-nobodys-bottom.jpg"
-                  alt="Path through a field at Nobody's Bottom with gently rolling hills and fluffy white clouds in the background"
-              /></a>
-              <button type="button" class="btn btn-sm">Add</button>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="pic">
-              <a
-                data-fancybox="gallery"
-                href="assets/images/landscapes/sm-tranquility.jpg"
-                data-caption="Tranquility"
-              >
-                <img
-                  class="img-responsive w-100"
-                  src="assets/images/landscapes/sm-tranquility.jpg"
-                  alt="Looking over a tranquil winter lake with low sun peeking from behind tree branch and clouds"
-              /></a>
-              <button type="button" class="btn btn-sm">Add</button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="trees">
-        <div class="row my-3">
-          <div class="col-12">
-            <h2 class="heading-gallery-category">Trees</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="pic">
-              <a
-                data-fancybox="gallery"
-                href="assets/images/trees/sm-ashridge-reflection.jpg"
-                data-caption="Ashridge Reflection"
-              >
-                <img
-                  class="img-responsive w-100"
-                  src="assets/images/trees/sm-ashridge-reflection.jpg"
-                  alt="Looking down muddy autumn track lined with trees reflected in large puddles"
-              /></a>
-              <button type="button" class="btn btn-sm">Add</button>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="pic">
-              <a
-                data-fancybox="gallery"
-                href="assets/images/trees/sm-bound-tree.jpg"
-                data-caption="Bound Tree"
-              >
-                <img
-                  class="img-responsive w-100"
-                  src="assets/images/trees/sm-bound-tree.jpg"
-                  alt="Close up of sinewy, gnarled tree"
-              /></a>
-              <button type="button" class="btn btn-sm">Add</button>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="pic">
-              <a
-                data-fancybox="gallery"
-                href="assets/images/trees/sm-misty-woods.jpg"
-                data-caption="Misty Woods"
-              >
-                <img
-                  class="img-responsive w-100"
-                  src="assets/images/trees/sm-misty-woods.jpg"
-                  alt="Tall, bare trees in misty, frosted wood"
-              /></a>
-              <button type="button" class="btn btn-sm">Add</button>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="pic">
-              <a
-                data-fancybox="gallery"
-                href="assets/images/trees/sm-nettleden-tree-1.jpg"
-                data-caption="Nettleden Tree 1"
-              >
-                <img
-                  class="img-responsive w-100"
-                  src="assets/images/trees/sm-nettleden-tree-1.jpg"
-                  alt="A lone tree casting a shadow over open ploughed fields"
-              /></a>
-              <button type="button" class="btn btn-sm">Add</button>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="pic">
-              <a
-                data-fancybox="gallery"
-                href="assets/images/trees/sm-nettleden-tree-2.jpg"
-                data-caption="Nettleden Tree 2"
-              >
-                <img
-                  class="img-responsive w-100"
-                  src="assets/images/trees/sm-nettleden-tree-2.jpg"
-                  alt="Lone tree in field of green and yellow with red poppies in foreground"
-              /></a>
-              <button type="button" class="btn btn-sm">Add</button>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="pic">
-              <a
-                data-fancybox="gallery"
-                href="assets/images/trees/sm-twisted-tree.jpg"
-                data-caption="Twisted Tree"
-              >
-                <img
-                  class="img-responsive w-100"
-                  src="assets/images/trees/sm-twisted-tree.jpg"
-                  alt="Looking up at gnarled, knobbly tree in forest"
-              /></a>
-              <button type="button" class="btn btn-sm">Add</button>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="pic">
-              <a
-                data-fancybox="gallery"
-                href="assets/images/trees/sm-winter-woods.jpg"
-                data-caption="Winter Woods"
-              >
-                <img
-                  class="img-responsive w-100"
-                  src="assets/images/trees/sm-winter-woods.jpg"
-                  alt="Bare trees in misty woods, with frosted branches strewn on ground"
-              /></a>
-              <button type="button" class="btn btn-sm">Add</button>
-            </div>
-          </div>
-        </div>
-      </section>
-    </section>
-
-    <!-- Footer -->
-
-    <footer class="container-fluid">
-      <div class="row">
-        <div class="col-12 py-5">
-          <div id="sm-links-container">
-            <ul>
-              <!-- Facebook -->
-              <li>
-                <a
-                  class="sm-links"
-                  href="https://www.facebook.com/"
-                  target="_blank"
-                  rel="noopener"
-                  aria-label="Find out more on Facebook"
-                >
-                  <i class="fab fa-facebook-f fa-lg fa-2x"> </i>
-                </a>
-              </li>
-              <!-- Twitter -->
-              <li>
-                <a
-                  href="https://www.twitter.com/"
-                  target="_blank"
-                  rel="noopener"
-                  aria-label="Find out more on Twitter"
-                  class="sm-links"
-                >
-                  <i class="fab fa-twitter fa-lg fa-2x"> </i>
-                </a>
-              </li>
-              <!--Linkedin -->
-              <li>
-                <a
-                  href="https://www.linkedin.com/"
-                  target="_blank"
-                  rel="noopener"
-                  aria-label="Find out more on LinkedIn"
-                  class="sm-links"
-                >
-                  <i class="fab fa-linkedin-in fa-lg fa-2x"> </i>
-                </a>
-              </li>
-              <!--Instagram-->
-              <li>
-                <a
-                  href="https://www.instagram.com/"
-                  target="_blank"
-                  rel="noopener"
-                  aria-label="Find out more on Instagram"
-                  class="sm-links"
-                >
-                  <i class="fab fa-instagram fa-lg fa-2x"> </i>
-                </a>
-              </li>
-              <!--Pinterest-->
-              <li>
-                <a
-                  href="https://www.pinterest.com/"
-                  target="_blank"
-                  rel="noopener"
-                  aria-label="Find out more on Pinterest"
-                  class="sm-links"
-                >
-                  <i class="fab fa-pinterest fa-lg fa-2x"> </i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- Copyright -->
-      <div class="container text-center" id="copyright-container">
-        <div class="row">
-          <div class="col-12">
-            <p class="small">
-              © 2020 Copyright Penny Holland
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!-- Bootstrap JavaScript CDN -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <!-- Script to collapse dropdowns in mobile navbar burger menu when clicked NB this is different from other pages due to gallery dropdown anchors (dropdown-item vs nav-item). Source: https://stackoverflow.com/questions/42401606/how-to-hide-collapsible-bootstrap-4-navbar-on-click -->
-    <script>
-      $(".dropdown-item").on("click", function () {
-        $(".navbar-collapse").collapse("hide");
-      });
-    </script>
-  </body>
+				<section id="coast">
+					<div class="row my-3">
+						<div class="col-12">
+							<h2 class="heading-gallery-category">Coast</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="pic">
+								<a data-fancybox="gallery" href="assets/images/coast/sm-coast-1.jpg" data-caption="Coast 1" >
+									<img class="img-responsive w-100" src="assets/images/coast/sm-coast-1.jpg" alt="Clouds over the sea with wet sand and rocks" />
+								</a>
+								<button type="button" class="btn btn-sm">Add</button>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="pic">
+								<a data-fancybox="gallery" href="assets/images/coast/sm-coast-2.jpg" data-caption="Coast 2" >
+									<img class="img-responsive w-100" src="assets/images/coast/sm-coast-2.jpg" alt="Sea wave gently breaking on sandy beach, foam spreading" />
+								</a>
+								<button type="button" class="btn btn-sm">Add</button>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="pic">
+								<a data-fancybox="gallery" href="assets/images/coast/sm-rock-pattern-devon.jpg" data-caption="Rock Pattern Devon" >
+									<img class="img-responsive w-100" src="assets/images/coast/sm-rock-pattern-devon.jpg" alt="Close up of circle patterns in yellow rock looking towards sea in Devon" />
+								</a>
+								<button type="button" class="btn btn-sm">Add</button>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="pic">
+								<a data-fancybox="gallery" href="assets/images/coast/sm-sea-tyre.jpg" data-caption="Sea Tyre" >
+									<img class="img-responsive w-100" src="assets/images/coast/sm-sea-tyre.jpg" alt="Bike tyre filled with sand, stones and debris from the beach" />
+								</a>
+								<button type="button" class="btn btn-sm">Add</button>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="pic">
+								<a data-fancybox="gallery" href="assets/images/coast/sm-wet-sand.jpg" data-caption="Wet Sand" >
+									<img class="img-responsive w-100" src="assets/images/coast/sm-wet-sand.jpg" alt="Close up of wet, patterned sand after the sea has receeded" />
+								</a>
+								<button type="button" class="btn btn-sm">Add</button>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+                <!-- Flora and Fauna -->
+                
+                <section id="flora-and-fauna">
+					<div class="row my-3">
+						<div class="col-12">
+							<h2 class="heading-gallery-category">Flora and Fauna</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="pic">
+								<a data-fancybox="gallery" href="assets/images/flora-and-fauna/sm-autumn-1.jpg" data-caption="Autumn 1" >
+									<img class="img-responsive w-100" src="assets/images/flora-and-fauna/sm-autumn-1.jpg" alt="Close up of fungi, brachen and autumn leaves coating a fallen tree" />
+								</a>
+								<button type="button" class="btn btn-sm">Add</button>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="pic">
+								<a data-fancybox="gallery" href="assets/images/flora-and-fauna/sm-autumn-buck-1.jpg" data-caption="Autumn Buck 1" >
+									<img class="img-responsive w-100" src="assets/images/flora-and-fauna/sm-autumn-buck-1.jpg" alt="Buck deer grazing on autumn leaves in forest" />
+								</a>
+								<button type="button" class="btn btn-sm">Add</button>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="pic">
+								<a data-fancybox="gallery" href="assets/images/flora-and-fauna/sm-autumn-buck-2.jpg" data-caption="Autumn Buck 2" >
+									<img class="img-responsive w-100" src="assets/images/flora-and-fauna/sm-autumn-buck-2.jpg" alt="Buck deer standing on autumn leaves in forest" />
+								</a>
+								<button type="button" class="btn btn-sm">Add</button>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="pic">
+								<a data-fancybox="gallery" href="assets/images/flora-and-fauna/sm-barley.jpg" data-caption="Barley" >
+									<img class="img-responsive w-100" src="assets/images/flora-and-fauna/sm-barley.jpg" alt="Close up of Barley bent over by a breeze" />
+								</a>
+								<button type="button" class="btn btn-sm">Add</button>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="pic">
+								<a data-fancybox="gallery" href="assets/images/flora-and-fauna/sm-butterfly-1.jpg" data-caption="Butterfly 1" >
+									<img class="img-responsive w-100" src="assets/images/flora-and-fauna/sm-butterfly-1.jpg" alt="Close up of a Red Admiral butterfly on a leaf" />
+								</a>
+								<button type="button" class="btn btn-sm">Add</button>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="pic">
+								<a data-fancybox="gallery" href="assets/images/flora-and-fauna/sm-butterfly-2.jpg" data-caption="Butterfly 2" >
+									<img class="img-responsive w-100" src="assets/images/flora-and-fauna/sm-butterfly-2.jpg" alt="Close up of Cabbage White butterfly and bee on thistles" />
+								</a>
+								<button type="button" class="btn btn-sm">Add</button>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="pic">
+								<a data-fancybox="gallery" href="assets/images/flora-and-fauna/sm-butterfly-3.jpg" data-caption="Butterfly 3" >
+									<img class="img-responsive w-100" src="assets/images/flora-and-fauna/sm-butterfly-3.jpg" alt="Close up of butterfly on pink flower" />
+								</a>
+								<button type="button" class="btn btn-sm">Add</button>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="pic">
+								<a data-fancybox="gallery" href="assets/images/flora-and-fauna/sm-camoflage.jpg" data-caption="Camoflage" >
+									<img class="img-responsive w-100" src="assets/images/flora-and-fauna/sm-camoflage.jpg" alt="Fence post hidden by sea of white, green and yellow flowers" />
+								</a>
+								<button type="button" class="btn btn-sm">Add</button>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="pic">
+								<a data-fancybox="gallery" href="assets/images/flora-and-fauna/sm-frosted-leaf.jpg" data-caption="Frosted Leaf" >
+									<img class="img-responsive w-100" src="assets/images/flora-and-fauna/sm-frosted-leaf.jpg" alt="Close up of thick frost on brown winter leaf" />
+								</a>
+								<button type="button" class="btn btn-sm">Add</button>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="pic">
+								<a data-fancybox="gallery" href="assets/images/flora-and-fauna/sm-fungus-cup.jpg" data-caption="Fungus Cup" >
+									<img class="img-responsive w-100" src="assets/images/flora-and-fauna/sm-fungus-cup.jpg" alt="White Fungus Cup mushroom covered by autumn leaves" />
+								</a>
+								<button type="button" class="btn btn-sm">Add</button>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="pic">
+								<a data-fancybox="gallery" href="assets/images/flora-and-fauna/sm-nectar.jpg" data-caption="Nectar" >
+									<img class="img-responsive w-100" src="assets/images/flora-and-fauna/sm-nectar.jpg" alt="Close up of bee on thistle" />
+								</a>
+								<button type="button" class="btn btn-sm">Add</button>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="pic">
+								<a data-fancybox="gallery" href="assets/images/flora-and-fauna/sm-reflection-1.jpg" data-caption="Reflection 1" >
+									<img class="img-responsive w-100" src="assets/images/flora-and-fauna/sm-reflection-1.jpg" alt="Fallen logs in water surrounded by brown and green brachen" />
+								</a>
+								<button type="button" class="btn btn-sm">Add</button>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="pic">
+								<a data-fancybox="gallery" href="assets/images/flora-and-fauna/sm-summer-field.jpg" data-caption="Summer Field" >
+									<img class="img-responsive w-100" src="assets/images/flora-and-fauna/sm-summer-field.jpg" alt="Several red poppies peeking through sea of summer barley" />
+								</a>
+								<button type="button" class="btn btn-sm">Add</button>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="pic">
+								<a data-fancybox="gallery" href="assets/images/flora-and-fauna/sm-survivor.jpg" data-caption="Survivor" >
+									<img class="img-responsive w-100" src="assets/images/flora-and-fauna/sm-survivor.jpg" alt="Close up of green sprig covered in thick frost" />
+								</a>
+								<button type="button" class="btn btn-sm">Add</button>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="pic">
+								<a data-fancybox="gallery" href="assets/images/flora-and-fauna/sm-wild-fruit.jpg" data-caption="Wild Fruit" >
+									<img class="img-responsive w-100" src="assets/images/flora-and-fauna/sm-wild-fruit.jpg" alt="Close up of wild blackthorn on tree" />
+								</a>
+								<button type="button" class="btn btn-sm">Add</button>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="pic">
+								<a data-fancybox="gallery" href="assets/images/flora-and-fauna/sm-wild-garlic.jpg" data-caption="Wild Garlic" >
+									<img class="img-responsive w-100" src="assets/images/flora-and-fauna/sm-wild-garlic.jpg" alt="Sea of Wild Garlic in dappled sunlight" />
+								</a>
+								<button type="button" class="btn btn-sm">Add</button>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="pic">
+								<a data-fancybox="gallery" href="assets/images/flora-and-fauna/sm-winter-buck.jpg" data-caption="Winter Buck" >
+									<img class="img-responsive w-100" src="assets/images/flora-and-fauna/sm-winter-buck.jpg" alt="A buck deer looking towards you through a break in the snow-covered forest" />
+								</a>
+								<button type="button" class="btn btn-sm">Add</button>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+                <!-- Flowers -->
+                
+                <section id="flowers">
+					<div class="row my-3">
+						<div class="col-12">
+							<h2 class="heading-gallery-category">Flowers</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="pic">
+								<a data-fancybox="gallery" href="assets/images/flowers/sm-echinacea.jpg" data-caption="Echinacea" >
+									<img class="img-responsive w-100" src="assets/images/flowers/sm-echinacea.jpg" alt="Large white Echinacea against a leafy background" />
+								</a>
+								<button type="button" class="btn btn-sm">Add</button>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="pic">
+								<a data-fancybox="gallery" href="assets/images/flowers/sm-faded-glory.jpg" data-caption="Faded Glory" >
+									<img class="img-responsive w-100" src="assets/images/flowers/sm-faded-glory.jpg" alt="Close up of a flower in Faded Glory" />
+								</a>
+								<button type="button" class="btn btn-sm">Add</button>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="pic">
+								<a data-fancybox="gallery" href="assets/images/flowers/sm-poppy-1.jpg" data-caption="Poppy 1" >
+									<img class="img-responsive w-100" src="assets/images/flowers/sm-poppy-1.jpg" alt="Close up of a red poppy against a leafy green and pink background" />
+								</a>
+								<button type="button" class="btn btn-sm">Add</button>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="pic">
+								<a data-fancybox="gallery" href="assets/images/flowers/sm-shadows.jpg" data-caption="Shadows" >
+									<img class="img-responsive w-100" src="assets/images/flowers/sm-shadows.jpg" alt="Close up of shadows falling on a purple flower" />
+								</a>
+								<button type="button" class="btn btn-sm">Add</button>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="pic">
+								<a data-fancybox="gallery" href="assets/images/flowers/sm-summer.jpg" data-caption="Summer" >
+									<img class="img-responsive w-100" src="assets/images/flowers/sm-summer.jpg" alt="Close up of shadows falling on a white flower" />
+								</a>
+								<button type="button" class="btn btn-sm">Add</button>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+                <!-- Landscapes -->
+                
+                <section id="landscapes">
+					<div class="row my-3">
+						<div class="col-12">
+							<h2 class="heading-gallery-category">Landscapes</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="pic">
+								<a data-fancybox="gallery" href="assets/images/landscapes/sm-bale-scape.jpg" data-caption="Bale Scape" >
+									<img class="img-responsive w-100" src="assets/images/landscapes/sm-bale-scape.jpg" alt="Hay bales spread sparsely across an open field with trees on horizon and blue skies" />
+								</a>
+								<button type="button" class="btn btn-sm">Add</button>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="pic">
+								<a data-fancybox="gallery" href="assets/images/landscapes/sm-field-work.jpg" data-caption="Field Work" >
+									<img class="img-responsive w-100" src="assets/images/landscapes/sm-field-work.jpg" alt="Hay baler approaching across a hazy field with tree in background" />
+								</a>
+								<button type="button" class="btn btn-sm">Add</button>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="pic">
+								<a data-fancybox="gallery" href="assets/images/landscapes/sm-fieldscape.jpg" data-caption="Field Scape" >
+									<img class="img-responsive w-100" src="assets/images/landscapes/sm-fieldscape.jpg" alt="White clouds and blue sky over a cornfield" />
+								</a>
+								<button type="button" class="btn btn-sm">Add</button>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="pic">
+								<a data-fancybox="gallery" href="assets/images/landscapes/sm-nobodys-bottom.jpg" data-caption="Nobody's Bottom" >
+									<img class="img-responsive w-100" src="assets/images/landscapes/sm-nobodys-bottom.jpg" alt="Path through a field at Nobody's Bottom with gently rolling hills and fluffy white clouds in the background" />
+								</a>
+								<button type="button" class="btn btn-sm">Add</button>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="pic">
+								<a data-fancybox="gallery" href="assets/images/landscapes/sm-tranquility.jpg" data-caption="Tranquility" >
+									<img class="img-responsive w-100" src="assets/images/landscapes/sm-tranquility.jpg" alt="Looking over a tranquil winter lake with low sun peeking from behind tree branch and clouds" />
+								</a>
+								<button type="button" class="btn btn-sm">Add</button>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+                <!-- Trees -->
+                
+                <section id="trees">
+					<div class="row my-3">
+						<div class="col-12">
+							<h2 class="heading-gallery-category">Trees</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="pic">
+								<a data-fancybox="gallery" href="assets/images/trees/sm-ashridge-reflection.jpg" data-caption="Ashridge Reflection" >
+									<img class="img-responsive w-100" src="assets/images/trees/sm-ashridge-reflection.jpg" alt="Looking down muddy autumn track lined with trees reflected in large puddles" />
+								</a>
+								<button type="button" class="btn btn-sm">Add</button>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="pic">
+								<a data-fancybox="gallery" href="assets/images/trees/sm-bound-tree.jpg" data-caption="Bound Tree" >
+									<img class="img-responsive w-100" src="assets/images/trees/sm-bound-tree.jpg" alt="Close up of sinewy, gnarled tree" />
+								</a>
+								<button type="button" class="btn btn-sm">Add</button>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="pic">
+								<a data-fancybox="gallery" href="assets/images/trees/sm-misty-woods.jpg" data-caption="Misty Woods" >
+									<img class="img-responsive w-100" src="assets/images/trees/sm-misty-woods.jpg" alt="Tall, bare trees in misty, frosted wood" />
+								</a>
+								<button type="button" class="btn btn-sm">Add</button>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="pic">
+								<a data-fancybox="gallery" href="assets/images/trees/sm-nettleden-tree-1.jpg" data-caption="Nettleden Tree 1" >
+									<img class="img-responsive w-100" src="assets/images/trees/sm-nettleden-tree-1.jpg" alt="A lone tree casting a shadow over open ploughed fields" />
+								</a>
+								<button type="button" class="btn btn-sm">Add</button>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="pic">
+								<a data-fancybox="gallery" href="assets/images/trees/sm-nettleden-tree-2.jpg" data-caption="Nettleden Tree 2" >
+									<img class="img-responsive w-100" src="assets/images/trees/sm-nettleden-tree-2.jpg" alt="Lone tree in field of green and yellow with red poppies in foreground" />
+								</a>
+								<button type="button" class="btn btn-sm">Add</button>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="pic">
+								<a data-fancybox="gallery" href="assets/images/trees/sm-twisted-tree.jpg" data-caption="Twisted Tree" >
+									<img class="img-responsive w-100" src="assets/images/trees/sm-twisted-tree.jpg" alt="Looking up at gnarled, knobbly tree in forest" />
+								</a>
+								<button type="button" class="btn btn-sm">Add</button>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3">
+							<div class="pic">
+								<a data-fancybox="gallery" href="assets/images/trees/sm-winter-woods.jpg" data-caption="Winter Woods" >
+									<img class="img-responsive w-100" src="assets/images/trees/sm-winter-woods.jpg" alt="Bare trees in misty woods, with frosted branches strewn on ground" />
+								</a>
+								<button type="button" class="btn btn-sm">Add</button>
+							</div>
+						</div>
+					</div>
+				</section>
+			</section>
+			
+			<!-- Footer -->
+			
+			<footer class="container-fluid">
+				<div class="row">
+					<div class="col-12 py-5">
+						<div id="sm-links-container">
+							<ul>
+								<!-- Facebook -->
+								<li>
+									<a class="sm-links" href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Find out more on Facebook" >
+										<i class="fab fa-facebook-f fa-lg fa-2x"></i>
+									</a>
+								</li>
+								<!-- Twitter -->
+								<li>
+									<a href="https://www.twitter.com/" target="_blank" rel="noopener" aria-label="Find out more on Twitter" class="sm-links" >
+										<i class="fab fa-twitter fa-lg fa-2x"></i>
+									</a>
+								</li>
+								<!--Linkedin -->
+								<li>
+									<a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="Find out more on LinkedIn" class="sm-links" >
+										<i class="fab fa-linkedin-in fa-lg fa-2x"></i>
+									</a>
+								</li>
+								<!--Instagram-->
+								<li>
+									<a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Find out more on Instagram" class="sm-links" >
+										<i class="fab fa-instagram fa-lg fa-2x"></i>
+									</a>
+								</li>
+								<!--Pinterest-->
+								<li>
+									<a href="https://www.pinterest.com/" target="_blank" rel="noopener" aria-label="Find out more on Pinterest" class="sm-links" >
+										<i class="fab fa-pinterest fa-lg fa-2x"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- Copyright -->
+				<div class="container text-center" id="copyright-container">
+					<div class="row">
+						<div class="col-12">
+							<p class="small">© 2020 Copyright Penny Holland</p>
+						</div>
+					</div>
+				</div>
+			</footer>
+			
+			<!-- Bootstrap JavaScript CDN -->
+			<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+			<!-- Script to collapse dropdowns in mobile navbar burger menu when clicked NB this is different from other pages due to gallery dropdown anchors (dropdown-item vs nav-item). Source: https://stackoverflow.com/questions/42401606/how-to-hide-collapsible-bootstrap-4-navbar-on-click -->
+			<script> $(".dropdown-item").on("click", function () { $(".navbar-collapse").collapse("hide"); }); </script>
+		</body>
 </html>
