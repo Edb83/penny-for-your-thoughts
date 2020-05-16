@@ -207,8 +207,8 @@ At this point, user feedback suggested changing the hero image and after doing s
 
 - [Autoprefixer](https://autoprefixer.github.io/) - Post CSS plugin which parses CSS and adds vendor prefixes
 - [Bootstrap](https://getbootstrap.com/) - Responsive grid and boilerplate styling framework
+- [Code Beautify](https://codebeautify.org/htmlviewer/) - HTML code beautifier
 - [Color Scheme Designer](https://colorschemedesigner.com/csd-3.5/) - Complimentary color scheme for the site
-- [CSS Tricks](https://css-tricks.com/examples/hrs/) - Specifically for linear-gradiant horizontal rule
 - [Font Awesome](https://fontawesome.com/) - Icon used for shopping cart in navbar
 - [Free Formatter](https://www.freeformatter.com/html-formatter.html) - Formatting HTML code
 - [Google Fonts](https://fonts.google.com/) - Open Sans and Monserrat fonts
@@ -262,23 +262,23 @@ Mobile scores:
 
 - Home
 
-![Landing](assets/audit/audit-home.jpg "Landing page scores")
+![Landing](audit/audit-home.jpg "Landing page scores")
 
 - About
 
-![About](assets/audit/audit-about.jpg "About page scores")
+![About](audit/audit-about.jpg "About page scores")
 
 - Pricing
 
-![Pricing](assets/audit/audit-pricing.jpg "Pricing page scores")
+![Pricing](audit/audit-pricing.jpg "Pricing page scores")
 
 - Gallery
 
-![Gallery](assets/audit/audit-gallery.jpg "Gallery page scores")
+![Gallery](audit/audit-gallery.jpg "Gallery page scores")
 
 - Sign Up
 
-![Sign Up](assets/audit/audit-signup.jpg "Sign Up page scores")
+![Sign Up](audit/audit-signup.jpg "Sign Up page scores")
 
 - [W3C - HTML](https://validator.w3.org/) - On update no HTML errors or warnings detected - **PASS**
   - `alt` tags missing
@@ -365,7 +365,13 @@ _Note: initially some file names were incorrect but were all amended_
 
 ### Responsiveness
 
-The site has been designed with a mobile-first philosophy and, supported by [Bootstrap](https://getbootstrap.com/), has been thoroughly tested at all stages of development using [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools). In addition to Bootstrap's breakpoints, various media queries have been used to maximise the legibility of text and provide sufficient spacing for all contents. These queries include altered `font-size`, `height`, `margin`, `max-height`, `max-width`, `padding`, `text-align` and `width`.
+The site has been designed with a mobile-first philosophy and, supported by [Bootstrap](https://getbootstrap.com/), has been thoroughly tested at all stages of development using [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools).
+
+In addition to Bootstrap's breakpoints, various media queries have been used to maximise the legibility of text and provide sufficient spacing for all content. These queries include optimised `font-size`, `height`, `margin`, `max-height`, `max-width`, `padding`, `text-align` and `width`.
+
+Consideration has been given to the flow of pages on different devices, for example:
+- on the About page the text is centre-aligned when the photographer's headshot appears beneath the text, but is left-aligned where the headshot is next to the text to prevent a mistmatched display
+- on the Sign Up page the Sign Up button is left-aligned for mobile devices to improve thumb access when completing the form, but on larger displays is centre-aligned to improve the presentation of the form as a whole 
 
 The following issues arose and have each been addressed:
 
