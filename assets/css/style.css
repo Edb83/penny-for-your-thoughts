@@ -7,7 +7,7 @@
 
 /* Google fonts: Open Sans & Montserrat */
 
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600|Open+Sans&display:300,400=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400|Open+Sans&display:400,600=swap");
 
 /* Site-wide */
 
@@ -73,7 +73,7 @@ nav {
 }
 /* Navbar - "Penny for your Thoughts" */
 .navbar-brand {
-  font-weight: 500;
+
   font-size: 1rem;
   letter-spacing: 0.0625rem;
   color: #fff;
@@ -102,6 +102,7 @@ nav {
 
 .page-heading {
   font-size: 2rem;
+  font-weight: 400;
   text-align: center;
   margin-bottom: 1.875rem;
   letter-spacing: 0.25rem;
