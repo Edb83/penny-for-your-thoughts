@@ -36,7 +36,7 @@
 
 ## Context
 
-This site is a showcase for an aspiring photographer's work, which is available to purchase either on card or enlarged print.
+This site is a showcase for an aspiring photographer's work, which is available to purchase on either card or enlarged print.
 
 Since moving to the countryside, Penny has found herself increasingly inspired by her beautiful surroundings and is keen to share them with a wider audience. More than ever in these uncertain, digital times, there's comfort to be found in a personal message written on a physical card, adorned with beautiful, candid pictures of nature.
 
@@ -67,11 +67,11 @@ For ease of reference, the means by which a user's expectations have been met ar
 | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | For it to be immediately clear what the purpose of the site is and what it has to offer. The interface and layout should be clean, with a focus on showcasing the images for purchase | Aligns with client's expectations                                                                                                                                                                                                                                                                                                                    |
 | To learn something about the photographer and to be able to contact them directly or find them on social media                                                                        | The About page is separate from the rest of the content but is easily accessible for those wishing to learn more about the photographer, and the information itself is not overly dense or excessive. The About page includes a contact email and the minimalist footer provides available social media links, as is expected by all web users today |
-| To be able to quickly find out more about the product, specifically its price and available options                                                                                   | The Pricing page is currently separate and provides an acceptible means of sharing this information, which is laid out in a pair of easily digestible tables containly only pertinent information. As the project develops and the shopping basket is implemented, this information may be conveyed more effectively elsewhere                       |
+| To be able to quickly find out more about the product, specifically its price and available options                                                                                   | Pricing is a separate page and provides an acceptible means of sharing this information, which is laid out in a pair of easily digestible tables containly only pertinent information. As the project develops and the shopping basket is implemented, this information may be conveyed more effectively elsewhere                                   |
 | Quick access to the gallery, with the option to sort by theme                                                                                                                         | Currently this expectation is met (and promoted) using the nav bar Gallery dropdown list and intro gallery below the hero image. This method will be re-examined as new images are added and when future functionality enables advanced search options                                                                                               |
 | To be able to sign up for more information and updates on the photographer’s work                                                                                                     | The Sign Up page has the singular purpose of establishing a connection with potential clients in the hope of securing repeat business                                                                                                                                                                                                                |
 | To be able to access all information on a range of devices                                                                                                                            | Addressed in the <a href="#testing-responsive">Responsiveness</a> section below                                                                                                                                                                                                                                                                      |
-| Images to be fast to load and easy to navigate                                                                                                                                        | Efforts have been made to reduce the size of files to what is acceptible on the web today, but there is scope to utilise thumbnails of an even smaller size to improve the speed at which the Gallery loads                                                                                                                                          |
+| Images to be fast to load and easy to navigate                                                                                                                                        | Efforts have been made to reduce the size of files as much as possible without impacting quality, but there is scope to utilise thumbnails of an even smaller size to improve the speed at which the Gallery loads                                                                                                                                   |
 
 Seven individuals contributed to testing the site and provided feedback on its layout, responsiveness and styling at various points in development.
 
@@ -82,7 +82,7 @@ Seven individuals contributed to testing the site and provided feedback on its l
 Overall the wireframes were successfully converted into a functioning website, however there were some deviations from the plan. These were:
 
 1. A circular image divided up into four seasons (with the same functionality as the intro gallery images on the landing page) was originally envisaged, however it was not possible to create this to the desired standard in the time available, so the idea was dropped. Furthermore, the page structure required would have been unnecessarily complex and ultimately misleading and repetitive.
-2. The option to Sign In was planned to appear below the Sign Up form, however as the project advanced it became apparent that this was not a needed feature in this first iteration. The decision was made to simplify the design and stick to the core requirement of providing a means to subscribe to information rather than to log in with no purpose. The benefits of signing into the site are more closely tied to the (as yet) unrealised shopping basket feature and will be explored in future.
+2. The option to Sign In was planned to appear below the Sign Up form, however as the project advanced it was apparent that this was not a needed feature in this first iteration. The decision was made to simplify the design and stick to the core requirement of providing a means to subscribe to information rather than to log in with no purpose. The benefits of signing into the site are more closely tied to the (as yet) unrealised shopping basket feature and will be explored in future.
 
 The full suite of wireframes for **desktop**, **tablet** and **mobile** devices, plus a **sitemap**, can be accessed [here](wireframes/).
 
@@ -92,7 +92,7 @@ Based on the client's brief and visitors' expectations for the site, a clean, si
 
 Two fonts with a soft, warm style have been used across the site: [Montserrat](https://fonts.google.com/specimen/Montserrat) and [Open Sans](https://fonts.google.com/specimen/Open+Sans).
 
-At this point, user feedback suggested changing the hero image and after doing so, [Color Scheme Designer](https://colorschemedesigner.com/csd-3.5/) was used to pull out several complimentary and web-friendly colours (#036, #39C, #960) which tied in with the new hero image. The result is a much more vibrant aesthetic based on blues and gold, which gives the site a bolder appearance and more character. Furthermore, visual feedback for user actions became much clearer and the identity of separate elements (e.g images with shadows, golden horizontal rules to indicate consitent headings etc) became more apparent. At a late stage in development the Pricing tables were given a border shadow consistent with the rest of the site, as feedback suggested the Pricing page was the weakest page, aesthetically.
+At this point, user feedback suggested changing the hero image and after doing so, [Color Scheme Designer](https://colorschemedesigner.com/csd-3.5/) was used to pull out several complimentary and web-friendly colours (#036, #39C, #960) which tied in with the new hero image. The result is a much more vibrant aesthetic based on blues and gold, which gives the site a bolder appearance and more character. Furthermore, visual feedback for user actions became much clearer and the identity of separate elements (e.g images with shadows, golden horizontal rules to indicate headings etc) became more apparent. At a late stage in development the Pricing tables were given a border shadow consistent with the rest of the site, as feedback suggested the Pricing page was the weakest page, aesthetically.
 
 <div align="right"><a style="text-align:right" href="#top">Go to index :arrow_double_up:</a></div>
 
@@ -109,9 +109,10 @@ At this point, user feedback suggested changing the hero image and after doing s
 - Collapses into a hamburger icon to support the mobile browsing experience
 - Brand maintains visibility on all device sizes
 - Brand acts as the Home button to avoid duplication and clutter
-- Drop down options are scrollable on mobile devices in landscape orientation to prevent frustrating case of hidden options
+- Gallery dropdown options are scrollable on mobile devices in landscape orientation to prevent frustrating case of hidden options
+- Gallery dropdown includes an 'All' option to prevent hesitation on clicking through. It might otherwise be assumed on first visit that these were separate pages
 - High contrast hoverable links provide responsive visual feedback
-- Active links clearly indicate current location on site
+- Active links clearly indicate current location on site (while Brand is left consistently white)
 - Shopping basket for quick access to purchasing selected items (for future implementation and currently disabled)
 
 **2. Footer**
@@ -135,6 +136,7 @@ At this point, user feedback suggested changing the hero image and after doing s
 **4. About**
 
 - Provides the voice of the photographer, plus their background, credentials and reason for setting up the site
+- Headshot of the photographer
 - Link to email photographer directly with email subject placeholder to encourage completion
 
 **5. Pricing**
@@ -151,6 +153,7 @@ At this point, user feedback suggested changing the hero image and after doing s
 - Ability to enlarge images by clicking on them, and to scroll through a pop-up gallery of images in full aspect ratio. Clicking outside viewing area (or swiping up/down on mobile) returns visitor to the normal gallery
 - Within pop-up gallery, user can view thumbnails of all images and use the mouse wheel or swipe to scroll through
 - Names of each image are included at bottom of pop-up gallery, providing some context for each scene and enabling visitors to ask specific questions of the photographer
+- All images have an appropriate `alt` entry to accomodate screen reading software
 - Image sizes are all below 300kb for faster loading, while preserving FHD resolution to showcase their quality
 
 **7. Signup**
@@ -280,6 +283,9 @@ Mobile scores:
 
 ![Sign Up](audit/audit-signup.jpg "Sign Up page scores")
 
+- [CSS Lint](http://csslint.net/) - 0 errors, 56 warnings - **PASS**
+  - Don't use IDs in selectors
+  - Compatible vendor prefixes
 - [W3C - HTML](https://validator.w3.org/) - On update no HTML errors or warnings detected - **PASS**
   - `alt` tags missing
   - call to action `button` with `type="button"` identified as an issue
@@ -294,7 +300,7 @@ Mobile scores:
 
 **Summary**:
 
-Of the manual tests conducted, the only ones to fail were those related to default form validation settings. These test were initially carried out on a boilerplate Bootstrap form and subsequently using the `novalidate` JS method described in Bootstrap, but the results were the same. Research shows that the `pattern` property could address this, but has stated by [Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email#Validation): "HTML form validation is not a substitute for scripts that ensure that the entered data is in the proper format". Solving this is beyond the scope of the project.
+Of the manual tests conducted, the only ones to fail were those related to default form validation settings. These test were initially carried out on a boilerplate Bootstrap form and subsequently using the `novalidate` JS method described in Bootstrap, but the results were the same. Research shows that the `pattern` property could address this, but as stated by [Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email#Validation): "_HTML form validation is not a substitute for scripts that ensure that the entered data is in the proper format_". Solving this is beyond the scope of the project.
 
 The following scenarios were tested to ensure that the site is functioning as expected:
 
@@ -303,7 +309,7 @@ The following scenarios were tested to ensure that the site is functioning as ex
 - From each page
   - check that nav bar links take you to the correct page - **PASS**
   - check that each Gallery dropdown link takes you to the correct section of the Gallery page - **PASS**
-  - check that nav bar links (including Brand) have the correct styling (blue) when hovered over on desktop devices - **PASS**
+  - check that nav bar links (excluding Brand) have the correct styling (blue) when hovered over on desktop devices - **PASS**
   - check that the active / current nav bar link (excluding Brand) is correctly styled and distinguished from the others - **PASS**
 
 **2. Footer**
@@ -337,7 +343,7 @@ _Note: initially a missing ">" was preventing the Subject field being filled but
 _Note: initially some file names were incorrect but were all amended_
 
 - Check that the correct caption is displayed for each of the 48 images in the modal gallery - **PASS**
-- Check that all 48 "Add" buttons (currently no functionality as shopping basket is beyond scope of project, see Features left to implement) have the correct styling (dark blue) when hovered over on desktop devices - **PASS**
+- Check that all 48 "Add" buttons (currently no functionality as shopping basket is beyond scope of project, see <a href="#features-future">Features left to implement</a>) have the correct styling (dark blue) when hovered over on desktop devices - **PASS**
 
 **7. Signup**
 
@@ -347,7 +353,9 @@ _Note: initially some file names were incorrect but were all amended_
   - leave all fields blank and click Sign Up button to check validation displays an input issue - **PASS**
   - enter all fields correctly and click Sign Up button to check validation confirms correct inputs - **PASS**
   - enter all fields correctly apart from one (in turn) and check validation correctly identifies issues - **PASS**
-  - enter an email address in an incorrect format to check validation displays an input issue. Results:
+  - enter an email address in an incorrect format to check validation displays an input issue.
+
+  Results:
 
   |  Entry  | Test result |
   | :-----: | :---------: |
@@ -370,20 +378,21 @@ The site has been designed with a mobile-first philosophy and, supported by [Boo
 In addition to Bootstrap's breakpoints, various media queries have been used to maximise the legibility of text and provide sufficient spacing for all content. These queries include optimised `font-size`, `height`, `margin`, `max-height`, `max-width`, `padding`, `text-align` and `width`.
 
 Consideration has been given to the flow of pages on different devices, for example:
-- on the About page the text is centre-aligned when the photographer's headshot appears beneath the text, but is left-aligned where the headshot is next to the text to prevent a mistmatched display
-- on the Sign Up page the Sign Up button is left-aligned for mobile devices to improve thumb access when completing the form, but on larger displays is centre-aligned to improve the presentation of the form as a whole 
+
+- on the About page the text is center-aligned when the photographer's headshot appears beneath the text, but is left-aligned where the headshot is next to the text to prevent a mistmatched display
+- on the Sign Up page the Sign Up button is left-aligned for mobile devices to improve thumb access when completing the form, but on larger displays is center-aligned to improve the presentation of the form as a whole
 
 The following issues arose and have each been addressed:
 
-| Issue                                                                                                                  | Solution                                                                                                                |
-| :------------------------------------------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------------------- |
-| Navbar Brand causes hamburger icon to spill                                                                                           | Reduced starting `font-size`, removed `margin-right`and added media query to increase above `min-width: 370px`          |
-| Navbar dropdown not visible on landscape mobile devices                                                                               | Added media query to set `overflow-y: scroll`. See Issues and resolutions section below                                 |
-| Footer social media icons appear cramped on larger displays                                                                           | Added media query to increase `margin: 0 1rem;`                                                                         |
-| Landing page main heading ran to several lines on smaller displays                                                                    | Reduced starting `font-size` of callout header and paragraph and added media query to increase above `min-width: 768px` |
-| Pricing tables appear too elongated on larger displays when filling two columns                                                       | Added two media queries to increase `padding` above above `min-width: 768px` and `min-width: 992px`                     |
-| Image of photographer in About suffered from unwanted top margin (which was needed in single-column views) when sharing row with text | Added media query to remove `margin-top` of the container and change `max-height` and `max-width` of the image          |
-| Gallery images on small displays appear too wide                                                                                      | See Issues and resolutions below                                                                                        |
+| Issue                                                                                                                                    | Solution                                                                                                                |
+| :--------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------- |
+| Navbar Brand causes hamburger icon to spill                                                                                              | Reduced starting `font-size`, removed `margin-right`and added media query to increase above `min-width: 370px`          |
+| Navbar Gallery dropdowns not visible on landscape mobile devices                                                                         | Added media query to set `overflow-y: scroll`. See Issues and resolutions section below                                 |
+| Footer social media icons appear cramped on larger displays                                                                              | Added media query to increase `margin: 0 1rem;`                                                                         |
+| Landing page main heading is too small on larger displays                                                                                | Reduced starting `font-size` of callout header and paragraph and added media query to increase above `min-width: 768px` |
+| Pricing tables appear too elongated on larger displays when filling two columns                                                          | Added two media queries to increase `padding` above above `min-width: 768px` and `min-width: 992px`                     |
+| Image of photographer on About page suffers from unwanted top margin (which is needed in single-column views) when sharing row with text | Added media query to remove `margin-top` of the container and change `max-height` and `max-width` of the image          |
+| Gallery images on small displays appear too wide                                                                                         | See Issues and resolutions below                                                                                        |
 
 #### Browsers
 
@@ -469,11 +478,11 @@ Real world testing on:
 
 - **There is white space beneath footer on pages with little content (Pricing and About)**
 
-  - Resolved by using a suggestion from [Philip Walton: Sticky footer](https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/) to set body element `flex-direction: column` and `min-height: 100vh`. This was a more elegant solution than changing the structure of the site e.g. by adding the Pricing and About pages further down the Landing Page and relying on achor links, or by simply increasing the content on each of the affected pages
+  - Resolved by using a suggestion from [Philip Walton: Sticky footer](https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/) to set body element `flex-direction: column` and `min-height: 100vh`. This was a more elegant solution than changing the structure of the site e.g. by adding the Pricing and About pages to the Landing Page and relying on achor links, or by simply increasing the content on each of the affected pages
 
 - **Gallery image buttons do not stay inside their respective images where images have different aspect ratios**
 
-  _Due to having_ `position: abolute` _buttons were left floating outside of their images_
+  _Due to having_ `position: abolute`, _buttons were left floating outside of their images_
 
   - Initially resolved by fixing the height of images to `vh20` but this had the unintended side-effect of making them appear too wide on mobile devices
 
@@ -483,7 +492,7 @@ Real world testing on:
 
 - **Signup form validation messages display poorly on iOS**
 
-  _Despite displaying correctly in Chrome devtools, the display on iOS leaves validation error messages appearing clipped and ugly_
+  _Despite displaying correctly in Chrome DevTools, the display on iOS leaves validation error messages appearing clipped and ugly_
 
   - Resolved by using Bootstrap's recommended `needs-validation` class and `novalidate` ([Source](https://getbootstrap.com/docs/4.1/components/forms/#custom-styles)). A block styled with `invalid-feedback` was avoided to prevent error messages appearing and shifting the lines of input fields
 
@@ -523,8 +532,8 @@ To deploy this page to GitHub Pages from its [GitHub repository](https://github.
 
 To clone this project from GitHub:
 
-1. Under the repository name, click "Clone or download"
-2. In the Clone with HTTPs section, copy the clone URL for the repository
+1. Under the repository name, click **Clone or download**
+2. In the **Clone with HTTPs** section, copy the clone URL for the repository
 3. In your local IDE open Git Bash
 4. Change the current working directory to the location where you want the cloned directory to be made
 5. Type `git clone`, and then paste the URL you copied in Step 2
@@ -557,7 +566,7 @@ Code was either directly copied or modified from the following sources:
 
 The text in the About page and beautiful photos used throughout this site were obtained from Penny Holland, with permission granted to use them. All other text was written by me and agreed with Penny.
 
-The Deployment section was copied from Richard Wells' README ([Source](https://github.com/D0nni387/Luxury-Door-Solutions/blob/master/README.md))
+The Deployment section was based on Richard Wells' README ([Source](https://github.com/D0nni387/Luxury-Door-Solutions/blob/master/README.md)).
 
 ### Acknowledgements
 
@@ -567,7 +576,7 @@ The Deployment section was copied from Richard Wells' README ([Source](https://g
 
 - Jonathan Munz (Code Institute Mentor) - for his sage advice, prompts to find solutions, and calm reassurances during the project
 
-- Richard Wells (Code Institute Slack Lead) - for his webinar on writing the README and Chrome DevTools 
+- Richard Wells (Code Institute Slack Lead) - for his webinar on writing the README and using Chrome DevTools
 
 - The Code Institute Slack Community - for many tips and tricks discovered while browsing
 

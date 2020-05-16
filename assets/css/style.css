@@ -557,7 +557,7 @@ table caption {
     margin: 0 3rem;
   }
 
-  /* Increases the external padding around tables and reduces width for spacing */
+  /* Increases the external padding around tables and reduces width for spacing and to prevent "size" line spanning */
   .table-container {
     padding: 1.25rem 5rem;
     width: 98%;
