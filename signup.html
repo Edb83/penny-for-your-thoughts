@@ -1,272 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="description" content="Penny for your Thoughts | Beautiful cards and prints delivered to your doorstep | Gallery of images: Canals, Coast, Flora and Fauna, Flowers, Landscapes, Trees" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <script src="https://kit.fontawesome.com/62998f70b3.js"></script>
-    <link rel="shortcut icon" type="image/png" href="favicon.png" />
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    <title>
-      Penny for your Thoughts | Beautiful cards delivered to your doorstep
-    </title>
-  </head>
-  <body>
-
-    <!-- Navbar -->
-
-    <nav class="container-fluid navbar navbar-expand-md navbar-dark">
-        <a class="navbar-brand" href="index.html">Penny for your Thoughts</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html" aria-label="About the photographer">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="pricing.html" aria-label="Card and print pricing">Pricing</a>
-                </li>
-                <!-- nav-item-alt class used to prevent Javascript to collapse dropdowns from interrupting clicks on Gallery -->
-                <li class="nav-item-alt dropdown">
-                    <a
-                        class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Choose section of Gallery">Gallery
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="gallery.html" aria-label="Top of Gallery">All</a>
-                    <a class="dropdown-item" href="gallery.html#canals" aria-label="Canals section of Gallery">Canals</a>
-                    <a class="dropdown-item" href="gallery.html#coast" aria-label="Coast section of Gallery">Coast</a>
-                    <a class="dropdown-item" href="gallery.html#flora-and-fauna" aria-label="Flora and Fauna section of Gallery">Flora and Fauna</a>
-                    <a class="dropdown-item" href="gallery.html#flowers" aria-label="Flowers section of Gallery">Flowers</a>
-                    <a class="dropdown-item" href="gallery.html#landscapes" aria-label="Landscapes section of Gallery">Landscapes</a>
-                    <a class="dropdown-item" href="gallery.html#trees" aria-label="Trees section of Gallery">Trees</a>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="description" content="Penny for your Thoughts | Beautiful cards and prints delivered to your doorstep | Gallery of images: Canals, Coast, Flora and Fauna, Flowers, Landscapes, Trees" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+		<script src="https://kit.fontawesome.com/62998f70b3.js"></script>
+		<link rel="shortcut icon" type="image/png" href="favicon.png" />
+		<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+		<title> Penny for your Thoughts | Beautiful cards delivered to your doorstep </title>
+	</head>
+    
+    <body>
+        
+        <!-- Navbar -->
+        
+        <nav class="container-fluid navbar navbar-expand-md navbar-dark">
+            <a class="navbar-brand" href="index.html">Penny for your Thoughts</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" aria-label="About the photographer">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html" aria-label="Card and print pricing">Pricing</a>
+                    </li>
+                    <!-- nav-item-alt class used to prevent Javascript to collapse dropdowns from interrupting clicks on Gallery -->
+                    <li class="nav-item-alt dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Choose section of Gallery">Gallery </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="gallery.html" aria-label="Top of Gallery">All</a>
+                            <a class="dropdown-item" href="gallery.html#canals" aria-label="Canals section of Gallery">Canals</a>
+                            <a class="dropdown-item" href="gallery.html#coast" aria-label="Coast section of Gallery">Coast</a>
+                            <a class="dropdown-item" href="gallery.html#flora-and-fauna" aria-label="Flora and Fauna section of Gallery">Flora and Fauna</a>
+                            <a class="dropdown-item" href="gallery.html#flowers" aria-label="Flowers section of Gallery">Flowers</a>
+                            <a class="dropdown-item" href="gallery.html#landscapes" aria-label="Landscapes section of Gallery">Landscapes</a>
+                            <a class="dropdown-item" href="gallery.html#trees" aria-label="Trees section of Gallery">Trees</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link nav-signup" href="#" aria-label="Sign up for updates">Sign Up
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- 'disabled' class greys-out the shopping cart until implemented -->
+                        <a class="nav-link disabled" href="#" aria-label="Shopping cart (currently disabled)">
+                            <span class="d-md-none">Shopping Cart </span>
+                            <i class="fas fa-shopping-cart fa-lg"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <!-- Sign Up -->
+        
+        <section class="container inner-page-contents">
+            <div class="row">
+                <div class="col-12 pt-5 mt-5 mx-auto page-text text-center">
+                    <h2 class="page-heading">Sign Up</h2>
+                    <p>Please enter your details below to register with Penny for your Thoughts and receive updates about new images when they are released.</p>
+                </div>
+            </div>
+            <form class="needs-validation mt-5" id="signup-form" novalidate>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputFirstName">First Name</label>
+                        <input type="text" class="form-control" id="inputFirstName" placeholder="First Name" required />
                     </div>
-                </li>
-            </ul>
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link nav-signup" href="#" aria-label="Sign up for updates">Sign Up <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <!-- 'disabled' class greys-out the shopping cart until implemented -->
-                    <a class="nav-link disabled" href="#" aria-label="Shopping cart (currently disabled)"><span class="d-md-none">Shopping Cart </span><i class="fas fa-shopping-cart fa-lg"></i></a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Sign Up -->
-
-    <section class="container inner-page-contents">
-      <div class="row">
-        <div class="col-12 pt-5 mt-5 mx-auto page-text text-center">
-          <h2 class="page-heading">Sign Up</h2>
-          <p>
-            Please enter your details below to register with Penny for your
-            Thoughts and receive updates about new images when they are
-            released.
-          </p>
-        </div>
-      </div>
-      <form class="needs-validation mt-5" id="signup-form" novalidate>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputFirstName">First Name</label>
-            <input
-              type="text"
-              class="form-control"
-              id="inputFirstName"
-              placeholder="First Name"
-              required
-            />
-          </div>
-          <div class="form-group col-md-6">
-            <label for="inputSurname">Surname</label>
-            <input
-              type="text"
-              class="form-control"
-              id="inputSurname"
-              placeholder="Surname"
-              required
-            />
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputEmail">Email</label>
-            <input
-              type="email"
-              class="form-control"
-              id="inputEmail"
-              placeholder="Email"
-              required
-            />
-            <small class="form-text text-muted"
-              >We'll never share your email with anyone else</small
-            >
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputPassword1">Password</label>
-            <input
-              type="password"
-              class="form-control"
-              id="inputPassword1"
-              placeholder="Password"
-              required
-            />
-          </div>
-          <div class="form-group col-md-6">
-            <label for="inputPassword2">Confirm Password</label>
-            <input
-              type="password"
-              class="form-control"
-              id="inputPassword2"
-              placeholder="Password"
-              required
-            />
-          </div>
-        </div>
-        <div class="form-group form-check">
-          <input
-            type="checkbox"
-            class="form-check-input form-control-slim"
-            id="acceptUpdates"
-          />
-          <label class="form-check-label" for="acceptUpdates"
-            >I want to receive product updates</label
-          >
-        </div><div class="sign-up-button-container">
-        <button type="submit" class="btn">Sign Up</button></div>
-      </form>
-    </section>
-
-    <!-- Footer -->
-
-    <footer class="container-fluid">
-      <div class="row">
-        <div class="col-12 py-5">
-          <div id="sm-links-container">
-            <ul>
-              <!-- Facebook -->
-              <li>
-                <a
-                  class="sm-links"
-                  href="https://www.facebook.com/"
-                  target="_blank"
-                  rel="noopener"
-                  aria-label="Find out more on Facebook"
-                >
-                  <i class="fab fa-facebook-f fa-lg fa-2x"> </i>
-                </a>
-              </li>
-              <!-- Twitter -->
-              <li>
-                <a
-                  href="https://www.twitter.com/"
-                  target="_blank"
-                  rel="noopener"
-                  aria-label="Find out more on Twitter"
-                  class="sm-links"
-                >
-                  <i class="fab fa-twitter fa-lg fa-2x"> </i>
-                </a>
-              </li>
-              <!--Linkedin -->
-              <li>
-                <a
-                  href="https://www.linkedin.com/"
-                  target="_blank"
-                  rel="noopener"
-                  aria-label="Find out more on LinkedIn"
-                  class="sm-links"
-                >
-                  <i class="fab fa-linkedin-in fa-lg fa-2x"> </i>
-                </a>
-              </li>
-              <!--Instagram-->
-              <li>
-                <a
-                  href="https://www.instagram.com/"
-                  target="_blank"
-                  rel="noopener"
-                  aria-label="Find out more on Instagram"
-                  class="sm-links"
-                >
-                  <i class="fab fa-instagram fa-lg fa-2x"> </i>
-                </a>
-              </li>
-              <!--Pinterest-->
-              <li>
-                <a
-                  href="https://www.pinterest.com/"
-                  target="_blank"
-                  rel="noopener"
-                  aria-label="Find out more on Pinterest"
-                  class="sm-links"
-                >
-                  <i class="fab fa-pinterest fa-lg fa-2x"> </i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- Copyright -->
-      <div class="container text-center" id="copyright-container">
-        <div class="row">
-          <div class="col-12">
-            <p class="small">
-              © 2020 Copyright Penny Holland
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!-- Bootstrap JavaScript CDN -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <!-- Script to collapse dropdowns in mobile navbar burger menu when clicked. Source: https://stackoverflow.com/questions/42401606/how-to-hide-collapsible-bootstrap-4-navbar-on-click -->
-    <script>
-      $(".nav-item").on("click", function () {
-        $(".navbar-collapse").collapse("hide");
-      });
-    </script>
-    <script>
-      // Example starter JavaScript for disabling form submissions if there are invalid fields. Source: https://getbootstrap.com/docs/4.1/components/forms/#custom-styles
-      (function () {
-        "use strict";
-        window.addEventListener(
-          "load",
-          function () {
-            // Fetch all the forms we want to apply custom Bootstrap validation styles to
-            var forms = document.getElementsByClassName("needs-validation");
-            // Loop over them and prevent submission
-            var validation = Array.prototype.filter.call(forms, function (
-              form
-            ) {
-              form.addEventListener(
-                "submit",
-                function (event) {
-                  if (form.checkValidity() === false) {
-                    event.preventDefault();
-                    event.stopPropagation();
-                  }
-                  form.classList.add("was-validated");
+                    <div class="form-group col-md-6">
+                        <label for="inputSurname">Surname</label>
+                        <input type="text" class="form-control" id="inputSurname" placeholder="Surname" required />
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail">Email</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Email" required />
+                        <small class="form-text text-muted" >We'll never share your email with anyone else</small>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword1">Password</label>
+                        <input type="password" class="form-control" id="inputPassword1" placeholder="Password" required />
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword2">Confirm Password</label>
+                        <input type="password" class="form-control" id="inputPassword2" placeholder="Password" required />
+                    </div>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input form-control-slim" id="acceptUpdates" />
+                    <label class="form-check-label" for="acceptUpdates" >I want to receive product updates</label>
+                </div>
+                <div class="sign-up-button-container">
+                    <button type="submit" class="btn">Sign Up</button>
+                </div>
+            </form>
+        </section>
+        
+        <!-- Footer -->
+        
+        <footer class="container-fluid">
+            <div class="row">
+                <div class="col-12 py-5">
+                    <div id="sm-links-container">
+                        <ul>
+                            <!-- Facebook -->
+                            <li>
+                                <a class="sm-links" href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Find out more on Facebook" >
+                                    <i class="fab fa-facebook-f fa-lg fa-2x"></i>
+                                </a>
+                            </li>
+                            <!-- Twitter -->
+                            <li>
+                                <a href="https://www.twitter.com/" target="_blank" rel="noopener" aria-label="Find out more on Twitter" class="sm-links" >
+                                    <i class="fab fa-twitter fa-lg fa-2x"></i>
+                                </a>
+                            </li>
+                            <!--Linkedin -->
+                            <li>
+                                <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="Find out more on LinkedIn" class="sm-links" >
+                                    <i class="fab fa-linkedin-in fa-lg fa-2x"></i>
+                                </a>
+                            </li>
+                            <!--Instagram-->
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Find out more on Instagram" class="sm-links" >
+                                    <i class="fab fa-instagram fa-lg fa-2x"></i>
+                                </a>
+                            </li>
+                            <!--Pinterest-->
+                            <li>
+                                <a href="https://www.pinterest.com/" target="_blank" rel="noopener" aria-label="Find out more on Pinterest" class="sm-links" >
+                                    <i class="fab fa-pinterest fa-lg fa-2x"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Copyright -->
+            <div class="container text-center" id="copyright-container">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="small">© 2020 Copyright Penny Holland</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <!-- Bootstrap JavaScript CDN -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <!-- Script to collapse dropdowns in mobile navbar burger menu when clicked. Source: https://stackoverflow.com/questions/42401606/how-to-hide-collapsible-bootstrap-4-navbar-on-click -->
+        <script> $(".nav-item").on("click", function () { $(".navbar-collapse").collapse("hide"); }); </script>
+        <!-- JavaScript for disabling form submissions if there are invalid fields. Source: https://getbootstrap.com/docs/4.1/components/forms/#custom-styles -->
+        <script>
+            (function () {
+            "use strict";
+            window.addEventListener(
+                "load",
+                function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName("needs-validation");
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (
+                    form
+                ) {
+                    form.addEventListener(
+                    "submit",
+                    function (event) {
+                        if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                        }
+                        form.classList.add("was-validated");
+                    },
+                    false
+                    );
+                });
                 },
                 false
-              );
-            });
-          },
-          false
-        );
-      })();
-    </script>
-  </body>
+            );
+            })();
+        </script>
+        
+    </body>
 </html>
