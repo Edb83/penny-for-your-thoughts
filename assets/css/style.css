@@ -16,7 +16,8 @@ body {
   font-size: 16px;
   margin: 0;
 
-  /* These settings are used to position the footer at the bottom of the page where there is insufficient content to naturally position it there (About, Pricing, Signup) */
+  /* These settings are used to position the footer at the bottom of the page where there is insufficient 
+  *  content to naturally position it there (About, Pricing, Signup) */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,7 +44,8 @@ input[type="submit"],
   border-radius: 0;
 }
 
-/* These settings are used to position the footer at the bottom of the page where there is insufficient content to naturally position it there (About, Pricing, Signup) */
+/* These settings are used to position the footer at the bottom of the page where there is insufficient 
+*  content to naturally position it there (About, Pricing, Signup) */
 .inner-page-contents {
   -webkit-box-flex: 1;
   -ms-flex: 1;
@@ -53,12 +55,6 @@ input[type="submit"],
 .uppercase {
   text-transform: uppercase;
 }
-
-/* Shadow */
-/* .blue-shadow {
-  -webkit-box-shadow: 0 5px 8px #036;
-  box-shadow: 0 5px 8px #036;
-} */
 
 /* Navbar */
 
@@ -101,7 +97,8 @@ nav {
     background-color: #39c;
 }
 
-/* Headings - applies to headings of all pages for consistent typography and spacing. These have been given separate ids to give options for unique styling */
+/* Headings - applies to headings of all pages for consistent typography and spacing. 
+*  These have been given separate ids to give options for unique styling */
 
 .page-heading {
   font-size: 2rem;
@@ -272,13 +269,15 @@ footer {
   text-decoration: none;
 }
 
-/* Social media icon margins - this has responsive media queries for larger displays. NB adding padding here will increase the 'clickable' area of links */
+/* Social media icon margins - this has responsive media queries for larger displays. 
+*  NB adding padding here will increase the 'clickable' area of links */
 .sm-links {
   margin: 0 1rem;
 }
 
 /* 'Grow' hover effect from Ian Lunn can be applied to most blocks to provide subtle visual feedback.
-*   Currently only applied to intro gallery images in index.html. Also affects the absolutely positioned text within the image, but there is some visual distortion */
+*  Currently only applied to intro gallery images in index.html. Also affects the absolutely positioned text 
+*  within the image, but there is some visual distortion */
 
 .hvr-grow {
   display: inline-block;
@@ -354,7 +353,8 @@ table {
   text-align: center;
   table-layout: fixed;
 }
-/* Table border styling - separating top and bottom borders across two rules allows for a minimalist display and greater precision across the tables' rows  */
+/* Table border styling - separating top and bottom borders across two rules allows for a minimalist display and greater 
+*  precision across the tables' rows  */
 .table thead th {
   vertical-align: bottom;
   border-bottom: 2px;
@@ -392,7 +392,8 @@ table caption {
   box-shadow: 0 5px 8px #036;
 }
 
-/* 'Add' button on gallery images, which has been incrementally changed to provide best absolute positioning. This will break if image dimensions are not fixed  */
+/* 'Add' button on gallery images, which has been incrementally changed to provide best absolute positioning. 
+*  This will break if image dimensions are not fixed  */
 .pic button {
   position: absolute;
   top: 95%;
@@ -534,7 +535,8 @@ table caption {
   }
 }
 
-/* Allows the hero image to be displayed on mobile devices (iOS), however it will appear as a static image and will not 'reveal' itself when scrolling down the page */
+/* Allows the hero image to be displayed on mobile devices (iOS), however it will appear as a static image 
+*  and will not 'reveal' itself when scrolling down the page */
 @media screen and (max-width: 1024px) {
   #callout {
     background-attachment: scroll;
@@ -557,7 +559,7 @@ table caption {
     margin: 0 3rem;
   }
 
-  /* Increases the external padding around tables and reduces width for spacing and to prevent "size" line spanning */
+  /* Increases the external padding around tables and reduces width for spacing and to prevent "Size" spilling into a new row */
   .table-container {
     padding: 1.25rem 5rem;
     width: 98%;
