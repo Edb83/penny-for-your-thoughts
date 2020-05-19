@@ -27,6 +27,7 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
 }
+
   /* This changes the size size and inline position of text below page headers */
  .page-text p {
     margin-bottom: 1.5rem;
@@ -71,9 +72,9 @@ nav {
   z-index: 1;
   left: 0;
 }
+
 /* Navbar - "Penny for your Thoughts" */
 .navbar-brand {
-
   font-size: 1rem;
   letter-spacing: 0.0625rem;
   color: #fff;
@@ -84,12 +85,14 @@ nav {
 .navbar-dark .navbar-nav .nav-link {
   color: #fff;
 }
+
 /* Navbar - items hover & active */
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .active > .nav-link {
   color: #036;
   font-weight: 600;
 }
+
 /* Navbar - dropdown hover */
 .dropdown-item:focus, .dropdown-item:hover {
     color: #fff;
@@ -118,6 +121,7 @@ nav {
     bottom #fff no-repeat;
   background-size: 100% 0.125rem;
 }
+
 /* Headings - gallery section headings */
 .heading-gallery-category {
   font-weight: 400;
@@ -172,6 +176,7 @@ nav {
   font-size: 1.5rem;
   color: #3399cc;
 }
+
 .intro-text {
   padding: 0 0.625rem;
   text-align: center;
@@ -179,11 +184,13 @@ nav {
   margin-top: 0.5rem;
   margin-bottom: 2rem;
 }
+
 /* Container for the circular images below Hero image - reduced width prevents overflow caused by hvr.grow effect */
 #intro-gallery {
   width: 91%;
   font-family: "Open Sans", sans-serif;
 }
+
 /* Circular images below Hero image */
 
 /* <a> element targeted here in order to create a clickable area which matches the desired shape of the image contained within */
@@ -233,6 +240,7 @@ footer {
   border-top-color: #036;
   background-color: #c90;
 }
+
 /* Social media container */
 #sm-links-container {
   -ms-flex-line-pack: center;
@@ -324,6 +332,7 @@ footer {
   /* This top margin is removed in media query to prevent unwanted spacing where two columns present on larger displays */
   margin-top: 2.5rem;
 }
+
 /* About image - Media query restricts the dimensions of the image to its container on larger displays;
 *  NB should be applied to <a> class if wanting to make the picture a clickable link.*/
 #about-image img {
@@ -349,11 +358,13 @@ footer {
   box-shadow: 0 5px 8px #036;
   border-radius: 5px;
 }
+
 /* Fixed layout keeps the column widths identical on both tables so that in single column display they are aligned on the page */
 table {
   text-align: center;
   table-layout: fixed;
 }
+
 /* Table border styling - separating top and bottom borders across two rules allows for a minimalist display and greater 
 *  precision across the tables' rows  */
 .table thead th {
@@ -381,6 +392,7 @@ table caption {
 .pic {
   padding: 0;
 }
+
 /* Gallery image - set height on larger displays to preserve consistency and absolute positioning of 'Add' pic button
 *  Media query changes height to 100% for smaller displays to prevent a narrow image and provide full aspect ratio */
 .pic img {
@@ -406,6 +418,7 @@ table caption {
   background-color: #39c;
   color: #fff;
 }
+
 /* Hover styling for Gallery 'Add' buttons */
 .pic button:hover {
   background-color: #036;
@@ -470,10 +483,10 @@ table caption {
   /* Increase the font-size of headings and text on larger displays */
   .intro-title {
     font-size: 2rem;
-}
+  }
   .intro-text {
   font-size: 1.25rem;
-}
+  }
   .page-heading {
   font-size: 2.5rem;
   }
@@ -494,7 +507,7 @@ table caption {
   /* Centers the sign-up button for ease of clicking when form is not inline */
   .sign-up-button-container {
     text-align: center;
-}
+  }
 
 }
 
@@ -509,7 +522,7 @@ table caption {
     min-height: 136px;
   }
 
-/* Aligns text left when sharing row with about-image */
+  /* Aligns text left when sharing row with about-image */
   #about-me-text {
     text-align: left;
 }
@@ -521,6 +534,7 @@ table caption {
     height: -moz-fit-content;
     height: fit-content;
   }
+
   #about-image img {
     max-height: 100%;
     max-width: 100%;
